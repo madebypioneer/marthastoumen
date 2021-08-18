@@ -294,7 +294,7 @@ document.addEventListener('shopify:section:unload', function() {
 {%- assign allow_list = linklists[section.settings.allow_list] -%}
 {%- if allow_list.handle != blank -%}
   {%- for link in allow_list.links -%}
-    {%- if page.url == link.url -%}
+    {%- if request.path == link.url -%}
       {%- assign is_page_gated = false -%}
     {%- endif -%}
   {%- endfor -%}
