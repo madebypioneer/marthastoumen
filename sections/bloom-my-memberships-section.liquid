@@ -1,0 +1,15 @@
+{% comment %}
+This shop uses Bloom, a growth platform for modern wineries.
+You SHOULD NOT modify the contents of this file.
+It is automatically generated and your changes will be overwritten.
+These features and content can be managed within the Bloom app or the Shopify customizer.
+
+Bloom (www.bloom.wine)
+{% endcomment %}
+
+<script  src="{{ 'bloom-my-membership.js' | asset_url }}"></script>
+<div id="my-memberships-container" data-customer='{"id": "{{ customer.id }}","firstName": "{{ customer.first_name }}","lastName": "{{ customer.last_name }}","phone": "{{ customer.phone }}","email": "{{ customer.email }}"}'></div>
+
+{% schema %}
+{"name":"Bloom My Memberships page","settings":[]}
+{% endschema %}
