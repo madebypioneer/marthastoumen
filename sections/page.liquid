@@ -4,7 +4,7 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="page-width page-width--narrow">
+<div class="{% if section.settings.fullWidth %}w-full text-center{% else %}md:w-1/2{% endif %}">
   <h2 class="page-title">
     {%- if section.settings.page.title != blank -%}
       {{ section.settings.page.title | escape }}
@@ -12,15 +12,17 @@
       Page title
     {%- endif -%}
   </h2>
-  <div class="rte">
-    {%- if section.settings.page.content != blank -%}
-      {{ section.settings.page.content }}
-    {%- else -%}
-      <div class='page-placeholder-wrapper placeholder'>
-        {{ 'page' | placeholder_svg_tag: 'page-placeholder' }}
-      </div>
-    {%- endif -%}
-  </div>
+  {% if section.settings.showContent %}
+    <div class="rte">
+      {%- if section.settings.page.content != blank -%}
+        {{ section.settings.page.content }}
+      {%- else -%}
+        <div class='page-placeholder-wrapper placeholder'>
+          {{ 'page' | placeholder_svg_tag: 'page-placeholder' }}
+        </div>
+      {%- endif -%}
+    </div>
+  {% endif %}
 </div>
 
 {% schema %}
@@ -33,6 +35,16 @@
       "type": "page",
       "id": "page",
       "label": "t:sections.page.settings.page.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "fullWidth",
+      "label": "Full Width"
+    },
+    {
+      "type": "checkbox",
+      "id": "showContent",
+      "label": "Show Page Content"
     }
   ],
   "presets": [

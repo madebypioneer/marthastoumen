@@ -1,0 +1,4 @@
+.imageMask {
+    clip-path: url(#circleMask);
+    -webkit-clip-path: url(#circleMask);
+}

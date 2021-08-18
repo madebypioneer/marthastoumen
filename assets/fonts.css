@@ -1,0 +1,612 @@
+@font-face {
+    font-family: 'Baton Web';
+    src: url('BatonWeb-Regular.woff2') format('woff2'),
+    url('BatonWeb-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baton Web';
+    src: url('BatonWeb-RegularItalic.woff2') format('woff2'),
+    url('BatonWeb-RegularItalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-MediumItalic.woff2') format('woff2'),
+    url('Gopher-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-BoldItalic.woff2') format('woff2'),
+    url('Gopher-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display Hairline';
+    src: url('GopherDisplay-HairlineItalic.woff2') format('woff2'),
+    url('GopherDisplay-HairlineItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-Heavy.woff2') format('woff2'),
+    url('GopherDisplay-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text Hairline';
+    src: url('GopherText-Hairline.woff2') format('woff2'),
+    url('GopherText-Hairline.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-MediumItalic.woff2') format('woff2'),
+    url('GopherText-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-Italic.woff2') format('woff2'),
+    url('GopherDisplay-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-BlackItalic.woff2') format('woff2'),
+    url('GopherDisplay-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text Hairline';
+    src: url('GopherText-HairlineItalic.woff2') format('woff2'),
+    url('GopherText-HairlineItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-Regular.woff2') format('woff2'),
+    url('GopherDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-Bold.woff2') format('woff2'),
+    url('Gopher-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display Hairline';
+    src: url('GopherDisplay-Hairline.woff2') format('woff2'),
+    url('GopherDisplay-Hairline.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-Bold.woff2') format('woff2'),
+    url('GopherDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-Heavy.woff2') format('woff2'),
+    url('GopherText-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-Medium.woff2') format('woff2'),
+    url('GopherText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-LightItalic.woff2') format('woff2'),
+    url('GopherText-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-Thin.woff2') format('woff2'),
+    url('GopherText-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-BlackItalic.woff2') format('woff2'),
+    url('GopherText-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Hairline';
+    src: url('Gopher-Hairline.woff2') format('woff2'),
+    url('Gopher-Hairline.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-HeavyItalic.woff2') format('woff2'),
+    url('GopherText-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-Medium.woff2') format('woff2'),
+    url('Gopher-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-Italic.woff2') format('woff2'),
+    url('GopherText-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-LightItalic.woff2') format('woff2'),
+    url('Gopher-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-Light.woff2') format('woff2'),
+    url('GopherText-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-Medium.woff2') format('woff2'),
+    url('GopherDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-ThinItalic.woff2') format('woff2'),
+    url('GopherText-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-BoldItalic.woff2') format('woff2'),
+    url('GopherDisplay-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-Black.woff2') format('woff2'),
+    url('GopherDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-ThinItalic.woff2') format('woff2'),
+    url('Gopher-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-Black.woff2') format('woff2'),
+    url('GopherText-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-Thin.woff2') format('woff2'),
+    url('Gopher-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-Light.woff2') format('woff2'),
+    url('Gopher-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-Regular.woff2') format('woff2'),
+    url('Gopher-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Hairline';
+    src: url('Gopher-HairlineItalic.woff2') format('woff2'),
+    url('Gopher-HairlineItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-Heavy.woff2') format('woff2'),
+    url('Gopher-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-HeavyItalic.woff2') format('woff2'),
+    url('GopherDisplay-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-Bold.woff2') format('woff2'),
+    url('GopherText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-BlackItalic.woff2') format('woff2'),
+    url('Gopher-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-ThinItalic.woff2') format('woff2'),
+    url('GopherDisplay-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-Light.woff2') format('woff2'),
+    url('GopherDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-Regular.woff2') format('woff2'),
+    url('GopherText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-Italic.woff2') format('woff2'),
+    url('Gopher-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-LightItalic.woff2') format('woff2'),
+    url('GopherDisplay-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-Thin.woff2') format('woff2'),
+    url('GopherDisplay-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-MediumItalic.woff2') format('woff2'),
+    url('GopherDisplay-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-HeavyItalic.woff2') format('woff2'),
+    url('Gopher-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-Black.woff2') format('woff2'),
+    url('Gopher-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-BoldItalic.woff2') format('woff2'),
+    url('GopherText-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-Thin.woff2') format('woff2'),
+    url('Gopher-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-Light.woff2') format('woff2'),
+    url('Gopher-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-Regular.woff2') format('woff2'),
+    url('Gopher-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Hairline';
+    src: url('Gopher-HairlineItalic.woff2') format('woff2'),
+    url('Gopher-HairlineItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-Heavy.woff2') format('woff2'),
+    url('Gopher-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-HeavyItalic.woff2') format('woff2'),
+    url('GopherDisplay-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-Bold.woff2') format('woff2'),
+    url('GopherText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-BlackItalic.woff2') format('woff2'),
+    url('Gopher-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-ThinItalic.woff2') format('woff2'),
+    url('GopherDisplay-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-Light.woff2') format('woff2'),
+    url('GopherDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-Regular.woff2') format('woff2'),
+    url('GopherText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-Italic.woff2') format('woff2'),
+    url('Gopher-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-LightItalic.woff2') format('woff2'),
+    url('GopherDisplay-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-Thin.woff2') format('woff2'),
+    url('GopherDisplay-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Display';
+    src: url('GopherDisplay-MediumItalic.woff2') format('woff2'),
+    url('GopherDisplay-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-HeavyItalic.woff2') format('woff2'),
+    url('Gopher-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher';
+    src: url('Gopher-Black.woff2') format('woff2'),
+    url('Gopher-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gopher Text';
+    src: url('GopherText-BoldItalic.woff2') format('woff2'),
+    url('GopherText-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+

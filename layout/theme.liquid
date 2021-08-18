@@ -41,16 +41,17 @@
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
 
       :root {
-        --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
-        --font-body-style: {{ settings.type_body_font.style }};
-        --font-body-weight: {{ settings.type_body_font.weight }};
+        --font-body-family: 'Gopher', sans-serif;
+        --font-body-style: normal;
+        --font-body-weight: normal;
 
-        --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
-        --font-heading-style: {{ settings.type_header_font.style }};
-        --font-heading-weight: {{ settings.type_header_font.weight }};
+        --font-heading-family: 'Baton Web', sans-serif;
+        --font-heading-style: italic;
+        --font-heading-weight: 400;
 
-        --color-base-text: {{ settings.colors_text.red }}, {{ settings.colors_text.green }}, {{ settings.colors_text.blue }};
-        --color-base-background-1: {{ settings.colors_background_1.red }}, {{ settings.colors_background_1.green }}, {{ settings.colors_background_1.blue }};
+        --color-background: #F9F5EA;
+        --color-base-text: #30292F;
+        --color-base-background-1: #F9F5EA;
         --color-base-background-2: {{ settings.colors_background_2.red }}, {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};
         --color-base-solid-button-labels: {{ settings.colors_solid_button_labels.red }}, {{ settings.colors_solid_button_labels.green }}, {{ settings.colors_solid_button_labels.blue }};
         --color-base-outline-button-labels: {{ settings.colors_outline_button_labels.red }}, {{ settings.colors_outline_button_labels.green }}, {{ settings.colors_outline_button_labels.blue }};
@@ -69,6 +70,7 @@
         box-sizing: border-box;
         font-size: 62.5%;
         height: 100%;
+        background-color: #F9F5EA;
       }
 
       body {
@@ -85,6 +87,15 @@
         font-weight: var(--font-body-weight);
       }
 
+      h2 {
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 0em;
+        text-transform: uppercase;
+      }
+
       @media screen and (min-width: 750px) {
         body {
           font-size: 1.6rem;
@@ -92,6 +103,8 @@
       }
     {% endstyle %}
 
+    {{ 'fonts.css' | asset_url | stylesheet_tag }}
+    {{ 'tailwind.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
@@ -104,7 +117,7 @@
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
   </head>
 
-  <body>
+  <body class="bg-fullMoon">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>

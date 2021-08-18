@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "watch": "npx tailwindcss -i ./styles/tailwind.css -o ./assets/tailwind.css --watch",
+    "build": "npx tailwindcss -i ./styles/tailwind.css -o ./assets/tailwind.css"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "tailwindcss": "^2.2.7"
+  }
+}

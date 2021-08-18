@@ -1,11 +1,14 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
-<div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
-  <div class="image-with-text__grid color-{{ section.settings.color_scheme }}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} grid grid--gapless grid--1-col grid--2-col-tablet">
-    <div class="grid__item">
-      <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-        {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
+<div class="mx-auto image-with-text bg-vine">
+  <div class="flex flex-wrap{% if section.settings.layout == 'text_first' %} lg:flex-row-reverse{% endif %}">
+    <div class="{% if section.settings.thin %}md:w-1/2{% else %}md:w-3/5{% endif %} w-full overflow-hidden relative">
+      {%- if section.settings.wine_club -%}
+        <img src="{{ 'wineclub_ringrotation.gif' | asset_url }}" alt="" class="wine-club-rotating" style="position: absolute; max-width: 80%; left: -25%; z-index: 1; top: -10%;">
+      {% endif %}
+      <div class="{% if section.settings.mask %}image{% if section.settings.thin %}Thin{% endif %} {% endif %}{% if section.settings.thin %}aspect-w-3 aspect-h-1{% else %}aspect-w-3 aspect-h-4 md:aspect-h-2{% endif %} image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
       >
+        {% comment %}{% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}{% endcomment %}
         {%- if section.settings.image != blank -%}
           <img srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
             {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{%- endif -%}
@@ -25,33 +28,55 @@
         {%- endif -%}
       </div>
     </div>
-    <div class="grid__item">
+    <div class="{% if section.settings.thin %}md:w-1/2{% else %}md:w-2/5{% endif %} text-fullMoon">
       <div class="image-with-text__content image-with-text__content--{{ section.settings.height }}">
         {%- for block in section.blocks -%}
           {% case block.type %}
+            {% when 'preheading' %}
+            <h6 class="text-fullMoon mb-0">{{ block.settings.preheading }}</h6>
             {%- when 'heading' -%}
-              <h2 class="image-with-text__heading h1" {{ block.shopify_attributes }}>
+              <h2 class="image-with-text__heading h1 text-fullMoon mt-0" {{ block.shopify_attributes }}>
                 {{ block.settings.heading | escape }}
               </h2>
             {%- when 'text' -%}
               <div class="image-with-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
-                <a{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link == blank %} aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
+                <a{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% endif %} class="button--text"{% if block.settings.button_link == blank %} aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
                   {{ block.settings.button_label | escape }}
+                  <span class="arrow"></span>
                 </a>
               {%- endif -%}
           {%- endcase -%}
         {%- endfor -%}
       </div>
     </div>
+    {% comment %}viewBox="0 0 893 652"{% endcomment %}
+    {% if section.settings.mask %}
+        <svg width="0" height="0">
+          <clipPath id="wineMask{% if section.settings.thin %}Thin{% endif %}" clipPathUnits="objectBoundingBox">
+            {% if section.settings.thin %}
+              {% if section.settings.layout == 'text_first' %}
+                <path transform="scale(0.001276,0.0028)" d="M784,0 L784,357 L22.0911753,357.001712 C-4.99633273,272.780797 -7.17339394,181.877196 15.5596847,90.9735945 L15.5596847,90.9735945 L38.31,-0.000309499489 L784,0 Z" id="Combined-Shape" fill="#D8D8D8" fill-rule="nonzero"></path>
+              {% else %}
+                <path transform="scale(0.001276,0.0028)" d="M741.931,0 L764.682055,90.9735945 C790.91078,180.122327 789.854004,272.301609 765.015919,357.001922 L0,357 L0,0 L741.931,0 Z" id="Combined-Shape" fill="#D8D8D8" fill-rule="nonzero"></path>
+              {% endif %}
+            {% else %}
+              {% if section.settings.layout == 'text_first' %}
+                <path transform="scale(0.00112,0.00154)" d="M895,1.13686838e-13 L895,652 L88.8193473,652.001804 C4.82266594,536.137007 -19.5968431,395.555301 15.5596847,254.973595 L15.5596847,254.973595 L79.324,5.68434189e-14 L895,1.13686838e-13 Z" id="Combined-Shape"></path>
+              {% else %}
+                <path transform="scale(0.00112,0.00154)" d="M809.917,5.68434189e-14 L873.682055,254.973595 C914.31056,393.065694 889.46953,538.429373 812.183102,652.003592 L0,652 L0,1.13686838e-13 L809.917,5.68434189e-14 Z" id="Combined-Shape"></path>
+              {% endif %}
+            {% endif %}
+          </clipPath>
+        </svg>
+    {%  endif %}
   </div>
 </div>
 
 {% schema %}
 {
   "name": "t:sections.image-with-text.name",
-  "class": "spaced-section spaced-section--full-width",
   "settings": [
     {
       "type": "image_picker",
@@ -59,52 +84,22 @@
       "label": "t:sections.image-with-text.settings.image.label"
     },
     {
-      "type": "select",
-      "id": "height",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.image-with-text.settings.height.options__1.label"
-        },
-        {
-          "value": "small",
-          "label": "t:sections.image-with-text.settings.height.options__2.label"
-        },
-        {
-          "value": "large",
-          "label": "t:sections.image-with-text.settings.height.options__3.label"
-        }
-      ],
-      "default": "adapt",
-      "label": "t:sections.image-with-text.settings.height.label"
+      "type": "checkbox",
+      "id": "mask",
+      "default": false,
+      "label": "Wine Mask"
     },
     {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "background-1",
-          "label": "t:sections.image-with-text.settings.color_scheme.options__1.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.image-with-text.settings.color_scheme.options__2.label"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.image-with-text.settings.color_scheme.options__3.label"
-        },
-        {
-          "value": "accent-1",
-          "label": "t:sections.image-with-text.settings.color_scheme.options__4.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.image-with-text.settings.color_scheme.options__5.label"
-        }
-      ],
-      "default": "background-1",
-      "label": "t:sections.image-with-text.settings.color_scheme.label"
+      "type": "checkbox",
+      "id": "wine_club",
+      "default": false,
+      "label": "Wine Club Rotating Circle"
+    },
+    {
+      "type": "checkbox",
+      "id": "thin",
+      "default": false,
+      "label": "Thin"
     },
     {
       "type": "select",
@@ -125,6 +120,19 @@
     }
   ],
   "blocks": [
+    {
+      "type": "preheading",
+      "name": "PreHeading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "preheading",
+          "default": "Image with text",
+          "label": "PreHeading"
+        }
+      ]
+    },
     {
       "type": "heading",
       "name": "t:sections.image-with-text.blocks.heading.name",

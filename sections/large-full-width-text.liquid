@@ -1,0 +1,46 @@
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+
+<div class="w-full">
+    <div class="image-with-text__content image-with-text__content--{{ section.settings.height }}">
+        {%- for block in section.blocks -%}
+            {% case block.type %}
+                {%- when 'heading' -%}
+                    <p class="" {{ block.shopify_attributes }}>
+                        {{ block.settings.text | escape }}
+                    </p>
+            {%- endcase -%}
+        {%- endfor -%}
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Full Width Large Text",
+    "type": "block",
+    "blocks": [
+        {
+            "type": "text",
+            "name": "Text",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "textarea",
+                    "id": "text",
+                    "default": "We want to be a leading force in course-correcting the California wine industry. By sharing the simple pleasures of unexpected wines made naturally in California, making natural wine accessible to all interested by knowledge sharing, and welcoming wine drinkers across the spectrum and being transparent in our practices. We focus on joy, pleasure and the art of winemaking first.",
+                    "label": "Text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Full Width Large Text",
+            "blocks": [
+                {
+                    "type": "text"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

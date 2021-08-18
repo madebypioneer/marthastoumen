@@ -1,17 +1,31 @@
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'announcement' -%}
-      <div class="announcement-bar color-{{ block.settings.color_scheme }}" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+      <div class="bg-vine text-fullMoon p-8 text-center relative flex overflow-x-hidden announcement-bar color-{{ block.settings.color_scheme }}" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
         {%- if block.settings.text != blank -%}
           {%- if block.settings.link != blank -%}
-            <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
+            <a href="{{ block.settings.link }}" class="announcement-bar__link link animate-marquee link--text focus-inset animate-arrow whitespace-nowrap">
           {%- endif -%}
-              <p class="announcement-bar__message h5">
+              <p class="animate-marquee announcement-bar__message h5 whitespace-nowrap">
                 {{ block.settings.text | escape }}
                 {%- if block.settings.link != blank -%}
                   {% render 'icon-arrow' %}
                 {%- endif -%}
               </p>
+          {%- if block.settings.link != blank -%}
+            </a>
+          {%- endif -%}
+        {%- endif -%}
+        {%- if block.settings.text != blank -%}
+          {%- if block.settings.link != blank -%}
+            <a href="{{ block.settings.link }}" class="absolute announcement-bar__link link animate-marquee2 link--text focus-inset animate-arrow whitespace-nowrap">
+          {%- endif -%}
+          <p class="absolute animate-marquee2 announcement-bar__message h5 whitespace-nowrap">
+            {{ block.settings.text | escape }}
+            {%- if block.settings.link != blank -%}
+              {% render 'icon-arrow' %}
+            {%- endif -%}
+          </p>
           {%- if block.settings.link != blank -%}
             </a>
           {%- endif -%}

@@ -1,0 +1,124 @@
+{{ 'section-content.css' | asset_url | stylesheet_tag }}
+
+<div class="container mx-auto {% if section.settings.reduce_spacing != true %}py-64{% endif %}">
+    <div class="flex flex-wrap justify-center p-32 md:p-64">
+        {%- for block in section.blocks -%}
+            {% case block.type %}
+                {%- when 'buttons' -%}
+                    <div class="w-full large text-center mt-48">
+                        {% if block.settings.link_one_page %}
+                            <a href="{{ block.settings.link_one_page }}" class="button button--primary mx-8">
+                                {{ block.settings.link_one_text }}
+                            </a>
+                        {% endif %}
+                        {% if block.settings.link_two_page %}
+                            <a href="{{ block.settings.link_two_page }}" class="button button--primary button--filled mx-8">
+                                {{ block.settings.link_two_text }}
+                            </a>
+                        {% endif %}
+                    </div>
+            {%- when 'heading' -%}
+                    <div class="w-full large text-center">
+                        <h2 class="h1">{{ block.settings.heading }}</h2>
+                    </div>
+                {%- when 'largeText' -%}
+                    <div class="w-full pb-64 large text-center">
+                        {{ block.settings.text }}
+                        {% comment %}<h2>{% endcomment %}
+                            {% comment %}{{ section.settings.heading }}{% endcomment %}
+                        {% comment %}</h2>{% endcomment %}
+                    </div>
+                    {%- when 'card' -%}
+                        <div class="md:w-1/4 p-32 py-64 text-center">
+                            <h4>{{ block.settings.heading }}</h4>
+                            {{ block.settings.content }}
+                        </div>
+            {%- endcase -%}
+        {%- endfor -%}
+    </div>
+</div>
+
+
+{% schema %}
+{
+    "name": "Content",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "reduce_spacing",
+            "label": "Reduce Top and Bottom Spacing"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "buttons",
+            "name": "Buttons",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "link_one_text",
+                    "label": "Link Text"
+                },
+                {
+                    "type": "url",
+                    "id": "link_one_page",
+                    "label": "Page"
+                },
+                {
+                    "type": "text",
+                    "id": "link_two_text",
+                    "label": "Link Text"
+                },
+                {
+                    "type": "url",
+                    "id": "link_two_page",
+                    "label": "Page"
+                }
+            ]
+        },
+        {
+            "type": "heading",
+            "name": "Heading",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading"
+                }
+            ]
+        },
+        {
+            "type": "largeText",
+            "name": "Large Text",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "Text"
+                }
+            ]
+        },
+        {
+            "type": "card",
+            "name": "Card",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading"
+                },
+                {
+                    "type": "richtext",
+                    "id": "content",
+                    "label": "Content"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Content"
+        }
+    ]
+}
+{% endschema %}

@@ -1,15 +1,25 @@
-.image-with-text {
-  margin-top: 5rem;
+/*.image-with-text {*/
+/*  margin-top: 5rem;*/
+/*}*/
+
+
+
+/*.image-with-text:not(.color-scheme-background-1) {*/
+/*  margin-bottom: 5rem;*/
+/*}*/
+
+/*@media screen and (min-width: 750px) {*/
+/*  .image-with-text {*/
+/*    margin-bottom: 5rem;*/
+/*  }*/
 }
 
-.image-with-text:not(.color-scheme-background-1) {
-  margin-bottom: 5rem;
-}
-
-@media screen and (min-width: 750px) {
-  .image-with-text {
-    margin-bottom: 5rem;
-  }
+.image-with-text .wine-club-rotating {
+  position: absolute;
+  max-width: 80%;
+  left: -25%;
+  z-index: 1;
+  top: -10%;
 }
 
 .image-with-text .grid {
@@ -94,6 +104,16 @@
 @media screen and (min-width: 990px) {
   .image-with-text__content {
     padding: 6rem 7rem 7rem;
+  }
+
+  .image-with-text .image {
+    clip-path: url(#wineMask);
+    -webkit-clip-path: url(#wineMask);
+  }
+
+  .image-with-text .imageThin {
+    clip-path: url(#wineMaskThin);
+    -webkit-clip-path: url(#wineMaskThin);
   }
 }
 

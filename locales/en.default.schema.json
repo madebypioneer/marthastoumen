@@ -143,6 +143,10 @@
         "social_vimeo_link": {
           "label": "Vimeo",
           "info": "https://vimeo.com/shopify"
+        },
+        "social_spotify_link": {
+          "label": "Spotify",
+          "info": "https://spotify.com/shopify"
         }
       }
     },
@@ -1537,6 +1541,44 @@
       },
       "presets": {
         "name": "Rich text"
+      }
+    },
+    "side-by-side": {
+      "name": "Side by Side",
+      "settings": {
+        "include_margins": {
+          "label": "Make section margins the same as theme"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Heading",
+          "settings": {
+            "heading": {
+              "label": "Heading"
+            },
+            "heading_size": {
+              "options__1": {
+                "label": "Small"
+              },
+              "options__2": {
+                "label": "Medium"
+              },
+              "label": "Heading font size"
+            }
+          }
+        },
+        "text": {
+          "name": "Text",
+          "settings": {
+            "text": {
+              "label": "Description"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Side by Side"
       }
     }
   }
