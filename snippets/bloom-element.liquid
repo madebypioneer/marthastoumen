@@ -1,0 +1,32 @@
+{% comment %}
+This shop uses Bloom, a growth platform for modern wineries.
+You SHOULD NOT modify the contents of this file.
+It is automatically generated and your changes will be overwritten.
+These features and content can be managed within the Bloom app or the Shopify customizer.
+
+Bloom (www.bloom.wine)
+{% endcomment %}
+
+{%- assign level_ids_array = level_ids | replace: ' ', '' | split: ',' -%}
+{%- assign nanoseconds = "now" | date: "%N" -%}
+{%- assign snippet_guid = option | append: level_ids_array | append: nanoseconds | md5 -%}
+
+{% case type %}
+  {% when 'clubform' %}
+    <div data-bloom-club-join-form-id="{{ id }}" data-bloom-club-join-form='{ "levelIds": "{{ level_ids_array | join: "," }}", "action": "{{ action }}" }'>
+  {% when 'clubform-field' %}
+    <div data-bloom-club-join-form-field-id="{{ snippet_guid }}" data-bloom-club-join-form-field='{ "name": "{{ name }}", "className": "{{ class }}", "prompt": "{{ prompt }}" }'></div>
+  {% when 'clubform-button' %}
+    <button class="{{ class }}" data-bloom-club-join-form-button=''>
+      {%- if label == blank -%}Join{%- else -%}{{ label }}{%- endif -%}
+    </button>
+  {% when 'endclubform' %}
+    </div>
+    <script>
+      var formContainer = document.querySelector('[data-bloom-club-join-form-id="{{ id }}"]');
+      var props = Object.assign({ id: "{{ id }}", elementContainer: formContainer }, JSON.parse(formContainer.dataset.bloomClubJoinForm || "{}"))
+      var element = bloom.elements().create('form', props)
+    </script>
+  {% else %}
+     This snippet is not configured properly
+{% endcase %}

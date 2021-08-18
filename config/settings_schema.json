@@ -4,8 +4,8 @@
     "theme_name": "Martha Stoumen",
     "theme_version": "1.0.0",
     "theme_author": "Tinywins",
-    "theme_documentation_url": "https://shopify.dev/themes/tools/dawn",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/shopify.dev\/themes\/tools\/dawn",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.colors.name",
@@ -201,6 +201,89 @@
         "id": "favicon",
         "label": "t:settings_schema.favicon.settings.favicon.label",
         "info": "t:settings_schema.favicon.settings.favicon.info"
+      }
+    ]
+  },
+  {
+    "name": "Bloom",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Cart date of birth"
+      },
+      {
+        "type": "checkbox",
+        "id": "bloom_cart_dob_show",
+        "label": "Ask for date of birth",
+        "info": "This will be required for new club signups and orders containing alcohol",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "bloom_cart_dob_label",
+        "label": "Label",
+        "default": "Please enter your date of birth to checkout"
+      },
+      {
+        "type": "select",
+        "id": "bloom_cart_dob_minimum_age",
+        "label": "Minimum age requirement",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "18",
+            "label": "18"
+          },
+          {
+            "value": "19",
+            "label": "19"
+          },
+          {
+            "value": "20",
+            "label": "20"
+          },
+          {
+            "value": "21",
+            "label": "21"
+          }
+        ],
+        "default": "0",
+        "info": "Customer will be required to input a date at least this number of years old"
+      },
+      {
+        "type": "header",
+        "content": "Shipping notice"
+      },
+      {
+        "type": "checkbox",
+        "id": "bloom_shipping_notice_enabled",
+        "label": "Display shipping notice",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "bloom_shipping_notice_title",
+        "label": "Title",
+        "default": "Shipping notice"
+      },
+      {
+        "type": "richtext",
+        "id": "bloom_shipping_notice_message",
+        "label": "Message",
+        "default": "<p>We are experiencing some delays in shipping. You will be notified by email when your order ships.<\/p>"
+      },
+      {
+        "type": "header",
+        "content": "Tock"
+      },
+      {
+        "type": "text",
+        "id": "tock_subdomain",
+        "label": "Tock subdomain",
+        "info": "If you use Tock, enter the Tock subdomain."
       }
     ]
   }

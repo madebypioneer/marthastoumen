@@ -1,0 +1,120 @@
+{% comment %}
+This shop uses Bloom, a growth platform for modern wineries.
+You SHOULD NOT modify the contents of this file.
+It is automatically generated and your changes will be overwritten.
+These features and content can be managed within the Bloom app or the Shopify customizer.
+
+Bloom (www.bloom.wine)
+{% endcomment %}
+
+{% for block in section.blocks %}
+  {% if block.type == "section_settings" %}
+    {% assign section_settings = block.settings %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+<div class="uk-scope">
+    <div class="{{ section_settings.container_outer_class }}">
+      <div class="{{ section_settings.container_inner_class }}">
+      {% assign index = 0 %}
+      {% for block in section.blocks %}
+        {% if forloop.index > index %}
+          {% assign index = forloop.index %}
+          {% if block.type == "column" %}
+            <div class="uk-width-1-1 {{ block.settings.class }} uk-text-{{ block.settings.alignment | downcase }}">
+              {% if block.settings.template == "card" %}
+                <div class="uk-card uk-card-default" style="background: {{ block.settings.background_color }}">
+          			  <div class="uk-card-body uk-height-1-1">
+          			    <div class="uk-height-1-1">
+              {% endif %}
+              {% for inner_block in section.blocks %}
+                {% if forloop.index > index %}
+                  {% if inner_block.type == "column" %}
+                    {% assign index = forloop.index | minus: 1 %}
+                    {% break %}
+                  {% endif %}
+                  {% assign index = forloop.index %}
+
+                  {% if inner_block.type == "content_text" %}
+                    <{{ inner_block.settings.html_element }} class="{{ inner_block.settings.class }}">{{ inner_block.settings.content }}</{{ inner_block.settings.html_element }}>
+                  {% elsif inner_block.type == "content_richtext" %}
+                    <{{ inner_block.settings.html_element }} class="{{ inner_block.settings.class }}">{{ inner_block.settings.content }}</{{ inner_block.settings.html_element }}>
+                  {% elsif inner_block.type == "content_html" %}
+                    {{ inner_block.settings.content }}
+                  {% elsif inner_block.type == "content_image" %}
+                    <div class="{{ inner_block.settings.class }}">
+                      <img src="{{ inner_block.settings.content | img_url: 'master' }}" alt="">
+                    </div>
+                  {% elsif inner_block.type == "product_add_to_cart" %}
+                    {% assign product = all_products[inner_block.settings.product] %}
+                    {% assign number_of_variants = product.variants | size %}
+                    <div data-bloom-add-to-cart="" class="{{ inner_block.settings.class }}">
+                      {% if product.has_only_default_variant %}
+                        <input type="hidden" name="variant" value="{{ product.first_available_variant.id }}" data-bloom-add-to-cart-variant="" />
+                      {% elsif number_of_variants > 1 %}
+                        <select name="variant" class="{{ section_settings.select_element_class }} {{ inner_block.settings.select_element_class }}" data-bloom-add-to-cart-variant="">
+                          {% for variant in product.variants %}
+                            <option value="{{ variant.id }}">{{ variant.title }}</option>
+                          {% endfor %}
+                        </select>
+                      {% endif %}
+                      <button {% unless product.variants[0].available %}disabled{% endunless %}
+                        class="{{ section_settings.button_class }} {{ inner_block.settings.button_class }}"
+                        data-bloom-add-to-cart-button="">
+                        {{ inner_block.settings.button_label }}
+                      </button>
+                    </div>
+                    <script>
+                      Bloom.storefront.utilities.makeArray(document.querySelectorAll('[data-bloom-add-to-cart]')).forEach(function(el) {
+                        var variantInput = el.querySelector('[data-bloom-add-to-cart-variant]')
+                        var button = el.querySelector('[data-bloom-add-to-cart-button]')
+
+                        button.addEventListener('click', function(event) {
+                          debugger
+                          Bloom.storefront.utilities.addToCart(variantInput.value, 1, {}, '{{ section_settings.add_to_cart_target }}')
+                        })
+                      })
+                    </script>
+                  {% elsif inner_block.type == "club_signup" %}
+                    {%- assign club_level_parts = inner_block.settings.club_level | split: "-" -%}
+                    {%- assign button_class = section_settings.button_class | append: ' ' | append: inner_block.settings.button_class -%}
+                    club_id: {{ club_level_parts[1] }}<br>
+                    level_id: {{ club_level_parts[3] }}
+                    {% comment %}
+                    {%- render 'bloom-club-signup-snippet', club_id: club_level_parts[1], level_id: club_level_parts[3], class: inner_block.settings.class, button_class: button_class, button_label: inner_block.settings.button_label -%}
+                    {% endcomment %}
+                  {% elsif inner_block.type == "page_content_placeholder" %}
+                    {{ page.content }}
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+              {% if block.settings.template == "card" %}
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+            </div>
+          {% elsif block.type == "heading" %}
+            <{{ block.settings.html_element }}>{{ block.settings.content }}</{{ block.settings.html_element }}>
+          {% elsif block.type == "content_richtext" %}
+            <{{ inner_block.settings.html_element }}>{{ block.settings.content }}</{{ block.settings.html_element }}>
+          {% elsif block.type == "content_html" %}
+            {{ block.settings.content }}
+          {% elsif block.type == "content_image" %}
+            <div class="{{ block.settings.class }}">
+              <img src="{{ block.settings.content | img_url: 'master' }}" alt="">
+            </div>
+          {% elsif block.type == "page_content_placeholder" %}
+            {{ page.content }}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{"name":"Clubs section","settings":[],"blocks":[{"type":"section_settings","name":"Section settings","settings":[{"id":"container_outer_class","type":"text","label":"Outer container class","default":"uk-container uk-container-medium"},{"id":"container_inner_class","type":"text","label":"Inner container class","default":"uk-grid uk-grid-medium"},{"id":"button_class","type":"text","label":"Button class","default":"button btn"},{"id":"select_element_class","type":"text","label":"Select element class","default":"select"},{"id":"add_to_cart_target","type":"select","label":"Add to cart target","options":[{"value":"ajax_cart","label":"Ajax cart"},{"value":"cart_page","label":"Cart page"},{"value":"checkout","label":"Checkout"}]}]},{"type":"column","name":"Column","settings":[{"id":"alignment","type":"select","label":"Alignment","options":[{"value":"left","label":"Left"},{"value":"center","label":"Center"},{"value":"right","label":"Right"}]},{"id":"class","type":"text","label":"Class","default":"uk-width-1-2"},{"id":"template","type":"select","label":"Template","options":[{"value":"column","label":"Column"},{"value":"card","label":"Card"}]}]},{"type":"content_text","name":"Content (Text)","settings":[{"id":"content","type":"textarea","label":"Content"},{"id":"html_element","type":"select","label":"HTML element","options":[{"value":"h1","label":"H1"},{"value":"h2","label":"H2"},{"value":"h3","label":"H3"},{"value":"h4","label":"H4"},{"value":"h5","label":"H5"},{"value":"h6","label":"H6"},{"value":"p","label":"P"},{"value":"address","label":"Address"}]},{"id":"class","type":"text","label":"Class"}]},{"type":"content_richtext","name":"Content (Rich text)","settings":[{"id":"content","type":"richtext","label":"Content"},{"id":"html_element","type":"select","label":"HTML element","options":[{"value":"h1","label":"H1"},{"value":"h2","label":"H2"},{"value":"h3","label":"H3"},{"value":"h4","label":"H4"},{"value":"h5","label":"H5"},{"value":"h6","label":"H6"},{"value":"p","label":"P"},{"value":"address","label":"Address"}]},{"id":"class","type":"text","label":"Class"}]},{"type":"content_html","name":"Content (HTML)","settings":[{"id":"content","type":"html","label":"Content"}]},{"type":"content_image","name":"Content (Image)","settings":[{"id":"content","type":"image_picker","label":"Content"},{"id":"class","type":"text","label":"Class"}]},{"type":"product_add_to_cart","name":"Product (Add to cart)","settings":[{"id":"button_label","type":"text","label":"Button label"},{"type":"product","id":"product","label":"Product"},{"id":"class","type":"text","label":"Container class"},{"id":"button_class","type":"text","label":"Button class","default":"button btn"},{"id":"select_element_class","type":"text","label":"Select element class","default":"select"}]},{"type":"club_signup","name":"Club signup","settings":[{"id":"club_level","type":"select","label":"Club level","options":[{"group":"Martha Stoumen Club","value":"club-582","label":"All levels"},{"group":"Martha Stoumen Club","value":"club-582-level-112313","label":"6 bottle club"},{"group":"Martha Stoumen Club","value":"club-582-level-112314","label":"12 Bottle Club"}]},{"id":"button_label","type":"text","label":"Button label"},{"id":"class","type":"text","label":"Container class"},{"id":"button_class","type":"text","label":"Button class","default":"button btn"},{"id":"select_element_class","type":"text","label":"Select element class","default":"select"}]},{"type":"page_content_placeholder","name":"Page content placeholder","settings":[{"type":"paragraph","content":"This will be filled in with the content from the page object"}]}]}
+{% endschema %}
