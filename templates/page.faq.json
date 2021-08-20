@@ -259,6 +259,33 @@
         "heading": "Gifts",
         "content": ""
       }
+    },
+    "1629483371363103e5": {
+      "type": "section-faq",
+      "blocks": {
+        "1629483371363103e5-0": {
+          "type": "faq",
+          "settings": {
+            "heading": "Why can’t you ship my wines to me via FedEx Ground in July?",
+            "content": "<p>We want to make sure that you receive your wines in excellent condition so that you can taste all of the love and care that went into their making. <\/p><p>Natural wine is a living product that is sensitive to things like sunlight and temperature extremes. Wine can “cook” if it is exposed to high temperatures, making it smell flat and lose its vibrancy, and bright flavors can become muddied and taste stewed. <\/p><p>Below freezing, wine can freeze in the bottle and expand, pushing out the cork or breaking the glass bottle. <\/p>"
+          }
+        },
+        "0b46ca20-b9d5-4443-8662-a294dd729cb8": {
+          "type": "faq",
+          "settings": {
+            "heading": "What is Cold Chain shipping?",
+            "content": "<p>Cold Chain shipping is some temperature-controlled logistics sorcery, part of the same magic that gets vaccines around the country and Dippin’ Dots to your favorite waterpark in high summer.<\/p><p>Each summer, we work with FedEx and their national network of 90 temperature controlled warehouses to make sure that your wine arrives in perfect condition. Each Monday morning, a refrigerated FedEx truck arrives at our warehouse and picks up all of the orders from the past week. Everyone’s wine is sent out to regional temperature controlled facilities, and delivered the following week. It’s not fast! But it’s also significantly cheaper than overnight shipping, and has a smaller (though not insignificant!) carbon footprint. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1629483371363103e5-0",
+        "0b46ca20-b9d5-4443-8662-a294dd729cb8"
+      ],
+      "settings": {
+        "heading": "Weather",
+        "content": ""
+      }
     }
   },
   "order": [
@@ -266,6 +293,7 @@
     "1629482800b8facdc6",
     "1629482875830ab17d",
     "16294830541423f7f7",
-    "1629483178933ab0fc"
+    "1629483178933ab0fc",
+    "1629483371363103e5"
   ]
 }
