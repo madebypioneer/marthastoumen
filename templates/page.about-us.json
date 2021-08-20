@@ -119,6 +119,28 @@
         "image": "shopify:\/\/shop_images\/f1e72087aaa18135083a609a217dc317.png",
         "layout": "image_first"
       }
+    },
+    "162942420010f5aeff": {
+      "type": "team-member",
+      "blocks": {
+        "162942420010f5aeff-0": {
+          "type": "teamMember",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cb3f278fa4fb04d66f664e646e14e4a5.jpg",
+            "layout": "image_first",
+            "featured": true,
+            "name": "MARTHA STOUMEN",
+            "position": "WINEMAKER",
+            "bio": "<p>Martha went to work in the vineyard, olive orchard, and winery of a small farm and learning center in Tuscany after studying traditional agricultural systems and Italian during her undergraduate degree. The majority of her farm work took place in the vineyard rather than the winery, so she entered the world of wine production through the lens of a vigneronne rather than a typical modern California winemaker who spends very little to no time in the vineyard. During this time she also worked with farm animals, bees, and vegetables, and to this day views growing grapes and making wine ideally as part of a larger system. <br\/><br\/>Besides a love of food, and therefore agriculture, Martha was drawn to wine for two reasons: she relishes a tradition in which the master-apprentice relationship is still very much alive and well, and because wine is a product that sets the pace and rhythm of the winemaker’s life, rather than vice-versa. Grape growing and winemaking aligns a vigneronne’s actions with the seasons; she can neither rush the process nor slow it down. After her initial exposure to grape farming and winemaking in Tuscany, Martha began a series of apprenticeships, sandwiched around a Master's at UC Davis. Martha has had the pleasure of apprenticing under Reinhard Löwenstein (Heymann-Löwenstein, Mosel), Jordan Fiorentini (Chalk Hill, California) Chris Brockway (Broc Cellars, California), Clive Dougall (Seresin, Marlborough), Didier Barral (Léon Barral, Faugères, France), and Giusto Occhipinti (COS, Sicily). Many of these teachers have remained a part of her life as she has moved toward her own vision of making responsibly farmed, terroir-driven wines in the land that she holds so dear in her heart, California.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "162942420010f5aeff-0"
+      ],
+      "settings": {
+        "heading": "THE TEAM"
+      }
     }
   },
   "order": [
@@ -126,6 +148,7 @@
     "1629423979307bc95b",
     "1629424061a795407d",
     "16294241095a836411",
-    "1629424162b216fb88"
+    "1629424162b216fb88",
+    "162942420010f5aeff"
   ]
 }
