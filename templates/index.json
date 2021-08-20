@@ -3,7 +3,8 @@
     "1629423396520fe146": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/5ed14d441d62c4bd10833e86de86c204.jpg"
+        "image": "shopify:\/\/shop_images\/5ed14d441d62c4bd10833e86de86c204.jpg",
+        "remove_top_spacing": true
       }
     },
     "featured_products": {
@@ -140,7 +141,8 @@
         "4251c108-9981-47e6-a1de-21b6e77737fe"
       ],
       "settings": {
-        "reduce_spacing": true
+        "reduce_spacing": true,
+        "reduce_top_spacing": false
       }
     },
     "16294237544c521f73": {
