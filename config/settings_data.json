@@ -8,7 +8,7 @@
             "type": "announcement",
             "settings": {
               "text": "Welcome to our store",
-              "color_scheme": "inverse",
+              "color_scheme": "background-1",
               "link": ""
             }
           }
@@ -44,15 +44,15 @@
           "footer-0"
         ],
         "settings": {
-          "newsletter_enable": false,
+          "newsletter_enable": true,
           "newsletter_preheading": "Subscribe",
           "newsletter_heading": "Sign up to our emails",
-          "newsletter_content": "",
+          "newsletter_content": "<p>Updates and knowledge direct from the cellar. <\/p>",
           "partners_enable": true,
           "partners_preheading": "Sign Up",
           "partners_heading": "Industry Partners",
-          "partners_content": "",
-          "partners_linkText": "",
+          "partners_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
+          "partners_linkText": "Learn More",
           "partners_link": "",
           "show_social": false
         }

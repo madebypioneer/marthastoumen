@@ -1,35 +1,9 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ],
+    "1629423396520fe146": {
+      "type": "image",
       "settings": {
-        "desktop_text_box_position": "flex-end",
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "adapt_height_first_image": false
+        "image": "shopify:\/\/shop_images\/5ed14d441d62c4bd10833e86de86c204.jpg"
       }
     },
     "featured_products": {
@@ -48,19 +22,19 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text"
+            "heading": "LETTING NATURE HAVE HER WAY, A CULTURE OF PATIENCE"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Martha Stoumen Wines was founded upon the desire to recapture a farming and winemaking culture that has all but faded away: a winemaking culture of patience. <\/p>"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Learn More",
             "button_link": ""
           }
         }
@@ -71,16 +45,155 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/26821f5688952dba296e792f77228727.jpg",
         "mask": false,
         "wine_club": false,
+        "thin": false,
+        "layout": "image_first"
+      }
+    },
+    "16294234729e2c2abd": {
+      "type": "collection-list",
+      "blocks": {
+        "16294234729e2c2abd-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "16294234729e2c2abd-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "16294234729e2c2abd-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "16294234729e2c2abd-0",
+        "16294234729e2c2abd-1",
+        "16294234729e2c2abd-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "portrait",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
+    "162942358041d53832": {
+      "type": "image-with-text",
+      "blocks": {
+        "bb5bd869-da2f-4b0b-a424-a743012e3aba": {
+          "type": "preheading",
+          "settings": {
+            "preheading": "MARTHA STOUMEN’S WINE CLUB"
+          }
+        },
+        "162942358041d53832-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Know your Farmer, Know your Baker, Know your Winemaker"
+          }
+        }
+      },
+      "block_order": [
+        "bb5bd869-da2f-4b0b-a424-a743012e3aba",
+        "162942358041d53832-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/49fec3ee4df9a14c16b71e9353cf54a4.jpg",
+        "mask": true,
+        "wine_club": false,
+        "thin": true,
+        "layout": "text_first"
+      }
+    },
+    "1629423586fd4603de": {
+      "type": "content",
+      "blocks": {
+        "2137a895-a158-4f85-aac6-ad42a6a50104": {
+          "type": "heading",
+          "settings": {
+            "heading": "Be the first person we call when we have good news"
+          }
+        },
+        "4251c108-9981-47e6-a1de-21b6e77737fe": {
+          "type": "buttons",
+          "settings": {
+            "link_one_text": "Sign In",
+            "link_one_page": "shopify:\/\/pages\/contact-us",
+            "link_two_text": "Join Now",
+            "link_two_page": "shopify:\/\/pages\/contact-us"
+          }
+        }
+      },
+      "block_order": [
+        "2137a895-a158-4f85-aac6-ad42a6a50104",
+        "4251c108-9981-47e6-a1de-21b6e77737fe"
+      ],
+      "settings": {
+        "reduce_spacing": true
+      }
+    },
+    "16294237544c521f73": {
+      "type": "image-with-text",
+      "blocks": {
+        "9012ead1-9789-4344-af7d-350f860b5212": {
+          "type": "preheading",
+          "settings": {
+            "preheading": "MARTHA STOUMEN’S WINE CLUB"
+          }
+        },
+        "16294237544c521f73-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Perks"
+          }
+        },
+        "16294237544c521f73-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br\/><br\/>Perk Item of the Subscription Club Lorem Ipsum<br\/>Perk Item of the Subscription Club Lorem Ipsum<br\/>Perk Item of the Subscription Club Lorem Ipsum<br\/>Perk Item of the Subscription Club Lorem Ipsum<\/p>"
+          }
+        },
+        "16294237544c521f73-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Join Now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "9012ead1-9789-4344-af7d-350f860b5212",
+        "16294237544c521f73-0",
+        "16294237544c521f73-1",
+        "16294237544c521f73-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/49fec3ee4df9a14c16b71e9353cf54a4.jpg",
+        "mask": true,
+        "wine_club": true,
         "thin": false,
         "layout": "image_first"
       }
     }
   },
   "order": [
-    "image_banner",
+    "1629423396520fe146",
     "featured_products",
-    "image_text"
+    "image_text",
+    "16294234729e2c2abd",
+    "162942358041d53832",
+    "1629423586fd4603de",
+    "16294237544c521f73"
   ]
 }
