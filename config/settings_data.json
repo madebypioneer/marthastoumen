@@ -56,7 +56,7 @@
           "partners_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
           "partners_linkText": "Learn More",
           "partners_link": "",
-          "show_social": false
+          "show_social": true
         }
       }
     },
