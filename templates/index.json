@@ -199,7 +199,7 @@
         "d86da602-817b-45d2-9509-d8a5b4c0c67a": {
           "type": "card",
           "settings": {
-            "layout": "one_quarter",
+            "layout": "one_third",
             "image": "shopify:\/\/shop_images\/Vineyard_1.png",
             "is_icon": true,
             "heading": "TO YOUR TABLE",

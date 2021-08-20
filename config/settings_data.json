@@ -48,17 +48,19 @@
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/Group_5.png",
+          "menu": "footer",
           "newsletter_enable": true,
           "newsletter_preheading": "Subscribe",
           "newsletter_heading": "Sign up to our emails",
           "newsletter_content": "<p>Updates and knowledge direct from the cellar. <\/p>",
+          "show_social": true,
           "partners_enable": true,
           "partners_preheading": "Sign Up",
           "partners_heading": "Industry Partners",
           "partners_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
           "partners_linkText": "Learn More",
           "partners_link": "",
-          "show_social": true
+          "contact_link": "shopify:\/\/pages\/contact-us"
         }
       }
     },
