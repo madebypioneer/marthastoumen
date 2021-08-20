@@ -1,12 +1,271 @@
 {
   "sections": {
-    "main": {
-      "type": "image-with-text",
+    "16294828723a66f779": {
+      "type": "page",
       "settings": {
+        "page": "faq",
+        "fullWidth": true,
+        "showContent": false
+      }
+    },
+    "1629482800b8facdc6": {
+      "type": "section-faq",
+      "blocks": {
+        "1629482800b8facdc6-0": {
+          "type": "faq",
+          "settings": {
+            "heading": "Where can I buy your wines near me?",
+            "content": "<p>Please visit our &lt;Stockists&gt; page to see where you can find our wines locally!<\/p>"
+          }
+        },
+        "512e9d22-a951-446a-ab14-6cefd7728704": {
+          "type": "faq",
+          "settings": {
+            "heading": "Do you have a tasting room? Can I visit?",
+            "content": "<p>Martha Stoumen Wines does not have a tasting room. If you find yourself in the Sebastopol area and would like to order any of our wines for pick up, our friends at the Pax tasting room kindly let us use them as a pick up point for pre-orders. <\/p><p>To order Martha Stoumen’s wines for pick up, please place an order on our website at least 2 business days ahead of time. You’ll receive an email with instructions as soon as they’re ready to pick up! If you’d like to stick around the Pax tasting room, they offer 2-for-1 tastings to all of our friends. Want to make a day of it and stop by some of our favorite spots on the way? Check out our &lt; link to Summer road trip guides here &gt;.<\/p>"
+          }
+        },
+        "2b7b8a3e-5490-42e9-a635-b3cb9feb5a0c": {
+          "type": "faq",
+          "settings": {
+            "heading": "I’m a sommelier \/ have a super cool wine shop \/ want to serve your wines at my restaurant. Who do I talk to?",
+            "content": "<p>Please visit our &lt;Industry&gt; page to see a list of all of the distributors and importers we work with across the country and around the world.<\/p>"
+          }
+        },
+        "417164ae-fd31-4711-95d4-31ac60604c99": {
+          "type": "faq",
+          "settings": {
+            "heading": "Are your wines vegan?",
+            "content": "<p>Yes, our wines themselves are vegan, but we’ve recently started using a cork that uses beeswax instead of plastic. If you’d like to know which of our wines use a beeswax free closure, please reach out to Claire at <a href=\"mailto:info@marthastoumen.com\"><span style=\"text-decoration:underline\">info@marthastoumen.com<\/span><\/a> and she’ll give you the lowdown! <\/p>"
+          }
+        },
+        "2b4bd066-e4f3-46bf-a638-d4ad85f967a1": {
+          "type": "faq",
+          "settings": {
+            "heading": "A lot of your wines aren’t certified organic. Why is that?",
+            "content": "<p>Some of the vineyards we work with are certified organic, and others do not go through the certification process. We are committed to farming in a way that works with nature, and <a href=\"https:\/\/marthastoumen.com\/blog\/2021\/4\/9\/working-with-nature-the-natural-wine-movement\"><span style=\"text-decoration:underline\">dedicated to the natural wine movement’s goals of greater transparency and environmental responsibility.<\/span><\/a> If you’d like to know more about the specific farming practices at a vineyard we work with, please take a look at our tech sheets &lt;link&gt;. <\/p><p><br\/>Martha does not go for certification on the vineyards that she farms herself. Beyond the expense, organic farming rules don’t really address issues like carbon sequestration, erosion control, biodiversity, and soil health as a holistic system. <br\/><\/p><p>Many farmers who work organically will certify some of their vineyards but not others. Some, like Hawkeye Vineyard (where Honeymoon’s &lt;LINK&gt; Chardonnay is grown), go for less cost prohibitive certifications like the “<a href=\"https:\/\/www.fishfriendlyfarming.org\/about\"><span style=\"text-decoration:underline\">Fish Friendly Farming<\/span><\/a>” program (administered by the California Land Stewardship Institute) that shows a dedication to managing runoff by using cover crops and other regenerative farming practices.<\/p>"
+          }
+        },
+        "71da2f73-5f18-4ba6-8ef6-0d59d71b4814": {
+          "type": "faq",
+          "settings": {
+            "heading": "I want to work with you and learn everything there is to know about grapes!",
+            "content": "<p>Every year, we have a wonderful crew of harvest interns who help us with all of the work that goes into turning grapes into wine. We make wine out of a shared space in Sebastopol, Pax Mahle Wines, and work alongside Carlo Mondavi (RAEN), Patrick Capiello (Monte Rio), and Rosalind Reynolds (Emme Wines). We all share a group of interns and work together as a team during harvest. Rosalind, Pax’s assistant winemaker, is responsible for putting together our harvest crew - we at Martha Stoumen Wines do not do any of the hiring for harvest, but pass along promising candidates to Rosalind. Please email your resume to us at <a href=\"mailto:careers@marthastoumen.com\"><span style=\"text-decoration:underline\">careers@marthastoumen.com<\/span><\/a> if you’d like to be considered for a harvest intern position!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1629482800b8facdc6-0",
+        "512e9d22-a951-446a-ab14-6cefd7728704",
+        "2b7b8a3e-5490-42e9-a635-b3cb9feb5a0c",
+        "417164ae-fd31-4711-95d4-31ac60604c99",
+        "2b4bd066-e4f3-46bf-a638-d4ad85f967a1",
+        "71da2f73-5f18-4ba6-8ef6-0d59d71b4814"
+      ],
+      "settings": {
+        "heading": "General Questions",
+        "content": ""
+      }
+    },
+    "1629482875830ab17d": {
+      "type": "section-faq",
+      "blocks": {
+        "1629482875830ab17d-0": {
+          "type": "faq",
+          "settings": {
+            "heading": "I gave you the wrong address! How do I reroute a shipment?",
+            "content": "<p>There is a $20 fee for rerouting shipments if the shipper is able to do it (sometimes they can’t, we’re sorry!). Please email us at <a href=\"mailto:info@marthstoumen.com\"><span style=\"text-decoration:underline\">info@marthstoumen.com<\/span><\/a> with the address you’d like your package to be rerouted to and we will try to get it diverted.<\/p><p>Due to alcohol shipping laws, it is not possible to reroute packages across state lines: the wine will need to return to us in Sonoma and be re-shipped. For all packages that are returned to us, we charge $15 plus the cost of reshipment. <\/p>"
+          }
+        },
+        "ee7e3a83-fe85-43d2-917b-3e711d737545": {
+          "type": "faq",
+          "settings": {
+            "heading": "I received a notice that there was a delivery attempt, but I’m out of town. What do I do?",
+            "content": "<p>Using the tracking number emailed to you, please reach out to the shipper (FedEx or GSO) to request that they hold the package at a pick up location, or reattempt after your return.<\/p>"
+          }
+        },
+        "09710330-b7ad-4960-84e8-9f143fdee905": {
+          "type": "faq",
+          "settings": {
+            "heading": "How do I see which wines I’ve ordered?",
+            "content": "<p>You’ll need to create an account using the email you used.<\/p><p>If you have ordered from us in the past, you’ll need to create a new account. ---&gt; INSTRUCTIONS<\/p>"
+          }
+        },
+        "a51772d6-95ab-4116-b085-fd30075982f3": {
+          "type": "faq",
+          "settings": {
+            "heading": "I haven’t received tracking information yet. When is my wine coming?",
+            "content": "<p>You’ll receive an email with tracking information as soon as your order is ready to ship. We’re a very small team, and so it can take a few days before your order is picked up by FedEx or GSO. Orders that are received after 11am PST on Thursday will be sent out the following Monday, and orders received after 11am PST on Friday will be sent the following Tuesday. <\/p>"
+          }
+        },
+        "7dbb2b15-04ab-4d01-8c53-8050574b631c": {
+          "type": "faq",
+          "settings": {
+            "heading": "Why can’t you ship to my state?",
+            "content": "<p>We are able to ship to all but 7 states (Alabama, Arkansas, Delaware, Hawaii, Kentucky, Rhode Island, and Utah). If you live in Mississippi, you’ll need to email us at info@marthastoumen.com to arrange for your wines to be shipped to a package store.<\/p>"
+          }
+        },
+        "491fc3f2-7fb7-4db9-a7a1-aaf920a81d2e": {
+          "type": "faq",
+          "settings": {
+            "heading": "Why is it so expensive to ship wine?",
+            "content": "<p>Wine is heavy, fragile, and temperature sensitive, and there’s a surcharge to make sure that wine is only being sold to and delivered to people 21 years of age and older.  <a href=\"https:\/\/www.sfchronicle.com\/wine\/article\/If-you-want-independent-wineries-to-survive-get-15789494.php\"><span style=\"text-decoration:underline\">Here’s a great article from Esther Mobley at The SF Chronicle that explains some of the ins and outs of moving wine from our winery to you.<\/span><\/a> If you’d like to receive $25 flat rate shipping year round, please &lt;sign up for the Martha Stoumen Wines club.&gt;<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1629482875830ab17d-0",
+        "ee7e3a83-fe85-43d2-917b-3e711d737545",
+        "09710330-b7ad-4960-84e8-9f143fdee905",
+        "a51772d6-95ab-4116-b085-fd30075982f3",
+        "7dbb2b15-04ab-4d01-8c53-8050574b631c",
+        "491fc3f2-7fb7-4db9-a7a1-aaf920a81d2e"
+      ],
+      "settings": {
+        "heading": "Orders",
+        "content": ""
+      }
+    },
+    "16294830541423f7f7": {
+      "type": "section-faq",
+      "blocks": {
+        "16294830541423f7f7-0": {
+          "type": "faq",
+          "settings": {
+            "heading": "I just signed up for the wine club! How do I log into my account?",
+            "content": "<p>Woo hoo! Congratulations, we’re so excited to have you. You’ll need to create a login using the email address you gave when creating your membership (please don’t click “Forgot Password!”). &lt; You can create a login here &gt; Once you are logged in, $25 flat rate shipping will automatically apply to all of your orders.<\/p>"
+          }
+        },
+        "32ad446c-d7c8-4baa-a232-d7b15bed9e2c": {
+          "type": "faq",
+          "settings": {
+            "heading": "Which wines are in your current wine club release?",
+            "content": "<p>Current Release Details (do we want this to be here? Or link to another page?)<\/p>"
+          }
+        },
+        "8b7c3776-93e1-44fa-a44a-e4838ba42d25": {
+          "type": "faq",
+          "settings": {
+            "heading": "How do I select the local pickup option for the fall release?",
+            "content": "<p>Want to pick up your wines in Sebastopol? Please login into your account and select the local pickup option before the release closes. <em>INSTRUCTIONS <\/em>The Pax Wines tasting room is open 7 days a week from 11am to 6pm, and until 8pm on Friday and Saturday. They are located in The Barlow at 6780 McKinley Street, Suite 170. As a Martha Stoumen Wines club member, you’re invited to a 2 for 1 tasting when you come to pick up your wines. Please schedule your tasting directly with Pax Wines &lt;<a href=\"https:\/\/www.exploretock.com\/paxwine\/\"><span style=\"text-decoration:underline\">https:\/\/www.exploretock.com\/paxwine\/<\/span><\/a>&gt; and let them know you’re with the band. <\/p><p>If you are unable to pick up your wines within 4 weeks, we will ship your wines to you and charge your card on file for $25 flat rate shipping. <\/p>"
+          }
+        },
+        "b23d8080-a509-408b-9259-e692ece89ad3": {
+          "type": "faq",
+          "settings": {
+            "heading": "How do I update billing or shipping information for my club membership?",
+            "content": "<p>TODO<\/p>"
+          }
+        },
+        "ef2e959c-d493-452a-8fba-fcd7d714c688": {
+          "type": "faq",
+          "settings": {
+            "heading": "How do I update my credit card info for a club shipment?",
+            "content": "<p>TODO<\/p>"
+          }
+        },
+        "ab79d30b-99d4-47b2-9e94-81a253b2afb5": {
+          "type": "faq",
+          "settings": {
+            "heading": "How do I select which wines are in my wine club shipment?",
+            "content": "<p>Only 12 bottle club members may customize their wine club shipment. 6 bottle club members receive one bottle of each new release in their shipment. <\/p>"
+          }
+        },
+        "9482537e-3d82-4749-908e-b6853584156f": {
+          "type": "faq",
+          "settings": {
+            "heading": "How do I change my membership level?",
+            "content": "<p>Want to bump your club membership up to 12-bottles or down to 6-bottles? Reach out to Claire at info@marthastoumen.com and we’ll get you sorted.<\/p>"
+          }
+        },
+        "31852817-023b-4ab4-837c-888494ddeab7": {
+          "type": "faq",
+          "settings": {
+            "heading": "How do I place my membership on hold or cancel?",
+            "content": "<p>Please email Claire at <a href=\"mailto:info@marthastoumen.com\">info@marthastoumen.com<\/a> and she’ll put your membership on hold until a future date, or cancel your membership.<\/p>"
+          }
+        },
+        "de5098d7-58f2-4405-a9d1-deb86a48d068": {
+          "type": "faq",
+          "settings": {
+            "heading": "Where can I find my available allocations?",
+            "content": "<p>TODO<\/p>"
+          }
+        },
+        "fda21c67-42e6-4213-9a54-08bf2f5d98b9": {
+          "type": "faq",
+          "settings": {
+            "heading": "How much does the wine club cost?",
+            "content": "<p>The 6 bottle club ranges between $195-$275 per shipment, and the 12 bottle club generally ranges from $380-$550 per shipment, depending upon your selections. In addition to the wine, there are applicable taxes and $25 flat rate shipping.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16294830541423f7f7-0",
+        "32ad446c-d7c8-4baa-a232-d7b15bed9e2c",
+        "8b7c3776-93e1-44fa-a44a-e4838ba42d25",
+        "b23d8080-a509-408b-9259-e692ece89ad3",
+        "ef2e959c-d493-452a-8fba-fcd7d714c688",
+        "ab79d30b-99d4-47b2-9e94-81a253b2afb5",
+        "9482537e-3d82-4749-908e-b6853584156f",
+        "31852817-023b-4ab4-837c-888494ddeab7",
+        "de5098d7-58f2-4405-a9d1-deb86a48d068",
+        "fda21c67-42e6-4213-9a54-08bf2f5d98b9"
+      ],
+      "settings": {
+        "heading": "Wine Club",
+        "content": ""
+      }
+    },
+    "1629483178933ab0fc": {
+      "type": "section-faq",
+      "blocks": {
+        "1629483178933ab0fc-0": {
+          "type": "faq",
+          "settings": {
+            "heading": "How do I gift a wine club membership?",
+            "content": "<p>INSTRUCTIONS → need to set up an account.<\/p>"
+          }
+        },
+        "5682fc9e-41e6-4ca9-ac1e-ebc2867c9cc1": {
+          "type": "faq",
+          "settings": {
+            "heading": "I lost my gift card! I never received my gift card! How do I get access to it?",
+            "content": "<p>From the order confirmation email, click “Resend gift cards.” You will receive an email that contains your gift card. Didn’t receive an order confirmation email? Please reach out to Claire at <a href=\"mailto:info@marthastoumen.com\"><span style=\"text-decoration:underline\">info@marthastoumen.com<\/span><\/a> and she’ll help you figure out what’s going on!<\/p>"
+          }
+        },
+        "25a7a64c-ca53-46e4-a5a6-76dd8e4f593a": {
+          "type": "faq",
+          "settings": {
+            "heading": "Do gift cards expire?",
+            "content": "<p>Nope! Martha Stoumen Wines gift cards do not ever expire.<\/p>"
+          }
+        },
+        "c38e6a9a-7cc4-4743-84cb-3cca6d7ef308": {
+          "type": "faq",
+          "settings": {
+            "heading": "Does my recipient receive an email after I send them a gift?",
+            "content": "<p>Gift card: No, there is no place for you to enter a gift recipient email in addition to your own. You are emailed the gift card, which you can then forward to your recipient with a message, or print out and snail mail with a handwritten note! <\/p><p>Gift membership: Only if you want them to! When a new member creates a gift membership and doesn't check the box to <strong>Send a Message<\/strong>, then this becomes a setting on the membership that tells the system not to send any notifications to the gift recipient. These notifications include the welcome to the club email, as well as future processing emails. The gift recipient will still receive an order confirmation and shipping emails. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1629483178933ab0fc-0",
+        "5682fc9e-41e6-4ca9-ac1e-ebc2867c9cc1",
+        "25a7a64c-ca53-46e4-a5a6-76dd8e4f593a",
+        "c38e6a9a-7cc4-4743-84cb-3cca6d7ef308"
+      ],
+      "settings": {
+        "heading": "Gifts",
+        "content": ""
       }
     }
   },
   "order": [
-    "main"
+    "16294828723a66f779",
+    "1629482800b8facdc6",
+    "1629482875830ab17d",
+    "16294830541423f7f7",
+    "1629483178933ab0fc"
   ]
 }
