@@ -2,7 +2,30 @@
   "sections": {
     "main": {
       "type": "image-with-text",
+      "blocks": {
+        "e97f6609-9cd7-40a9-ae59-9655b13a8e37": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR STORY"
+          }
+        },
+        "6d6dc472-9461-43aa-9de0-a10550ffccdc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Martha Stoumen Wines was founded upon the desire to recapture a farming and winemaking culture that has all but faded away: a winemaking culture of patience. <br\/><br\/>For my wines I lease and farm around half of the vineyards myself. The other half are farmed by multi-generation farmers who understand their land, and their family's land, far better than I ever will, and who farm with my same philosophies in mind. Patience in the vineyard means composting rather than adding synthetic fertilizers, allowing predatory insects the ability to outcompete pests rather than spraying insecticides, and doing proper handwork, such as pruning for vine longevity rather than high yields.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e97f6609-9cd7-40a9-ae59-9655b13a8e37",
+        "6d6dc472-9461-43aa-9de0-a10550ffccdc"
+      ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/600c88ee65a4e3b659d0b70f48f23464.jpg",
+        "mask": true,
+        "wine_club": false,
+        "thin": false,
+        "layout": "image_first"
       }
     }
   },
