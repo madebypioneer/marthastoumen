@@ -153,6 +153,55 @@
       "settings": {
         "heading": "THE TEAM"
       }
+    },
+    "16294242047c980b62": {
+      "type": "content",
+      "blocks": {
+        "93b46cb1-ebda-4412-aeb7-8a2deb7c746a": {
+          "type": "largeText",
+          "settings": {
+            "text": "<p>We want to be a leading force in course-correcting the California wine industry. By sharing the simple pleasures of unexpected wines made naturally in California, making natural wine accessible to all interested by knowledge sharing, and welcoming wine drinkers across the spectrum and being transparent in our practices. We focus on joy, pleasure and the art of winemaking first.<\/p>"
+          }
+        },
+        "b28069c6-576f-4ecd-af12-43d65953ddfb": {
+          "type": "card",
+          "settings": {
+            "heading": "LISTEN TO THE LAND",
+            "content": "<p>We have deep respect for the California land. <br\/><br\/>We believe in putting Mother Nature at the forefront of decision-making. <\/p>"
+          }
+        },
+        "411e19cf-37c6-4ccf-94e7-19c793e6b8d7": {
+          "type": "card",
+          "settings": {
+            "heading": "COLLABORATE WITH CARETAKERS",
+            "content": "<p>We have deep compassion <br\/>for others.<br\/><br\/>We believe in treating all people <br\/>in our supply chain equitably.<\/p>"
+          }
+        },
+        "e20ae0ae-4d93-4410-888a-5110362303a0": {
+          "type": "card",
+          "settings": {
+            "heading": "CRAFT WITH PATIENCE",
+            "content": "<p>We have deep patience for the natural winemaking process.<br\/><br\/>We believe in making low-intervention wines the traditional way — no shortcuts.<\/p>"
+          }
+        },
+        "48e97139-a27f-406b-a0b7-eeda85744683": {
+          "type": "card",
+          "settings": {
+            "heading": "ENJOY LIFE’S SIMPLE PLEASURES",
+            "content": "<p>We have deep appreciation for <br\/>the joy of wine.<br\/><br\/>We believe in sharing the art, romance, and pleasure of wine with our community and beyond.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "93b46cb1-ebda-4412-aeb7-8a2deb7c746a",
+        "b28069c6-576f-4ecd-af12-43d65953ddfb",
+        "411e19cf-37c6-4ccf-94e7-19c793e6b8d7",
+        "e20ae0ae-4d93-4410-888a-5110362303a0",
+        "48e97139-a27f-406b-a0b7-eeda85744683"
+      ],
+      "settings": {
+        "reduce_spacing": false
+      }
     }
   },
   "order": [
@@ -161,6 +210,7 @@
     "1629424061a795407d",
     "16294241095a836411",
     "1629424162b216fb88",
-    "162942420010f5aeff"
+    "162942420010f5aeff",
+    "16294242047c980b62"
   ]
 }
