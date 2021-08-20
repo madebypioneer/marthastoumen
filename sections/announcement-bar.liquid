@@ -6,26 +6,14 @@
           {%- if block.settings.link != blank -%}
             <a href="{{ block.settings.link }}" class="announcement-bar__link link animate-marquee link--text focus-inset animate-arrow whitespace-nowrap">
           {%- endif -%}
-              <p class="animate-marquee announcement-bar__message h5 whitespace-nowrap">
-                {{ block.settings.text | escape }}
-                {%- if block.settings.link != blank -%}
-                  {% render 'icon-arrow' %}
-                {%- endif -%}
+              <p class="animate-marquee relative announcement-bar__message h5 whitespace-nowrap">
+                <span>
+                  {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} ///
+                </span>
+                <span>
+                  {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} /// {{ block.settings.text | escape }} ///
+                </span>
               </p>
-          {%- if block.settings.link != blank -%}
-            </a>
-          {%- endif -%}
-        {%- endif -%}
-        {%- if block.settings.text != blank -%}
-          {%- if block.settings.link != blank -%}
-            <a href="{{ block.settings.link }}" class="absolute announcement-bar__link link animate-marquee2 link--text focus-inset animate-arrow whitespace-nowrap">
-          {%- endif -%}
-          <p class="absolute animate-marquee2 announcement-bar__message h5 whitespace-nowrap">
-            {{ block.settings.text | escape }}
-            {%- if block.settings.link != blank -%}
-              {% render 'icon-arrow' %}
-            {%- endif -%}
-          </p>
           {%- if block.settings.link != blank -%}
             </a>
           {%- endif -%}
