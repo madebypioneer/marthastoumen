@@ -3,6 +3,7 @@
     "1629423396520fe146": {
       "type": "image",
       "settings": {
+        "image": "shopify:\/\/shop_images\/5ed14d441d62c4bd10833e86de86c204.jpg"
       }
     },
     "featured_products": {
@@ -44,6 +45,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/26821f5688952dba296e792f77228727.jpg",
         "mask": false,
         "wine_club": false,
         "thin": false,
