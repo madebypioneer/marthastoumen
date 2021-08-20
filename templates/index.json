@@ -3,7 +3,8 @@
     "1629423396520fe146": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/5ed14d441d62c4bd10833e86de86c204.jpg"
+        "image": "shopify:\/\/shop_images\/5ed14d441d62c4bd10833e86de86c204.jpg",
+        "remove_top_spacing": true
       }
     },
     "featured_products": {
@@ -140,7 +141,8 @@
         "4251c108-9981-47e6-a1de-21b6e77737fe"
       ],
       "settings": {
-        "reduce_spacing": true
+        "reduce_spacing": true,
+        "reduce_top_spacing": false
       }
     },
     "16294237544c521f73": {
@@ -185,6 +187,75 @@
         "thin": false,
         "layout": "image_first"
       }
+    },
+    "162943294777e06a90": {
+      "type": "full-width-image-with-text-below",
+      "blocks": {
+        "162943294777e06a90-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "A GUIDE TO NATURAL WINES"
+          }
+        },
+        "162943294777e06a90-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Natural wine can be thought of as pre-industrial wine, it's a craft rooted in agriculture. It is wine made without additives, processing agents and heavy preservatives. Although unregulated, natural wines are usually made from vineyards that, at minimum, are farmed according to organic practices. The natural winemaker relies on just the grape itself to provide flavor, structure and stability to the finished wine, and relies on a diverse mix of ambient, wild yeast and bacteria to ferment the wine instead of a single laboratory-selected yeast species.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "162943294777e06a90-0",
+        "162943294777e06a90-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/759e98e1db7c669de0d6b078a93667c9.jpg",
+        "additional_top_spacing": true
+      }
+    },
+    "162943297494e0f082": {
+      "type": "content",
+      "blocks": {
+        "f15d8dfb-0c1e-4335-a0d3-8155ee31e057": {
+          "type": "card",
+          "settings": {
+            "layout": "one_third",
+            "image": "shopify:\/\/shop_images\/Table_1.png",
+            "is_icon": true,
+            "heading": "FROM THE FARM",
+            "content": "<p>We farm with compost rather than synthetic fertilizers, we allow insects to outcompete pests rather than spray insecticides, and we do proper handwork to prune for longevity rather than high yields.<\/p>"
+          }
+        },
+        "dc14f402-6ca0-4344-9a74-2e4943153ce9": {
+          "type": "card",
+          "settings": {
+            "layout": "one_third",
+            "image": "shopify:\/\/shop_images\/Cellar_1_1.png",
+            "is_icon": true,
+            "heading": "TO THE CELLAR",
+            "content": "<p>We use a minimalist winemaking approach where we let the natural yeast and bacteria present on the grape skins perform the fermentation, and allow longer macerations and aging to provide stability rather than using added tannin, acid or stabilizing agents.<\/p>"
+          }
+        },
+        "d86da602-817b-45d2-9509-d8a5b4c0c67a": {
+          "type": "card",
+          "settings": {
+            "layout": "one_quarter",
+            "image": "shopify:\/\/shop_images\/Vineyard_1.png",
+            "is_icon": true,
+            "heading": "TO YOUR TABLE",
+            "content": "<p>It jives with your body better. No matter the varietal, natural wines tend to uplift more than weigh you down. That heavy and tired feeling you get drinking a glass of conventional wine doesn’t happen.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "f15d8dfb-0c1e-4335-a0d3-8155ee31e057",
+        "dc14f402-6ca0-4344-9a74-2e4943153ce9",
+        "d86da602-817b-45d2-9509-d8a5b4c0c67a"
+      ],
+      "settings": {
+        "reduce_spacing": false,
+        "reduce_top_spacing": true
+      }
     }
   },
   "order": [
@@ -194,6 +265,8 @@
     "16294234729e2c2abd",
     "162942358041d53832",
     "1629423586fd4603de",
-    "16294237544c521f73"
+    "16294237544c521f73",
+    "162943294777e06a90",
+    "162943297494e0f082"
   ]
 }
