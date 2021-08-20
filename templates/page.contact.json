@@ -1,14 +1,21 @@
 {
   "sections": {
-    "form": {
-      "type": "contact-form",
+    "main": {
+      "type": "main-page",
       "settings": {
-        "heading": ""
+        "full_width": false,
+        "reduce_top_spacing": true,
+        "show_social": true,
+        "social_header": "FOLLOW ALONG",
+        "show_page_title": false,
+        "show_content": true,
+        "show_contact": true,
+        "heading": "We'd love to hear from you!",
+        "layout": "form_first"
       }
     }
   },
   "order": [
-    "main",
-    "form"
+    "main"
   ]
 }
