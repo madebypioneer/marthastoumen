@@ -69,11 +69,37 @@
         "image": "shopify:\/\/shop_images\/a35c0852c53ccc74abe9f7ac3965a78c.png",
         "layout": "image_first"
       }
+    },
+    "16294241095a836411": {
+      "type": "parallax-image-with-text",
+      "blocks": {
+        "16294241095a836411-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "patience in the cellar means a minimalist winemaking approach"
+          }
+        },
+        "16294241095a836411-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Letting natural yeast and bacteria present on the grape skins perform fermentation, and allow longer macerations and aging to provide stability rather than adding tannin, acid or stabilizing agents in our wines<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16294241095a836411-0",
+        "16294241095a836411-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/a7502aa8317eb1466052a5ef5b8082e8.png",
+        "layout": "text_first"
+      }
     }
   },
   "order": [
     "main",
     "1629423979307bc95b",
-    "1629424061a795407d"
+    "1629424061a795407d",
+    "16294241095a836411"
   ]
 }
