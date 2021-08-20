@@ -1,0 +1,34 @@
+{% comment %}{{ 'parallax-with-text.css' | asset_url | stylesheet_tag }}{% endcomment %}
+<div class="bg-earth py-48">
+    <div class="flex animate-marquee relative items-center">
+        {%- for press in blogs.news.articles -%}
+            <div class="text-fullMoon p-32 text-center" style="min-width: 360px; max-width: 360px;">
+                {{ press.content }}
+                <img src="{{ press.image.src | img_url: '500x' }}" alt="" class="pt-32" style="max-height: 60px; width: auto; max-width: 400px; margin: auto;">
+            </div>
+        {%- endfor -%}
+        {%- for press in blogs.news.articles -%}
+            <div class="text-fullMoon p-32 text-center" style="min-width: 360px;">
+                {{ press.content }}
+                <img src="{{ press.image.src | img_url: '500x' }}" alt="" class="pt-32" style="max-height: 60px; width: auto; max-width: 400px; margin: auto;">
+            </div>
+        {%- endfor -%}
+        {%- for press in blogs.news.articles -%}
+            <div class="text-fullMoon p-32 text-center" style="min-width: 360px;">
+                {{ press.content }}
+                <img src="{{ press.image.src | img_url: '500x' }}" alt="" class="pt-32" style="max-height: 60px; width: auto; max-width: 400px; margin: auto;">
+            </div>
+        {%- endfor -%}
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Press Marquee",
+    "presets": [
+        {
+            "name": "Press Marquee"
+        }
+    ]
+}
+{% endschema %}
