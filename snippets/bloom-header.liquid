@@ -63,6 +63,7 @@ Bloom.Cookie = function(name) {
   var current = new Date();
   var expiresAt = new Date(current.getFullYear(), current.getMonth() + 1, current.getDate())
   var json = {}
+  var path = "/";
 
   var load = function() {
     try {
@@ -74,7 +75,7 @@ Bloom.Cookie = function(name) {
   }
 
   var save = function() {
-    docCookies.setItem(name, btoa(JSON.stringify(json)), expiresAt, null, null, true, 'none')
+    docCookies.setItem(name, btoa(JSON.stringify(json)), expiresAt, path, null, true, 'none')
   }
 
   Object.assign(this, {
@@ -88,7 +89,7 @@ Bloom.Cookie = function(name) {
       save()
     },
     clear: function() {
-      docCookies.removeItem(name)
+      docCookies.removeItem(name, path, null, true, 'none')
     }
   })
 }
