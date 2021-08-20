@@ -1,5 +1,5 @@
 {% comment %}{{ 'parallax-with-text.css' | asset_url | stylesheet_tag }}{% endcomment %}
-<div class="bg-earth py-48">
+<div class="bg-earth py-48 overflow-x-hidden">
     <div class="flex animate-marquee relative items-center">
         {%- for press in blogs.news.articles -%}
             <div class="text-fullMoon p-32 text-center" style="min-width: 360px; max-width: 360px;">
