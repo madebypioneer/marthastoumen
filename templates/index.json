@@ -187,6 +187,31 @@
         "thin": false,
         "layout": "image_first"
       }
+    },
+    "162943294777e06a90": {
+      "type": "full-width-image-with-text-below",
+      "blocks": {
+        "162943294777e06a90-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "A GUIDE TO NATURAL WINES"
+          }
+        },
+        "162943294777e06a90-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Natural wine can be thought of as pre-industrial wine, it's a craft rooted in agriculture. It is wine made without additives, processing agents and heavy preservatives. Although unregulated, natural wines are usually made from vineyards that, at minimum, are farmed according to organic practices. The natural winemaker relies on just the grape itself to provide flavor, structure and stability to the finished wine, and relies on a diverse mix of ambient, wild yeast and bacteria to ferment the wine instead of a single laboratory-selected yeast species.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "162943294777e06a90-0",
+        "162943294777e06a90-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/759e98e1db7c669de0d6b078a93667c9.jpg",
+        "additional_top_spacing": true
+      }
     }
   },
   "order": [
@@ -196,6 +221,7 @@
     "16294234729e2c2abd",
     "162942358041d53832",
     "1629423586fd4603de",
-    "16294237544c521f73"
+    "16294237544c521f73",
+    "162943294777e06a90"
   ]
 }
