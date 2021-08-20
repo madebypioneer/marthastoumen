@@ -94,12 +94,38 @@
         "image": "shopify:\/\/shop_images\/a7502aa8317eb1466052a5ef5b8082e8.png",
         "layout": "text_first"
       }
+    },
+    "1629424162b216fb88": {
+      "type": "parallax-image-with-text",
+      "blocks": {
+        "1629424162b216fb88-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "above all, we strive to make wines that are delicious, joyful, and truly representative of California"
+          }
+        },
+        "1629424162b216fb88-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1629424162b216fb88-0",
+        "1629424162b216fb88-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/f1e72087aaa18135083a609a217dc317.png",
+        "layout": "image_first"
+      }
     }
   },
   "order": [
     "main",
     "1629423979307bc95b",
     "1629424061a795407d",
-    "16294241095a836411"
+    "16294241095a836411",
+    "1629424162b216fb88"
   ]
 }
