@@ -433,9 +433,17 @@ p:not(:last-of-type) {
   font-size: 4rem;
 }
 
+.card_icon {
+  max-width: 60px;
+}
+
 @media only screen and (min-width: 750px) {
   .h0 {
     font-size: 5.2rem;
+  }
+
+  .card_icon {
+    max-width: 120px;
   }
 }
 
@@ -2010,6 +2018,16 @@ input[type='checkbox'] {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.2);
 }
 
+@media only screen and (min-width: 750px) {
+  .md\:columns-auto {
+    column-count: auto !important;
+  }
+
+  .md\:columns-2 {
+    column-count: 2;
+  }
+}
+
 .header {
   display: grid;
   grid-template-areas: 'left-icon heading icons';
@@ -2136,15 +2154,19 @@ input[type='checkbox'] {
   justify-content: center;
 }
 
-.header__icon {
-  padding-left: 30px;
-  padding-right: 30px;
+@media only screen and (min-width: 750px) {
+  .header__icon {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .header__icon:not(:last-of-type),
+  .header__search {
+    border-right: 1px solid;
+  }
 }
 
-.header__icon:not(:last-of-type),
-.header__search {
-  border-right: 1px solid;
-}
+
 
 .header__icon span {
   height: 100%;

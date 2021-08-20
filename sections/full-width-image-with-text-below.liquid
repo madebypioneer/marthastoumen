@@ -3,7 +3,7 @@
 <div class="mx-auto image-with-text">
     <div class="flex flex-wrap{% if section.settings.additional_top_spacing %} pt-88{% endif %}">
         <div class="w-full pt-32 mx-32">
-            <div class="aspect-w-11 aspect-h-4 image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+            <div class="aspect-w-3 md:aspect-w-11 aspect-h-4 image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
             >
                 {% comment %}{% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}{% endcomment %}
                 {%- if section.settings.image != blank -%}
@@ -26,12 +26,12 @@
             </div>
         </div>
 
-        <div class="w-full px-64">
+        <div class="w-full md:px-64">
             <div class="flex flex-wrap">
                 {%- for block in section.blocks -%}
                     {% case block.type %}
                         {%- when 'heading' -%}
-                            <div class="md:w-1/2 p-32">
+                            <div class="md:w-1/2 p-32 pb-0 md:pb-32">
                                 <h2 class="image-with-text__heading h1 text-fullMoon mt-0" {{ block.shopify_attributes }}>
                                     {{ block.settings.heading | escape }}
                                 </h2>

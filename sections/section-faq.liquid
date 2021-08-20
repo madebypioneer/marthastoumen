@@ -3,16 +3,16 @@
 <script src="{{ 'section-faq.js' | asset_url }}" defer="defer"></script>
 
 <div class="faq container mx-auto mb-32">
-    <div class="flex flex-wrap -mx-32">
-        <div class="md:w-1/3 p-32 sticky top-0 self-start">
+    <div class="flex flex-wrap">
+        <div class="md:w-1/3 px-32 pt-32 pb-0 md:py-32 md:sticky top-0 self-start">
             {% if section.settings.heading %}
-                <h2 class="mb-8">{{ section.settings.heading }}</h2>
+                <h2 class="{% if section.settings.content %}mb-8{% endif %}">{{ section.settings.heading }}</h2>
             {% endif %}
             {% if section.settings.content %}
                 {{ section.settings.content }}
             {% endif %}
         </div>
-        <div class="md:w-2/3 p-32">
+        <div class="md:w-2/3 md:p-32 px-32 pb-32">
             {%- for block in section.blocks -%}
                 {% assign count = count | plus:1 %}
                 <div class="accordion pt-16" data-accordion="accordion{{ count }}">

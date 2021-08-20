@@ -1,7 +1,7 @@
 {{ 'section-content.css' | asset_url | stylesheet_tag }}
 
 <div class="container mx-auto {% if section.settings.reduce_top_spacing and section.settings.reduce_bottom_spacing != true %}pb-64{% elsif section.settings.reduce_bottom_spacing %}pt-64{% elsif section.settings.reduce_spacing != true %}py-64{% endif %}">
-    <div class="flex flex-wrap justify-center {% if section.settings.reduce_top_spacing %}px-32{% else %}p-32 md:p-64{% endif %}">
+    <div class="flex flex-wrap justify-center {% if section.settings.reduce_top_spacing %}px-32{% else %}p-32 md:p-64 py-128{% endif %}">
         {%- for block in section.blocks -%}
             {% case block.type %}
                 {%- when 'buttons' -%}
@@ -12,12 +12,12 @@
                             </a>
                         {% endif %}
                         {% if block.settings.link_two_page %}
-                            <a href="{{ block.settings.link_two_page }}" class="button button--primary button--filled mx-8">
+                            <a href="{{ block.settings.link_two_page }}" class="button button--primary button--filled mx-8 mt-32 md:mt-0">
                                 {{ block.settings.link_two_text }}
                             </a>
                         {% endif %}
                     </div>
-            {%- when 'heading' -%}
+                {%- when 'heading' -%}
                     <div class="w-full large text-center">
                         <h2 class="h1">{{ block.settings.heading }}</h2>
                     </div>
@@ -29,16 +29,17 @@
                         {% comment %}</h2>{% endcomment %}
                     </div>
                     {%- when 'card' -%}
-                        <div class="{% if block.settings.layout == 'one_third' %}md:w-1/3{% else %}md:w-1/4{% endif %} p-32 py-64 text-center">
+                        <div class="{% if block.settings.layout == 'one_third' %}md:w-1/3{% else %}md:w-1/4{% endif %} py-32 md:p-32 md:py-64 md:text-center">
                             <div class="flex flex-wrap">
                                 {%- if block.settings.image -%}
-                                    <div class="w-full mb-40 justify-center">
+                                    <div class="w-full md:mb-40 mb-24 justify-center">
                                         {% if block.settings.is_icon %}
                                             <img
                                                 src="{{ block.settings.image | img_url: '533x' }}"
                                                 width="{{ block.settings.image.width }}"
                                                 height="{{ block.settings.image.height }}"
-                                                style="max-width: 120px; height: auto; margin: auto;"
+                                                style="height: auto;"
+                                                class="md:m-auto card_icon"
                                             >
                                         {% else %}
                                         <div class="aspect-w-1 aspect-h-1">
