@@ -7,16 +7,6 @@
         "remove_top_spacing": true
       }
     },
-    "featured_products": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "collection": "",
-        "products_to_show": 3,
-        "show_view_all": true,
-        "swipe_on_mobile": false
-      }
-    },
     "image_text": {
       "type": "image-with-text",
       "blocks": {
@@ -53,40 +43,9 @@
         "layout": "image_first"
       }
     },
-    "16294234729e2c2abd": {
-      "type": "collection-list",
-      "blocks": {
-        "16294234729e2c2abd-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "16294234729e2c2abd-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "16294234729e2c2abd-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "16294234729e2c2abd-0",
-        "16294234729e2c2abd-1",
-        "16294234729e2c2abd-2"
-      ],
+    "1629481912abcaba07": {
+      "type": "press-marquee",
       "settings": {
-        "title": "Collections",
-        "image_ratio": "portrait",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": false
       }
     },
     "162942358041d53832": {
@@ -142,7 +101,8 @@
       ],
       "settings": {
         "reduce_spacing": true,
-        "reduce_top_spacing": false
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false
       }
     },
     "16294237544c521f73": {
@@ -254,15 +214,15 @@
       ],
       "settings": {
         "reduce_spacing": false,
-        "reduce_top_spacing": true
+        "reduce_top_spacing": true,
+        "reduce_bottom_spacing": false
       }
     }
   },
   "order": [
     "1629423396520fe146",
-    "featured_products",
     "image_text",
-    "16294234729e2c2abd",
+    "1629481912abcaba07",
     "162942358041d53832",
     "1629423586fd4603de",
     "16294237544c521f73",
