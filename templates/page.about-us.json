@@ -27,9 +27,53 @@
         "thin": false,
         "layout": "image_first"
       }
+    },
+    "1629423979307bc95b": {
+      "type": "content",
+      "blocks": {
+        "76a5483b-827d-467b-b3c4-650f039019b6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Handmade with Patience"
+          }
+        }
+      },
+      "block_order": [
+        "76a5483b-827d-467b-b3c4-650f039019b6"
+      ],
+      "settings": {
+        "reduce_spacing": false
+      }
+    },
+    "1629424061a795407d": {
+      "type": "parallax-image-with-text",
+      "blocks": {
+        "1629424061a795407d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "patience in the vineyard means composting rather than adding synthetic fertilizers"
+          }
+        },
+        "1629424061a795407d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Allowing predatory insects the ability to outcompete pests rather than spraying insecticides, and doing proper handwork, such as pruning for vine longevity rather than high yields are what give our honest wines their flavor.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1629424061a795407d-0",
+        "1629424061a795407d-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/a35c0852c53ccc74abe9f7ac3965a78c.png",
+        "layout": "image_first"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1629423979307bc95b",
+    "1629424061a795407d"
   ]
 }
