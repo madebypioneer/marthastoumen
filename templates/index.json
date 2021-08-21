@@ -26,7 +26,7 @@
           "type": "button",
           "settings": {
             "button_label": "Learn More",
-            "button_link": ""
+            "button_link": "shopify:\/\/pages\/team"
           }
         }
       },
@@ -54,7 +54,7 @@
         "bb5bd869-da2f-4b0b-a424-a743012e3aba": {
           "type": "preheading",
           "settings": {
-            "preheading": "MARTHA STOUMEN’S WINE CLUB"
+            "preheading": "COMMUNITY SUPPORTED WINE CLUB"
           }
         },
         "162942358041d53832-0": {
@@ -82,15 +82,15 @@
         "2137a895-a158-4f85-aac6-ad42a6a50104": {
           "type": "heading",
           "settings": {
-            "heading": "Be the first person we call when we have good news"
+            "heading": "A Community Support Wine Club"
           }
         },
         "4251c108-9981-47e6-a1de-21b6e77737fe": {
           "type": "buttons",
           "settings": {
-            "link_one_text": "Sign In",
+            "link_one_text": "Join Now",
             "link_one_page": "shopify:\/\/pages\/contact-us",
-            "link_two_text": "Join Now",
+            "link_two_text": "Sign In",
             "link_two_page": "shopify:\/\/pages\/contact-us"
           }
         }
@@ -111,25 +111,25 @@
         "9012ead1-9789-4344-af7d-350f860b5212": {
           "type": "preheading",
           "settings": {
-            "preheading": "MARTHA STOUMEN’S WINE CLUB"
+            "preheading": "COMMUNITY SUPPORTED WINE CLUB"
           }
         },
         "16294237544c521f73-0": {
           "type": "heading",
           "settings": {
-            "heading": "Perks"
+            "heading": "COME ON IN"
           }
         },
         "16294237544c521f73-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br\/><br\/>Perk Item of the Subscription Club Lorem Ipsum<br\/>Perk Item of the Subscription Club Lorem Ipsum<br\/>Perk Item of the Subscription Club Lorem Ipsum<br\/>Perk Item of the Subscription Club Lorem Ipsum<\/p>"
+            "text": "<p>This club makes our world go around so we want every release to feel special for you. Our club members receive a bottle of each new wine along with:<br\/><br\/>• First access to new vintages and special releases<\/p><p>• Limited edition artwork and thoughtful club goodies<\/p><p>• $25 flat rate shipping on all orders<\/p><p>• Tickets to release parties, popups and other events<\/p>"
           }
         },
         "16294237544c521f73-2": {
           "type": "button",
           "settings": {
-            "button_label": "Join Now",
+            "button_label": "LEARN MORE",
             "button_link": ""
           }
         }
@@ -160,7 +160,7 @@
         "162943294777e06a90-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Natural wine can be thought of as pre-industrial wine, it's a craft rooted in agriculture. It is wine made without additives, processing agents and heavy preservatives. Although unregulated, natural wines are usually made from vineyards that, at minimum, are farmed according to organic practices. The natural winemaker relies on just the grape itself to provide flavor, structure and stability to the finished wine, and relies on a diverse mix of ambient, wild yeast and bacteria to ferment the wine instead of a single laboratory-selected yeast species.<\/p>"
+            "text": "<p>People have been crafting wine without additives for centuries. This fact easily gets lost among the shelves of formulated products and rows of chemically treated vines that dominate the American wine industry today. The post-war industrial food movement birthed a huge shift in the way we farm and eat, and—although not discussed as much—in the way we grow grapes and drink. Today’s small natural wine producers (that’s us!) are working to shift the tides back towards a gentler way of making wine, tending our soils, our vines, and our communities.<br\/><\/p><p>Natural winemakers nurture the ever-growing voice of transparency and sustainability in our agricultural system. We craft wines that place Mother Nature first, using our knowledge and expertise to support healthy farming systems and delicious moments of connection.<\/p>"
           }
         }
       },
@@ -182,8 +182,8 @@
             "layout": "one_third",
             "image": "shopify:\/\/shop_images\/Table_1.png",
             "is_icon": true,
-            "heading": "FROM THE FARM",
-            "content": "<p>We farm with compost rather than synthetic fertilizers, we allow insects to outcompete pests rather than spray insecticides, and we do proper handwork to prune for longevity rather than high yields.<\/p>"
+            "heading": "IN THE VINEYARD",
+            "content": "<p>We enrich our soils with compost and allow beneficial insects to outcompete pests. We welcome plant growth below our vines: they serve as insect habitat in the spring and organic matter in the fall. Harvesting and pruning by hand ensures healthy grapes come into our cellar and long lived vines remain in our fields.<\/p>"
           }
         },
         "dc14f402-6ca0-4344-9a74-2e4943153ce9": {
@@ -193,7 +193,7 @@
             "image": "shopify:\/\/shop_images\/Cellar_1_1.png",
             "is_icon": true,
             "heading": "TO THE CELLAR",
-            "content": "<p>We use a minimalist winemaking approach where we let the natural yeast and bacteria present on the grape skins perform the fermentation, and allow longer macerations and aging to provide stability rather than using added tannin, acid or stabilizing agents.<\/p>"
+            "content": "<p>We work with a light hand in the cellar to allow the natural yeast and bacteria present on grape skins to kick-start each fermentation. Rather than using added tannin, acid, or stabilizing agents, we lean on the tannin and acid present in our fruit, along with careful aging to create vibrant, balanced wines.<\/p>"
           }
         },
         "d86da602-817b-45d2-9509-d8a5b4c0c67a": {
@@ -202,8 +202,8 @@
             "layout": "one_third",
             "image": "shopify:\/\/shop_images\/Vineyard_1.png",
             "is_icon": true,
-            "heading": "TO YOUR TABLE",
-            "content": "<p>It jives with your body better. No matter the varietal, natural wines tend to uplift more than weigh you down. That heavy and tired feeling you get drinking a glass of conventional wine doesn’t happen.<\/p>"
+            "heading": "AT YOUR TABLE",
+            "content": "<p>Natural wines tend to jive with your body the same way thoughtfully prepared produce can make you feel abuzz from the inside out. The same desire to preserve the taste of late summer tomatoes in sauce or sun-warmed berries in jam drives us to create friendly, uplifting wines that find a place at your table anytime.<\/p>"
           }
         }
       },

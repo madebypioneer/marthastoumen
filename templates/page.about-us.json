@@ -12,7 +12,7 @@
         "6d6dc472-9461-43aa-9de0-a10550ffccdc": {
           "type": "text",
           "settings": {
-            "text": "<p>Martha Stoumen Wines was founded upon the desire to recapture a farming and winemaking culture that has all but faded away: a winemaking culture of patience. <br\/><br\/>For my wines I lease and farm around half of the vineyards myself. The other half are farmed by multi-generation farmers who understand their land, and their family's land, far better than I ever will, and who farm with my same philosophies in mind. Patience in the vineyard means composting rather than adding synthetic fertilizers, allowing predatory insects the ability to outcompete pests rather than spraying insecticides, and doing proper handwork, such as pruning for vine longevity rather than high yields.<\/p>"
+            "text": "<p>Martha Stoumen Wines was founded upon the desire to recapture a farming and winemaking culture that has all but faded away: a winemaking culture of patience.<\/p><p>We grow grapes and craft natural wine in Northern California. After 8 years apprenticing around the world, Martha set out as a self-funded, first generation winemaker to answer the question, “What does California taste like?” In our hot little corner of Northern California, Mediterranean grapes thrive and healthy vineyards allow us to create joyful balanced wines. Our wines are made from unexpected varietals and offer new takes on California classics. We do things the right way even if it's not the easy or cool way. Of the dozen or so wines we make every year, blends and flavors change but our desire to share the simple pleasures of natural wine remains the same.<\/p>"
           }
         }
       },
@@ -42,7 +42,9 @@
         "76a5483b-827d-467b-b3c4-650f039019b6"
       ],
       "settings": {
-        "reduce_spacing": false
+        "reduce_spacing": false,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false
       }
     },
     "1629424061a795407d": {
@@ -51,13 +53,13 @@
         "1629424061a795407d-0": {
           "type": "heading",
           "settings": {
-            "heading": "patience in the vineyard means composting rather than adding synthetic fertilizers"
+            "heading": "PATIENCE IN THE VINEYARD MEANS COMPOSTING RATHER THAN ADDING SYNTHETIC FERTILIZERS"
           }
         },
         "1629424061a795407d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Allowing predatory insects the ability to outcompete pests rather than spraying insecticides, and doing proper handwork, such as pruning for vine longevity rather than high yields are what give our honest wines their flavor.<\/p>"
+            "text": "<p>When Martha founded the company in 2014, she started by exploring warm and breezy regions that allow for natural farming. She was thrilled to find a handful of dedicated farmers, primarily growing Mediterranean grapes in the Ukiah area of Mendocino County, Contra Costa County and Suisun Valley. She has been making wine from their fruit and laughing with them ever since. Martha also found two traditionally planted, head trained, dry farmed vineyards that she now leases, allowing us to farm 25% of our production. <\/p><p><br\/><\/p><p>Wine is an agricultural product. Just as with food, highly processed wines contain additives to mask flavor deficiencies in the base ingredient: grapes. And poorly farmed grapes (read: cheap farming that’s bad for our soils) will always need this flavor boost. Why apply harmful pesticides and herbicides when we know this kills soil microbiology, the very thing that assists in plant nutrition and grape flavor? In the vineyard we farm for healthy soils and vine longevity rather than high yields. We allow predatory insects the ability to outcompete pests rather than spraying insecticides, and do proper handwork to ensure healthy grapes come into the cellar ready to make flavorful, honest wines.<\/p>"
           }
         }
       },
@@ -76,13 +78,13 @@
         "16294241095a836411-0": {
           "type": "heading",
           "settings": {
-            "heading": "patience in the cellar means a minimalist winemaking approach"
+            "heading": "PATIENCE IN THE CELLAR MEANS A MINIMALIST WINEMAKING APPROACH"
           }
         },
         "16294241095a836411-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Letting natural yeast and bacteria present on the grape skins perform fermentation, and allow longer macerations and aging to provide stability rather than adding tannin, acid or stabilizing agents in our wines<\/p>"
+            "text": "<p>We craft our wines in Sebastopol, CA in a winery we share with friends. Our main goal is to create complex, delicious wines, and, simple as it sounds, the best way to do this is by using complex, delicious grapes. Healthy grapes contain every ingredient necessary to make wine. Each berry contains sugar and acid in the pith, tannin in the skin and stems, and a rich bloom of yeast and bacteria on the clusters. We embrace the idea that wine is an agricultural product, and no two wines should taste the same. Instead of using a single commercial yeast species, we embrace native fermentations and the many flavors a diversity of microbes bring to our wines. <\/p><p>In the cellar we strive to create the conditions for the natural process of fermentation to thrive. Rather than trying to tightly control the transition from grapes to wine from within the juice, we prepare with rigorous cellar cleaning. From there we intimately monitor every fermentation. We work with our hands, feet, and our own human energy to bring these wines to life, and are energized by this process. Harvest heals, excites, inspires, and connects us every year.<\/p>"
           }
         }
       },
@@ -101,13 +103,13 @@
         "1629424162b216fb88-0": {
           "type": "heading",
           "settings": {
-            "heading": "above all, we strive to make wines that are delicious, joyful, and truly representative of California"
+            "heading": "ABOVE ALL WE STRIVE TO MAKE WINES THAT ARE DELICIOUS, JOYFUL, AND TRULY REPRESENTATIVE OF CALIFORNIA"
           }
         },
         "1629424162b216fb88-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p>"
+            "text": "<p>We’re small fish in a big pond (CA’s largest winery produces 75 million cases annually, we make ~7,000), so we form a friendly community with one another and with our customers. Wine is an extension of our culture. Our collective idea of beauty has shifted away from homogeneity, status, and normativity, and moved toward uniqueness, authenticity, and personality. This moment allows us the creative freedom to express the true variability and beauty of nature. Each wine expresses its own personality, and we like that. <\/p><p><br\/>You have your own personality, and we like that too. We take joy seriously.<strong> <\/strong>We believe natural wines jive with your body better: whether it’s a darker, more structured red, a snappy, chill-able red, or a bright, acidic white, they tend to uplift you more than weigh you down. That heavy, tired, feeling you get when you drink a glass of conventional wine can be a thing of the past.<\/p>"
           }
         }
       },
@@ -131,7 +133,7 @@
             "featured": true,
             "name": "MARTHA STOUMEN",
             "position": "WINEMAKER",
-            "bio": "<p>Martha went to work in the vineyard, olive orchard, and winery of a small farm and learning center in Tuscany after studying traditional agricultural systems and Italian during her undergraduate degree. The majority of her farm work took place in the vineyard rather than the winery, so she entered the world of wine production through the lens of a vigneronne rather than a typical modern California winemaker who spends very little to no time in the vineyard. During this time she also worked with farm animals, bees, and vegetables, and to this day views growing grapes and making wine ideally as part of a larger system. <br\/><br\/>Besides a love of food, and therefore agriculture, Martha was drawn to wine for two reasons: she relishes a tradition in which the master-apprentice relationship is still very much alive and well, and because wine is a product that sets the pace and rhythm of the winemaker’s life, rather than vice-versa. Grape growing and winemaking aligns a vigneronne’s actions with the seasons; she can neither rush the process nor slow it down. After her initial exposure to grape farming and winemaking in Tuscany, Martha began a series of apprenticeships, sandwiched around a Master's at UC Davis. Martha has had the pleasure of apprenticing under Reinhard Löwenstein (Heymann-Löwenstein, Mosel), Jordan Fiorentini (Chalk Hill, California) Chris Brockway (Broc Cellars, California), Clive Dougall (Seresin, Marlborough), Didier Barral (Léon Barral, Faugères, France), and Giusto Occhipinti (COS, Sicily). Many of these teachers have remained a part of her life as she has moved toward her own vision of making responsibly farmed, terroir-driven wines in the land that she holds so dear in her heart, California.<\/p>"
+            "bio": "<p>Martha went to work in the vineyard, olive orchard, and winery of a small farm and learning center in Tuscany after studying traditional agricultural systems and Italian during her undergraduate degree. The majority of her farm work took place in the vineyard rather than the winery, so she entered the world of wine production through the lens of a vintner rather than a typical modern California winemaker who spends very little to no time in the vineyard. During this time she also worked with farm animals, bees, and vegetables, and to this day views growing grapes and making wine as part of a larger system.<\/p><p>Besides a love of food, and therefore agriculture, Martha was drawn to wine for two reasons: she relishes a tradition in which the master-apprentice relationship is still very much alive and well, and because wine is a product that sets the pace and rhythm of the winemaker’s life, rather than vice-versa. Grape growing and winemaking aligns a vigneronne’s actions with the seasons; she can neither rush the process nor slow it down. After her initial exposure to grape farming and winemaking in Tuscany, Martha began a series of apprenticeships, sandwiched around a Master's at UC Davis. Martha has had the pleasure of apprenticing under Reinhard Löwenstein (Heymann-Löwenstein, Mosel), Jordan Fiorentini (Chalk Hill, California) Chris Brockway (Broc Cellars, California), Clive Dougall (Seresin, Marlborough), Didier Barral (Léon Barral, Faugères, France), and Giusto Occhipinti (COS, Sicily). Many of these teachers have remained a part of her life since moving toward her own vision of making responsibly farmed, terroir-driven wines in the land that she holds so dear in her heart, California<br\/>Besides a love of food, and therefore agriculture, Martha was drawn to wine for two reasons: she relishes a tradition in which the master-apprentice relationship is still very much alive and well, and because wine is a product that sets the pace and rhythm of the winemaker’s life, rather than vice-versa. Grape growing and winemaking aligns a vigneronne’s actions with the seasons; she can neither rush the process nor slow it down. After her initial exposure to grape farming and winemaking in Tuscany, Martha began a series of apprenticeships, sandwiched around a Master's at UC Davis. Martha has had the pleasure of apprenticing under Reinhard Löwenstein (Heymann-Löwenstein, Mosel), Jordan Fiorentini (Chalk Hill, California) Chris Brockway (Broc Cellars, California), Clive Dougall (Seresin, Marlborough), Didier Barral (Léon Barral, Faugères, France), and Giusto Occhipinti (COS, Sicily). Many of these teachers have remained a part of her life as she has moved toward her own vision of making responsibly farmed, terroir-driven wines in the land that she holds so dear in her heart, California.<\/p>"
           }
         },
         "0b3a33a4-a4f2-4a09-9255-6b7162144068": {
@@ -142,13 +144,61 @@
             "featured": true,
             "name": "TIM LYONS",
             "position": "ASSISTANT WINEMAKER",
-            "bio": "<p>Assistant Winemaker Tim Lyons grew up in southeastern Pennsylvania and studied business and chemistry at the University of Virginia, where he discovered his love of wine while working at nearby Jefferson Vineyards (Monticello AVA). <br\/><br\/>From a young age, Tim has been passionate about both community and native fermentation (by age 10, he was already sharing sourdough starters with neighbors to make Amish friendship bread)! The connection between sourdough baking and winemaking came years later when he read Jon Bonné’s “The New California,” and found the world of natural wine. You can now find Tim knee deep in grapes, sprinting around in a forklift, and in the cellar collaborating with Martha to dream up our next wine. <br\/><br\/>Prior to joining the team in 2018, Tim apprenticed at Riggers Loft winery and cidery collective in the East Bay. Outside of the cellar, Tim is usually exploring western Sonoma county or digging deeper into the science behind wine through UC-Davis’ online viticulture & enology program.<\/p>"
+            "bio": "<p>Assistant Winemaker Tim Lyons grew up in southeastern Pennsylvania and studied business and chemistry at the University of Virginia, where he discovered his love of wine while working at nearby Jefferson Vineyards (Monticello AVA). <\/p><p><br\/>Assistant Winemaker Tim Lyons grew up in southeastern Pennsylvania and studied business and chemistry at the University of Virginia, where he discovered his love of wine while working at nearby Jefferson Vineyards (Monticello AVA).<\/p><p>From a young age, Tim has been passionate about both community and native fermentation (by age 10, he was already sharing sourdough starters with neighbors to make Amish friendship bread!). The connection between sourdough baking and winemaking came years later when he read Jon Bonné’s “The New California,” and found the world of natural wine. You can now find Tim knee deep in grapes, sprinting around in a forklift, and in the cellar collaborating with Martha to dream up our next wine. <\/p><p>Prior to joining the team in 2018, Tim apprenticed at Riggers Loft winery and cidery collective in the East Bay. Outside of the cellar, Tim is usually exploring western Sonoma county or digging deeper into the science behind wine through UC-Davis’ online viticulture & enology program.<br\/>Prior to joining the team in 2018, Tim apprenticed at Riggers Loft winery and cidery collective in the East Bay. Outside of the cellar, Tim is usually exploring western Sonoma county or digging deeper into the science behind wine through UC-Davis’ online viticulture & enology program.<\/p>"
+          }
+        },
+        "3e4977a8-10dc-4c7a-962c-02849a268142": {
+          "type": "teamMember",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jaylee_Photo.jpg",
+            "layout": "image_first",
+            "featured": false,
+            "name": "Jaylee Adams",
+            "position": "SALES AND MARKETING MANAGER",
+            "bio": ""
+          }
+        },
+        "d414f505-6de8-4e85-8efb-ea4738931787": {
+          "type": "teamMember",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Claire_Photo.jpg",
+            "layout": "image_first",
+            "featured": false,
+            "name": "Claire Hill",
+            "position": "DISTRIBUTION AND OPERATIONS MANAGER",
+            "bio": ""
+          }
+        },
+        "dd7e6e18-1e82-4be9-85a5-b6fc8a34b2fb": {
+          "type": "teamMember",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nina_Photo.jpg",
+            "layout": "image_first",
+            "featured": false,
+            "name": "NINA KRAVETZ",
+            "position": "SALES AND MARKETING ASSISTANT",
+            "bio": ""
+          }
+        },
+        "7960ea8e-4461-4e1a-9a59-a15b5d3d3900": {
+          "type": "teamMember",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jon_Photo.jpg",
+            "layout": "image_first",
+            "featured": false,
+            "name": "Jon Patch",
+            "position": "HUSBAND AND BRAND STRATEGIST",
+            "bio": ""
           }
         }
       },
       "block_order": [
         "162942420010f5aeff-0",
-        "0b3a33a4-a4f2-4a09-9255-6b7162144068"
+        "0b3a33a4-a4f2-4a09-9255-6b7162144068",
+        "3e4977a8-10dc-4c7a-962c-02849a268142",
+        "d414f505-6de8-4e85-8efb-ea4738931787",
+        "dd7e6e18-1e82-4be9-85a5-b6fc8a34b2fb",
+        "7960ea8e-4461-4e1a-9a59-a15b5d3d3900"
       ],
       "settings": {
         "heading": "THE TEAM"
@@ -166,6 +216,8 @@
         "b28069c6-576f-4ecd-af12-43d65953ddfb": {
           "type": "card",
           "settings": {
+            "layout": "one_quarter",
+            "is_icon": false,
             "heading": "LISTEN TO THE LAND",
             "content": "<p>We have deep respect for the California land. <br\/><br\/>We believe in putting Mother Nature at the forefront of decision-making. <\/p>"
           }
@@ -173,6 +225,8 @@
         "411e19cf-37c6-4ccf-94e7-19c793e6b8d7": {
           "type": "card",
           "settings": {
+            "layout": "one_quarter",
+            "is_icon": false,
             "heading": "COLLABORATE WITH CARETAKERS",
             "content": "<p>We have deep compassion <br\/>for others.<br\/><br\/>We believe in treating all people <br\/>in our supply chain equitably.<\/p>"
           }
@@ -180,6 +234,8 @@
         "e20ae0ae-4d93-4410-888a-5110362303a0": {
           "type": "card",
           "settings": {
+            "layout": "one_quarter",
+            "is_icon": false,
             "heading": "CRAFT WITH PATIENCE",
             "content": "<p>We have deep patience for the natural winemaking process.<br\/><br\/>We believe in making low-intervention wines the traditional way — no shortcuts.<\/p>"
           }
@@ -187,6 +243,8 @@
         "48e97139-a27f-406b-a0b7-eeda85744683": {
           "type": "card",
           "settings": {
+            "layout": "one_quarter",
+            "is_icon": false,
             "heading": "ENJOY LIFE’S SIMPLE PLEASURES",
             "content": "<p>We have deep appreciation for <br\/>the joy of wine.<br\/><br\/>We believe in sharing the art, romance, and pleasure of wine with our community and beyond.<\/p>"
           }
@@ -200,7 +258,9 @@
         "48e97139-a27f-406b-a0b7-eeda85744683"
       ],
       "settings": {
-        "reduce_spacing": false
+        "reduce_spacing": false,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false
       }
     }
   },

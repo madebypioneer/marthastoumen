@@ -52,13 +52,13 @@
           "newsletter_enable": true,
           "newsletter_preheading": "Subscribe",
           "newsletter_heading": "Sign up to our emails",
-          "newsletter_content": "<p>Updates and knowledge direct from the cellar. <\/p>",
+          "newsletter_content": "<p>Harvest updates, new releases and the occasional recipe fresh from the upstairs office.<\/p>",
           "show_social": true,
           "partners_enable": true,
-          "partners_preheading": "Sign Up",
+          "partners_preheading": "DISTRIBUTION",
           "partners_heading": "Industry Partners",
-          "partners_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
-          "partners_linkText": "Learn More",
+          "partners_content": "<p>The fine folks bringing our wines to restaurants and retailers in urban hubs and tiny towns across the globe.<\/p>",
+          "partners_linkText": "FIND US",
           "partners_link": "",
           "contact_link": "shopify:\/\/pages\/contact-us"
         }
