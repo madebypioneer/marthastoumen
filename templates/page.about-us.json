@@ -21,7 +21,7 @@
         "6d6dc472-9461-43aa-9de0-a10550ffccdc"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/600c88ee65a4e3b659d0b70f48f23464.jpg",
+        "image": "shopify:\/\/shop_images\/Hero.jpg",
         "mask": true,
         "wine_club": false,
         "thin": false,
@@ -93,7 +93,7 @@
         "16294241095a836411-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/a7502aa8317eb1466052a5ef5b8082e8.png",
+        "image": "shopify:\/\/shop_images\/Handmade_with_Patience_-_Middle_photo.jpg",
         "layout": "text_first"
       }
     },
@@ -118,7 +118,7 @@
         "1629424162b216fb88-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/f1e72087aaa18135083a609a217dc317.png",
+        "image": "shopify:\/\/shop_images\/Handmade_with_Patience_-_Bottom_photo.jpg",
         "layout": "image_first"
       }
     },
