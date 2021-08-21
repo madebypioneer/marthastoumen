@@ -69,7 +69,7 @@
         "162942358041d53832-0"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/49fec3ee4df9a14c16b71e9353cf54a4.jpg",
+        "image": "shopify:\/\/shop_images\/Wine_Club_Banner.png",
         "mask": true,
         "wine_club": false,
         "thin": true,
@@ -141,7 +141,7 @@
         "16294237544c521f73-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/49fec3ee4df9a14c16b71e9353cf54a4.jpg",
+        "image": "shopify:\/\/shop_images\/Wine_Club_Perks_4bee6e4e-b454-4eae-9f91-3c2e46b29c56.png",
         "mask": true,
         "wine_club": true,
         "thin": false,
@@ -169,7 +169,7 @@
         "162943294777e06a90-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/759e98e1db7c669de0d6b078a93667c9.jpg",
+        "image": "shopify:\/\/shop_images\/Guide_to_natural_wines.png",
         "additional_top_spacing": true
       }
     },
