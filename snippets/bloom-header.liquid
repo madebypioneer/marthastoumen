@@ -323,12 +323,14 @@ Bloom.storefront.utilities._uncoverButton = function(button, i) {
 
 Bloom.storefront.utilities.disableCheckout = function() {
   console.log("Disabling checkout")
+  Array.prototype.forEach.call(document.querySelectorAll('[href*="checkout"]'), Bloom.storefront.utilities._coverButton)
   Array.prototype.forEach.call(document.querySelectorAll('[name="checkout"]'), Bloom.storefront.utilities._coverButton)
   Array.prototype.forEach.call(document.querySelectorAll('[action*="checkout"] [type="submit"]'), Bloom.storefront.utilities._coverButton)
 }
 
 Bloom.storefront.utilities.enableCheckout = function() {
   console.log("Enabling checkout")
+  Array.prototype.forEach.call(document.querySelectorAll('[href*="checkout"]'), Bloom.storefront.utilities._uncoverButton)
   Array.prototype.forEach.call(document.querySelectorAll('[name="checkout"]'), Bloom.storefront.utilities._uncoverButton)
   Array.prototype.forEach.call(document.querySelectorAll('[action*="checkout"] [type="submit"]'), Bloom.storefront.utilities._uncoverButton)
 }
@@ -589,7 +591,7 @@ Bloom.storefront.utilities.handleCheckoutClick = function(event) {
     if (Bloom.storefront.utilities._.hasDiscountNinjaPromotion()) { return true }
     var form = Bloom.storefront.utilities._.closestAncestor(event.target, "form")
     var button = Bloom.storefront.utilities._.closestAncestor(event.target, "button")
-    var discountCode = Bloom.storefront.utilities._.getUrlParameter("discount", form.action)
+    var discountCode = Bloom.storefront.utilities._.getUrlParameter("discount", (form||{}).action)
     if (!discountCode) {
       discountCode = Bloom.storefront.utilities._.getDiscountCodeForCart(cart)
     }
@@ -643,6 +645,7 @@ Bloom.storefront.utilities._.handleCheckoutClickEvents = function(el, i) {
 }
 
 Bloom.storefront.utilities.ready(function() {
+  Bloom.storefront.utilities.makeArray(document.querySelectorAll('[href*="checkout"]')).forEach(Bloom.storefront.utilities._.handleCheckoutClickEvents);
   Bloom.storefront.utilities.makeArray(document.querySelectorAll('[name="checkout"]')).forEach(Bloom.storefront.utilities._.handleCheckoutClickEvents);
   Bloom.storefront.utilities.makeArray(document.querySelectorAll('[action*="checkout"] [type="submit"]')).forEach(Bloom.storefront.utilities._.handleCheckoutClickEvents);
 
@@ -677,6 +680,7 @@ Bloom.storefront.utilities.ready(function() {
 
 if (Bloom.storefront.data.settings.is_sales_channel) {
   Bloom.storefront.settings.clickEvents.forEach(function(eventName) {
+    Bloom.storefront.utilities.addDelegatedEventListener(eventName, '[href*="checkout"]', Bloom.storefront.utilities.handleCheckoutClick)
     Bloom.storefront.utilities.addDelegatedEventListener(eventName, '[name="checkout"]', Bloom.storefront.utilities.handleCheckoutClick)
     Bloom.storefront.utilities.addDelegatedEventListener(eventName, '[action*="checkout"] [type="submit"]', Bloom.storefront.utilities.handleCheckoutClick)
   })
