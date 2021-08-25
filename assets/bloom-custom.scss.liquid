@@ -66,8 +66,8 @@
   }
 }
 #bloom-age-gate-foreground {
-  .uk-modal {
-    background: rgba(14,83,86,.6);
+  &.uk-modal {
+    background: rgba(14,83,86,.7);
   }
 }
 .Bloom__AgeGate {
@@ -82,7 +82,9 @@
       background-color: #f9f5ea !important;
     }
   }
-  .Bloom__Button--Primary {
+  .Bloom__Button--Primary, 
+   .Bloom__Button--Primary:active, 
+  .Bloom__Button--Primary:focus {
     cursor: pointer;
     justify-content: center;
     align-items: center;
@@ -96,7 +98,8 @@
     background-color: #a46f4d;
     color: #f9f5ea;
     font-size:24px;
-    &:hover, &:active, &:focus {
+    box-shadow: none;
+    &:hover {
       border: 2px solid #a46f4d;
       background-color: #f9f5ea;
       color: #a46f4d;
