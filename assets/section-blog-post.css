@@ -80,6 +80,25 @@
   margin-bottom: 3rem;
 }
 
+.article-template blockquote {
+  font-family: 'Baton', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #0E5356;
+  margin: 32px 0;
+}
+
+.article-related .more {
+  font-family: 'Courier Prime Sans', monospace;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #30292F;
+  text-transform: uppercase;
+}
+
 .article-template .share {
   border-bottom: 1px solid rgba(14, 83, 86, 0.5);
 }
@@ -109,10 +128,10 @@
   margin-bottom: 64px;
 }
 
-/*.article-body img {*/
-/*  clip-path: url(#circleMask);*/
-/*  -webkit-clip-path: url(#circleMask);*/
-/*}*/
+.article-body img {
+  clip-path: url(#circleMask);
+  -webkit-clip-path: url(#circleMask);
+}
 
 .article-hero .tags {
   font-family: 'Courier Prime Sans', monospace;

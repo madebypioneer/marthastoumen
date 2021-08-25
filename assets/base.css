@@ -262,10 +262,6 @@ body,
   list-style: none;
 }
 
-.hidden {
-  display: none !important;
-}
-
 .visually-hidden {
   position: absolute !important;
   overflow: hidden;
@@ -648,9 +644,9 @@ table:not([class]) th {
   }
 }
 
-.hidden {
-  display: none !important;
-}
+/*.hidden {*/
+/*  display: none !important;*/
+/*}*/
 
 @media screen and (max-width: 749px) {
   .small-hide {

@@ -247,11 +247,36 @@
     </div>
     <div class="w-full mt-88">
       <div class="flex flex-wrap">
-        <div class="md:w-1/2 mb-32 md:mb-0 text-center md:text-left px-32">
-          <small class="copyright__content">&copy;{{ 'now' | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}   ///   All Rights Reserved</small>
+        <div class="w-full md:w-1/2 mb-32 md:mb-0 text-center md:text-left px-32">
+          <ul>
+            <li class="block md:inline">
+              <small class="copyright__content">
+                &copy;{{ 'now' | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}
+                <span class="mx-8 hidden md:inline-block"> /// </span>
+              </small>
+            </li>
+            <li class="block md:inline">
+              <small class="copyright__content">
+                All Rights Reserved
+              </small>
+            </li>
+          </ul>
         </div>
-        <div class="md:w-1/2 md:text-right mb-32 md:mb-0 text-center px-32">
-          <small>Privacy Policy   ///   Terms and Conditions   ///   Accessibility</small>
+        <div class="w-full md:w-1/2 md:text-right mb-32 md:mb-0 text-center px-32">
+          <ul>
+            {%- for link in section.settings.sub_menu.links -%}
+            <li class="block md:inline">
+              <a href="{{ link.url }}">
+                  <small>
+                    {{ link.title }}
+                    {% if forloop.last != true %}
+                      <span class="mx-8 hidden md:inline-block"> /// </span>
+                    {% endif %}
+                  </small>
+              </a>
+            </li>
+            {%- endfor -%}
+          </ul>
         </div>
       </div>
     </div>
@@ -422,6 +447,11 @@
       "id": "menu",
       "default": "main-menu",
       "label": "t:sections.header.settings.menu.label"
+    },
+    {
+      "type": "link_list",
+      "id": "sub_menu",
+      "label": "Sub Footer Menu"
     },
     {
       "type": "header",
