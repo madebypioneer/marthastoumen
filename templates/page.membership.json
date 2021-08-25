@@ -1,0 +1,62 @@
+{
+  "sections": {
+    "16299161199a315e58": {
+      "type": "club-join",
+      "blocks": {
+        "91b61098-5601-4834-9d18-aa2aa4be4580": {
+          "type": "customer_choice",
+          "settings": {
+            "level_variant_id": "112313",
+            "card_width": "w-1\/3",
+            "image": "shopify:\/\/shop_images\/759e98e1db7c669de0d6b078a93667c9.jpg",
+            "club_level_name": "6 Bottle Club",
+            "title_size": "1.5rem",
+            "level_description": "<p>One wine per shipment<\/p>",
+            "level_benefits": "",
+            "club_price": "$190 per shipment",
+            "text_align": "center",
+            "to_join": true,
+            "to_join_url": "\/pages\/membership-signup",
+            "to_checkout": false,
+            "to_cart": false,
+            "join_button_label": "Join the 6 Bottle Club"
+          }
+        },
+        "d5ed8a2c-fc62-45fe-b1b9-c52a039501b2": {
+          "type": "customer_choice",
+          "settings": {
+            "level_variant_id": "112314",
+            "card_width": "w-1\/3",
+            "image": "shopify:\/\/shop_images\/49fec3ee4df9a14c16b71e9353cf54a4.jpg",
+            "club_level_name": "12 Bottle Club",
+            "title_size": "1.5rem",
+            "level_description": "<p>Two wines per shipment<\/p>",
+            "level_benefits": "",
+            "club_price": "$250 per shipment",
+            "text_align": "center",
+            "to_join": true,
+            "to_join_url": "\/pages\/membership-signup",
+            "to_checkout": false,
+            "to_cart": false,
+            "join_button_label": "Join the 12 Bottle Club"
+          }
+        }
+      },
+      "block_order": [
+        "91b61098-5601-4834-9d18-aa2aa4be4580",
+        "d5ed8a2c-fc62-45fe-b1b9-c52a039501b2"
+      ],
+      "settings": {
+        "header_height": "400",
+        "heading_text": "",
+        "intro_text": "",
+        "bg_color": "",
+        "card_color_bg": "#f9f5ea",
+        "club_max_width": 90
+      }
+    }
+  },
+  "order": [
+    "16299161199a315e58"
+  ]
+}

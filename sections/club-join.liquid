@@ -1,18 +1,4 @@
 <!--=================================================================================================================
-Stylesheet
-===================================================================================================================-->
-
-<style>
-
-/* ==== Misc ================================================= */
-  .membership-cards ul {
-    list-style-position: outside;
-  }
-
-</style>
-
-
-<!--=================================================================================================================
 Club header
 ===================================================================================================================-->
 {% if section.settings.header_image %}
@@ -27,7 +13,7 @@ Club header
 {% endif %}
 
 <section style="background-color:{{section.settings.bg_color}}">
-  <div class="uk-container uk-width-1-1 uk-margin-auto" style="max-width:{{section.settings.club_max_width}}%"> 
+  <div class="uk-container uk-width-1-1 uk-margin-auto" id="membershipSection" style="max-width:{{section.settings.club_max_width}}%"> 
     <div class="membership-grid uk-margin-large-top uk-margin-large-bottom"> 
       <div class="uk-margin-large-bottom uk-text-center uk-margin-auto uk-width-2-3@m"> 
         {% if section.settings.heading_text %} <h1 class="u-h1">{{ section.settings.heading_text }}</h1>{% endif %}
@@ -92,18 +78,13 @@ Club header
 
                     {% if block.settings.club_level_name %}
                     {% assign title_size = block.settings.title_size %}
-                      <h3 class="uk-margin-small-bottom {{text_align}}" style="font-size: {{title_size}}">{{ block.settings.club_level_name }}</h3>
+                      <h3 class="uk-text-uppercase {{text_align}}">{{ block.settings.club_level_name }}</h3>
                     {% endif %}
 
-                    {% if block.settings.club_price %}
-                    <h4 class="uk-text-bold uk-margin-bottom {{text_align}}">
-                      {{ block.settings.club_price }}
-                    </h4>
-                    {% endif %}
                 
                 <div class="uk-margin-auto {{text_align}}"> 
                   {% if block.settings.level_description %}
-                    <div class="{% if block.settings.level_benefits %}uk-margin-small-bottom {% endif%}">
+                    <div class="{% if block.settings.level_benefits %}uk-margin-bottom {% endif%}">
                       {{ block.settings.level_description }}
                     </div>
                   {% endif %}
@@ -111,6 +92,12 @@ Club header
                   {% if block.settings.level_benefits %}
                           <div class="rte uk-margin-medium-bottom ">{{ block.settings.level_benefits }}</div>
                   {% endif %}
+                  
+                   {% if block.settings.club_price %}
+                    <h4 class="uk-text-bold uk-margin-medium-bottom">
+                      {{ block.settings.club_price }}
+                    </h4>
+                    {% endif %}
                 </div>
               </div>
 
@@ -129,7 +116,7 @@ Club header
                         {% if block.settings.option_select %}
                                 {%- render 'bloom-element',type: 'clubform-field', name: 'option',  class: 'uk-select uk-margin-bottom' -%}
                         {% endif %}
-                        {%- render 'bloom-element', type: 'clubform-button', label: block.settings.join_button_label, class: 'Button Button--primary btn btn--primary uk-width-1-1' -%}
+                        {%- render 'bloom-element', type: 'clubform-button', label: block.settings.join_button_label, class: 'button button--secondary uk-width-2-3' -%}
                 {%- render 'bloom-element', type: 'endclubform', id: block.id -%}
 
                 
@@ -140,7 +127,7 @@ Club header
                 {% else %}
                 
                   {%- render 'bloom-element', type: 'clubform', level_ids: block.settings.level_variant_id, id: block.id, action: checkout_option -%}                 
-                     {%- render 'bloom-element', type: 'clubform-button', label: block.settings.join_button_label, class: 'Button Button--primary btn btn--primary uk-width-1-1' -%}                  
+                     {%- render 'bloom-element', type: 'clubform-button', label: block.settings.join_button_label, class: 'button button--secondary uk-width-2-3' -%}                  
                   {%- render 'bloom-element', type: 'endclubform', id: block.id -%}
 
                 {% endif %}
@@ -284,10 +271,10 @@ Club header
           "id": "title_size",
           "type": "select",
           "label": "Title size", 
-          "default": "1.5rem",
+          "default": "inherit",
           "options": [
             {
-            "value": "1.5rem",
+            "value": "inherit",
             "label": "Default"
             },
             {
@@ -430,10 +417,10 @@ Club header
           "id": "title_size",
           "type": "select",
           "label": "Title size", 
-          "default": "1.5rem",
+          "default": "inherit",
           "options": [
             {
-            "value": "1.5rem",
+            "value": "inherit",
             "label": "Default"
             },
             {
