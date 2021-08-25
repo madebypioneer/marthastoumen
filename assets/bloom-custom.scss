@@ -6,9 +6,6 @@
   .uk-card-default {
     box-shadow:none;
   }
-  .uk-card-body {
-    padding: 20px;
-  }
   .membership-cards {
     // Font overrides
     .card-body {
@@ -46,6 +43,11 @@
       color: #000;
     }
     p {
+      color: #000;
+      line-height: 2.5rem;
+    }
+    a {
+      text-decoration: underline;
       color: #000;
     }
   }
