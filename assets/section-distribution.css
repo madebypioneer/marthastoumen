@@ -1,0 +1,12 @@
+.distributor-heading {
+    text-transform: uppercase;
+}
+
+.distributor-list {
+    font-family: 'Courier Prime Sans', monospace;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-decoration-line: underline;
+    color: #30292F;
+}

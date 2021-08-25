@@ -80,6 +80,55 @@
   margin-bottom: 3rem;
 }
 
+.article-template .share {
+  border-bottom: 1px solid rgba(14, 83, 86, 0.5);
+}
+
+.article-hero h6 {
+  font-family: 'Courier Prime Sans', monospace;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.article-template .share_heading {
+  font-family: 'Courier Prime Sans', monospace;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.article-hero h1 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.article-body img {
+  width: 100%;
+  height: auto;
+  margin-top: 56px;
+  margin-bottom: 64px;
+}
+
+/*.article-body img {*/
+/*  clip-path: url(#circleMask);*/
+/*  -webkit-clip-path: url(#circleMask);*/
+/*}*/
+
+.article-hero .tags {
+  font-family: 'Courier Prime Sans', monospace;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.article-hero .published {
+  font-family: 'Courier Prime Sans', monospace;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
 .article-template__social-sharing {
   margin-top: 3rem;
 }

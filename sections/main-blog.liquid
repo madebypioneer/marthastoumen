@@ -5,22 +5,146 @@
 
 {%- paginate blog.articles by 6 -%}
 
-  <div class="main-blog page-width">
-    <h1 class="title--primary">{{ blog.title | escape }}</h1>
-
-    <div class="blog-articles">
-      {%- for article in blog.articles -%}
-        <div class="blog-articles__article article">
-          {%- render 'article-card', article: article, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+  <div class="main-blog">
+    <div class="flex flex-wrap md:p-32">
+      <div class="w-full md:w-1/4 p-32">
+        <div class="mb-48">
+          <h1>{{ blog.title | escape }}</h1>
+          {{ section.settings.blog_description }}
         </div>
-      {%- endfor -%}
-    </div>
 
-    {%- if paginate.pages > 1 -%}
-      {%- render 'pagination', paginate: paginate -%}
-    {%- endif -%}
+        {% if section.settings.show_featured %}
+          <div class="{% if section.settings.show_categories %}mb-88{% endif %}">
+            <h3 class="clifton">Featured</h3>
+            <div class="flex">
+              {%- for article in blog.articles -%}
+              <a href="{{ shop.url }}{{ article.url }}" class="w-full mask-image featured-blog-card">
+                <div class="flex flex-wrap {% if forloop.index == 1 or forloop.index == 3 %}lg:flex-row-reverse {% endif %}-mx-16">
+                  <div class="md:w-1/2 p-16 w-full">
+                    <div class="aspect-w-1 aspect-h-1 imageMask image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+                    >
+                        <img srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
+                {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
+                {%- if article.image.src.width >= 533 -%}{{ article.image.src | img_url: '533x' }} 533w,{%- endif -%}
+                {%- if article.image.src.width >= 720 -%}{{ article.image.src | img_url: '720x' }} 720w,{%- endif -%}
+                {%- if article.image.src.width >= 940 -%}{{ article.image.src | img_url: '940x' }} 940w,{%- endif -%}
+                {%- if article.image.src.width >= 1066 -%}{{ article.image.src | img_url: '1066x' }} 1066w{%- endif -%}"
+                             src="{{ article.image.src | img_url: '533x' }}"
+                             sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                             alt="{{ article.image.src.alt | escape }}"
+                             width="{{ article.image.width }}"
+                             height="{{ article.image.height }}"
+                             loading="lazy"
+                             class="motion-reduce"
+                        >
+                    </div>
+                  </div>
+
+                  <div class="md:w-1/2 p-16 w-full">
+                    <span class="blog-date">
+                      {{- article.published_at | date: '%B %d, %Y' -}}
+                    </span>
+
+                    <h2 class="featured" id="Article-{{ article.id }}">
+                      {{ article.title | escape }}
+                    </h2>
+                  </div>
+                </div>
+              </a>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+
+        {% if section.settings.show_categories %}
+          <h3 class="clifton">Categories</h3>
+          <ul class="categories">
+            {% for tag in blog.tags %}
+            <li>
+              <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+      <div class="w-full md:w-3/4 p-32">
+        <div class="flex flex-wrap">
+          {%- for article in blog.articles -%}
+            {% comment %}If it's count 1 / 5 / 9 Use side by side{% endcomment %}
+            {% if forloop.index == 1 or forloop.index == 5 or forloop.index == 9 %}
+              <div class="w-full large-card py-96{% if forloop.first %} pt-0{% endif %}">
+                <div class="flex flex-wrap lg:flex-row-reverse">
+                  <div class="md:w-1/2 p-32 w-full">
+                    <div class="aspect-w-1 aspect-h-1 imageMask image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+                    >
+                        <img srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
+                {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
+                {%- if article.image.src.width >= 533 -%}{{ article.image.src | img_url: '533x' }} 533w,{%- endif -%}
+                {%- if article.image.src.width >= 720 -%}{{ article.image.src | img_url: '720x' }} 720w,{%- endif -%}
+                {%- if article.image.src.width >= 940 -%}{{ article.image.src | img_url: '940x' }} 940w,{%- endif -%}
+                {%- if article.image.src.width >= 1066 -%}{{ article.image.src | img_url: '1066x' }} 1066w{%- endif -%}"
+                             src="{{ article.image.src | img_url: '533x' }}"
+                             sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                             alt="{{ article.image.src.alt | escape }}"
+                             width="{{ article.image.width }}"
+                             height="{{ article.image.height }}"
+                             loading="lazy"
+                             class="motion-reduce"
+                        >
+                    </div>
+                  </div>
+
+                  <div class="md:w-1/2 p-32 w-full">
+                    <span class="date mb-8">
+                      {{- article.published_at | date: '%B %d, %Y' -}}
+                    </span>
+
+                    <h2 class="mb-16" id="Article-{{ article.id }}">
+                      {{ article.title | escape }}
+                    </h2>
+                    {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+                      <p class="article-card__excerpt rte-width">
+                        {%- if article.excerpt.size > 0 -%}
+                          {{ article.excerpt | strip_html | truncatewords: 30 }}
+                        {%- else -%}
+                          {{ article.content | strip_html | truncatewords: 30 }}
+                        {%- endif -%}
+                      </p>
+                    {%- endif -%}
+                    <p class="mt-40">
+                      <a href="{{ shop.url }}{{ article.url }}" class="button--text">
+                        Read More
+                        <span class="arrow"></span>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            {% else %}
+              <div class="w-full md:w-1/3 p-32">
+                {%- render 'article-card', article: article, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+              </div>
+            {% endif %}
+          {%- endfor -%}
+        </div>
+
+        {%- if paginate.pages > 1 -%}
+          {%- render 'pagination', paginate: paginate -%}
+        {%- endif -%}
+      </div>
+    </div>
   </div>
 {%- endpaginate -%}
+<svg
+    width="0"
+    height="0"
+>
+  <defs>
+    <clipPath id="circleMask" clipPathUnits="objectBoundingBox">
+      <path transform="scale(0.00164,0.0017)" d="M0.966081911,292.946119 C-1.03978709,246.864119 -1.81133709,198.963119 18.4652129,157.403119 C38.7427129,115.841119 77.1762129,86.5607186 114.931013,59.3571186 C151.739013,32.8363186 190.794013,5.47866859 236.102013,0.589508591 C280.365013,-4.18698141 320.926013,21.2983186 363.987013,32.4813186 C405.728013,43.3217186 450.892013,42.9617186 487.305013,65.8284186 C525.015013,89.5097186 554.531013,124.830119 574.149013,164.459119 C593.811013,204.177119 601.575013,248.781119 599.739013,292.946119 C597.937013,336.298119 581.441013,376.766119 563.674013,416.455119 C545.504013,457.045119 528.799013,500.250119 494.232013,528.635119 C459.481013,557.171119 413.717013,568.107119 369.240013,576.117119 C325.841013,583.932119 281.753013,583.531119 238.560013,574.675119 C194.899013,565.724119 152.598013,550.449119 116.704013,524.341119 C80.1857129,497.779119 50.1039129,463.138119 30.0261129,422.997119 C9.86247291,382.684119 2.92108291,337.860119 0.966081911,292.946119 Z"></path>
+    </clipPath>
+  </defs>
+</svg>
 
 {% schema %}
 {
@@ -28,6 +152,27 @@
   "tag": "section",
   "class": "spaced-section",
   "settings": [
+    {
+      "type": "header",
+      "content": "Blog Settings"
+    },
+    {
+      "type": "richtext",
+      "id": "blog_description",
+      "label": "Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_featured",
+      "default": true,
+      "label": "Show Featured Posts"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_categories",
+      "default": true,
+      "label": "Show Blog Categories"
+    },
     {
       "type": "header",
       "content": "t:sections.main-blog.settings.header.content"

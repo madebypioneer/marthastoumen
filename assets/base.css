@@ -2436,7 +2436,7 @@ details-disclosure > details {
 
 html {
   font-family: 'Gopher', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 @keyframes animateMenuOpen {

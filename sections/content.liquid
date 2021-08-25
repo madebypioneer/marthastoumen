@@ -19,14 +19,24 @@
                     </div>
                 {%- when 'heading' -%}
                     <div class="w-full large text-center">
-                        <h2 class="h1">{{ block.settings.heading }}</h2>
+                        <div class="m-auto" style="max-width: 800px;">
+                            <h2 class="h1">{{ block.settings.heading }}</h2>
+                        </div>
                     </div>
                 {%- when 'largeText' -%}
                     <div class="w-full pb-64 large text-center">
-                        {{ block.settings.text }}
+                        <div class="m-auto" style="max-width: 800px;">
+                            {{ block.settings.text }}
+                        </div>
                         {% comment %}<h2>{% endcomment %}
                             {% comment %}{{ section.settings.heading }}{% endcomment %}
                         {% comment %}</h2>{% endcomment %}
+                    </div>
+                {%- when 'text' -%}
+                    <div class="w-full text-center mt-16">
+                        <div class="m-auto" style="max-width: 800px;">
+                            {{ block.settings.text }}
+                        </div>
                     </div>
                     {%- when 'card' -%}
                         <div class="{% if block.settings.layout == 'one_third' %}md:w-1/3{% else %}md:w-1/4{% endif %} py-32 md:p-32 md:py-64 md:text-center">
@@ -125,6 +135,17 @@
         {
             "type": "largeText",
             "name": "Large Text",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "Text"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "name": "Text",
             "settings": [
                 {
                     "type": "richtext",
