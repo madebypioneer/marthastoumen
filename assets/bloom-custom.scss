@@ -83,8 +83,7 @@
     }
   }
   .Bloom__Button--Primary, 
-   .Bloom__Button--Primary:active, 
-  .Bloom__Button--Primary:focus {
+   .Bloom__Button--Primary:active {
     cursor: pointer;
     justify-content: center;
     align-items: center;
@@ -99,7 +98,7 @@
     color: #f9f5ea;
     font-size:24px;
     box-shadow: none;
-    &:hover {
+    &:hover, &:focus {
       border: 2px solid #a46f4d;
       background-color: #f9f5ea;
       color: #a46f4d;
