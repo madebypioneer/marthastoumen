@@ -118,7 +118,7 @@ Club header
                         {% if block.settings.option_select %}
                                 {%- render 'bloom-element',type: 'clubform-field', name: 'option',  class: 'uk-select uk-margin-bottom' -%}
                         {% endif %}
-                        {%- render 'bloom-element', type: 'clubform-button', label: block.settings.join_button_label, class: 'button button--secondary uk-width-2-3' -%}
+                        {%- render 'bloom-element', type: 'clubform-button', label: block.settings.join_button_label, class: 'button button--secondary uk-width-1-1 uk-width-2-3@m' -%}
                 {%- render 'bloom-element', type: 'endclubform', id: block.id -%}
 
                 
@@ -129,7 +129,7 @@ Club header
                 {% elsif block.type == "customer_choice" %}
                 
                   {%- render 'bloom-element', type: 'clubform', level_ids: block.settings.level_variant_id, id: block.id, action: checkout_option -%}                 
-                     {%- render 'bloom-element', type: 'clubform-button', label: block.settings.join_button_label, class: 'button button--secondary uk-width-2-3' -%}                  
+                     {%- render 'bloom-element', type: 'clubform-button', label: block.settings.join_button_label, class: 'button button--secondary uk-width-1-1 uk-width-2-3@m' -%}                  
                   {%- render 'bloom-element', type: 'endclubform', id: block.id -%}
                 
                 {% endif %}
