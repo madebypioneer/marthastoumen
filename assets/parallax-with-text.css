@@ -2,3 +2,13 @@
     clip-path: url(#circleMask);
     -webkit-clip-path: url(#circleMask);
 }
+
+.button--text-dark {
+    color: #30292F;
+}
+
+.button--text-dark .arrow,
+.button--text-dark .arrow:before,
+.button--text-dark .arrow:after {
+    background-color: #30292F;
+}
