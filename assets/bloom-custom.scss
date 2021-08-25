@@ -59,9 +59,9 @@
   }
 }
 
-/* ==== Age Gate ==== */
+/* ==== Site Age Gate ==== */
 #bloom-age-gate-background {
-    div:empty {
+  div:empty {
     display: block;
   }
 }
@@ -125,5 +125,17 @@
     color: #a46f4d;   
       opacity: .7;
     }
+  }
+}
+
+/* ==== Cart Age Gate ==== */
+.Bloom__DateOfBirth__Default {
+  p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: .04rem;
+  }
+  .Bloom__DateInput--input_wrapper  {
+    
   }
 }
