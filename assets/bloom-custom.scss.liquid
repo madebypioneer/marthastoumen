@@ -69,7 +69,7 @@
   .Bloom__AgeGate__Dialog {
     background-color: #f9f5ea;
     &.uk-card-hover:hover {
-      background-color: #f9f5ea;
+      background-color: #f9f5ea !important;
     }
   }
   .Bloom__Button--Primary {
@@ -82,11 +82,36 @@
     font-family: 'Baton Web',sans-serif;
     font-style: italic;
     font-weight: 400;
-    border-color: #a46f4d;
+    border:2px solid #a46f4d;
     background-color: #a46f4d;
     color: #f9f5ea;
     font-size:24px;
+    &:hover {
+      border: 2px solid #a46f4d;
+      background-color: #f9f5ea;
+      color: #a46f4d;
+    }
   }
   .Bloom__Button--Inverted {
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 8px;
+    min-width: 18rem;
+    font-family: 'Baton Web',sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    border: 2px solid #a46f4d;
+    background-color: #f9f5ea;
+    color: #a46f4d;   
+    font-size:24px;
+    margin-bottom: 40px !important;
+    &:hover {
+     border: 2px solid #a46f4d;
+    background-color: #f9f5ea;
+    color: #a46f4d;   
+      opacity: .7;
+    }
   }
 }
