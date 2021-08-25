@@ -1,24 +1,28 @@
 {{ 'section-distribution.css' | asset_url | stylesheet_tag }}
 
+{% if section.settings.link_list.links %}
 <div class="flex flex-wrap p-32 justify-center">
     <div class="w-full text-center">
         <h2>{{ section.settings.heading }}</h2>
     </div>
     {% for link in section.settings.link_list.links %}
-        <div class="w-full md:w-1/4 p-32">
-            <div class="pb-16" style="border-bottom: 1px solid #000000;">
-                <h4 class="distributor-heading mb-8">{{ link.title }}</h4>
-                <ul class="distributor-list">
-                    {% for sublink in link.links %}
-                        <li>
-                            <a href="{{ sublink.url }}" target="_blank">{{ sublink.title }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
+        {% if link.links != blank %}
+            <div class="w-full md:w-1/4 p-32">
+                <div class="pb-16" style="border-bottom: 1px solid #000000; height: 100%;">
+                    <h4 class="distributor-heading mb-8">{{ link.title }}</h4>
+                    <ul class="distributor-list">
+                        {% for sublink in link.links %}
+                            <li>
+                                <a href="{{ sublink.url }}" target="_blank">{{ sublink.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
-        </div>
+        {% endif %}
     {% endfor %}
 </div>
+{% endif %}
 
 
 {% schema %}
