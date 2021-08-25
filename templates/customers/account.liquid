@@ -107,9 +107,10 @@
     <div>
       {% include 'bloom' %}
       {% if is_member == false %}
-      <h3 class="h2">Memberships</h3>
-      <p><a class="button button--primary" href="/apps/wine-club/account/customers/{{ customer.id }}">View my memberships</a></p>
+      <h2>Memberships</h2>
+      <p class="uk-margin-medium-bottom"><a class="" href="/apps/wine-club/account/customers/{{ customer.id }}">View my memberships</a></p>
       {% endif %}
+      
       <h2>{{ 'customer.account.details' | t }}</h2>
 
       {{ customer.default_address | format_address }}
