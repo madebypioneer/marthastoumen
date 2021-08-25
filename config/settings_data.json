@@ -49,6 +49,8 @@
           "footer-0"
         ],
         "settings": {
+          "powered_by_bloom": true,
+          "bloom_logo": "shopify:\/\/shop_images\/bloom-dark_2x40_x40_eba5eb04-7767-4150-9ba5-4364491fbb3d.png",
           "logo": "shopify:\/\/shop_images\/Group_5.png",
           "menu": "footer",
           "sub_menu": "",

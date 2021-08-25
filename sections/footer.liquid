@@ -261,6 +261,13 @@
               </small>
             </li>
           </ul>
+          {% if section.settings.powered_by_bloom %}
+            <div class="">
+              <small class="">Powered by</small>
+              <img src="{{ section.settings.bloom_logo | img_url: 'x40' }}" width="81" height="20" 
+                   alt="Bloom logo" style="vertical-align:middle; margin-right: 2px; display: inline-block;">
+            </div>
+          {% endif %}
         </div>
         <div class="w-full md:w-1/2 md:text-right mb-32 md:mb-0 text-center px-32">
           <ul>
@@ -437,6 +444,22 @@
     }
   ],
   "settings": [
+	 {
+      "type": "header",
+      "content": "Powered by Bloom",
+      "info": "Display the Powered by Bloom stamp in the footer."
+    },
+    {
+      "type": "checkbox",
+      "id": "powered_by_bloom",
+      "label": "Show Powered by Bloom",
+      "default": true
+    },
+    {
+       "type": "image_picker",
+       "id": "bloom_logo",
+       "label": "Bloom Logo"
+    },
     {
       "type": "image_picker",
       "id": "logo",

@@ -1,3 +1,4 @@
+{% include 'bloom' %}
 {% comment %}theme-check-disable TemplateLength{% endcomment %}
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
 {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
@@ -83,15 +84,18 @@
               {{ product.title | escape }}
             </h1>
           {%- when 'price' -%}
+        {% if show_add_to_cart %}
             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
+        
             <div {{ block.shopify_attributes }}>
               {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
                 <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                 {{ form | payment_terms }}
               {%- endform -%}
             </div>
+        {% endif %}
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
@@ -117,6 +121,7 @@
               </details>
             </div>
           {%- when 'quantity_selector' -%}
+        {% if show_add_to_cart %}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
@@ -140,6 +145,7 @@
                 </button>
               </quantity-input>
             </div>
+        {% endif %}
           {%- when 'popup' -%}
               <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                 <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.link_label | default: block.settings.page.title }}</button>
@@ -257,6 +263,7 @@
             </noscript>
           {%- when 'buy_buttons' -%}
             <div {{ block.shopify_attributes }}>
+              {% if show_add_to_cart %}
               <product-form class="product-form">
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
@@ -300,6 +307,12 @@
                   </div>
                 </template>
               </pickup-availability>
+              {% else %}
+              <p class="uk-text-italic uk-margin-medium-bottom">This is a club member only wine. If you are a current wine club member 
+                please <a href="/account/login" style="text-decoration:underline; color:#000;">sign in</a> now 
+                or join our club to purchase this wine!</p>
+              <a href="/pages/wine-club" class="button button--primary uk-margin-bottom">Join Now</a>
+              {% endif %}
             </div>
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
