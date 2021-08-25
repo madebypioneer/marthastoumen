@@ -1,12 +1,563 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+<!--=================================================================================================================
+Stylesheet
+===================================================================================================================-->
+
+<style>
+
+/* ==== Misc ================================================= */
+  .membership-cards ul {
+    list-style-position: outside;
   }
+
+</style>
+
+
+<!--=================================================================================================================
+Club header
+===================================================================================================================-->
+{% if section.settings.header_image %}
+{% assign header_image_height = section.settings.header_height %}
+<header class="club-image-header">
+  <div class="uk-cover-container">
+    <canvas width="" height="{{ header_image_height }}"></canvas>
+    <img src="{{ section.settings.header_image| img_url: 'master' }}"
+         alt="" class="" uk-cover>
+  </div>
+</header>
+{% endif %}
+
+<section style="background-color:{{section.settings.bg_color}}">
+  <div class="uk-container uk-width-1-1 uk-margin-auto" style="max-width:{{section.settings.club_max_width}}%"> 
+    <div class="membership-grid uk-margin-large-top uk-margin-large-bottom"> 
+      <div class="uk-margin-large-bottom uk-text-center uk-margin-auto uk-width-2-3@m"> 
+        {% if section.settings.heading_text %} <h1 class="u-h1">{{ section.settings.heading_text }}</h1>{% endif %}
+        {% if section.settings.intro_text %} <p>{{ section.settings.intro_text }}</p> {% endif %}
+      </div>
+
+      <!--=================================================================================================================
+      Level description
+      ===================================================================================================================-->
+      <div class="uk-grid-match uk-flex-wrap uk-flex-center membership-cards" uk-grid>
+        {% if section.settings.card_color_bg != "rgba(0,0,0,0)" %}
+        {% assign card_color = section.settings.card_color_bg %}
+        {% endif %}
+        
+        {% for block in section.blocks %}
+          {% if block.settings.to_join %}
+             {% assign checkout_option =  block.settings.to_join_url %}
+          {% elsif block.settings.to_cart %}
+            {% assign checkout_option = "cart" %}
+          {% elsif block.settings.to_checkout %}
+            {%assign checkout_option = "checkout" %}
+          {% else %}
+            {%assign checkout_option = "checkout" %}
+          {% endif %}
+        
+          {% assign card_width = 'uk-width-1-1 uk-width-1-2@m uk-width-1-3@l' %}
+          {% case block.settings.card_width %}
+            {% when 'w-full' %}
+              {% assign card_width = 'uk-width-1-1' %}
+            {% when 'w-1/2' %}
+              {% assign card_width = 'uk-width-1-1 uk-width-1-2@m' %}
+            {% when 'w-1/3' %}
+              {% assign card_width = 'uk-width-1-1 uk-width-1-2@m uk-width-1-3@l' %}
+            {% when 'w-1/4' %}
+              {% assign card_width = 'uk-width-1-1 uk-width-1-2@m uk-width-1-4@l' %}
+            {% else %}
+              {% assign card_width = 'uk-width-1-1 uk-width-1-2@m uk-width-1-3@l' %}
+          {% endcase %}
+        
+        {% assign text_align = 'uk-text-center' %}
+          {% case block.settings.text_align %}
+            {% when 'center' %}
+              {% assign text_align = 'uk-text-center' %}
+            {% when 'left' %}
+              {% assign text_align = 'uk-text-left' %}
+            {% when 'right' %}
+              {% assign text_align = 'uk-text-right' %}
+            {% when 'justify' %}
+              {% assign text_align = 'uk-text-justify' %}
+            {% else %}
+              {% assign text_align = 'uk-text-center' %}
+          {% endcase %}
+        
+          <div class="{{ card_width }} uk-text-center" data-club-signup="">
+          <div class="uk-card uk-card-default uk-card-body uk-height-1-1" style="background-color: {{ card_color }};">
+              <div class="uk-height-1-1 uk-flex uk-flex-column uk-flex-between uk-flex-wrap-between">
+                <div class="card-body">
+                  {% if block.settings.image %}
+                      <img src="{{ block.settings.image | img_url: 'master' }}"
+                           alt="{{ block.settings.club_level_name }}" class="uk-width-1-1 uk-margin-small-bottom">
+                    {% endif %}
+
+                    {% if block.settings.club_level_name %}
+                    {% assign title_size = block.settings.title_size %}
+                      <h3 class="uk-margin-small-bottom {{text_align}}" style="font-size: {{title_size}}">{{ block.settings.club_level_name }}</h3>
+                    {% endif %}
+
+                    {% if block.settings.club_price %}
+                    <h4 class="uk-text-bold uk-margin-bottom {{text_align}}">
+                      {{ block.settings.club_price }}
+                    </h4>
+                    {% endif %}
+                
+                <div class="uk-margin-auto {{text_align}}"> 
+                  {% if block.settings.level_description %}
+                    <div class="{% if block.settings.level_benefits %}uk-margin-small-bottom {% endif%}">
+                      {{ block.settings.level_description }}
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.level_benefits %}
+                          <div class="rte uk-margin-medium-bottom ">{{ block.settings.level_benefits }}</div>
+                  {% endif %}
+                </div>
+              </div>
+
+<!--=================================================================================================================
+        Winery choice
+===================================================================================================================-->
+
+                {% if block.type == "winery_choice" %}
+                {%- render 'bloom-element', type: 'clubform', level_ids: block.settings.level_variant_id, id: block.id, action: checkout_option -%}
+                        {% if block.settings.level_select %}
+                                {%- render 'bloom-element',type: 'clubform-field', name: 'level', class: 'uk-select uk-margin-bottom' -%}
+                        {% endif %}
+                        {% if block.settings.release_select %}
+                                {%- render 'bloom-element',type: 'clubform-field', name: 'release', class: 'uk-select uk-margin-bottom' -%}
+                        {%endif %}
+                        {% if block.settings.option_select %}
+                                {%- render 'bloom-element',type: 'clubform-field', name: 'option',  class: 'uk-select uk-margin-bottom' -%}
+                        {% endif %}
+                        {%- render 'bloom-element', type: 'clubform-button', label: block.settings.join_button_label, class: 'Button Button--primary btn btn--primary uk-width-1-1' -%}
+                {%- render 'bloom-element', type: 'endclubform', id: block.id -%}
+
+                
+
+<!--=================================================================================================================
+        Customer Choice
+===================================================================================================================-->
+                {% else %}
+                
+                  {%- render 'bloom-element', type: 'clubform', level_ids: block.settings.level_variant_id, id: block.id, action: checkout_option -%}                 
+                     {%- render 'bloom-element', type: 'clubform-button', label: block.settings.join_button_label, class: 'Button Button--primary btn btn--primary uk-width-1-1' -%}                  
+                  {%- render 'bloom-element', type: 'endclubform', id: block.id -%}
+
+                {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Membership tiers",
+  "settings": [
+        {
+      "type": "header",
+      "content": "Header image"
+    },
+    {
+      "type": "image_picker",
+      "id": "header_image",
+      "label": "Image",
+      "info": "1400px wide recommended"
+    },
+    {
+    "type": "select",
+    "id": "header_height",
+    "label": "Image height",
+    "default": "400",
+    "options": [
+    {
+    "value": "200",
+    "label": "Small"
+    },
+    {
+    "value": "400",
+    "label": "Medium"
+    },
+    {
+    "value": "600",
+    "label": "Large"
+    },
+    {
+    "value": "800",
+    "label": "Extra large"
+    }
+    ]
+    },
+    {
+      "type": "header",
+      "content": "Introduction"
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Page title"
+    },
+    {
+      "type": "richtext",
+      "id": "intro_text",
+      "label": "Intro text"
+    },
+        {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Section background color"
+    },
+    {
+      "type": "color",
+      "id": "card_color_bg",
+      "label": "Card background color"
+    }, 
+    {
+      "type": "header",
+      "content": "Section layout"
+    },
+        {
+    "type": "range",
+    "id": "club_max_width",
+    "label": "Club section width",
+    "min": 50,
+        "max": 100,
+        "step": 10,
+        "unit": "%",
+        "default": 90
+    }
+  ],
+  "blocks": [
+    {
+      "type": "customer_choice",
+      "name": "Customer choice card",
+      "settings": [
+		  {
+          "id": "level_variant_id",
+          "type": "text",
+          "label": "Level id"
+          },
+          {
+          "type": "select",
+          "id": "card_width",
+          "label": "Width",
+          "default": "w-1/3",
+          "options": [
+            {
+              "value": "w-full",
+              "label": "100%"
+            },
+            {
+              "value": "w-1/2",
+              "label": "50%"
+            },
+            {
+              "value": "w-1/3",
+              "label": "33%"
+            },
+            {
+              "value": "w-1/4",
+              "label": "25%"
+            }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1000px wide recommended"
+        },
+        {
+          "id": "club_level_name",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "id": "title_size",
+          "type": "select",
+          "label": "Title size", 
+          "default": "1.5rem",
+          "options": [
+            {
+            "value": "1.5rem",
+            "label": "Default"
+            },
+            {
+            "value": "2rem",
+            "label": "2x larger"
+            },
+            {
+            "value": "3rem",
+            "label": "3x larger"
+            },
+            {
+            "value": "4rem",
+            "label": "4x larger"
+            }
+          ]
+        },
+        {
+          "id": "level_description",
+          "type": "richtext",
+          "label": "Description"
+        },
+        {
+          "id": "level_benefits",
+          "type": "html",
+          "label": "Benefits",
+          "info": "Enter as HTML"
+        },
+		{
+          "id": "club_price",
+          "type": "text",
+          "label": "Price"
+        },
+        {
+          "id": "text_align",
+          "type": "select",
+          "label": "Text alignment", 
+          "default": "center",
+          "options": [
+            {
+            "value": "center",
+            "label": "Center"
+            },
+            {
+            "value": "left",
+            "label": "Left"
+            },
+            {
+            "value": "right",
+            "label": "Right"
+            },
+            {
+            "value": "justify",
+            "label": "Justify"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Join flow options"
+        },
+        {
+          "id": "to_join",
+          "type": "checkbox",
+          "label": "Send customer to a join page",
+          "default": false
+        },
+        {
+          "id": "to_join_url",
+          "type": "text",
+          "label": "URL to join page",
+          "info": "Example: /pages/join-club/"
+        },
+        {
+          "id": "to_checkout",
+          "type": "checkbox",
+          "label": "Send customer directly to checkout",
+          "info": "Requires a product to be created and use the Variant ID below",
+          "default": false
+        },
+        {
+          "id": "to_cart",
+          "type": "checkbox",
+          "label": "Add membership to the shopping cart",
+          "info": "Requires a product to be created and use the Variant ID below",
+          "default": false
+        },
+        {
+          "id": "join_button_label",
+          "type": "text",
+          "label": "Join button label", 
+                  "default": "Join the club"
+        }
+      ]
+    }, 
+	{
+      "type": "winery_choice",
+      "name": "Winery choice card",
+      "settings": [
+		  {
+          "id": "level_variant_id",
+          "type": "text",
+          "label": "Level id"
+          },
+          {
+          "type": "select",
+          "id": "card_width",
+          "label": "Width",
+          "default": "w-1/3",
+          "options": [
+            {
+              "value": "w-full",
+              "label": "100%"
+            },
+            {
+              "value": "w-1/2",
+              "label": "50%"
+            },
+            {
+              "value": "w-1/3",
+              "label": "33%"
+            },
+            {
+              "value": "w-1/4",
+              "label": "25%"
+            }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1000px wide recommended"
+        },
+        {
+          "id": "club_level_name",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "id": "title_size",
+          "type": "select",
+          "label": "Title size", 
+          "default": "1.5rem",
+          "options": [
+            {
+            "value": "1.5rem",
+            "label": "Default"
+            },
+            {
+            "value": "2rem",
+            "label": "2x larger"
+            },
+            {
+            "value": "3rem",
+            "label": "3x larger"
+            },
+            {
+            "value": "4rem",
+            "label": "4x larger"
+            }
+          ]
+        },
+        {
+          "id": "level_description",
+          "type": "richtext",
+          "label": "Description"
+        },
+        {
+          "id": "level_benefits",
+          "type": "html",
+          "label": "Benefits",
+          "info": "Enter as HTML"
+        },
+		{
+          "id": "club_price",
+          "type": "text",
+          "label": "Price"
+        },
+                {
+          "id": "text_align",
+          "type": "select",
+          "label": "Text alignment", 
+          "default": "center",
+          "options": [
+            {
+            "value": "center",
+            "label": "Center"
+            },
+            {
+            "value": "left",
+            "label": "Left"
+            },
+            {
+            "value": "right",
+            "label": "Right"
+            },
+            {
+            "value": "justify",
+            "label": "Justify"
+            }
+          ]
+        },
+                {
+          "type": "header",
+          "content": "Club dropdowns"
+        },
+                {
+          "id": "level_select",
+          "type": "checkbox",
+          "label": "Show level selection",
+          "default": false
+        },
+        {
+          "id": "release_select",
+          "type": "checkbox",
+          "label": "Show release selection",
+          "default": false
+        },
+        {
+          "id": "option_select",
+          "type": "checkbox",
+          "label": "Show option selection",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "Join flow options"
+        },
+        {
+          "id": "to_join",
+          "type": "checkbox",
+          "label": "Send customer to a join page",
+          "default": false
+        },
+        {
+          "id": "to_join_url",
+          "type": "text",
+          "label": "URL to join page",
+          "info": "Example: /pages/join-club/"
+        },
+        {
+          "id": "to_checkout",
+          "type": "checkbox",
+          "label": "Send customer directly to checkout",
+          "info": "Requires a product to be created and use the Variant ID below",
+          "default": false
+        },
+        {
+          "id": "to_cart",
+          "type": "checkbox",
+          "label": "Add membership to the shopping cart",
+          "info": "Requires a product to be created and use the Variant ID below",
+          "default": false
+        },
+        {
+          "id": "join_button_label",
+          "type": "text",
+          "label": "Join button label", 
+                  "default": "Join the club"
+        }
+      ]
+    }
+  ], 
+"presets": [
+        {
+        "name": "Club join", 
+        "blocks": []
+        }
+] 
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
