@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "16299161199a315e58": {
+      "type": "club-join",
+      "settings": {
+        "header_height": "400",
+        "heading_text": "",
+        "intro_text": "",
+        "bg_color": "",
+        "card_color_bg": "",
+        "club_max_width": 90
+      }
+    }
+  },
+  "order": [
+    "16299161199a315e58"
+  ]
+}

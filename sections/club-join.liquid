@@ -23,7 +23,7 @@ Club header
       <!--=================================================================================================================
       Level description
       ===================================================================================================================-->
-      <div class="uk-grid-match uk-flex-wrap uk-flex-center membership-cards" uk-grid>
+      <div class="uk-grid-match uk-flex-wrap uk-flex-center" uk-grid>
         {% if section.settings.card_color_bg != "rgba(0,0,0,0)" %}
         {% assign card_color = section.settings.card_color_bg %}
         {% endif %}
@@ -67,38 +67,40 @@ Club header
               {% assign text_align = 'uk-text-center' %}
           {% endcase %}
         
-          <div class="{{ card_width }} uk-text-center" data-club-signup="">
+        {% if block.type == "winery_choice" or block.type == "customer_choice"  %}
+          <div class="{{ card_width }} uk-text-center membership-cards" data-club-signup="">
           <div class="uk-card uk-card-default uk-card-body uk-height-1-1" style="background-color: {{ card_color }};">
-              <div class="uk-height-1-1 uk-flex uk-flex-column uk-flex-between uk-flex-wrap-between">
-                <div class="card-body">
+              <div class="uk-height-1-1 uk-flex uk-flex-column uk-flex-between uk-flex-wrap-between">     
                   {% if block.settings.image %}
-                      <img src="{{ block.settings.image | img_url: 'master' }}"
+                      <div class="image">
+                        <img src="{{ block.settings.image | img_url: 'master' }}"
                            alt="{{ block.settings.club_level_name }}" class="uk-width-1-1 uk-margin-small-bottom">
-                    {% endif %}
-
+                	</div>
+                    {% endif %}           
+                <div class="card-body">
+                  <div class="uk-margin-auto {{text_align}}"> 
+                    
                     {% if block.settings.club_level_name %}
-                    {% assign title_size = block.settings.title_size %}
-                      <h3 class="uk-text-uppercase {{text_align}}">{{ block.settings.club_level_name }}</h3>
+                      {% assign title_size = block.settings.title_size %}
+                      <h3 class="h2 uk-text-uppercase {{text_align}}">{{ block.settings.club_level_name }}</h3>
+                    {% endif %}
+                    
+                    {% if block.settings.level_description %}
+                      <div class="">
+                        {{ block.settings.level_description }}
+                      </div>
                     {% endif %}
 
-                
-                <div class="uk-margin-auto {{text_align}}"> 
-                  {% if block.settings.level_description %}
-                    <div class="{% if block.settings.level_benefits %}uk-margin-bottom {% endif%}">
-                      {{ block.settings.level_description }}
-                    </div>
-                  {% endif %}
-
-                  {% if block.settings.level_benefits %}
-                          <div class="rte uk-margin-medium-bottom ">{{ block.settings.level_benefits }}</div>
-                  {% endif %}
-                  
-                   {% if block.settings.club_price %}
-                    <h4 class="uk-text-bold uk-margin-medium-bottom">
-                      {{ block.settings.club_price }}
-                    </h4>
+                    {% if block.settings.level_benefits %}
+                            <div class="rte uk-margin-bottom ">{{ block.settings.level_benefits }}</div>
                     {% endif %}
-                </div>
+
+                     {% if block.settings.club_price %}
+                      <h5 class="uk-text-bold">
+                        {{ block.settings.club_price }}
+                      </h5>
+                      {% endif %}
+                  </div>
               </div>
 
 <!--=================================================================================================================
@@ -124,16 +126,47 @@ Club header
 <!--=================================================================================================================
         Customer Choice
 ===================================================================================================================-->
-                {% else %}
+                {% elsif block.type == "customer_choice" %}
                 
                   {%- render 'bloom-element', type: 'clubform', level_ids: block.settings.level_variant_id, id: block.id, action: checkout_option -%}                 
                      {%- render 'bloom-element', type: 'clubform-button', label: block.settings.join_button_label, class: 'button button--secondary uk-width-2-3' -%}                  
                   {%- render 'bloom-element', type: 'endclubform', id: block.id -%}
-
+                
                 {% endif %}
             </div>
           </div>
         </div>
+        {% else %}
+          <div class="{{ card_width }} uk-text-center text-card">
+            <div class="uk-card uk-card-default uk-card-body uk-height-1-1" style="background-color: {{ card_color }};">
+                <div class="uk-height-1-1 uk-flex uk-flex-column uk-flex-between uk-flex-wrap-between">     
+                  <div class="card-body">
+                    <div class="uk-margin-auto {{text_align}}"> 
+                      {% if block.settings.club_level_name %}
+                        <h3 class="h2 uk-text-uppercase uk-margin-bottom {{text_align}}">{{ block.settings.club_level_name }}</h3>
+                      {% endif %}
+
+                      {% if block.settings.level_description %}
+                        <div class="">
+                          {{ block.settings.level_description }}
+                        </div>
+                      {% endif %}
+
+                      {% if block.settings.level_benefits %}
+                              <div class="rte uk-margin-bottom ">{{ block.settings.level_benefits }}</div>
+                      {% endif %}
+
+                       {% if block.settings.club_price %}
+                        <h5 class="uk-text-bold">
+                          {{ block.settings.club_price }}
+                        </h5>
+                        {% endif %}
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
         {% endfor %}
       </div>
     </div>
@@ -536,6 +569,106 @@ Club header
                   "default": "Join the club"
         }
       ]
+    }, 
+	{
+      "type": "text_card",
+      "name": "Text block card",
+      "settings": [
+          {
+          "type": "select",
+          "id": "card_width",
+          "label": "Width",
+          "default": "w-1/3",
+          "options": [
+            {
+              "value": "w-full",
+              "label": "100%"
+            },
+            {
+              "value": "w-1/2",
+              "label": "50%"
+            },
+            {
+              "value": "w-1/3",
+              "label": "33%"
+            },
+            {
+              "value": "w-1/4",
+              "label": "25%"
+            }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1000px wide recommended"
+        },
+        {
+          "id": "club_level_name",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "id": "title_size",
+          "type": "select",
+          "label": "Title size", 
+          "default": "inherit",
+          "options": [
+            {
+            "value": "inherit",
+            "label": "Default"
+            },
+            {
+            "value": "2rem",
+            "label": "2x larger"
+            },
+            {
+            "value": "3rem",
+            "label": "3x larger"
+            },
+            {
+            "value": "4rem",
+            "label": "4x larger"
+            }
+          ]
+        },
+        {
+          "id": "level_description",
+          "type": "richtext",
+          "label": "Description"
+        },
+        {
+          "id": "level_benefits",
+          "type": "html",
+          "label": "Benefits",
+          "info": "Enter as HTML"
+        },
+        {
+          "id": "text_align",
+          "type": "select",
+          "label": "Text alignment", 
+          "default": "center",
+          "options": [
+            {
+            "value": "center",
+            "label": "Center"
+            },
+            {
+            "value": "left",
+            "label": "Left"
+            },
+            {
+            "value": "right",
+            "label": "Right"
+            },
+            {
+            "value": "justify",
+            "label": "Justify"
+            }
+          ]
+        }
+	  ]
     }
   ], 
 "presets": [
