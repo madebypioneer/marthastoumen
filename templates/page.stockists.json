@@ -1,0 +1,39 @@
+{
+  "sections": {
+    "16298654141d692e83": {
+      "type": "content",
+      "blocks": {
+        "0c48e8ce-3779-4082-a22c-b04058f299f3": {
+          "type": "heading",
+          "settings": {
+            "heading": "TRYING TO FIND MARTHA STOUMEN WINES?"
+          }
+        },
+        "ab7a5129-d60b-4231-8544-120866edc934": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’ve gathered a list of the local wine shops, bars, stores, and restaurants that usually carry our wines. This isn’t everyone — you can find our bottles in some pretty unexpected places! We always recommend calling ahead to see what’s in stock. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "0c48e8ce-3779-4082-a22c-b04058f299f3",
+        "ab7a5129-d60b-4231-8544-120866edc934"
+      ],
+      "settings": {
+        "reduce_spacing": false,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false
+      }
+    },
+    "16298654210ff76458": {
+      "type": "section-stockist",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "16298654141d692e83",
+    "16298654210ff76458"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "sections": {
+    "162986478112c194ab": {
+      "type": "content",
+      "blocks": {
+        "c4ba74c0-1732-483b-b16f-1698cc3229f4": {
+          "type": "heading",
+          "settings": {
+            "heading": "WANT MARTHA STOUMEN WINES IN YOUR RESTAURANT OR RETAIL SPACE?"
+          }
+        },
+        "88ad6791-58c2-4d12-8a95-9b0a6ec53a29": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We work with the following (fantastic!) distributors to share handmade California wines with purveyors around the world.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c4ba74c0-1732-483b-b16f-1698cc3229f4",
+        "88ad6791-58c2-4d12-8a95-9b0a6ec53a29"
+      ],
+      "settings": {
+        "reduce_spacing": false,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false
+      }
+    },
+    "1629864785397d8167": {
+      "type": "section-distribution",
+      "settings": {
+        "heading": "DOMESTIC",
+        "link_list": "domestic"
+      }
+    },
+    "1629864829950a9a5e": {
+      "type": "section-distribution",
+      "settings": {
+        "heading": "INTERNATIONAL",
+        "link_list": "international"
+      }
+    },
+    "1629864868c6825d4d": {
+      "type": "parallax-image-with-text",
+      "blocks": {
+        "1629864868c6825d4d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "TRYING TO FIND MARTHA  STOUMEN WINES?"
+          }
+        },
+        "1629864868c6825d4d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’ve gathered a list of the local wine shops, bars, stores, and restaurants that usually carry our wines. This isn’t everyone — you can find our bottles in some pretty unexpected places! We always recommend calling ahead to see what’s in stock. <\/p>"
+          }
+        },
+        "897deeea-c7d2-4728-a8c8-e894147fcfdf": {
+          "type": "button",
+          "settings": {
+            "button_label": "VIEW STOCKISTS",
+            "button_link": "shopify:\/\/pages\/stockists"
+          }
+        }
+      },
+      "block_order": [
+        "1629864868c6825d4d-0",
+        "1629864868c6825d4d-1",
+        "897deeea-c7d2-4728-a8c8-e894147fcfdf"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Martha_Stoumen_Natural_Wine_Working_with_Nature_California_Winemaker_Harvest_Story_Andrew_Thomas_Lee.jpg",
+        "layout": "image_first",
+        "disable_parallax": true
+      }
+    }
+  },
+  "order": [
+    "162986478112c194ab",
+    "1629864785397d8167",
+    "1629864829950a9a5e",
+    "1629864868c6825d4d"
+  ]
+}

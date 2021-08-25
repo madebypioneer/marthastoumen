@@ -3,6 +3,8 @@
     "social_facebook_link": "https:\/\/facebook.com\/marthastoumenwines",
     "social_instagram_link": "https:\/\/instagram.com\/marthastoumen",
     "social_spotify_link": "https:\/\/spotify.com\/marthastoumen",
+    "bloom_cart_dob_show": true,
+    "bloom_cart_dob_minimum_age": "21",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
