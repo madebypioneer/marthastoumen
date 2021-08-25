@@ -60,6 +60,16 @@
 }
 
 /* ==== Age Gate ==== */
+#bloom-age-gate-background {
+    div:empty {
+    display: block;
+  }
+}
+#bloom-age-gate-foreground {
+  .uk-modal {
+    background: rgba(14,83,86,.6);
+  }
+}
 .Bloom__AgeGate {
   .Bloom__AgeGate__Heading {
     font-family: 'Baton Web', sans-serif;
@@ -86,7 +96,7 @@
     background-color: #a46f4d;
     color: #f9f5ea;
     font-size:24px;
-    &:hover {
+    &:hover, &:active, &:focus {
       border: 2px solid #a46f4d;
       background-color: #f9f5ea;
       color: #a46f4d;
@@ -107,7 +117,7 @@
     color: #a46f4d;   
     font-size:24px;
     margin-bottom: 40px !important;
-    &:hover {
+    &:hover, &:active, &:focus {
      border: 2px solid #a46f4d;
     background-color: #f9f5ea;
     color: #a46f4d;   
