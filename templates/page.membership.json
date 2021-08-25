@@ -11,9 +11,9 @@
             "image": "shopify:\/\/shop_images\/image_3.png",
             "club_level_name": "6 Bottle Club",
             "title_size": "1.5rem",
-            "level_description": "<p>One wine per shipment<\/p>",
+            "level_description": "<p>One bottle of each new wine<\/p>",
             "level_benefits": "",
-            "club_price": "$190 per shipment",
+            "club_price": "$195 - $275 per shipment",
             "text_align": "center",
             "to_join": true,
             "to_join_url": "\/pages\/membership-signup",
@@ -30,9 +30,9 @@
             "image": "shopify:\/\/shop_images\/image_4.png",
             "club_level_name": "12 Bottle Club",
             "title_size": "1.5rem",
-            "level_description": "<p>Two wines per shipment<\/p>",
+            "level_description": "<p>Two bottles of each new wine per shipment<\/p>",
             "level_benefits": "",
-            "club_price": "$250 per shipment",
+            "club_price": "$380 - $550 per shipment",
             "text_align": "center",
             "to_join": true,
             "to_join_url": "\/pages\/membership-signup",
@@ -48,7 +48,7 @@
             "club_level_name": "Two Ways to Play",
             "title_size": "3rem",
             "level_description": "<p>Vestibulum eu odio. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Morbi vestibulum volutpat enim.Vestibulum eu odio. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Morbi vestibulum volutpat enim.<\/p>",
-            "level_benefits": "<a href=\"#\">Learn more <\/a>",
+            "level_benefits": "<p>Want to gift a membership? <\/p><a href=\"#\">Learn more <\/a>",
             "text_align": "left"
           }
         }
