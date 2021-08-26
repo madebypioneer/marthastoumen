@@ -5,7 +5,7 @@
       "settings": {
         "heading": "Member information",
         "club_level": "club-582",
-        "welcome_page_path": "",
+        "welcome_page_path": "\/pages\/welcome-to-the-club",
         "button_label": "",
         "button_loading_label": "Creating your account...",
         "apply_default_form_styles": false,
