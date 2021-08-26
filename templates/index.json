@@ -89,9 +89,9 @@
           "type": "buttons",
           "settings": {
             "link_one_text": "Join Now",
-            "link_one_page": "shopify:\/\/pages\/contact-us",
+            "link_one_page": "shopify:\/\/pages\/membership-signup",
             "link_two_text": "Sign In",
-            "link_two_page": "shopify:\/\/pages\/contact-us"
+            "link_two_page": "shopify:\/\/pages\/team"
           }
         }
       },
@@ -130,7 +130,7 @@
           "type": "button",
           "settings": {
             "button_label": "LEARN MORE",
-            "button_link": ""
+            "button_link": "shopify:\/\/pages\/membership"
           }
         }
       },

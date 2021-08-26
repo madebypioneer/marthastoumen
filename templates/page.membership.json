@@ -1,5 +1,48 @@
 {
   "sections": {
+    "1629948404cfa546a1": {
+      "type": "content",
+      "blocks": {
+        "3024eba2-923e-4fec-a7ea-c35cc8fb3a19": {
+          "type": "heading",
+          "settings": {
+            "heading": "WANT TO DRINK OUR WINES YEAR ROUND?"
+          }
+        },
+        "24fc36ac-7244-4b31-af06-110364face7a": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You’re the first person we call when we’ve got good news. Club members receive a bottle of each new wine as well as first access to library treasures and special releases. <br\/><br\/>From harvest to our seasonal release dates, we take care to keep you in the loop every step of the way and make sure to get your wines delivered with ease. <br\/><br\/>See below for more information on our current offerings and to join the party!<\/p>"
+          }
+        },
+        "005298e7-e458-4bf0-be65-d0b42028ac7e": {
+          "type": "buttons",
+          "settings": {
+            "link_one_text": "Sign In",
+            "link_one_page": "\/account",
+            "link_two_text": "Join Now",
+            "link_two_page": "shopify:\/\/pages\/membership-signup"
+          }
+        }
+      },
+      "block_order": [
+        "3024eba2-923e-4fec-a7ea-c35cc8fb3a19",
+        "24fc36ac-7244-4b31-af06-110364face7a",
+        "005298e7-e458-4bf0-be65-d0b42028ac7e"
+      ],
+      "settings": {
+        "reduce_spacing": false,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false
+      }
+    },
+    "16299483928fa50dfe": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_4.png",
+        "remove_top_spacing": false
+      }
+    },
     "16299161199a315e58": {
       "type": "club-join",
       "blocks": {
@@ -66,9 +109,74 @@
         "card_color_bg": "#f9f5ea",
         "club_max_width": 90
       }
+    },
+    "162994866447ef345c": {
+      "type": "image-with-text",
+      "blocks": {
+        "773a0703-8b2d-4041-a4ba-d39cdba589b3": {
+          "type": "preheading",
+          "settings": {
+            "preheading": "SHIPPING NOW"
+          }
+        },
+        "162994866447ef345c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "SPRING\/SUMMER 2021"
+          }
+        },
+        "162994866447ef345c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This release showcases the breadth of natural wines. The 2020’s are brimming with joy and ready to drink while the 2019’s could make your day today or evolve in your cellar over a few years. <br\/><br\/>(Left \/ Right)<br\/>Mendocino Benchlands 2020<br\/>Out to the Meadow 2020<br\/>Nero d’Avola 2019 | club exclusive<br\/>Nero d’Avola Rosato 2020<br\/>Post Flirtation Red 2020<br\/>Post Flirtation White 2019<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "773a0703-8b2d-4041-a4ba-d39cdba589b3",
+        "162994866447ef345c-0",
+        "162994866447ef345c-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_4.png",
+        "mask": true,
+        "wine_club": false,
+        "thin": false,
+        "layout": "image_first"
+      }
+    },
+    "16299486715b84051b": {
+      "type": "content",
+      "blocks": {
+        "5e933451-c335-45e2-8c22-be645c7170c0": {
+          "type": "heading",
+          "settings": {
+            "heading": "WANT TO GIFT A MEMBERSHIP OR HAVE QUESTIONS?"
+          }
+        },
+        "67ee4205-4f2a-4390-a6c1-dee932223ca8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Check out our <a href=\"\/pages\/faq\" title=\"FAQ\">Wine Club Account FAQs Page<\/a>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5e933451-c335-45e2-8c22-be645c7170c0",
+        "67ee4205-4f2a-4390-a6c1-dee932223ca8"
+      ],
+      "settings": {
+        "reduce_spacing": false,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false
+      }
     }
   },
   "order": [
-    "16299161199a315e58"
+    "1629948404cfa546a1",
+    "16299483928fa50dfe",
+    "16299161199a315e58",
+    "162994866447ef345c",
+    "16299486715b84051b"
   ]
 }

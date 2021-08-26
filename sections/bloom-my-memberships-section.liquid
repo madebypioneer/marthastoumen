@@ -7,8 +7,9 @@ These features and content can be managed within the Bloom app or the Shopify cu
 Bloom (www.bloom.wine)
 {% endcomment %}
 
+<link href="{{ 'bloom-my-membership.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
 <script  src="{{ 'bloom-my-membership.js' | asset_url }}"></script>
-<div id="my-memberships-container" data-customer='{"id": "{{ customer.id }}","firstName": "{{ customer.first_name }}","lastName": "{{ customer.last_name }}","phone": "{{ customer.phone }}","email": "{{ customer.email }}"}'></div>
+<div id="my-memberships-container" {% if customer %} data-customer='{"id": "{{ customer.id }}","firstName": "{{ customer.first_name }}","lastName": "{{ customer.last_name }}","phone": "{{ customer.phone }}","email": "{{ customer.email }}"}' {% endif %} ></div>
 
 {% schema %}
 {"name":"Bloom My Memberships page","settings":[]}

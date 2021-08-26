@@ -36,24 +36,12 @@
       },
       "footer": {
         "type": "footer",
-        "blocks": {
-          "footer-0": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
-            }
-          }
-        },
-        "block_order": [
-          "footer-0"
-        ],
         "settings": {
-          "powered_by_bloom": true,
+          "powered_by_bloom": false,
           "bloom_logo": "shopify:\/\/shop_images\/bloom-dark_2x40_x40_eba5eb04-7767-4150-9ba5-4364491fbb3d.png",
           "logo": "shopify:\/\/shop_images\/Group_5.png",
           "menu": "footer",
-          "sub_menu": "",
+          "sub_menu": "sub-footer-menu",
           "newsletter_enable": true,
           "newsletter_preheading": "Subscribe",
           "newsletter_heading": "Sign up to our emails",
@@ -64,7 +52,7 @@
           "partners_heading": "Industry Partners",
           "partners_content": "<p>The fine folks bringing our wines to restaurants and retailers in urban hubs and tiny towns across the globe.<\/p>",
           "partners_linkText": "FIND US",
-          "partners_link": "",
+          "partners_link": "distribution",
           "contact_link": "shopify:\/\/pages\/contact-us"
         }
       },
