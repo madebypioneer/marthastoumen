@@ -37,7 +37,7 @@
       "footer": {
         "type": "footer",
         "settings": {
-          "powered_by_bloom": false,
+          "powered_by_bloom": true,
           "bloom_logo": "shopify:\/\/shop_images\/bloom-dark_2x40_x40_eba5eb04-7767-4150-9ba5-4364491fbb3d.png",
           "logo": "shopify:\/\/shop_images\/Group_5.png",
           "menu": "footer",
@@ -63,7 +63,7 @@
           "allow_list": "",
           "require_full_dob": false,
           "require_full_dob_mobile": false,
-          "header_image": "shopify:\/\/shop_images\/Vineyard_1.png",
+          "header_image": "shopify:\/\/shop_images\/MS.Logo.png",
           "header_image_position": -114,
           "header_image_size": 96,
           "header_image_padding": 0,

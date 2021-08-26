@@ -21,7 +21,7 @@
         "6d6dc472-9461-43aa-9de0-a10550ffccdc"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Hero.jpg",
+        "image": "shopify:\/\/shop_images\/Hero_aaf7b911-b076-495c-b52c-9efdf100dad7.jpg",
         "mask": true,
         "wine_club": false,
         "thin": false,
@@ -68,8 +68,9 @@
         "1629424061a795407d-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/a35c0852c53ccc74abe9f7ac3965a78c.png",
-        "layout": "image_first"
+        "image": "shopify:\/\/shop_images\/Handmade_with_Patience_-_Top_photo_977b425e-51ab-43b9-8737-c17923bcc680.jpg",
+        "layout": "image_first",
+        "disable_parallax": false
       }
     },
     "16294241095a836411": {
@@ -93,8 +94,9 @@
         "16294241095a836411-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Handmade_with_Patience_-_Middle_photo.jpg",
-        "layout": "text_first"
+        "image": "shopify:\/\/shop_images\/Handmade_with_Patience_-_Middle_photo_795db83d-5743-4213-b101-6058be053c6d.jpg",
+        "layout": "text_first",
+        "disable_parallax": false
       }
     },
     "1629424162b216fb88": {
@@ -118,8 +120,9 @@
         "1629424162b216fb88-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Handmade_with_Patience_-_Bottom_photo.jpg",
-        "layout": "image_first"
+        "image": "shopify:\/\/shop_images\/Handmade_with_Patience_-_Bottom_photo_5f7dc509-ca4c-4628-83c6-1f3c218af992.jpg",
+        "layout": "image_first",
+        "disable_parallax": false
       }
     },
     "162942420010f5aeff": {
@@ -128,7 +131,7 @@
         "162942420010f5aeff-0": {
           "type": "teamMember",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cb3f278fa4fb04d66f664e646e14e4a5.jpg",
+            "image": "shopify:\/\/shop_images\/Martha_Photo.jpg",
             "layout": "image_first",
             "featured": true,
             "name": "MARTHA STOUMEN",
@@ -139,7 +142,7 @@
         "0b3a33a4-a4f2-4a09-9255-6b7162144068": {
           "type": "teamMember",
           "settings": {
-            "image": "shopify:\/\/shop_images\/dcb53f2b8a82ec9477d3ef88b9cf5764.jpg",
+            "image": "shopify:\/\/shop_images\/Tim_Photo.jpg",
             "layout": "text_first",
             "featured": true,
             "name": "TIM LYONS",
@@ -150,7 +153,7 @@
         "3e4977a8-10dc-4c7a-962c-02849a268142": {
           "type": "teamMember",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Jaylee_Photo.jpg",
+            "image": "shopify:\/\/shop_images\/Jaylee_Photo_4f8eb8b1-523e-40e6-9b6e-c73a724c2414.jpg",
             "layout": "image_first",
             "featured": false,
             "name": "Jaylee Adams",
@@ -161,7 +164,7 @@
         "d414f505-6de8-4e85-8efb-ea4738931787": {
           "type": "teamMember",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Claire_Photo.jpg",
+            "image": "shopify:\/\/shop_images\/Claire_Photo_81b9e5f7-e7cc-47f8-9e98-6a34fa3a071b.jpg",
             "layout": "image_first",
             "featured": false,
             "name": "Claire Hill",
@@ -172,7 +175,7 @@
         "dd7e6e18-1e82-4be9-85a5-b6fc8a34b2fb": {
           "type": "teamMember",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Nina_Photo.jpg",
+            "image": "shopify:\/\/shop_images\/Nina_Photo_d549c615-40b3-4983-afef-0478889a279f.jpg",
             "layout": "image_first",
             "featured": false,
             "name": "NINA KRAVETZ",
@@ -183,7 +186,7 @@
         "7960ea8e-4461-4e1a-9a59-a15b5d3d3900": {
           "type": "teamMember",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Jon_Photo.jpg",
+            "image": "shopify:\/\/shop_images\/Jon_Photo_b4bc3d57-ed28-43ff-bf3b-c5ce72c94885.jpg",
             "layout": "image_first",
             "featured": false,
             "name": "Jon Patch",
