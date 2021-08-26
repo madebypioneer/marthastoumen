@@ -15,12 +15,12 @@
         <div class="md:w-2/3 md:p-32 px-32 pb-32">
             {%- for block in section.blocks -%}
                 {% assign count = count | plus:1 %}
-                <div class="accordion pt-16" data-accordion="accordion{{ count }}">
+                <faq-accordion class="accordion pt-16" data-accordion="accordion{{ count }}">
                     <h3 class="accordion--trigger pb-16">{{ block.settings.heading }}</h3>
-                    <div class="accordion--content pb-16{% comment %} hidden{% endcomment %}" data-accordion-content="accordion{{ count }}">
+                    <div class="accordion--content pb-16 hidden" data-accordion-content="accordion{{ count }}">
                         {{ block.settings.content }}
                     </div>
-                </div>
+                </faq-accordion>
             {%- endfor -%}
         </div>
     </div>
