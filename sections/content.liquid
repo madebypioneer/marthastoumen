@@ -19,7 +19,7 @@
                     </div>
                 {%- when 'heading' -%}
                     <div class="w-full large text-center">
-                        <div class="m-auto" style="max-width: 800px;">
+                        <div class="m-auto" style="max-width: 960px;">
                             <h2 class="h1">{{ block.settings.heading }}</h2>
                         </div>
                     </div>
@@ -28,9 +28,6 @@
                         <div class="m-auto" style="max-width: 800px;">
                             {{ block.settings.text }}
                         </div>
-                        {% comment %}<h2>{% endcomment %}
-                            {% comment %}{{ section.settings.heading }}{% endcomment %}
-                        {% comment %}</h2>{% endcomment %}
                     </div>
                 {%- when 'text' -%}
                     <div class="w-full text-center mt-16">
