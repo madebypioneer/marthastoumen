@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "163009138975db7cb1": {
+      "type": "rich-text",
+      "blocks": {
+        "163009138975db7cb1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "join the 12 bottle club",
+            "heading_size": "medium"
+          }
+        },
+        "163009138975db7cb1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Donec venenatis vulputate lorem. Sed lectus.<br\/><br\/>In ut quam vitae odio lacinia tincidunt. In consectetuer turpis ut velit.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163009138975db7cb1-0",
+        "163009138975db7cb1-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "162999314124ce8ff2": {
+      "type": "bloom-club-signup-section-v2",
+      "settings": {
+        "heading": "Member information",
+        "club_level": "club-582",
+        "welcome_page_path": "\/pages\/12-bottle-welcome",
+        "button_label": "Join the 12 Bottle Club",
+        "button_loading_label": "Creating your account...",
+        "apply_default_form_styles": false,
+        "button_size": "medium",
+        "button_border_radius": 0,
+        "input_size": "medium",
+        "input_border_radius": 0,
+        "content_max_width": 1200,
+        "show_password": true,
+        "show_dob": true,
+        "show_credit_card": true,
+        "show_delivery": true
+      }
+    }
+  },
+  "order": [
+    "163009138975db7cb1",
+    "162999314124ce8ff2"
+  ]
+}
