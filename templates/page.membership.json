@@ -21,7 +21,7 @@
             "link_one_text": "Sign In",
             "link_one_page": "\/account",
             "link_two_text": "Join Now",
-            "link_two_page": "shopify:\/\/pages\/6-bottle-membership-signup"
+            "link_two_page": "\/pages\/membership\/#membershipSection"
           }
         }
       },
