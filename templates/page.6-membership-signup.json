@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "1630091207afb909c8": {
+      "type": "rich-text",
+      "blocks": {
+        "1630091207afb909c8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "join the 6 bottle club",
+            "heading_size": "medium"
+          }
+        },
+        "1630091207afb909c8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sed libero. Fusce ac felis sit amet ligula pharetra condimentum. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1630091207afb909c8-0",
+        "1630091207afb909c8-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "162999314124ce8ff2": {
+      "type": "bloom-club-signup-section-v2",
+      "settings": {
+        "heading": "Member information",
+        "club_level": "club-582",
+        "welcome_page_path": "\/pages\/6-bottle-welcome",
+        "button_label": "Join the 6 Bottle Club",
+        "button_loading_label": "Creating your account...",
+        "apply_default_form_styles": false,
+        "button_size": "medium",
+        "button_border_radius": 0,
+        "input_size": "medium",
+        "input_border_radius": 0,
+        "content_max_width": 1200,
+        "show_password": true,
+        "show_dob": true,
+        "show_credit_card": true,
+        "show_delivery": true
+      }
+    }
+  },
+  "order": [
+    "1630091207afb909c8",
+    "162999314124ce8ff2"
+  ]
+}

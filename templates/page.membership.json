@@ -21,7 +21,7 @@
             "link_one_text": "Sign In",
             "link_one_page": "\/account",
             "link_two_text": "Join Now",
-            "link_two_page": "shopify:\/\/pages\/membership-signup"
+            "link_two_page": "shopify:\/\/pages\/6-bottle-membership-signup"
           }
         }
       },
@@ -59,7 +59,7 @@
             "club_price": "$195 - $275 per shipment",
             "text_align": "center",
             "to_join": true,
-            "to_join_url": "\/pages\/membership-signup",
+            "to_join_url": "\/pages\/6-bottle-membership-signup",
             "to_checkout": false,
             "to_cart": false,
             "join_button_label": "Join the 6 Bottle Club"
@@ -78,7 +78,7 @@
             "club_price": "$380 - $550 per shipment",
             "text_align": "center",
             "to_join": true,
-            "to_join_url": "\/pages\/membership-signup",
+            "to_join_url": "\/pages\/12-bottle-membership-signup",
             "to_checkout": false,
             "to_cart": false,
             "join_button_label": "Join the 12 Bottle Club"

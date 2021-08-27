@@ -89,7 +89,7 @@
           "type": "buttons",
           "settings": {
             "link_one_text": "Join Now",
-            "link_one_page": "shopify:\/\/pages\/membership-signup",
+            "link_one_page": "shopify:\/\/pages\/6-bottle-membership-signup",
             "link_two_text": "Sign In",
             "link_two_page": "shopify:\/\/pages\/team"
           }

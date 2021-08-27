@@ -96,7 +96,7 @@
           "type": "button",
           "settings": {
             "button_label": "Join Now",
-            "button_link": "shopify:\/\/pages\/membership-signup"
+            "button_link": "shopify:\/\/pages\/6-bottle-membership-signup"
           }
         }
       },
