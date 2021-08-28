@@ -1,46 +1,54 @@
 {% if product %}
-    <div class="flex flex-wrap p-32 md:p-80 md:mb-64 justify-center">
-        <div class="w-full md:w-1/3 p-32 pb-0 md:pb-32">
-            <h2 class="h1 mt-0 mb-16">
-                Specifications
-            </h2>
-            {{ section.settings.content }}
-        </div>
-        <div class="w-full md:w-2/3 p-32">
-            <div class="flex flex-wrap">
-                <div class="w-full md:w-1/2">
-                    {% if product.metafields.custom_fields.vintage %}
-                        <p><strong>Vintage:</strong> {{ product.metafields.custom_fields.vintage }}</p>
-                    {% endif %}
+    {% if product.metafields.custom_fields.vintage or
+          product.metafields.custom_fields.alcohol_by_volume or
+          product.metafields.custom_fields.region or
+          product.metafields.custom_fields.vinification_notes or
+          product.metafields.custom_fields.serving_temp or
+          product.metafields.custom_fields.at_bottling
+    %}
+        <div class="flex flex-wrap p-32 md:p-80 md:mb-64 justify-center">
+            <div class="w-full md:w-1/3 p-32 pb-0 md:pb-32">
+                <h2 class="h1 mt-0 mb-16">
+                    Specifications
+                </h2>
+                {{ section.settings.content }}
+            </div>
+            <div class="w-full md:w-2/3 p-32">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2">
+                        {% if product.metafields.custom_fields.vintage %}
+                            <p><strong>Vintage:</strong> {{ product.metafields.custom_fields.vintage }}</p>
+                        {% endif %}
 
-                    {% if product.metafields.custom_fields.alcohol_by_volume %}
-                        <p><strong>Alcohol:</strong> {{ product.metafields.custom_fields.alcohol_by_volume }}</p>
-                    {% endif %}
+                        {% if product.metafields.custom_fields.alcohol_by_volume %}
+                            <p><strong>Alcohol:</strong> {{ product.metafields.custom_fields.alcohol_by_volume }}</p>
+                        {% endif %}
 
-                    {% if product.metafields.custom_fields.region %}
-                        <p><strong>Region:</strong></p>
-                        {{ product.metafields.custom_fields.region }}
-                    {% endif %}
-                </div>
-                <div class="w-full md:w-1/2">
-                    {% if product.metafields.custom_fields.vinification_notes %}
-                        <p><strong>Vinification Notes:</strong></p>
-                        {{ product.metafields.custom_fields.vinification_notes }}
-                    {% endif %}
+                        {% if product.metafields.custom_fields.region %}
+                            <p><strong>Region:</strong></p>
+                            {{ product.metafields.custom_fields.region }}
+                        {% endif %}
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        {% if product.metafields.custom_fields.vinification_notes %}
+                            <p><strong>Vinification Notes:</strong></p>
+                            {{ product.metafields.custom_fields.vinification_notes }}
+                        {% endif %}
 
-                    {% if product.metafields.custom_fields.serving_temp %}
-                        <p><strong>Serving Temp:</strong></p>
-                        {{ product.metafields.custom_fields.serving_temp }}
-                    {% endif %}
+                        {% if product.metafields.custom_fields.serving_temp %}
+                            <p><strong>Serving Temp:</strong></p>
+                            {{ product.metafields.custom_fields.serving_temp }}
+                        {% endif %}
 
-                    {% if product.metafields.custom_fields.at_bottling %}
-                        <p><strong>At Bottling:</strong></p>
-                        {{ product.metafields.custom_fields.at_bottling }}
-                    {% endif %}
+                        {% if product.metafields.custom_fields.at_bottling %}
+                            <p><strong>At Bottling:</strong></p>
+                            {{ product.metafields.custom_fields.at_bottling }}
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    {% endif %}
 {% endif %}
 
 {% schema %}
