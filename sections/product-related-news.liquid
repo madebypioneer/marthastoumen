@@ -1,0 +1,59 @@
+{{ 'section-related-news.css' | asset_url | stylesheet_tag }}
+
+{% if product and product.metafields.custom_fields.related_news_article != blank %}
+    <div class="flex flex-wrap p-32 md:p-72 items-center text-center bg-earth text-fullMoon section-related-news">
+        {% assign article_blog_handle = product.metafields.custom_fields.related_news_article | split: "." %}
+        {% for article in blogs[article_blog_handle[0]].articles %}
+            {% if article.handle contains article_blog_handle[1] %}
+                <div class="w-full">
+                    <div class="flex flex-wrap">
+                        <div class="w-full">
+                            <div class="mx-auto" style="max-width: 900px;">
+                                {% if article.metafields.custom_fields.link %}
+                                    <a href="{{ article.metafields.custom_fields.link }}" target="_blank" rel="noopener noreferrer">
+                                {% endif %}
+                                    {{ article.content }}
+                                {% if article.metafields.custom_fields.link %}
+                                    </a>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% if article.metafields.custom_fields.light_logo %}
+                            <div class="w-full mt-24">
+                                {% if article.metafields.custom_fields.link %}
+                                    <a href="{{ article.metafields.custom_fields.link }}" target="_blank" rel="noopener noreferrer">
+                                {% endif %}
+                                    <img src="{{ article.metafields.custom_fields.light_logo }}" alt="" class="mx-auto" style="max-height: 30px; width: auto;">
+                                {% if article.metafields.custom_fields.link %}
+                                    </a>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    </div>
+
+                </div>
+                {% break %}
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% schema %}
+{
+    "name": "Related News",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "default": "Get Down With",
+            "label": "Heading"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Related News"
+        }
+    ]
+}
+{% endschema %}
