@@ -14,35 +14,56 @@
                 {{ section.settings.content }}
             </div>
             <div class="w-full md:w-2/3 p-32">
-                <div class="flex flex-wrap">
-                    <div class="w-full md:w-1/2">
+                <div class="flex flex-wrap -mx-32">
+                    <div class="w-full md:w-1/2 px-32">
                         {% if product.metafields.custom_fields.vintage %}
-                            <p><strong>Vintage:</strong> {{ product.metafields.custom_fields.vintage }}</p>
+                            <div class="spec-inline">
+                                <p><strong>Vintage:</strong></p>
+                                <p>{{ product.metafields.custom_fields.vintage }}</p>
+                            </div>
                         {% endif %}
 
                         {% if product.metafields.custom_fields.alcohol_by_volume %}
-                            <p><strong>Alcohol:</strong> {{ product.metafields.custom_fields.alcohol_by_volume }}</p>
+                            <div class="spec-inline">
+                                <p><strong>Alcohol:</strong></p>
+                                <p>{{ product.metafields.custom_fields.alcohol_by_volume }}</p>
+                            </div>
                         {% endif %}
 
-                        {% if product.metafields.custom_fields.region %}
-                            <p><strong>Region:</strong></p>
-                            {{ product.metafields.custom_fields.region }}
+                        {% if product.metafields.custom_fields.varietal != blank %}
+                            <div class="spec-inline">
+                                <p><strong>Varietal:</strong></p>
+                                <p>{% for item in product.metafields.custom_fields.varietal %}{{ item.varietal }}{% if forloop.last != true %}, {% endif %}{% endfor %}</p>
+                            </div>
+                        {% endif %}
+
+                        {% if product.metafields.custom_fields.region_description %}
+                            <div class="spec-inline">
+                                <p><strong>Region:</strong></p>
+                                {{ product.metafields.custom_fields.region_description | replace: ' ', ' ' }}
+                            </div>
                         {% endif %}
                     </div>
-                    <div class="w-full md:w-1/2">
+                    <div class="w-full md:w-1/2 px-32">
                         {% if product.metafields.custom_fields.vinification_notes %}
-                            <p><strong>Vinification Notes:</strong></p>
-                            {{ product.metafields.custom_fields.vinification_notes }}
+                            <div class="spec-inline">
+                                <p><strong>Vinification Notes:</strong></p>
+                                {{ product.metafields.custom_fields.vinification_notes | replace: ' ', ' ' }}
+                            </div>
                         {% endif %}
 
                         {% if product.metafields.custom_fields.serving_temp %}
-                            <p><strong>Serving Temp:</strong></p>
-                            {{ product.metafields.custom_fields.serving_temp }}
+                            <div class="spec-inline">
+                                <p><strong>Serving Temp:</strong></p>
+                                {{ product.metafields.custom_fields.serving_temp | replace: ' ', ' ' }}
+                            </div>
                         {% endif %}
 
                         {% if product.metafields.custom_fields.at_bottling %}
-                            <p><strong>At Bottling:</strong></p>
-                            {{ product.metafields.custom_fields.at_bottling }}
+                            <div class="spec-inline">
+                                <p><strong>At Bottling:</strong></p>
+                                {{ product.metafields.custom_fields.at_bottling | replace: ' ', ' ' }}
+                            </div>
                         {% endif %}
                     </div>
                 </div>

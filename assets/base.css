@@ -618,6 +618,14 @@ blockquote {
   letter-spacing: 0.04rem;
 }
 
+.spec-inline p {
+  display: inline;
+}
+
+.spec-inline:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
 .color-foreground {
   color: rgb(var(--color-foreground));
 }
