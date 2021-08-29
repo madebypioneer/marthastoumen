@@ -48,11 +48,6 @@
           "type": "description",
           "settings": {
           }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -63,12 +58,40 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share"
+        "description"
       ],
       "settings": {
         "enable_sticky_info": true,
         "enable_video_looping": false
+      }
+    },
+    "163019601858fd3f1a": {
+      "type": "product-related-news",
+      "settings": {
+        "heading": "Get Down With"
+      }
+    },
+    "1630196035996deaae": {
+      "type": "product-marthas-notes",
+      "settings": {
+      }
+    },
+    "163019605020435d5e": {
+      "type": "product-specifications",
+      "settings": {
+        "content": "<p>Want to dig deeper? Head this way!<\/p>"
+      }
+    },
+    "16301960799bced8b6": {
+      "type": "product-gallery",
+      "settings": {
+      }
+    },
+    "163019609541e24af1": {
+      "type": "spotify",
+      "settings": {
+        "heading": "Get Down With",
+        "text": "Check out our playlist pairings curated in partnership with"
       }
     },
     "162994917204089a3d": {
@@ -127,6 +150,11 @@
   },
   "order": [
     "main",
+    "163019601858fd3f1a",
+    "1630196035996deaae",
+    "163019605020435d5e",
+    "16301960799bced8b6",
+    "163019609541e24af1",
     "162994917204089a3d",
     "product-recommendations"
   ]
