@@ -1,0 +1,16 @@
+.featured-press .content {
+    font-family: "Courier Prime Sans", monospace;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.featured-press .featured-press-card {
+    border: 1px solid;
+    display: grid !important;
+    grid-template-rows: 44px auto 80px;
+    height: 100%;
+}
+
+.featured-press .card:not(:first-of-type) {
+    border-width: 1px 1px 1px 0;
+}

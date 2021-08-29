@@ -1,132 +1,106 @@
-{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
-{{ 'component-card.css' | asset_url | stylesheet_tag }}
-{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-press.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="{{ 'section-main-press.js' | asset_url }}"></script>
+
 
 <div class="main-blog mx-auto" style="max-width: 1680px;">
     <div class="flex flex-wrap md:p-32">
-        <div class="w-full md:w-1/4 p-32">
-            <div class="mb-48">
-                <h1>{{ blog.title | escape }}</h1>
-                {{ section.settings.blog_description }}
-            </div>
-
-            {% if section.settings.show_featured %}
-                <div class="{% if section.settings.show_categories %}mb-88{% endif %}">
-                    <h3 class="clifton">Featured</h3>
-                    <div class="flex flex-wrap">
-                        {% assign featured = 0 %}
-                        {% for article in blog.articles %}
-                            {% if article.metafields.custom_fields.featured and featured < 4 %}
-                                {% assign featured = featured | plus: 1 %}
-                                <a href="{{ shop.url }}{{ article.url }}" class="w-full mask-image featured-blog-card">
-                                    <div class="flex {% if forloop.index == 1 or forloop.index == 3 %}lg:flex-row-reverse {% endif %}-mx-16">
-                                        <div class="w-1/2 p-16">
-                                            <div class="aspect-w-1 aspect-h-1 imageMask image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-                                            >
-                                                <img srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
-                    {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
-                    {%- if article.image.src.width >= 533 -%}{{ article.image.src | img_url: '533x' }} 533w,{%- endif -%}
-                    {%- if article.image.src.width >= 720 -%}{{ article.image.src | img_url: '720x' }} 720w,{%- endif -%}
-                    {%- if article.image.src.width >= 940 -%}{{ article.image.src | img_url: '940x' }} 940w,{%- endif -%}
-                    {%- if article.image.src.width >= 1066 -%}{{ article.image.src | img_url: '1066x' }} 1066w{%- endif -%}"
-                                                     src="{{ article.image.src | img_url: '533x' }}"
-                                                     sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                                                     alt="{{ article.image.src.alt | escape }}"
-                                                     width="{{ article.image.width }}"
-                                                     height="{{ article.image.height }}"
-                                                     loading="lazy"
-                                                     class="motion-reduce"
-                                                >
-                                            </div>
-                                        </div>
-
-                                        <div class="w-1/2 p-16">
-                        <span class="blog-date">
-                          {{- article.published_at | date: '%B %d, %Y' -}}
-                        </span>
-
-                                            <h2 class="featured" id="Article-{{ article.id }}">
-                                                {{ article.title | escape }}
-                                            </h2>
-                                        </div>
-                                    </div>
-                                </a>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
-                </div>
-            {% endif %}
-
-            {% if section.settings.show_categories %}
-                <h3 class="clifton">Categories</h3>
-                <ul class="categories">
-                    {% for tag in blog.tags %}
-                        <li>
-                            <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag.title }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
+        <div class="w-full p-32 text-center">
+                <h1>{% if section.settings.heading %}{{ sectin.settings.heading }}{% else %}{{ blog.title | escape }}{% endif %}</h1>
         </div>
-        <div class="w-full md:w-3/4 p-32">
-            {%- paginate blog.articles by 6 -%}
-                <div class="flex flex-wrap">
-                    {%- for article in blog.articles -%}
-                        {% comment %}If it's count 1 / 5 / 9 Use side by side{% endcomment %}
-                        {% if forloop.index == 1 or forloop.index == 5 or forloop.index == 9 %}
-                            <div class="w-full large-card py-96{% if forloop.first %} pt-0{% endif %}">
-                                <div class="flex flex-wrap lg:flex-row-reverse">
-                                    <div class="md:w-1/2 p-32 w-full">
-                                        <div class="aspect-w-1 aspect-h-1 imageMask image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-                                        >
-                                            <img srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
-                  {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
-                  {%- if article.image.src.width >= 533 -%}{{ article.image.src | img_url: '533x' }} 533w,{%- endif -%}
-                  {%- if article.image.src.width >= 720 -%}{{ article.image.src | img_url: '720x' }} 720w,{%- endif -%}
-                  {%- if article.image.src.width >= 940 -%}{{ article.image.src | img_url: '940x' }} 940w,{%- endif -%}
-                  {%- if article.image.src.width >= 1066 -%}{{ article.image.src | img_url: '1066x' }} 1066w{%- endif -%}"
-                                                 src="{{ article.image.src | img_url: '533x' }}"
-                                                 sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                                                 alt="{{ article.image.src.alt | escape }}"
-                                                 width="{{ article.image.width }}"
-                                                 height="{{ article.image.height }}"
-                                                 loading="lazy"
-                                                 class="motion-reduce"
+
+        {% if section.settings.show_featured %}
+            <div class="w-full">
+                <div class="flex featured-press">
+                    {% for article in blog.articles %}
+                        {% if article.metafields.custom_fields.featured %}
+                            <div class="flex w-full md:w-1/2">
+                                <div class="featured-press-card py-56 px-64">
+                                    <div>
+                                        {% if article.metafields.custom_fields.dark_logo %}
+                                            <img src="{{ article.metafields.custom_fields.dark_logo }}"
+                                                 style="height: 20px; width: auto;"
+                                                 class="mb-24"
+                                                 alt=""
                                             >
-                                        </div>
+                                        {% endif %}
                                     </div>
 
-                                    <div class="md:w-1/2 p-32 w-full">
-                      <span class="date mb-8">
-                        {{- article.published_at | date: '%B %d, %Y' -}}
-                      </span>
-
-                                        <h2 class="mb-16" id="Article-{{ article.id }}">
-                                            {{ article.title | escape }}
-                                        </h2>
-                                        {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-                                            <p class="article-card__excerpt rte-width">
-                                                {%- if article.excerpt.size > 0 -%}
-                                                    {{ article.excerpt | strip_html | truncatewords: 30 }}
-                                                {%- else -%}
-                                                    {{ article.content | strip_html | truncatewords: 30 }}
-                                                {%- endif -%}
-                                            </p>
-                                        {%- endif -%}
-                                        <p class="mt-40">
-                                            <a href="{{ shop.url }}{{ article.url }}" class="button--text">
-                                                Read More
-                                                <span class="arrow"></span>
-                                            </a>
-                                        </p>
+                                    <div class="content">
+                                        {{ article.content }}
                                     </div>
+
+                                    <p class="mt-16">
+                                        <a href="{{ shop.url }}{{ article.url }}" class="button--text button--text-dark" target="_blank">
+                                            Read The Full Article
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
-                        {% else %}
-                            <div class="w-full md:w-1/3 p-32">
-                                {%- render 'article-card', article: article, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
-                            </div>
                         {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="flex mt-40">
+                    <div class="w-1/2 text-right px-32">
+                        <button class="slick-prev">
+                            <svg width="121" height="21" viewBox="0 0 121 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.03932 1.04243L0.6875 10.7024L8.03932 20.3624C8.10571 20.4764 8.19007 20.5704 8.28667 20.6381C8.38327 20.7057 8.48987 20.7454 8.59924 20.7546C8.70862 20.7637 8.81821 20.742 8.92061 20.6909C9.023 20.6399 9.11581 20.5606 9.19275 20.4586C9.26969 20.3566 9.32896 20.2342 9.36656 20.0996C9.40415 19.965 9.41919 19.8215 9.41065 19.6787C9.40211 19.5358 9.37019 19.3971 9.31706 19.2718C9.26393 19.1465 9.19082 19.0376 9.10269 18.9524L3.60222 11.7024C3.60222 11.7024 120.033 11.7024 120.236 11.7024C120.439 11.7024 120.616 11.6038 120.777 11.4095C120.953 11.1961 121.001 10.7024 121.001 10.7024C121.001 10.7024 120.92 10.1829 120.777 9.99533C120.634 9.80779 120.439 9.70243 120.236 9.70243L3.60222 9.70243L9.10269 2.45243C9.24573 2.26413 9.32569 2.00926 9.32497 1.7439C9.32425 1.47853 9.24292 1.22441 9.09887 1.03743C8.95481 0.850455 8.75983 0.745938 8.55682 0.746876C8.35382 0.747814 8.15941 0.85413 8.01637 1.04243L8.03932 1.04243Z" fill="#30292F"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="w-1/2 px-32">
+                        <button class="slick-next">
+                            <svg width="121" height="21" viewBox="0 0 121 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M112.961 20.461L120.312 10.801L112.961 1.14098C112.894 1.02701 112.81 0.933016 112.713 0.865363C112.617 0.797709 112.51 0.757977 112.401 0.748855C112.291 0.739733 112.182 0.761436 112.079 0.812493C111.977 0.86355 111.884 0.942769 111.807 1.04479C111.73 1.14681 111.671 1.26924 111.633 1.40381C111.596 1.53837 111.581 1.68193 111.589 1.82475C111.598 1.96757 111.63 2.10633 111.683 2.23162C111.736 2.35692 111.809 2.46583 111.897 2.55098L117.398 9.80099C117.398 9.80099 0.966873 9.80098 0.763977 9.80098C0.561081 9.80098 0.383629 9.89965 0.223022 10.0939C0.0465619 10.3073 -0.00103793 10.801 -0.00103793 10.801C-0.00103793 10.801 0.0795513 11.3206 0.223022 11.5081C0.366493 11.6956 0.561081 11.801 0.763977 11.801L117.398 11.801L111.897 19.051C111.754 19.2393 111.674 19.4942 111.675 19.7595C111.676 20.0249 111.757 20.279 111.901 20.466C112.045 20.653 112.24 20.7575 112.443 20.7565C112.646 20.7556 112.841 20.6493 112.984 20.461L112.961 20.461Z" fill="#30292F"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+        <div class="w-full pt-96">
+            <div class="flex flex-wrap">
+
+
+        <div class="w-full md:w-1/4 p-32">
+            <ul class="categories">
+                {% for tag in blog.tags %}
+                    <li class="py-24">
+                        <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="h4">{{ tag.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="w-full md:w-3/4 p-32">
+            {%- paginate blog.articles by 12 -%}
+                <div class="flex flex-wrap">
+                    {%- for article in blog.articles -%}
+                        <div class="w-full py-24">
+                            <div class="flex flex-wrap">
+                                <div class="w-full">
+                                    {% if article.metafields.custom_fields.link %}
+                                        <a href="{{ article.metafields.custom_fields.link }}" class="block" target="_blank">
+                                    {% endif %}
+                                        <p class="mb-8">
+                                            {{ article.title | escape }}
+                                        </p>
+                                        {% if article.metafields.custom_fields.color_logo %}
+                                        <img src="{{ article.metafields.custom_fields.color_logo }}"
+                                             style="height: 16px; width: auto;"
+                                             loading="lazy"
+                                        >
+                                        {% endif %}
+                                    {% if article.metafields.custom_fields.link %}
+                                        </a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
                     {%- endfor -%}
                 </div>
 
@@ -137,16 +111,8 @@
         </div>
     </div>
 </div>
-<svg
-        width="0"
-        height="0"
->
-    <defs>
-        <clipPath id="circleMask" clipPathUnits="objectBoundingBox">
-            <path transform="scale(0.00164,0.0017)" d="M0.966081911,292.946119 C-1.03978709,246.864119 -1.81133709,198.963119 18.4652129,157.403119 C38.7427129,115.841119 77.1762129,86.5607186 114.931013,59.3571186 C151.739013,32.8363186 190.794013,5.47866859 236.102013,0.589508591 C280.365013,-4.18698141 320.926013,21.2983186 363.987013,32.4813186 C405.728013,43.3217186 450.892013,42.9617186 487.305013,65.8284186 C525.015013,89.5097186 554.531013,124.830119 574.149013,164.459119 C593.811013,204.177119 601.575013,248.781119 599.739013,292.946119 C597.937013,336.298119 581.441013,376.766119 563.674013,416.455119 C545.504013,457.045119 528.799013,500.250119 494.232013,528.635119 C459.481013,557.171119 413.717013,568.107119 369.240013,576.117119 C325.841013,583.932119 281.753013,583.531119 238.560013,574.675119 C194.899013,565.724119 152.598013,550.449119 116.704013,524.341119 C80.1857129,497.779119 50.1039129,463.138119 30.0261129,422.997119 C9.86247291,382.684119 2.92108291,337.860119 0.966081911,292.946119 Z"></path>
-        </clipPath>
-    </defs>
-</svg>
+    </div>
+</div>
 
 {% schema %}
 {

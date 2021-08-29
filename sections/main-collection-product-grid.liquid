@@ -430,7 +430,7 @@
   {%- endif -%}
 </div>
 
-<div id="CollectionProductGrid">
+<div id="CollectionProductGrid">testing
   {%- paginate collection.products by section.settings.products_per_page -%}
     {%- if collection.products.size == 0 -%}
       <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
@@ -467,13 +467,9 @@
           {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
         </p>
 
-        <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="
-          grid grid--2-col negative-margin product-grid
-          {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
-            {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
-          {% endif %}">
+        <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="flex flex-wrap -mx-32">
           {%- for product in collection.products -%}
-            <li class="grid__item">
+            <li class="w-full md:w-1/2 lg:w-1/3 p-32">
               {% render 'product-card',
                 product_card_product: product,
                 media_size: section.settings.image_ratio,
