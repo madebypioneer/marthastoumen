@@ -25,20 +25,30 @@
       </div>
     </div>
     <div class="w-full md:w-1/2 p-64">
-      <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
+      <div id="ProductInfo-{{ section.id }}" class="product__info-container">
+        <div class="tags mb-8 uppercase">
+          <p><a href="/collections/all">ALL WINES</a>  •  {% for collection in product.collections %}{% if forloop.first %}<a href="{{ collection.url }}">{{ collection.title }}</a>{% endif %}  •  {% endfor %}{{ product.title | escape }}</p>
+        </div>
+
+        <h1 class="mb-8">
+          {{ product.title | escape }}
+        </h1>
+
+        <div class="composition mb-16">
+          <p>{% if product.metafields.custom_fields.varietal != blank %}{% for item in product.metafields.custom_fields.varietal %}{{ item.varietal }}{% if forloop.last != true %}, {% endif %}{% endfor %}{% if product.metafields.custom_fields.region_single_line %} · {% endif %}{% endif %}{% if product.metafields.custom_fields.region_single_line %}{{ product.metafields.custom_fields.region_single_line }}{% endif %}</p>
+        </div>
+
+        {% if product.description %}
+          <div class="mb-16">
+            {{ product.description }}
+          </div>
+        {% endif %}
+
+        <p class="subtext mb-32">{% if product.metafields.custom_fields.volume %}{{ product.metafields.custom_fields.volume }}{% if product.metafields.custom_fields.alcohol_by_volume %}, {% endif %}{% endif %}{% if product.metafields.custom_fields.alcohol_by_volume %}{{ product.metafields.custom_fields.alcohol_by_volume }} ABV (alcohol by volume){% endif %}</p>
+
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
         {%- for block in section.blocks -%}
           {%- case block.type -%}
-          {%- when '@app' -%}
-            {% render block %}
-          {%- when 'text' -%}
-            <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
-              {{- block.settings.text -}}
-            </p>
-          {%- when 'title' -%}
-            <h1 class="product__title" {{ block.shopify_attributes }}>
-              {{ product.title | escape }}
-            </h1>
           {%- when 'price' -%}
         {% if show_add_to_cart %}
             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
@@ -52,12 +62,6 @@
               {%- endform -%}
             </div>
         {% endif %}
-          {%- when 'description' -%}
-            {%- if product.description != blank -%}
-              <div class="product__description rte">
-                {{ product.description }}
-              </div>
-            {%- endif -%}
           {%- when 'collapsible_tab' -%}
             <div class="product__accordion accordion" {{ block.shopify_attributes }}>
               <details>
@@ -218,7 +222,7 @@
               </div>
             </noscript>
           {%- when 'buy_buttons' -%}
-            <div {{ block.shopify_attributes }}>
+            <div class="mb-64" {{ block.shopify_attributes }}>
               {% if show_add_to_cart %}
               <product-form class="product-form">
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
