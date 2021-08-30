@@ -2,6 +2,17 @@
   margin-bottom: 2rem;
 }
 
+.collection-nav a {
+  font-family: 'Baton Web', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.collection-nav li:not(:last-of-type) {
+  border-right: 1px solid #30292F;
+}
+
 .collection-hero--with-image {
   background-color: rgba(var(--color-foreground), 0.04);
 }
