@@ -1,5 +1,5 @@
 {% comment %}TODO: Bloom if you're going to uncomment the line below, you need to include the file{% endcomment %}
-{% comment %}{% include 'bloom' %}{% endcomment %}
+{% include 'bloom' %}
 {% comment %}theme-check-disable TemplateLength{% endcomment %}
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
 {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
@@ -17,6 +17,10 @@
   <div class="product flex flex-wrap px-32">
     <div class="w-full md:w-1/2 p-64">
       <div class="aspect-w-6 aspect-h-7">
+        
+
+        
+        
         {% if product.metafields.custom_fields.wine_type %}
           <div class="absolute top-0 right-0 z-10">
             {% case product.metafields.custom_fields.wine_type %}
@@ -67,6 +71,17 @@
           <p><a href="/collections/all">ALL WINES</a>  •  {% for collection in product.collections %}{% if forloop.first %}<a href="{{ collection.url }}">{{ collection.title }}</a>{% endif %}  •  {% endfor %}{{ product.title | escape }}</p>
         </div>
 
+        
+        
+        
+{% comment %}PRINT BLOOM VARIABLES FOR TESTIN PURPOSES. REMOVE BEFORE GOING LIVE.{% endcomment %}        
+<p style="background-color:#caae7c;"> cart: {{ show_add_to_cart }}<br>
+member: {{ is_member }}<br>
+Club only?: {{ is_club_members_only }}</p>
+
+        
+        
+        
         <h1 class="mb-8">
           {{ product.title | escape }}
         </h1>
