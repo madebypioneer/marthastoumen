@@ -18,12 +18,15 @@
     border: 1px solid #30292F;
     border-radius: 0;
     box-shadow: none;
+    padding: 12px 18px;
+    justify-content: space-around;
 }
 
 .custom-form .globo-form-app .classic-label {
     font-family: 'Gopher', sans-serif;
     font-style: normal;
     font-weight: bold;
+    margin-bottom: 10px;
     /*font-size: 10px;*/
     /*line-height: 24px;*/
 }
@@ -35,4 +38,19 @@
 .custom-form .globo-form-app.boxed-layout {
     margin: 0;
     padding: 0;
+}
+
+.custom-form .globo-form-app .globo-form-control.layout-2-column,
+.custom-form .globo-form-app .globo-form-control.layout-1-column {
+    padding: 0 16px;
+    margin-bottom: 24px;
+}
+
+.custom-form .globo-form-app .content.flex-wrap.block-container {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.custom-form .globo-form-app .footer {
+    text-align: right;
 }
