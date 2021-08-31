@@ -173,10 +173,12 @@
         {% endif %}
       </h3>
       <p>
-        {{ shop.address.company }},<br />
-        {{ shop.address.street }},<br />
-        {{ shop.address.city }}, {{ shop.address.province }}, {{ shop.address.zip }},<br />
-        {{ shop.address.country }}
+        <small>
+          {{ shop.address.company }},<br />
+          {{ shop.address.street }},<br />
+          {{ shop.address.city }}, {{ shop.address.province }}, {{ shop.address.zip }},<br />
+          {{ shop.address.country }}
+        </small>
       </p>
 
       {%- if section.settings.show_social -%}
