@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "1630422318e5127b58": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
+    "16304255066d33f782": {
+      "type": "page-with-form",
+      "settings": {
+        "full_width": false,
+        "reduce_top_spacing": true,
+        "show_social": false,
+        "social_header": "",
+        "show_page_title": true,
+        "show_content": true,
+        "show_contact": true,
+        "heading": "We'd love to hear from you!",
+        "form_shortcode": "{formbuilder:51727}",
+        "layout": "text_first"
+      }
+    }
+  },
+  "order": [
+    "1630422318e5127b58",
+    "16304255066d33f782"
+  ]
+}
