@@ -1291,6 +1291,7 @@ deferred-media {
   border: 1px solid;
   border-radius: 8px;
   background: transparent;
+  background-color: transparent;
   /*text-transform: capitalize;*/
   /*border-color: rgba(var(--color-button), var(--alpha-button-background));*/
   border-color: #000000;
