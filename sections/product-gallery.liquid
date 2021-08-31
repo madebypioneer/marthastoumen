@@ -2,15 +2,17 @@
     <div class="flex flex-wrap p-32 md:p-64 md:mb-64 -mx-48 justify-center">
         {%- for media in product.media -%}
             {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-                <div class="w-full md:w-1/3 p-48">
-                    <div class="aspect-w-3 aspect-h-4">
-                        <img
-                            src="{{ media | img_url: '450x' }}"
-                            class="w-full h-full object-center object-cover lg:w-full lg:h-full"
-                            alt=""
-                        >
+                {% unless forloop.first %}
+                    <div class="w-full md:w-1/3 p-48">
+                        <div class="aspect-w-3 aspect-h-4">
+                            <img
+                                src="{{ media | img_url: '450x' }}"
+                                class="w-full h-full object-center object-cover lg:w-full lg:h-full"
+                                alt=""
+                            >
+                        </div>
                     </div>
-                </div>
+                {% endunless %}
             {%- endunless -%}
         {%- endfor -%}
     </div>
