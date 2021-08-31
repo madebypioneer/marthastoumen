@@ -16,11 +16,24 @@
             <div class="flex flex-wrap">
 
                 <div class="w-full md:w-1/4 p-32">
+                    {% for tag in blog.tags %}
+                        {% if tag.title == 'Current Releases' %}
+                            <ul class="categories mb-32">
+                                <li class="py-24">
+                                    <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="h4">{{ tag.title }}</a>
+                                </li>
+                            </ul>
+                        {% endif %}
+                    {% endfor %}
+
                     <ul class="categories">
+                        <li class="h4 uppercase mb-0">Past Releases</li>
                         {% for tag in blog.tags %}
-                            <li class="py-24">
-                                <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="h4">{{ tag.title }}</a>
-                            </li>
+                            {% if tag.title != 'Current Releases' %}
+                                <li class="py-24">
+                                    <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="h4">{{ tag.title }}</a>
+                                </li>
+                            {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
@@ -32,7 +45,7 @@
                                     <div class="flex flex-wrap">
                                         <div class="w-full">
                                                 <p class="mb-8">
-                                                    <a href="{{ article.url }}" class="block" target="_blank">
+                                                    <a href="{{ article.url }}" class="block">
                                                         {{ article.title | escape }}
                                                     </a>
                                                 </p>
