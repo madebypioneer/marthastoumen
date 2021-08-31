@@ -52,7 +52,7 @@
 }
 
 .custom-form .globo-form-app .footer {
-    text-align: right;
+    text-align: right !important;
 }
 
 .custom-form .globo-form-app .footer button.action.submit.classic-button {
