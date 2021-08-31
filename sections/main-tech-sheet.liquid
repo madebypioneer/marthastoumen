@@ -13,12 +13,14 @@
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
+{% if article.metafields.custom_fields.related_product != blank %}
+    {% assign product = all_products[article.metafields.custom_fields.related_product] %}
+{% endif %}
+
 <section>
     <div class="product flex flex-wrap px-32">
         <div class="w-full md:w-1/2 p-64">
             <div class="aspect-w-6 aspect-h-7">
-
-
 
 
                 {% if product.metafields.custom_fields.wine_type %}
