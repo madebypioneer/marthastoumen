@@ -54,3 +54,8 @@
 .custom-form .globo-form-app .footer {
     text-align: right;
 }
+
+.custom-form .globo-form-app .footer button.action.submit.classic-button {
+    color: inherit;
+    background-color: inherit;
+}
