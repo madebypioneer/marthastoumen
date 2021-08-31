@@ -55,11 +55,10 @@
           </div>
         {% endif %}
 
-        <img
-           src="{% if product.metafields.custom_fields.hero_image %}{{ product.metafields.custom_fields.hero_image }}{% else %}{{ product.media.first | image_url }}{% endif %}"
-           class="object-center object-cover"
-           alt=""
-        >
+            <img
+                    src="{{ product.media.first | image_url }}"
+                    class="object-center object-cover"
+            >
       </div>
     </div>
     <div class="w-full md:w-1/2 p-64">
