@@ -1,11 +1,5 @@
 {
   "sections": {
-    "1630422318e5127b58": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": ""
-      }
-    },
     "16304255066d33f782": {
       "type": "page-with-form",
       "settings": {
@@ -23,7 +17,6 @@
     }
   },
   "order": [
-    "1630422318e5127b58",
     "16304255066d33f782"
   ]
 }
