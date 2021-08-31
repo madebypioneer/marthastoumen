@@ -1279,7 +1279,7 @@ deferred-media {
 .button,
 .shopify-challenge__button,
 .customer button,
-.custom-form .globo-form-app .action.submit {
+.custom-form .globo-form-app .action.submit.classic-button {
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
@@ -1487,7 +1487,7 @@ deferred-media {
 .button:not([disabled]):hover,
 .shopify-challenge__button:hover,
 .customer button:hover,
-.custom-form .globo-form-app .action.submit:hover {
+.custom-form .globo-form-app .action.submit.classic-button:hover {
   /*box-shadow: 0 0 0 0.2rem rgba(var(--color-button), var(--alpha-button-border));*/
   border-color: #A46F4D;
   background-color: #A46F4D;
