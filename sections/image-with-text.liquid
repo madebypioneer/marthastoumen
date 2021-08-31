@@ -26,8 +26,8 @@
       </div>
     </div>
     <div class="{% if section.settings.thin %}md:w-1/2{% else %}md:w-3/5{% endif %} w-full overflow-hidden relative">
-      {%- if section.settings.wine_club and section.settings.rotating_image -%}
-        <img src="{{ section.settings.rotating_image | image_url }}" alt="" class="wine-club-rotating" style="position: absolute; max-width: 80%; left: -12%; z-index: 1; top: -10%; bottom: 0">
+      {%- if section.settings.wine_club -%}
+        <img src="{% if section.settings.rotating_image %}{{ section.settings.rotating_image | image_url }}{% else %}{{ 'wineclub_rotating_love.gif' | asset_url }}{% endif %}" alt="" class="wine-club-rotating" style="position: absolute; max-width: 80%; left: -12%; z-index: 1; top: -10%; bottom: 0">
       {% endif %}
       <div class="{% if section.settings.mask %}image{% if section.settings.thin %}Thin{% endif %} {% endif %}{% if section.settings.thin %}aspect-w-3 aspect-h-4 md:aspect-h-1{% else %}aspect-w-3 aspect-h-4 md:aspect-h-2{% endif %} image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
       >
