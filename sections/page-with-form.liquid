@@ -3,6 +3,7 @@
 
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'custom-form.css' | asset_url |  stylesheet_tag }}
 
 <div class="flex flex-wrap{% if section.settings.layout == 'form_first' %} lg:flex-row-reverse{% endif %}">
     <div class="{% if section.settings.full_width %}w-full{% else %}w-full md:w-1/3{% endif %}{% if section.settings.reduce_top_spacing %} px-32 md:px-64 pb-32 md:pb-64{% else %} p-32 md:p-64{% endif %}">
@@ -52,17 +53,17 @@
                 </div>
             {%- endif -%}
         {% endif %}
-        {% if section.settings.show_content and section.settings.form_shortcode %}
+        {% if section.settings.show_content %}
             <div class="rte">
-                {{ section.settings.form_shortcode }}
+                {{ page.content }}
             </div>
         {% endif %}
     </div>
 
     {% if section.settings.show_contact %}
-        <div class="w-full md:w-2/3 contact {% if section.settings.reduce_top_spacing %} px-32 md:px-64 pt-24 md:pt-0 pb-32 md:pb-64{% else %}p-32 md:p-64{% endif %}">
+        <div class="w-full md:w-2/3 contact custom-form {% if section.settings.reduce_top_spacing %} px-32 md:px-64 pt-24 md:pt-0 pb-32 md:pb-64{% else %}p-32 md:p-64{% endif %}">
             <h4 class="mb-16">{{ section.settings.heading | escape }}</h4>
-            {% comment %}TODO: Shortcode for forms{% endcomment %}
+            {{ section.settings.form_shortcode }}
         </div>
     {% endif %}
 
@@ -138,6 +139,11 @@
             "default": "form_first",
             "label": "t:sections.image-with-text.settings.layout.label",
             "info": "Text first is the default mobile layout."
+        }
+    ],
+    "presets": [
+        {
+            "name": "Page with Form"
         }
     ]
 }

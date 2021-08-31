@@ -1,0 +1,38 @@
+.custom-form .globo-form-app .boxed-layout {
+    width: 100%;
+    background: transparent;
+}
+
+.globo-form-app {
+    background-color: transparent !important;
+    max-width: 100% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.globo-form-app input,
+.custom-form .globo-form-app .classic-input,
+.custom-form .globo-form-app .classic-input:active,
+.custom-form .globo-form-app .classic-input:focus {
+    background-color: transparent;
+    border: 1px solid #30292F;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.custom-form .globo-form-app .classic-label {
+    font-family: 'Gopher', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    /*font-size: 10px;*/
+    /*line-height: 24px;*/
+}
+
+.custom-form h3.title.globo-heading {
+   margin-bottom: 16px;
+}
+
+.custom-form .globo-form-app.boxed-layout {
+    margin: 0;
+    padding: 0;
+}
