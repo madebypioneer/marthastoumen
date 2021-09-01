@@ -140,8 +140,8 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "You may also like",
-        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla venenatis pretium laoreet aliquam sit feugiat pellentesque ac tellus. <\/p>"
+        "heading": "Keep Exploring",
+        "content": "<p>There are no wrong turns when it comes to expanding your palate, just enjoy!<\/p>"
       }
     }
   },

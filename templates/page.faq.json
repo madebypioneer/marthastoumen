@@ -168,7 +168,7 @@
           "type": "faq",
           "settings": {
             "heading": "How do I select which wines are in my wine club shipment?",
-            "content": "<p>Only 12 bottle club members may customize their wine club shipment. 6 bottle club members receive one bottle of each new release in their shipment. <\/p>"
+            "content": "<p>After <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\"><span style=\"text-decoration:underline\">logging into your account<\/span><\/a>, go to Memberships &gt; View my Memberships to <strong>Add or edit wine options<\/strong>. <\/p><p>Only 12 bottle club members may customize their wine club shipment. 6 bottle club members receive one bottle of each new release in their shipment but have the option to add additional bottles to their club shipment.  <\/p><p>Under <strong>Add or edit wine options<\/strong>, scroll down to <strong>Looking to add a few more bottles to your shipment?<\/strong> and add whichever other bottles you'd like! As a club member with $25 flat rate shipping on all orders, you can add any number of bottles for no additional shipping cost.<\/p>"
           }
         },
         "9482537e-3d82-4749-908e-b6853584156f": {
@@ -182,14 +182,14 @@
           "type": "faq",
           "settings": {
             "heading": "How do I place my membership on hold or cancel?",
-            "content": "<p>Please email Claire at <a href=\"mailto:info@marthastoumen.com\">info@marthastoumen.com<\/a> and she’ll put your membership on hold until a future date, or cancel your membership.<\/p>"
+            "content": "<p>There is no way to change this in your account. Please email Claire at <a href=\"mailto:info@marthastoumen.com\">info@marthastoumen.com<\/a> and she’ll put your membership on hold until a future date, or cancel your membership.<\/p>"
           }
         },
         "de5098d7-58f2-4405-a9d1-deb86a48d068": {
           "type": "faq",
           "settings": {
             "heading": "Where can I find my available allocations?",
-            "content": "<p>TODO<\/p>"
+            "content": "<p>Once you're logged into your wine club account, all wines marked <strong>Wine club exclusive<\/strong> will be available for you to purchase.<\/p>"
           }
         },
         "fda21c67-42e6-4213-9a54-08bf2f5d98b9": {
@@ -224,28 +224,28 @@
           "type": "faq",
           "settings": {
             "heading": "How do I gift a wine club membership?",
-            "content": "<p>INSTRUCTIONS → need to set up an account.<\/p>"
+            "content": "<p>INSTRUCTIONS → need to set up an account.<\/p><p><\/p><p>- Your recipient won't have the ability to change the wines in their shipment. If you want to give them the ability to choose which wines they get, we recommend sending them a <a href=\"\/products\/martha-stoumen-wines-gift-card\" title=\"Martha Stoumen Wines Gift Card\"><span style=\"text-decoration:underline\">gift card<\/span><\/a>. <\/p>"
           }
         },
         "5682fc9e-41e6-4ca9-ac1e-ebc2867c9cc1": {
           "type": "faq",
           "settings": {
             "heading": "I lost my gift card! I never received my gift card! How do I get access to it?",
-            "content": "<p>From the order confirmation email, click “Resend gift cards.” You will receive an email that contains your gift card. Didn’t receive an order confirmation email? Please reach out to Claire at <a href=\"mailto:info@marthastoumen.com\"><span style=\"text-decoration:underline\">info@marthastoumen.com<\/span><\/a> and she’ll help you figure out what’s going on!<\/p>"
+            "content": "<p>From the order confirmation email, click <strong>Resend gift cards<\/strong>. You will receive an email that contains your gift card. <\/p><p>Didn’t receive an order confirmation email? Please reach out to Claire at <a href=\"mailto:info@marthastoumen.com\"><span style=\"text-decoration:underline\">info@marthastoumen.com<\/span><\/a> and she’ll help you figure out what’s going on!<\/p>"
           }
         },
         "25a7a64c-ca53-46e4-a5a6-76dd8e4f593a": {
           "type": "faq",
           "settings": {
             "heading": "Do gift cards expire?",
-            "content": "<p>Nope! Martha Stoumen Wines gift cards do not ever expire.<\/p>"
+            "content": "<p>Nope! Martha Stoumen Wines gift cards never expire.<\/p>"
           }
         },
         "c38e6a9a-7cc4-4743-84cb-3cca6d7ef308": {
           "type": "faq",
           "settings": {
             "heading": "Does my recipient receive an email after I send them a gift?",
-            "content": "<p>Gift card: No, there is no place for you to enter a gift recipient email in addition to your own. You are emailed the gift card, which you can then forward to your recipient with a message, or print out and snail mail with a handwritten note! <\/p><p>Gift membership: Only if you want them to! When a new member creates a gift membership and doesn't check the box to <strong>Send a Message<\/strong>, then this becomes a setting on the membership that tells the system not to send any notifications to the gift recipient. These notifications include the welcome to the club email, as well as future processing emails. The gift recipient will still receive an order confirmation and shipping emails. <\/p>"
+            "content": "<p><strong>Gift card: <\/strong>No, there is no place for you to enter a gift recipient email in addition to your own. You are emailed the gift card, which you can then forward to your recipient with a message, or print out and snail mail with a handwritten note! <\/p><p><strong>Gift membership<\/strong>: Only if you want them to! When a new member creates a gift membership and doesn't check the box to <strong>Send a Message<\/strong>, then this becomes a setting on the membership that tells the system not to send any notifications to the gift recipient. These notifications include the welcome to the club email, as well as future processing emails. The gift recipient will still receive an order confirmation and shipping emails. <\/p>"
           }
         }
       },
