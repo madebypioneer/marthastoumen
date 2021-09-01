@@ -6,6 +6,10 @@
   height: 1.8rem;
 }
 
+.search-modal {
+  background-color: #F9F5EA;
+}
+
 /* Remove extra spacing for search inputs in Safari */
 input::-webkit-search-decoration {
   -webkit-appearance: none;
