@@ -43,6 +43,50 @@
         "remove_top_spacing": false
       }
     },
+    "163050466726472b3f": {
+      "type": "section-perks",
+      "blocks": {
+        "163050466726472b3f-0": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MS.Logo.png",
+            "text": "FIRST AND EXCLUSIVE ACCESS TO NEW AND LIMITED WINES"
+          }
+        },
+        "c1a03499-653c-4f56-a33e-247c94541049": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MS.Logo.png",
+            "text": "FLAT RATE $25 SHIPPING"
+          }
+        },
+        "59690b09-8c5b-400b-8a69-b8643d8466b2": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MS.Logo.png",
+            "text": "TICKETS TO PARTIES, POPUPS, & EVENTS"
+          }
+        },
+        "8b5b8866-b32a-4092-8cf7-c8e614399ee0": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MS.Logo.png",
+            "text": "TWO SHIPMENTS PER YEAR"
+          }
+        }
+      },
+      "block_order": [
+        "163050466726472b3f-0",
+        "c1a03499-653c-4f56-a33e-247c94541049",
+        "59690b09-8c5b-400b-8a69-b8643d8466b2",
+        "8b5b8866-b32a-4092-8cf7-c8e614399ee0"
+      ],
+      "settings": {
+        "preheading": "MARTHA STOUMEN’S WINE CLUB",
+        "heading": "Perks",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br\/><br\/>Perk Item of the Subscription Club Lorem Ipsum<br\/>Perk Item of the Subscription Club Lorem Ipsum<br\/>Perk Item of the Subscription Club Lorem Ipsum<br\/>Perk Item of the Subscription Club Lorem Ipsum<\/p>"
+      }
+    },
     "16299161199a315e58": {
       "type": "club-join",
       "blocks": {
@@ -116,19 +160,19 @@
         "773a0703-8b2d-4041-a4ba-d39cdba589b3": {
           "type": "preheading",
           "settings": {
-            "preheading": "SHIPPING NOW"
+            "preheading": "ON THE HORIZON"
           }
         },
         "162994866447ef345c-0": {
           "type": "heading",
           "settings": {
-            "heading": "SPRING\/SUMMER 2021"
+            "heading": "Fall\/Winter '21"
           }
         },
         "162994866447ef345c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>This release showcases the breadth of natural wines. The 2020’s are brimming with joy and ready to drink while the 2019’s could make your day today or evolve in your cellar over a few years. <br\/><br\/>(Left \/ Right)<br\/>Mendocino Benchlands 2020<br\/>Out to the Meadow 2020<br\/>Nero d’Avola 2019 | club exclusive<br\/>Nero d’Avola Rosato 2020<br\/>Post Flirtation Red 2020<br\/>Post Flirtation White 2019<\/p>"
+            "text": "<p>This release showcases the breadth of natural wines. The 2020’s are brimming with joy and ready to drink while the 2019’s could make your day today or evolve in your cellar over a few years. <br\/><br\/>(Left \/ Right)<br\/>Another Shore 2019 | club exclusive<br\/>Ricetti Carignan 2019<br\/>Mendocino Benchlands 2019<br\/>Honeymoon 2020 | new blend<br\/>Negroamaro Rosato NV No. 1<br\/>Venturi Carignan 2019 Long Élevage<\/p>"
           }
         }
       },
@@ -138,7 +182,7 @@
         "162994866447ef345c-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Membership_PageSeasonal_Release_Photo.jpg",
+        "image": "shopify:\/\/shop_images\/fall-winter-2021-release-wines_martha-stoumen_shadow-added.jpg",
         "mask": true,
         "wine_club": false,
         "thin": false,
@@ -175,6 +219,7 @@
   "order": [
     "1629948404cfa546a1",
     "16299483928fa50dfe",
+    "163050466726472b3f",
     "16299161199a315e58",
     "162994866447ef345c",
     "16299486715b84051b"
