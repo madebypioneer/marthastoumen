@@ -13,12 +13,20 @@
     flex-direction: row;
     align-items: flex-start;
     margin: 0 auto;
-    max-width: 50rem;
+    /*max-width: 50rem;*/
   }
 }
 
-.newsletter-form__field-wrapper {
-  width: 100%;
+/*.newsletter-form__field-wrapper {*/
+/*  width: 100%;*/
+/*}*/
+
+.close-button {
+  font-family: 'Courier Prime Sans', monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .newsletter-form__message {
