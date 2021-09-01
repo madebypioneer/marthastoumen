@@ -122,16 +122,16 @@
         "2137a895-a158-4f85-aac6-ad42a6a50104": {
           "type": "heading",
           "settings": {
-            "heading": "A Community Support Wine Club"
+            "heading": "A Community Supported Wine Club"
           }
         },
         "4251c108-9981-47e6-a1de-21b6e77737fe": {
           "type": "buttons",
           "settings": {
             "link_one_text": "Join Now",
-            "link_one_page": "shopify:\/\/pages\/6-bottle-membership-signup",
+            "link_one_page": "https:\/\/martha-stoumen.myshopify.com\/pages\/membership\/#membershipSection",
             "link_two_text": "Sign In",
-            "link_two_page": "shopify:\/\/pages\/team"
+            "link_two_page": "https:\/\/martha-stoumen.myshopify.com\/account\/login"
           }
         }
       },
