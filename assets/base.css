@@ -1833,7 +1833,7 @@ input[type='checkbox'] {
 .quantity {
   border: 0.1rem solid rgba(var(--color-foreground), 0.55);
   position: relative;
-  width: 14rem;
+  width: 20rem;
   display: flex;
   border-width: 1px;
   border-style: solid;
@@ -1855,6 +1855,7 @@ input[type='checkbox'] {
   -webkit-appearance: none;
   appearance: none;
   border-width: 0 1px;
+  border-style: solid;
 }
 
 .quantity__button {

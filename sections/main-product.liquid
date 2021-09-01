@@ -99,10 +99,10 @@ Club only?: {{ is_club_members_only }}</p>
           {%- case block.type -%}
           {%- when 'price' -%}
         {% if show_add_to_cart %}
-            <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
-              {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
-            </div>
-        
+            {% comment %}<div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>{% endcomment %}
+              {% comment %}{%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}{% endcomment %}
+            {% comment %}</div>{% endcomment %}
+
             <div {{ block.shopify_attributes }}>
               {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
                 <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
