@@ -49,28 +49,28 @@
         "163050466726472b3f-0": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MS.Logo.png",
+            "image": "shopify:\/\/shop_images\/Illustration_First-access-to-new-vintages-and-special-releases.png",
             "text": "FIRST AND EXCLUSIVE ACCESS TO NEW AND LIMITED WINES"
           }
         },
         "c1a03499-653c-4f56-a33e-247c94541049": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MS.Logo.png",
+            "image": "shopify:\/\/shop_images\/Illustration__25-flat-rate-shipping-on-all-orders.png",
             "text": "FLAT RATE $25 SHIPPING"
           }
         },
         "59690b09-8c5b-400b-8a69-b8643d8466b2": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MS.Logo.png",
+            "image": "shopify:\/\/shop_images\/Illustration_Tickets-to-release-parties_-popups-and-other-events.png",
             "text": "TICKETS TO PARTIES, POPUPS, & EVENTS"
           }
         },
         "8b5b8866-b32a-4092-8cf7-c8e614399ee0": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MS.Logo.png",
+            "image": "shopify:\/\/shop_images\/Wine-club_club-goodies.png",
             "text": "TWO SHIPMENTS PER YEAR"
           }
         }
@@ -82,9 +82,9 @@
         "8b5b8866-b32a-4092-8cf7-c8e614399ee0"
       ],
       "settings": {
-        "preheading": "MARTHA STOUMEN’S WINE CLUB",
-        "heading": "Perks",
-        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br\/><br\/>Perk Item of the Subscription Club Lorem Ipsum<br\/>Perk Item of the Subscription Club Lorem Ipsum<br\/>Perk Item of the Subscription Club Lorem Ipsum<br\/>Perk Item of the Subscription Club Lorem Ipsum<\/p>"
+        "preheading": "Community Supported Wine Club",
+        "heading": "Come On In",
+        "content": "<p>This club makes our world go around so we want every release to feel special for you. Our club members receive a bottle of each new wine along with:<\/p><p>• First access to new vintages and special releases<\/p><p>• Limited edition artwork and thoughtful club goodies<\/p><p>• $25 flat rate shipping on all orders<\/p><p>• Tickets to release parties, popups and other events<\/p>"
       }
     },
     "16299161199a315e58": {
