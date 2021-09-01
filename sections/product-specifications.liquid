@@ -12,6 +12,10 @@
                     Specifications
                 </h2>
                 {{ section.settings.content }}
+
+                {% for blog in blog.articles %}
+                    {{ blog.title }}
+                    {% endfor %}
             </div>
             <div class="w-full md:w-2/3 p-32">
                 <div class="flex flex-wrap -mx-32">
