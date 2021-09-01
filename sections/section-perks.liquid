@@ -20,15 +20,17 @@
                 {%- for block in section.blocks -%}
                 <div class="w-full md:w-1/2 px-32">
                     <div class="flex items-center -mx-16">
-                        <div class="p-16">
-                            <img
-                                src="{{ block.settings.image | img_url: '533x' }}"
-                                width="{{ block.settings.image.width }}"
-                                height="{{ block.settings.image.height }}"
-                                style="height: auto; width: 90px;"
-                                class="md:m-auto card_icon"
-                            >
-                        </div>
+                        {% if block.settings.image %}
+                            <div class="p-16">
+                                <img
+                                    src="{{ block.settings.image | img_url: '533x' }}"
+                                    width="{{ block.settings.image.width }}"
+                                    height="{{ block.settings.image.height }}"
+                                    style="height: auto; width: 90px;"
+                                    class="md:m-auto card_icon"
+                                >
+                            </div>
+                        {% endif %}
                         <div class="w-full p-16">
                             <p class="italic">{{ block.settings.text }}</p>
                         </div>

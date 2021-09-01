@@ -316,6 +316,44 @@
                     </ul>
                   </details>
                 </details-disclosure>
+              {%- elsif link.title contains 'Shop' -%}
+                <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset mega_hover"{% if link.current %} aria-current="page"{% endif %}>
+                  <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                </a>
+                <div class="absolute left-0 right-0 bg-fullMoon mega_menu p-64">
+                  <div class="grid">
+                      <ul class="categories">
+                        {% for collection in collections %}
+                          {% if collection.metafields.custom_fields.show_as_filter %}
+                            <li class="has-children">
+                              <a href="{{ collection.url }}" class="h4 uppercase">
+                                {{ collection.title }}
+                              </a>
+                              <ul class="children">
+                                {% for product in collection.products %}
+                                <li>
+                                  <a href="{{ product.url }}">{{ product.title }}</a>
+                                </li>
+                                {% endfor %}
+                                <li>
+                                  <a href="{{ collection.url }}">View All</a>
+                                </li>
+                              </ul>
+                            </li>
+                          {% endif %}
+                        {% endfor %}
+                        <li style="padding-bottom: 12px;">
+                          <a href="{{ routes.all_products_collection_url }}" class="button--text button--text-dark">
+                            Shop All
+                            <span class="arrow"></span>
+                          </a>
+                        </li>
+                      </ul>
+                  </div>
+                  </div>
+                <ul>
+
+                </ul>
               {%- else -%}
                 <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                   <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>

@@ -2,7 +2,9 @@ class FAQAccordion extends HTMLElement {
   constructor() {
     super();
 
-    this.addEventListener('click', (event) => {
+    const toggleButton = this.querySelectorAll('[data-accordion-toggle]')[0];
+
+    toggleButton.addEventListener('click', (event) => {
       event.preventDefault();
       this.onClickHandler();
     });

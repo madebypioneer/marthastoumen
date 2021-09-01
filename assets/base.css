@@ -2111,7 +2111,6 @@ input[type='checkbox'] {
     min-width: 45rem;
   }
 
-  .header .list-menu--inline li:not('.has-children'),
   .header .list-menu--inline li:not(:last-of-type) {
     border-right: 1px solid;
   }
@@ -2369,13 +2368,13 @@ details[open] > .header__icon--menu .icon-hamburger {
   display: none;
 }
 
-li:hover > .mega_menu {
-  display: block;
-}
+/*li:hover > .mega_menu {*/
+/*  display: block;*/
+/*}*/
 
-li:hover .mega_hover:after {
-  background-color: #0E5356;
-}
+/*li:hover .mega_hover:after {*/
+/*  background-color: #0E5356;*/
+/*}*/
 
 .mega_hover {
   position: relative;

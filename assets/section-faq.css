@@ -7,6 +7,10 @@
     margin: 0;
 }
 
+.faq .accordion .accordion--content a:hover {
+    color: #0E5356;
+}
+
 .faq .accordion {
     margin: 0;
 }
