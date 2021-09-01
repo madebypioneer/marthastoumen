@@ -41,7 +41,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": false
           }
         },
         "description": {
@@ -141,10 +141,7 @@
       "type": "product-recommendations",
       "settings": {
         "heading": "You may also like",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_vendor": false
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla venenatis pretium laoreet aliquam sit feugiat pellentesque ac tellus. <\/p>"
       }
     }
   },

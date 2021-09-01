@@ -1,5 +1,12 @@
 {
   "sections": {
+    "1630297194ef18551f": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/759e98e1db7c669de0d6b078a93667c9.jpg",
+        "remove_top_spacing": true
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -10,7 +17,8 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
+        "description": "<p>Each of our wines are thoughtful expressions of our vineyard sites around Northern California. We hope they pose beautiful questions and create sustained moments of connection and joy. <br\/><br\/>Spend some time getting to know each bottle or surprise yourself with a mixed case, there are no possible wrong turns when it comes to expanding your palate, just enjoy!<\/p>",
+        "products_per_page": 12,
         "image_ratio": "adapt",
         "show_secondary_image": false,
         "add_image_padding": false,
@@ -18,10 +26,55 @@
         "enable_filtering": true,
         "enable_sorting": true
       }
+    },
+    "1630297257e2405d88": {
+      "type": "image-with-text",
+      "blocks": {
+        "b5670103-76d2-42ff-a546-331624cc46f7": {
+          "type": "preheading",
+          "settings": {
+            "preheading": "MARTHA STOUMEN’S WINE CLUB"
+          }
+        },
+        "1630297257e2405d88-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Perks"
+          }
+        },
+        "1630297257e2405d88-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br\/><br\/>Perk Item of the Subscription Club Lorem Ipsum<br\/>Perk Item of the Subscription Club Lorem Ipsum<br\/>Perk Item of the Subscription Club Lorem Ipsum<br\/>Perk Item of the Subscription Club Lorem Ipsum<\/p>"
+          }
+        },
+        "1630297257e2405d88-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Join Now",
+            "button_link": "shopify:\/\/pages\/membership"
+          }
+        }
+      },
+      "block_order": [
+        "b5670103-76d2-42ff-a546-331624cc46f7",
+        "1630297257e2405d88-0",
+        "1630297257e2405d88-1",
+        "1630297257e2405d88-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/49fec3ee4df9a14c16b71e9353cf54a4.jpg",
+        "mask": true,
+        "wine_club": true,
+        "thin": false,
+        "layout": "image_first"
+      }
     }
   },
   "order": [
+    "1630297194ef18551f",
     "banner",
-    "product-grid"
+    "product-grid",
+    "1630297257e2405d88"
   ]
 }
