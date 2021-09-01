@@ -3,7 +3,7 @@
     "1629423396520fe146": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Home_Page_TemplateHero_Banner.jpg",
+        "image": "shopify:\/\/shop_images\/Home_Page_TemplateHero_Banner_14ba06bb-97bf-44a9-bef9-09ba880f76cf.jpg",
         "remove_top_spacing": true
       }
     },
@@ -200,7 +200,7 @@
         "162943294777e06a90-1": {
           "type": "text",
           "settings": {
-            "text": "<p>People have been crafting wine without additives for centuries. This fact easily gets lost among the shelves of formulated products and rows of chemically treated vines that dominate the American wine industry today. The post-war industrial food movement birthed a huge shift in the way we farm and eat, and—although not discussed as much—in the way we grow grapes and drink. Today’s small natural wine producers (that’s us!) are working to shift the tides back towards a gentler way of making wine, tending our soils, our vines, and our communities.<br\/><\/p><p>Natural winemakers nurture the ever-growing voice of transparency and sustainability in our agricultural system. We craft wines that place Mother Nature first, using our knowledge and expertise to support healthy farming systems and delicious moments of connection.<\/p>"
+            "text": "<p>People have been crafting wine without additives for centuries. This fact easily gets lost among the shelves of formulated products and rows of chemically treated vines that dominate the American wine industry today. The post-war industrial food movement birthed a huge shift in the way we farm and eat. Although not discussed as much, this movement also shifted the way we grow grapes and drink. Small natural wine producers (that’s us!) are working to shift the tides back towards a gentler way of making wine, tending our soils, our vines, and our communities.<br\/><\/p><p>Natural winemakers nurture the ever-growing voice of transparency and sustainability in our agricultural system. We craft wines that place Mother Nature first, using our knowledge and expertise to support healthy farming systems and delicious moments of connection.<\/p>"
           }
         }
       },
@@ -209,7 +209,7 @@
         "162943294777e06a90-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Home_Page_TemplateGuide_to_natural_wines.jpg",
+        "image": "shopify:\/\/shop_images\/Home_Page_TemplateGuide_to_natural_wines_0a206116-f6ca-406b-83fa-c12919af04cc.jpg",
         "additional_top_spacing": true
       }
     },
@@ -223,7 +223,7 @@
             "image": "shopify:\/\/shop_images\/Guide-to-Natural-Wines_Illustration-1_In-the-Vineyard.v2.png",
             "is_icon": true,
             "heading": "IN THE VINEYARD",
-            "content": "<p>We enrich our soils with compost and allow beneficial insects to outcompete pests. We welcome plant growth below our vines: they serve as insect habitat in the spring and organic matter in the fall. Harvesting and pruning by hand ensures healthy grapes come into our cellar and long lived vines remain in our fields.<\/p>"
+            "content": "<p>We enrich our soils with compost and allow beneficial insects to outcompete pests. We welcome plant growth below our vines: they serve as insect habitat in the spring and organic matter in the fall. Harvesting and pruning by hand ensures healthy grapes come into our cellar and long-lived vines remain in our fields.<\/p>"
           }
         },
         "dc14f402-6ca0-4344-9a74-2e4943153ce9": {
@@ -233,7 +233,7 @@
             "image": "shopify:\/\/shop_images\/Guide-to-Natural-Wines_Illustration-2_In-the-Cellar.v2.png",
             "is_icon": true,
             "heading": "TO THE CELLAR",
-            "content": "<p>We work with a light hand in the cellar to allow the natural yeast and bacteria present on grape skins to kick-start each fermentation. Rather than using added tannin, acid, or stabilizing agents, we lean on the tannin and acid present in our fruit, along with careful aging to create vibrant, balanced wines.<\/p>"
+            "content": "<p>We work with a light hand in the cellar to allow the natural yeast and bacteria present on grape skins to kick-start each fermentation. Rather than adding tannin, acid, or stabilizing agents, we lean on the tannin and acid naturally present in our fruit. With careful aging we create vibrant, balanced wines.<\/p>"
           }
         },
         "d86da602-817b-45d2-9509-d8a5b4c0c67a": {
@@ -243,7 +243,7 @@
             "image": "shopify:\/\/shop_images\/Guide-to-Natural-Wines_Illustration-3_At-your-Table.v2.png",
             "is_icon": true,
             "heading": "AT YOUR TABLE",
-            "content": "<p>Natural wines tend to jive with your body the same way thoughtfully prepared produce can make you feel abuzz from the inside out. The same desire to preserve the taste of late summer tomatoes in sauce or sun-warmed berries in jam drives us to create friendly, uplifting wines that find a place at your table anytime.<\/p>"
+            "content": "<p>Natural wines tend to jive with your body the same way thoughtfully prepared produce can make you feel abuzz from the inside out. The same desire to preserve the taste of late summer tomatoes in sauce or sun-warmed berries in jam drives us to create friendly, uplifting wines for your table.<\/p>"
           }
         }
       },
