@@ -15,7 +15,7 @@
           "type": "faq",
           "settings": {
             "heading": "Where can I buy your wines near me?",
-            "content": "<p>Please visit our &lt;Stockists&gt; page to see where you can find our wines locally!<\/p>"
+            "content": "<p>Please visit our <a href=\"\/pages\/stockists\" title=\"Stockists\">Stockists<\/a> page to see where you can find our wines locally!<\/p>"
           }
         },
         "512e9d22-a951-446a-ab14-6cefd7728704": {

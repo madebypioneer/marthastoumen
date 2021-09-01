@@ -3,6 +3,7 @@
     "social_facebook_link": "https:\/\/facebook.com\/marthastoumenwines",
     "social_instagram_link": "https:\/\/instagram.com\/marthastoumen",
     "social_spotify_link": "https:\/\/spotify.com\/marthastoumen",
+    "favicon": "shopify:\/\/shop_images\/MS.Logo.png",
     "bloom_cart_dob_show": true,
     "bloom_cart_dob_minimum_age": "21",
     "sections": {
@@ -12,7 +13,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
+              "text": "20% off shipping 6+ bottles use code SUMMER20 \/\/\/ 50% off shipping 12+ bottles Use code SUMMER50 \/\/\/ Free case shipping for wine club members",
               "link": ""
             }
           }
@@ -67,14 +68,14 @@
           "header_image_position": -114,
           "header_image_size": 96,
           "header_image_padding": 0,
-          "heading": "Are you older than 21?",
+          "heading": "Are you 21 or older?",
           "prompt": "Please enter your birth date",
           "button_submit_label": "Submit",
           "minimum_age": "21",
           "prompt_min_age": "",
           "button_continue_label": "Yes",
           "button_cancel_label": "No",
-          "redirect_url": "http:\/\/centurycouncil.org\/",
+          "redirect_url": "https:\/\/carolynnhaydu.com\/",
           "modal_drop_shadow": true,
           "background": "#0a8b8b",
           "background_image": "shopify:\/\/shop_images\/5ed14d441d62c4bd10833e86de86c204.jpg",
@@ -92,7 +93,7 @@
           "heading_font_size": 32,
           "prompt_font": "helvetica_n3",
           "prompt_font_size": 18,
-          "legal": "<p>Provide information to the visitor about underage drinking and a link to more information.<\/p>",
+          "legal": "<p>By entering this website you agree that you are of legal drinking age. <\/p>",
           "legal_font": "courier_new_n4",
           "legal_font_size": 12
         }
