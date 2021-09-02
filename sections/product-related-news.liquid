@@ -1,6 +1,6 @@
 {{ 'section-related-news.css' | asset_url | stylesheet_tag }}
 
-{% if product.metafields.custom_fields.testimonial_content != blank or section.settings.testimonial %}
+{% if product.metafields.custom_fields.testimonial_content != blank or section.settings.testimonial != blank %}
     <div class="flex flex-wrap p-32 md:p-72 items-center text-center bg-earth text-fullMoon section-related-news">
         <div class="w-full">
             <div class="flex flex-wrap">
@@ -9,7 +9,7 @@
                         {% if product.metafields.custom_fields.testimonial_url or section.settings.link %}
                             <a href="{% if product.metafields.custom_fields.testimonial_url %}{{ product.metafields.custom_fields.testimonial_url }}{% else %}{{ section.settings.link }}{% endif %}" target="_blank" rel="noopener noreferrer">
                         {% endif %}
-                            {% if product.metafields.custom_fields.testimonial_content %}
+                            {% if product.metafields.custom_fields.testimonial_content != blank %}
                                 {{ product.metafields.custom_fields.testimonial_content }}
                             {% else %}
                                 {{ section.settings.testimonial }}

@@ -12,8 +12,8 @@
 
 <script type="text/javascript" src="{{ 'featured-collection.js' | asset_url }}" defer="defer"></script>
 
-<div class="flex flex-wrap collection px-88 mb-128">
-  <div class="w-full md:w-1/4 px-48 py-32">
+<div class="flex flex-wrap collection xl:px-88 mb-128">
+  <div class="w-full lg:w-1/4 px-32 xl:px-48 py-32">
     <h2 class="mb-8">
       <a href="{{ section.settings.collection.url }}">
         Shop {{ section.settings.collection.title | escape }}
@@ -40,7 +40,7 @@
     endif
   %}
 
-  <slick-product-slider class="w-full md:w-3/4 px-48 featured-collection-slick">
+  <slick-product-slider class="w-full lg:w-3/4 px-32 xl:px-48 featured-collection-slick">
 
     <div class="flex">
       <div class="w-11/12">
