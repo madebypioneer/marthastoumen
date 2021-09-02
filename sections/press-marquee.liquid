@@ -25,7 +25,9 @@
         {%- for press in blogs.news.articles -%}
             {% if press.metafields.custom_fields.include_in_press_marquee %}
                 <div class="text-fullMoon p-32 text-center" style="min-width: 360px;">
-                    {{ press.content }}
+                    <div class="text-mono">
+                        {{ press.content }}
+                    </div>
                     {% if press.metafields.custom_fields.light_logo %}
                         <img src="{{ press.metafields.custom_fields.light_logo }}" alt="" class="pt-32" style="max-height: 60px; width: auto; max-width: 400px; margin: auto;">
                     {% endif %}
@@ -35,7 +37,9 @@
         {%- for press in blogs.news.articles -%}
             {% if press.metafields.custom_fields.include_in_press_marquee %}
                 <div class="text-fullMoon p-32 text-center" style="min-width: 360px;">
-                    {{ press.content }}
+                    <div class="text-mono">
+                        {{ press.content }}
+                    </div>
                     {% if press.metafields.custom_fields.light_logo %}
                         <img src="{{ press.metafields.custom_fields.light_logo }}" alt="" class="pt-32" style="max-height: 60px; width: auto; max-width: 400px; margin: auto;">
                     {% endif %}
