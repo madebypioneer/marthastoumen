@@ -10,6 +10,8 @@
 <noscript>{{ 'component-badge.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript>
 
+<script type="text/javascript" src="{{ 'featured-collection.js' | asset_url }}" defer="defer"></script>
+
 <div class="flex flex-wrap collection px-88 mb-128">
   <div class="w-full md:w-1/4 px-48 py-32">
     <h2 class="mb-8">
@@ -17,10 +19,16 @@
         Shop {{ section.settings.collection.title | escape }}
       </a>
     </h2>
-    {{ section.settings.collection.description }}
-
-    {%- if section.settings.show_view_all and section.settings.swipe_on_mobile -%}
-      <a href="{{ section.settings.collection.url }}" class="link underlined-link large-up-hide">{{ 'sections.featured_collection.view_all' | t }}</a>
+    <div>
+      {{ section.settings.collection.description }}
+    </div>
+    {%- if section.settings.show_view_all -%}
+      <p class="pt-40">
+        <a href="{{ section.settings.collection.url }}" class="button--text button--text-small button--text-dark">
+          {{ 'sections.featured_collection.view_all' | t }}
+          <span class="arrow"></span>
+        </a>
+      </p>
     {%- endif -%}
   </div>
 
@@ -32,53 +40,39 @@
     endif
   %}
 
-  <div class="w-full md:w-3/4 px-48">
+  <slick-product-slider class="w-full md:w-3/4 px-48 featured-collection-slick">
 
-  <slider-component class="slider-mobile-gutter">
-    <ul class="flex slider slider--tablet -mx-32" role="list">
-      {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
-        <li class="w-full md:w-1/3 p-32 slider__slide">
-          {% render 'product-card',
-            product_card_product: product,
-            media_size: section.settings.image_ratio,
-            show_secondary_image: section.settings.show_secondary_image,
-            add_image_padding: section.settings.add_image_padding,
-            show_vendor: section.settings.show_vendor
-          %}
-        </li>
-      {%- else -%}
-        {%- for i in (1..4) -%}
-          <li class="md:w-1/3">
-            {% render 'product-card-placeholder' %}
-          </li>
+    <div class="flex">
+      <div class="w-11/12">
+      <div class="flex product-slider-{{ section.id }} slider slider--tablet -mx-32" role="list" data-slick-slider>
+        {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+          <div class="w-full md:w-1/2 lg:w-1/3 p-32 slider__slide">
+            {% render 'product-card',
+              product_card_product: product,
+              media_size: section.settings.image_ratio,
+              show_secondary_image: section.settings.show_secondary_image,
+              add_image_padding: section.settings.add_image_padding,
+              show_vendor: section.settings.show_vendor
+            %}
+          </div>
+        {%- else -%}
+          {%- for i in (1..4) -%}
+            <div class="md:w-1/2 lg:w-1/3">
+              {% render 'product-card-placeholder' %}
+            </div>
+          {%- endfor -%}
         {%- endfor -%}
-      {%- endfor -%}
-    </ul>
-    {%- if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 -%}
-      <div class="slider-buttons no-js-hidden{% if section.settings.collection.all_products_count < 4 %} medium-hide{% endif %}{% if section.settings.collection.all_products_count < 3 %} small-hide{% endif %}">
-        <div class="slider-counter caption">
-          <span class="slider-counter--current">1</span>
-          <span aria-hidden="true"> / </span>
-          <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
-          <span class="slider-counter--total">{{ products_to_display }}</span>
-        </div>
-        <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-        <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
       </div>
-    {%- endif -%}
-  </slider-component>
-
-  {%- if section.settings.show_view_all and section.settings.collection.all_products_count > section.settings.products_to_show -%}
-    <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
-      <a href="{{ section.settings.collection.url }}"
-        class="button"
-        aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}"
-      >
-        {{ 'sections.featured_collection.view_all' | t }}
-      </a>
+      </div>
+    <div class="w-1/12 px-32 self-center">
+      <button class="slick-next-{{ section.id }}" data-slick-next>
+        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.3299 19.7142L23.9399 10.0542L14.3299 0.394159C14.2432 0.280186 14.1329 0.18619 14.0066 0.118536C13.8803 0.0508828 13.741 0.0111505 13.598 0.00202883C13.4551 -0.00709283 13.3118 0.0146097 13.178 0.0656665C13.0441 0.116723 12.9228 0.195943 12.8222 0.297962C12.7216 0.399981 12.6442 0.522417 12.595 0.656983C12.5459 0.791548 12.5262 0.935101 12.5374 1.07792C12.5486 1.22074 12.5903 1.3595 12.6597 1.4848C12.7292 1.61009 12.8247 1.719 12.9399 1.80416L20.1299 9.05416L0.99994 9.05416C0.734724 9.05416 0.480371 9.15951 0.292835 9.34705C0.105299 9.53459 -5.95557e-05 9.78894 -5.95673e-05 10.0542C-5.95789e-05 10.3194 0.105299 10.5737 0.292835 10.7613C0.480371 10.9488 0.734724 11.0542 0.99994 11.0542L20.1299 11.0542L12.9399 18.3042C12.753 18.4925 12.6484 18.7473 12.6494 19.0127C12.6503 19.2781 12.7566 19.5322 12.9449 19.7192C13.1332 19.9061 13.3881 20.0107 13.6535 20.0097C13.9188 20.0088 14.173 19.9025 14.3599 19.7142L14.3299 19.7142Z" fill="#30292F"/>
+        </svg>
+      </button>
     </div>
-  {%- endif -%}
-</div>
+    </div>
+  </slick-product-slider>
 </div>
 
 {% schema %}

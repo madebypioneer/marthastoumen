@@ -13,6 +13,33 @@
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
+<script type=“text/javascript”>
+  var _learnq = _learnq || [];
+  var item = {
+    Name: {{ product.title|json }},
+    ProductID: {{ product.id|json }},
+    Categories: {{ product.collections|map:’title’|json }},
+    ImageURL: “https:{{ product.featured_image.src|img_url:‘grande’ }}“,
+    URL: “{{ shop.secure_url }}{{ product.url }}“,
+    Brand: {{ product.vendor|json }},
+    Price: {{ product.price|money|json }},
+    CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+  };
+  _learnq.push([‘track’, ‘Viewed Product’, item]);
+  _learnq.push([‘trackViewedItem’, {
+    Title: item.Name,
+    ItemId: item.ProductID,
+    Categories: item.Categories,
+    ImageUrl: item.ImageURL,
+    Url: item.URL,
+    Metadata: {
+      Brand: item.Brand,
+      Price: item.Price,
+      CompareAtPrice: item.CompareAtPrice
+    }
+  }]);
+</script>
+
 <section>
   <div class="product flex flex-wrap px-32">
     <div class="w-full md:w-1/2 p-64">
@@ -55,9 +82,8 @@
           </div>
         {% endif %}
 
-            <img
-                    src="{{ product.media.first | image_url }}"
-                    class="object-center object-cover"
+            <img src="{{ product.media.first | img_url: '3000x' }}"
+                 class="object-center object-cover"
             >
       </div>
     </div>

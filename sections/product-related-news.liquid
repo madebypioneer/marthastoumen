@@ -40,19 +40,23 @@
 
 {% schema %}
 {
-    "name": "Related News",
+    "name": "Testimonial",
     "tag": "section",
     "settings": [
         {
+            "type": "richtext",
+            "id": "testimonial",
+            "label": "Testimonial"
+        },
+        {
             "type": "text",
-            "id": "heading",
-            "default": "Get Down With",
-            "label": "Heading"
+            "id": "attribution",
+            "label": "Attribution"
         }
     ],
     "presets": [
         {
-            "name": "Related News"
+            "name": "Testimonial"
         }
     ]
 }

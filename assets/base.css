@@ -301,6 +301,10 @@ body,
   z-index: 2;
 }
 
+.featured-collection-slick .slick-prev {
+  display: none !important;
+}
+
 /*Wine Tags*/
 /*font-family: Courier Prime Sans;*/
 /*font-size: 9px;*/
@@ -2234,6 +2238,15 @@ input[type='checkbox'] {
 .header__icon--cart {
   position: relative;
   margin-right: -1.2rem;
+}
+
+.button--text-small {
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.button--text-small .arrow {
+  width: calc(100% + 30px);
 }
 
 @media screen and (max-width: 989px) {
