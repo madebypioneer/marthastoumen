@@ -84,7 +84,7 @@
       "settings": {
         "preheading": "Community Supported Wine Club",
         "heading": "Come On In",
-        "content": "<p>This club makes our world go around so we want every release to feel special for you. Our club members receive a bottle of each new wine along with:<\/p><p>• First access to new vintages and special releases<\/p><p>• Limited edition artwork and thoughtful club goodies<\/p><p>• $25 flat rate shipping on all orders<\/p><p>• Tickets to release parties, popups and other events<\/p>"
+        "content": "<p>This club makes our world go around so we want every release to feel special for you. Our club members receive a bottle of each new wine along with...<\/p>"
       }
     },
     "16299161199a315e58": {
@@ -134,7 +134,7 @@
             "card_width": "w-1\/3",
             "club_level_name": "Two Ways to Play",
             "title_size": "3rem",
-            "level_description": "<p>Please note we cannot ship to the following states: Alabama, Arkansas, Delaware, Kentucky, New Hampshire, North Dakota, Oklahoma, Rhode Island and Utah. Live near a state border? We invite you to consider shipping to a nearby FedEx location to hold your wines for pickup!<\/p>",
+            "level_description": "<p>Please note we cannot ship to the following states: Alabama, Arkansas, Delaware, Kentucky, North Dakota, Rhode Island and Utah. Live near a state border? We invite you to consider shipping to a nearby FedEx location to hold your wines for pickup.<\/p>",
             "level_benefits": "<p>Want to gift a membership? <\/p><a href=\"#\">Learn more <\/a>",
             "text_align": "left"
           }
@@ -201,7 +201,7 @@
         "67ee4205-4f2a-4390-a6c1-dee932223ca8": {
           "type": "text",
           "settings": {
-            "text": "<p>Check out our <a href=\"\/pages\/faq\" title=\"FAQ\">Wine Club Account FAQs Page<\/a>.<\/p>"
+            "text": "<p>Check out our <a href=\"\/pages\/faq\" title=\"FAQ\">FAQs Page<\/a>.<\/p>"
           }
         }
       },
