@@ -45,8 +45,8 @@
 
   .newsletter-form__message--success {
     position: absolute;
-    left: 0;
-    bottom: -65%;
+    left: 16px;
+    bottom: -40%;
   }
 }
 

@@ -80,7 +80,7 @@
                 <div class="field">
                   <input
                           type="text"
-                          name="customer[first_name]"
+                          name="contact[first_name]"
                           value="{{ form.first_name }}"
                           placeholder="{{ 'newsletter.first_name' | t }}"
                           class="field__input"
@@ -97,7 +97,7 @@
                 <div class="field">
                   <input
                           type="text"
-                          name="customer[last_name]"
+                          name="contact[last_name]"
                           value="{{ form.last_name }}"
                           placeholder="{{ 'newsletter.last_name' | t }}"
                           class="field__input"
@@ -110,9 +110,9 @@
 
                 <div class="w-full lg:w-2/3 px-16 newsletter-form__field-wrapper hidden" data-newsletter-input>
                   <div class="field">
-                    <input type="hidden" name="customer[accepts_marketing]" value="" />
-                    <input type="checkbox" name="customer[accepts_marketing]" />
-                    <label for="accepts-marketing">I have read and agreed to the Privacy Policy and consent to the collection of my personal information, its use and disclosure in accordance with this Policy.</label>
+                    <input type="hidden" name="contact[accepts_marketing]" value="" />
+                    <input type="checkbox" name="contact[accepts_marketing]" required />
+                    <label for="accepts-marketing">{{ section.settings.accepts_marketing }}</label>
                   </div>
               </div>
 
@@ -124,7 +124,7 @@
               </div>
 
               {%- if form.posted_successfully? -%}
-                <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+                <h3 class="newsletter-form__message newsletter-form__message--success form__message text-fullMoon" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
               {%- endif -%}
             {%- endform -%}
           </div>
@@ -536,6 +536,12 @@
       "type": "richtext",
       "id": "newsletter_content",
       "label": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "accepts_marketing",
+      "label": "Accepts Marketing Newsletter Text",
+      "default": "<p>I have read and agreed to the Privacy Policy and consent to the collection of my personal information, its use and disclosure in accordance with this Policy.</p>"
     },
     {
       "type": "header",
