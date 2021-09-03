@@ -1,7 +1,15 @@
 {
   "sections": {
     "main": {
-      "type": "main-blog"
+      "type": "main-blog",
+      "settings": {
+        "blog_description": "<p><em>Musings, nerdy tangents and rich conversations from the cellar. Grab a glass and stay a while. <\/em><\/p>",
+        "show_featured": true,
+        "show_categories": true,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false
+      }
     }
   },
   "order": [
