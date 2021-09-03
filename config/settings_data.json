@@ -37,6 +37,18 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "f5d0cdbf-77a1-43dd-b2fb-6a085cb9a20e": {
+            "type": "text",
+            "settings": {
+              "heading": "Heading",
+              "subtext": "<p>this is where I'd like to give explanatory text<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "f5d0cdbf-77a1-43dd-b2fb-6a085cb9a20e"
+        ],
         "settings": {
           "powered_by_bloom": false,
           "bloom_logo": "shopify:\/\/shop_images\/bloom-dark_2x40_x40_eba5eb04-7767-4150-9ba5-4364491fbb3d.png",
