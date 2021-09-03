@@ -13,9 +13,14 @@
                 </h2>
                 {{ section.settings.content }}
 
-                {% for blog in blog.articles %}
-                    {{ blog.title }}
+                {% if product.metafields.custom_fields.tech_sheet != blank %}
+                    {% assign tech_sheet_handle = product.metafields.custom_fields.tech_sheet | split: "." %}
+                    {% for article in blogs[tech_sheet_handle[0]].articles %}
+                        {% if article.handle contains tech_sheet_handle[1] %}
+                            <a href="{{ article.url }}" class="button mt-32">Download Tech Sheet</a>
+                        {% endif %}
                     {% endfor %}
+                {% endif %}
             </div>
             <div class="w-full md:w-2/3 p-32">
                 <div class="flex flex-wrap -mx-32">
