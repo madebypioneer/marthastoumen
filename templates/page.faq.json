@@ -88,7 +88,7 @@
           "type": "faq",
           "settings": {
             "heading": "How do I see which wines I’ve ordered?",
-            "content": "<p><strong>Are you a wine club member?<\/strong> If yes,  just <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\"><span style=\"text-decoration:underline\">login to your account<\/span><\/a> to see your order history. Haven't logged into your wine club account since before September 7th, 2021?  You'll need to find the email we sent you with an \"activate account\" button to create a new password.<\/p><p><strong>Not a wine club member?<\/strong> To see your order history, you’ll need to <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/register\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/register\"><span style=\"text-decoration:underline\">create an account<\/span><\/a> using the email you used to place your order. All of your order history and tracking information will be in your new account!<\/p>"
+            "content": "<p><strong>Are you a wine club member?<\/strong> If yes,  just <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\"><span style=\"text-decoration:underline\">login to your account<\/span><\/a> to see your order history. Haven't logged into your wine club account since before September 7th, 2021?  You'll need to find the email we sent you with an \"activate your account\" button to create a new password. If the link has expired, just email us at info@marthastoumen.com to have us send you a new one!<\/p><p><strong>Not a wine club member?<\/strong> To see your order history, you’ll need to <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/register\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/register\"><span style=\"text-decoration:underline\">create an account<\/span><\/a> using the email you used to place your order. All of your order history and tracking information will be in your new account!<\/p>"
           }
         },
         "a51772d6-95ab-4116-b085-fd30075982f3": {
@@ -109,7 +109,7 @@
           "type": "faq",
           "settings": {
             "heading": "Why is it so expensive to ship wine?",
-            "content": "<p>Wine is heavy, fragile, and temperature sensitive, and there’s a surcharge to make sure that wine is only being sold to and delivered to people 21 years of age and older.  <a href=\"https:\/\/www.sfchronicle.com\/wine\/article\/If-you-want-independent-wineries-to-survive-get-15789494.php\"><span style=\"text-decoration:underline\">Here’s a great article from Esther Mobley at The SF Chronicle that explains some of the ins and outs of moving wine from our winery to you.<\/span><\/a> If you’d like to receive $25 flat rate shipping year round, please &lt;sign up for the Martha Stoumen Wines club.&gt;<\/p>"
+            "content": "<p>Wine is heavy, fragile, and temperature sensitive, and there’s a surcharge to make sure that wine is only being sold to and delivered to people 21 years of age and older.  <a href=\"https:\/\/www.sfchronicle.com\/wine\/article\/If-you-want-independent-wineries-to-survive-get-15789494.php\"><span style=\"text-decoration:underline\">Here’s a great article from Esther Mobley at The SF Chronicle that explains some of the ins and outs of moving wine from our winery to you.<\/span><\/a> If you’d like to receive $25 flat rate shipping year round, please <a href=\"https:\/\/martha-stoumen.myshopify.com\/pages\/membership\" title=\"https:\/\/martha-stoumen.myshopify.com\/pages\/membership\"><span style=\"text-decoration:underline\">sign up for the Martha Stoumen Wines club<\/span><\/a>.<\/p>"
           }
         }
       },
@@ -133,7 +133,7 @@
           "type": "faq",
           "settings": {
             "heading": "I just signed up for the wine club! How do I log into my account?",
-            "content": "<p>Congratulations, we’re so excited to have you! Click the person icon in the top right corner of any page (<a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\"><span style=\"text-decoration:underline\">or head here<\/span><\/a>). <\/p><p>Once you are logged in, $25 flat rate shipping will automatically apply to all of your orders.<\/p>"
+            "content": "<p>Congratulations, we’re so excited to have you! Click the person icon in the top right corner of any page (<a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\"><span style=\"text-decoration:underline\">or head here<\/span><\/a>). <\/p><p>Once you are logged in, $25 flat rate shipping will automatically apply to all of your orders and you'll be able to purchase wine club exclusive bottles.<\/p><p>Are you an existing wine club member who hasn't logged in since before September 7th, 2021? You'll need to find the email we sent you with the \"activate your account\" button. If that link has expired, just reach out to us at info@marthastoumen.com and we'll get you a replacement ASAP!<\/p>"
           }
         },
         "32ad446c-d7c8-4baa-a232-d7b15bed9e2c": {
