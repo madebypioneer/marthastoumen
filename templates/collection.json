@@ -3,7 +3,7 @@
     "1630297194ef18551f": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/759e98e1db7c669de0d6b078a93667c9.jpg",
+        "image": "shopify:\/\/shop_images\/Category_Page_TemplateHero.jpg",
         "remove_top_spacing": true
       }
     },
@@ -63,7 +63,7 @@
         "1630297257e2405d88-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Wine_Club_Perks_4dc60dcf-33cb-4138-a3e4-4536e131c610.png",
+        "image": "shopify:\/\/shop_images\/Category_Page_TemplatePerks.jpg",
         "mask": true,
         "wine_club": true,
         "thin": false,

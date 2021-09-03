@@ -3,10 +3,43 @@
     "main": {
       "type": "main-press",
       "settings": {
+        "blog_description": "",
+        "show_featured": true,
+        "show_categories": true,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false
+      }
+    },
+    "1630636780c4eae0cf": {
+      "type": "content",
+      "blocks": {
+        "5a53ed33-4675-440e-9034-5ea1ef4c4518": {
+          "type": "heading",
+          "settings": {
+            "heading": "PRESS INQUIRIES"
+          }
+        },
+        "a38dd0ab-4989-40a2-a3c0-51b2e50f2d19": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wine needs people to drink it and we have press to thank for making that happen. We love sharing stories and knowledge with journalists, writers and editors around the world. If you're a member of the media and would like to talk, please first get in touch with our Marketing Manager at <a href=\"mailto:jaylee@marthastoumen.com\" target=\"_blank\" title=\"mailto:jaylee@marthastoumen.com\">jaylee@marthastoumen.com<\/a>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5a53ed33-4675-440e-9034-5ea1ef4c4518",
+        "a38dd0ab-4989-40a2-a3c0-51b2e50f2d19"
+      ],
+      "settings": {
+        "reduce_spacing": false,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1630636780c4eae0cf"
   ]
 }
