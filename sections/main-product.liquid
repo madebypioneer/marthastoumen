@@ -18,8 +18,6 @@
   var item = {
     Name: {{ product.title|json }},
     ProductID: {{ product.id|json }},
-    Categories: {{ product.collections|map:’title’|json }},
-    ImageURL: “https:{{ product.featured_image.src|img_url:‘grande’ }}“,
     URL: “{{ shop.secure_url }}{{ product.url }}“,
     Brand: {{ product.vendor|json }},
     Price: {{ product.price|money|json }},
@@ -314,9 +312,6 @@ Club only?: {{ is_club_members_only }}</p>
                           {{ 'products.product.sold_out' | t }}
                         {%- endif -%}
                     </button>
-                    {%- if block.settings.show_dynamic_checkout -%}
-                      {{ form | payment_button }}
-                    {%- endif -%}
                   </div>
                 {%- endform -%}
               </product-form>
