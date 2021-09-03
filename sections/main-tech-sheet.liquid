@@ -173,7 +173,7 @@
         <div class="flex flex-wrap">
             <div class="w-full md:w-1/4 p-32"><span></span></div>
             <div class="w-full md:w-1/4 p-32">
-                {% render 'product-card', product_card_product: product %}
+                {% render 'product-card', product_card_product: product, available: product.available %}
             </div>
         </div>
     </div>

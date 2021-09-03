@@ -95,6 +95,7 @@
                   {%- capture product_settings -%}{%- if section.settings.product_show_vendor -%}vendor,{%- endif -%}title,price{%- endcapture -%}
                   {% render 'product-card',
                     product_card_product: item,
+                    available: product.available,
                     media_size: section.settings.image_ratio,
                     show_secondary_image: section.settings.show_secondary_image,
                     enable_image_padding: section.settings.enable_image_padding,

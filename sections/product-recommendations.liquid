@@ -24,7 +24,7 @@
           {% assign product_ref = all_products[reccomendation] %}
           {% if product_ref.title != blank %}
             <li class="w-full md:w-1/3 p-32">
-              {% render 'product-card', product_card_product: product_ref %}
+              {% render 'product-card', product_card_product: product_ref, available: product_ref.available %}
             </li>
           {% endif %}
         {% endfor %}
