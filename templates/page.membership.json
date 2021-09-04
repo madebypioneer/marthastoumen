@@ -154,6 +154,12 @@
         "club_max_width": 90
       }
     },
+    "16307961513b689582": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<a id=\"CurrentRelease\"><\/a>"
+      }
+    },
     "162994866447ef345c": {
       "type": "image-with-text",
       "blocks": {
@@ -221,6 +227,7 @@
     "16299483928fa50dfe",
     "163050466726472b3f",
     "16299161199a315e58",
+    "16307961513b689582",
     "162994866447ef345c",
     "16299486715b84051b"
   ]
