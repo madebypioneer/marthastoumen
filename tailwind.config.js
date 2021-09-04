@@ -42,6 +42,7 @@ module.exports = {
     extend: {
       borderColor: ['focus-visible'],
       opacity: ['disabled'],
+      fontStyle: ['hover', 'focus']
     }
   },
   extend: {

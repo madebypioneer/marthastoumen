@@ -547,12 +547,18 @@ h4,
 .h4,
 .custom-form h3.title.globo-heading {
   font-family: var(--font-heading-family);
-  font-style: var(--font-heading-style);
+  font-style: normal;
+  /*font-style: var(--font-heading-style);*/
   /*font-size: 1.5rem;*/
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 8px;
+}
+
+a.h4:hover,
+a:hover .h4 {
+  font-style: italic;
 }
 
 h5,
@@ -1482,8 +1488,12 @@ deferred-media {
   -webkit-appearance: none;
   appearance: none;
   font-family: 'Baton Web', sans-serif;
-  font-style: italic;
+  font-style: normal
   font-weight: normal;
+}
+
+.button--text:hover {
+  font-style: italic;
 }
 
 .button--text .arrow:after,
@@ -2185,6 +2195,10 @@ input[type='checkbox'] {
     border-right: 1px solid;
   }
 
+  .header .list-menu--inline .mega_menu li {
+    border-right: none;
+  }
+
   .header:not(.header--middle-left) .header__inline-menu {
     margin-top: 1.05rem;
   }
@@ -2447,13 +2461,13 @@ details[open] > .header__icon--menu .icon-hamburger {
   display: none;
 }
 
-/*li:hover > .mega_menu {*/
-/*  display: block;*/
-/*}*/
+li:hover > .mega_menu {
+  display: block;
+}
 
-/*li:hover .mega_hover:after {*/
-/*  background-color: #0E5356;*/
-/*}*/
+li:hover .mega_hover:after {
+  background-color: #0E5356;
+}
 
 .mega_hover {
   position: relative;
@@ -2463,13 +2477,15 @@ details[open] > .header__icon--menu .icon-hamburger {
   border-right: 1px solid #30292F;
 }
 
-.mega_hover:after {
+.mega_menu--content:before {
   content: '';
-  width: 47px;
+  width: 33px;
   height: 2px;
-  background-color: transparent;
+  background-color: #0E5356;
   position: absolute;
-  bottom: -24px;
+  top: 0;
+  left: 56px;
+  /*z-index: 10;*/
 }
 
 /*.mega_hover:hover:after {*/
@@ -2478,10 +2494,18 @@ details[open] > .header__icon--menu .icon-hamburger {
 
 .mega_menu {
   min-height: 560px;
-  background-color: #F7F1E2;
-  margin-top: 24px;
+
+  /*margin-top: 20px;*/
+  max-height: 65vh;
+  /*height: 100%;*/
   /*TODO: Comment back in after styles complete*/
   display: none;
+  overflow:hidden;
+}
+
+.mega_menu--content {
+  background-color: #F7F1E2;
+  position: relative;
 }
 
 .mega_menu .grid .categories {
@@ -2491,7 +2515,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 .mega_menu .grid {
   grid-template-areas: 'category products hoverProduct categoryLink';
   grid-template-columns: 1fr 1fr 1fr 2fr;
-  column-gap: 2rem;
+  column-gap: 60px;
   display: grid;
   margin-bottom: 0;
   position: relative;

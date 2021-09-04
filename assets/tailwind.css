@@ -16760,6 +16760,22 @@ video {
   font-style: normal;
 }
 
+.hover\:italic:hover {
+  font-style: italic;
+}
+
+.hover\:not-italic:hover {
+  font-style: normal;
+}
+
+.focus\:italic:focus {
+  font-style: italic;
+}
+
+.focus\:not-italic:focus {
+  font-style: normal;
+}
+
 .ordinal, .slashed-zero, .lining-nums, .oldstyle-nums, .proportional-nums, .tabular-nums, .diagonal-fractions, .stacked-fractions {
   --tw-ordinal: var(--tw-empty,/*!*/ /*!*/);
   --tw-slashed-zero: var(--tw-empty,/*!*/ /*!*/);
@@ -35825,6 +35841,22 @@ video {
     font-style: normal;
   }
 
+  .sm\:hover\:italic:hover {
+    font-style: italic;
+  }
+
+  .sm\:hover\:not-italic:hover {
+    font-style: normal;
+  }
+
+  .sm\:focus\:italic:focus {
+    font-style: italic;
+  }
+
+  .sm\:focus\:not-italic:focus {
+    font-style: normal;
+  }
+
   .sm\:ordinal, .sm\:slashed-zero, .sm\:lining-nums, .sm\:oldstyle-nums, .sm\:proportional-nums, .sm\:tabular-nums, .sm\:diagonal-fractions, .sm\:stacked-fractions {
     --tw-ordinal: var(--tw-empty,/*!*/ /*!*/);
     --tw-slashed-zero: var(--tw-empty,/*!*/ /*!*/);
@@ -54845,6 +54877,22 @@ video {
   }
 
   .md\:not-italic {
+    font-style: normal;
+  }
+
+  .md\:hover\:italic:hover {
+    font-style: italic;
+  }
+
+  .md\:hover\:not-italic:hover {
+    font-style: normal;
+  }
+
+  .md\:focus\:italic:focus {
+    font-style: italic;
+  }
+
+  .md\:focus\:not-italic:focus {
     font-style: normal;
   }
 
@@ -73871,6 +73919,22 @@ video {
     font-style: normal;
   }
 
+  .lg\:hover\:italic:hover {
+    font-style: italic;
+  }
+
+  .lg\:hover\:not-italic:hover {
+    font-style: normal;
+  }
+
+  .lg\:focus\:italic:focus {
+    font-style: italic;
+  }
+
+  .lg\:focus\:not-italic:focus {
+    font-style: normal;
+  }
+
   .lg\:ordinal, .lg\:slashed-zero, .lg\:lining-nums, .lg\:oldstyle-nums, .lg\:proportional-nums, .lg\:tabular-nums, .lg\:diagonal-fractions, .lg\:stacked-fractions {
     --tw-ordinal: var(--tw-empty,/*!*/ /*!*/);
     --tw-slashed-zero: var(--tw-empty,/*!*/ /*!*/);
@@ -92894,6 +92958,22 @@ video {
     font-style: normal;
   }
 
+  .xl\:hover\:italic:hover {
+    font-style: italic;
+  }
+
+  .xl\:hover\:not-italic:hover {
+    font-style: normal;
+  }
+
+  .xl\:focus\:italic:focus {
+    font-style: italic;
+  }
+
+  .xl\:focus\:not-italic:focus {
+    font-style: normal;
+  }
+
   .xl\:ordinal, .xl\:slashed-zero, .xl\:lining-nums, .xl\:oldstyle-nums, .xl\:proportional-nums, .xl\:tabular-nums, .xl\:diagonal-fractions, .xl\:stacked-fractions {
     --tw-ordinal: var(--tw-empty,/*!*/ /*!*/);
     --tw-slashed-zero: var(--tw-empty,/*!*/ /*!*/);
@@ -111914,6 +111994,22 @@ video {
   }
 
   .\32xl\:not-italic {
+    font-style: normal;
+  }
+
+  .\32xl\:hover\:italic:hover {
+    font-style: italic;
+  }
+
+  .\32xl\:hover\:not-italic:hover {
+    font-style: normal;
+  }
+
+  .\32xl\:focus\:italic:focus {
+    font-style: italic;
+  }
+
+  .\32xl\:focus\:not-italic:focus {
     font-style: normal;
   }
 

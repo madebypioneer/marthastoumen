@@ -8,6 +8,8 @@
 <noscript>{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 
+<script src="{{ 'mega-menu.js' | asset_url }}" defer="defer"></script>
+
 <style>
   header-drawer {
     justify-self: start;
@@ -320,37 +322,90 @@
                 <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset mega_hover"{% if link.current %} aria-current="page"{% endif %}>
                   <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                 </a>
-                <div class="absolute left-0 right-0 bg-fullMoon mega_menu p-64">
-                  <div class="grid">
-                      <ul class="categories">
-                        {% for collection in collections %}
-                          {% if collection.metafields.custom_fields.show_as_filter %}
-                            <li class="has-children">
-                              <a href="{{ collection.url }}" class="h4 uppercase">
-                                {{ collection.title }}
-                              </a>
-                              <ul class="children">
-                                {% for product in collection.products %}
-                                <li>
-                                  <a href="{{ product.url }}">{{ product.title }}</a>
-                                </li>
-                                {% endfor %}
-                                <li>
-                                  <a href="{{ collection.url }}">View All</a>
-                                </li>
-                              </ul>
+                <mega-menu class="absolute left-0 right-0 mega_menu">
+                  <div class="bg-full-moon w-full" style="height: 20px;"><span></span></div>
+                  <div class="mega_menu--content p-64">
+                  <div class="grid h-full overflow-hidden">
+                    <ul class="categories overflow-y-auto" data-caterories>
+                      {% for collection in collections %}
+                        {% if collection.metafields.custom_fields.show_as_filter %}
+                          <li class="mb-24">
+                            <a href="{{ collection.url }}" class="h4 uppercase hover:italic hover:text-vine block" data-category="{{ collection.id }}">
+                              {{ collection.title }}
+                            </a>
+                          </li>
+                        {% endif %}
+                      {% endfor %}
+                      <li class="mt-40" style="padding-bottom: 12px;">
+                        <a href="{{ routes.all_products_collection_url }}" class="button--text button--text-dark hover:text-vine">
+                          Shop All
+                          <span class="arrow"></span>
+                        </a>
+                      </li>
+                    </ul>
+
+                    {% comment %}Collection Products{% endcomment %}
+                    <div class="overflow-y-auto">
+                      {% for collection in collections %}
+                        {% if collection.metafields.custom_fields.show_as_filter %}
+                          <ul class="hidden -my-8" data-products="{{ collection.id }}">
+                            {% for product in collection.products %}
+                              <li class="mb-8">
+                                <a href="{{ product.url }}" class="hover:text-vine hover:italic block py-8" data-product-link="{{ product.id }}">{{ product.title }}</a>
+                              </li>
+                            {% endfor %}
+                            <li class="mt-32">
+                              <a href="{{ collection.url }}">View All</a>
                             </li>
-                          {% endif %}
-                        {% endfor %}
-                        <li style="padding-bottom: 12px;">
-                          <a href="{{ routes.all_products_collection_url }}" class="button--text button--text-dark">
-                            Shop All
-                            <span class="arrow"></span>
+                          </ul>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+
+                    {% comment %}Product Image{% endcomment %}
+                    <div>
+                      {% for product in collections.all.products %}
+                        <div class="hidden" data-product="{{ product.id }}">
+                          <a href="{{ product.url }}" class="block hover:text-vine hover:italic">
+                            <div class="aspect-h-3 aspect-w-2">
+                              <img
+                                src="{{ product.media.first | img_url: '1000x' }}"
+                                class="object-center object-cover"
+                                alt=""
+                              >
+                            </div>
+                            <span class="h4 mt-24 block uppercase">
+                              {{ product.title }}
+                            </span>
                           </a>
-                        </li>
-                      </ul>
+                        </div>
+                      {% endfor %}
+                    </div>
+
+                    {% comment %}Collection Image{% endcomment %}
+                    <div>
+                      {% for collection in collections %}
+                        {% if collection.metafields.custom_fields.show_as_filter %}
+                          <div class="hidden" data-category-image="{{ collection.id }}">
+                            <a href="{{ collection.url }}" class="block hover:text-vine">
+                              <div class="aspect-h-3 aspect-w-4">
+                                <img
+                                  src="{{ collection.image | img_url: '1000x' }}"
+                                  class="object-center object-cover"
+                                  alt=""
+                                >
+                              </div>
+                              <span class="h4 mt-24 block uppercase">
+                                {{ collection.title }}
+                              </span>
+                            </a>
+                          </div>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
                   </div>
                   </div>
+                  </mega-menu>
                 <ul>
 
                 </ul>
