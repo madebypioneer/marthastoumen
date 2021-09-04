@@ -50,7 +50,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/Illustration_First-access-to-new-vintages-and-special-releases.png",
-            "text": "FIRST AND EXCLUSIVE ACCESS TO NEW AND LIMITED WINES"
+            "text": "FIRST & EXCLUSIVE ACCESS TO NEW & LIMITED WINES"
           }
         },
         "c1a03499-653c-4f56-a33e-247c94541049": {
@@ -135,7 +135,7 @@
             "club_level_name": "Two Ways to Play",
             "title_size": "3rem",
             "level_description": "<p>Please note we cannot ship to the following states: Alabama, Arkansas, Delaware, Kentucky, North Dakota, Rhode Island and Utah. Live near a state border? We invite you to consider shipping to a nearby FedEx location to hold your wines for pickup.<\/p>",
-            "level_benefits": "<p>Want to gift a membership? <\/p><a href=\"#\">Learn more <\/a>",
+            "level_benefits": "<p><strong>Want to gift a membership?<\/strong>\nIn the join page, just select \"Give this membership as a gift.\"\n<\/p>",
             "text_align": "left"
           }
         }
@@ -172,7 +172,7 @@
         "162994866447ef345c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>This release showcases the breadth of natural wines. The 2020’s are brimming with joy and ready to drink while the 2019’s could make your day today or evolve in your cellar over a few years. <br\/><br\/>(Left \/ Right)<br\/>Another Shore 2019 | club exclusive<br\/>Ricetti Carignan 2019<br\/>Mendocino Benchlands 2019<br\/>Honeymoon 2020 | new blend<br\/>Negroamaro Rosato NV No. 1<br\/>Venturi Carignan 2019 Long Élevage<\/p>"
+            "text": "<p>This release showcases the stylistic breadth of natural wine. The 2020's are brimming with joy and ready to drink while the 2019’s could make your day today or evolve in your cellar over a few years. <br\/><br\/>(Left \/ Right)<br\/>Another Shore 2019 | club exclusive<br\/>Ricetti Carignan 2019<br\/>Mendocino Benchlands 2019<br\/>Honeymoon 2020 | new blend<br\/>Negroamaro Rosato NV No. 1<br\/>Venturi Carignan 2019 Long Élevage<\/p>"
           }
         }
       },
@@ -195,13 +195,13 @@
         "5e933451-c335-45e2-8c22-be645c7170c0": {
           "type": "heading",
           "settings": {
-            "heading": "WANT TO GIFT A MEMBERSHIP OR HAVE QUESTIONS?"
+            "heading": "HAVE QUESTIONS? UNSURE ABOUT THINGS?"
           }
         },
         "67ee4205-4f2a-4390-a6c1-dee932223ca8": {
           "type": "text",
           "settings": {
-            "text": "<p>Check out our <a href=\"\/pages\/faq\" title=\"FAQ\">FAQs Page<\/a>.<\/p>"
+            "text": "<p>Check out our <a href=\"\/pages\/faq\" title=\"FAQ\"><span style=\"text-decoration:underline\">FAQs Page<\/span><\/a>.<\/p>"
           }
         }
       },

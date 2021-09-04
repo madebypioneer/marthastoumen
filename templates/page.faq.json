@@ -88,7 +88,7 @@
           "type": "faq",
           "settings": {
             "heading": "How do I see which wines I’ve ordered?",
-            "content": "<p><strong>Are you a wine club member?<\/strong> If yes,  just <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\"><span style=\"text-decoration:underline\">login to your account<\/span><\/a> to see your order history. Haven't logged into your wine club account since before September 7th, 2021?  You'll need to find the email we sent you with an \"activate account\" button to create a new password.<\/p><p><strong>Not a wine club member?<\/strong> To see your order history, you’ll need to <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/register\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/register\"><span style=\"text-decoration:underline\">create an account<\/span><\/a> using the email you used to place your order. All of your order history and tracking information will be in your new account!<\/p>"
+            "content": "<p><strong>Are you a wine club member?<\/strong> If yes,  just <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\"><span style=\"text-decoration:underline\">login to your account<\/span><\/a> to see your order history. Haven't logged into your wine club account since before September 7th, 2021?  You'll need to find the email we sent you with an \"activate your account\" button to create a new password. If the link has expired (it's only good for 72 hours), just email us at info@marthastoumen.com to have us send you a new one!<\/p><p><strong>Not a wine club member?<\/strong> To see your order history, you’ll need to <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/register\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/register\"><span style=\"text-decoration:underline\">create an account<\/span><\/a> using the email you used to place your order. All of your order history and tracking information will be in your new account!<\/p>"
           }
         },
         "a51772d6-95ab-4116-b085-fd30075982f3": {
@@ -109,7 +109,7 @@
           "type": "faq",
           "settings": {
             "heading": "Why is it so expensive to ship wine?",
-            "content": "<p>Wine is heavy, fragile, and temperature sensitive, and there’s a surcharge to make sure that wine is only being sold to and delivered to people 21 years of age and older.  <a href=\"https:\/\/www.sfchronicle.com\/wine\/article\/If-you-want-independent-wineries-to-survive-get-15789494.php\"><span style=\"text-decoration:underline\">Here’s a great article from Esther Mobley at The SF Chronicle that explains some of the ins and outs of moving wine from our winery to you.<\/span><\/a> If you’d like to receive $25 flat rate shipping year round, please &lt;sign up for the Martha Stoumen Wines club.&gt;<\/p>"
+            "content": "<p>Wine is heavy, fragile, and temperature sensitive, and there’s a surcharge to make sure that wine is only being sold to and delivered to people 21 years of age and older.  <a href=\"https:\/\/www.sfchronicle.com\/wine\/article\/If-you-want-independent-wineries-to-survive-get-15789494.php\"><span style=\"text-decoration:underline\">Here’s a great article from Esther Mobley at The SF Chronicle that explains some of the ins and outs of moving wine from our winery to you.<\/span><\/a> If you’d like to receive $25 flat rate shipping year round, please <a href=\"https:\/\/martha-stoumen.myshopify.com\/pages\/membership\" title=\"https:\/\/martha-stoumen.myshopify.com\/pages\/membership\"><span style=\"text-decoration:underline\">sign up for the Martha Stoumen Wines club<\/span><\/a>.<\/p>"
           }
         }
       },
@@ -133,7 +133,7 @@
           "type": "faq",
           "settings": {
             "heading": "I just signed up for the wine club! How do I log into my account?",
-            "content": "<p>Congratulations, we’re so excited to have you! Click the person icon in the top right corner of any page (<a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\"><span style=\"text-decoration:underline\">or head here<\/span><\/a>). <\/p><p>Once you are logged in, $25 flat rate shipping will automatically apply to all of your orders.<\/p>"
+            "content": "<p>Congratulations, we’re so excited to have you! Click the person icon in the top right corner of any page (<a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\"><span style=\"text-decoration:underline\">or head here<\/span><\/a>). <\/p><p>Once you are logged in, $25 flat rate shipping will automatically apply to all of your orders and you'll be able to purchase wine club exclusive bottles.<\/p><p>Are you an existing wine club member who hasn't logged in since before September 7th, 2021? You'll need to find the email we sent you with the \"activate your account\" button. If that link has expired (it's only good for 72 hours), just reach out to us at info@marthastoumen.com and we'll get you a replacement ASAP!<\/p>"
           }
         },
         "32ad446c-d7c8-4baa-a232-d7b15bed9e2c": {
@@ -189,7 +189,7 @@
           "type": "faq",
           "settings": {
             "heading": "How can I purchase wine club exclusive bottles?",
-            "content": "<p>Once you're logged into your wine club account, all wines marked <strong>Wine club exclusive<\/strong> will be available for you to purchase. <\/p><p>If you'd like to add any bottles to your wine club purchase for no additional shipping fees, log into your wine club account and go to Memberships &gt; View my memberships.<\/p><p>Under <strong>Add or edit wine options<\/strong>, scroll down to <strong>Looking to add a few more bottles to your shipment?<\/strong> and add whichever other bottles you'd like!<\/p>"
+            "content": "<p>Once you're logged into your wine club account, all wines marked <strong>Wine club exclusive<\/strong> will be available for you to purchase. <\/p><p>If you'd like to add any bottles to your wine club purchase for no additional shipping fees, log into your wine club account and go to <strong>Memberships<\/strong> &gt; <strong>View my memberships<\/strong>.<\/p><p>Under <strong>Add or edit wine options<\/strong>, scroll down to <strong>Looking to add a few more bottles to your shipment?<\/strong> and add whichever other bottles you'd like!<\/p>"
           }
         },
         "fda21c67-42e6-4213-9a54-08bf2f5d98b9": {
@@ -197,6 +197,13 @@
           "settings": {
             "heading": "How much does the wine club cost?",
             "content": "<p>The 6 bottle club ranges between $195-$275 per shipment, and the 12 bottle club generally ranges from $380-$550 per shipment, depending upon your selections. In addition to the wine, there are applicable taxes and $25 flat rate shipping.<\/p>"
+          }
+        },
+        "883bb8bb-2e52-4093-bec8-607586e1f20c": {
+          "type": "faq",
+          "settings": {
+            "heading": "I'm trying to sign up and it says \"Phone has already been taken.\" What's going on?",
+            "content": "<p>We use Shopify for our backend e-commerce. They use your email and phone number as unique identifiers. If you've ever made a purchase on a website that uses Shopify (a lot of websites do!), their database has tied your email and phone number together. <\/p><p>If you get this error, it means you need to use the email address you've tied it to, or use an alternate phone number.<\/p>"
           }
         }
       },
@@ -210,7 +217,8 @@
         "9482537e-3d82-4749-908e-b6853584156f",
         "31852817-023b-4ab4-837c-888494ddeab7",
         "de5098d7-58f2-4405-a9d1-deb86a48d068",
-        "fda21c67-42e6-4213-9a54-08bf2f5d98b9"
+        "fda21c67-42e6-4213-9a54-08bf2f5d98b9",
+        "883bb8bb-2e52-4093-bec8-607586e1f20c"
       ],
       "settings": {
         "heading": "Wine Club",
@@ -224,7 +232,7 @@
           "type": "faq",
           "settings": {
             "heading": "How do I gift a wine club membership?",
-            "content": "<p>INSTRUCTIONS → need to set up an account.<\/p><p><\/p><p>- Your recipient won't have the ability to change the wines in their shipment. If you want to give them the ability to choose which wines they get, we recommend sending them a <a href=\"\/products\/martha-stoumen-wines-gift-card\" title=\"Martha Stoumen Wines Gift Card\"><span style=\"text-decoration:underline\">gift card<\/span><\/a>. <\/p>"
+            "content": "<p>After clicking the <a href=\"https:\/\/martha-stoumen.myshopify.com\/pages\/membership\" title=\"https:\/\/martha-stoumen.myshopify.com\/pages\/membership\"><span style=\"text-decoration:underline\">Join Now<\/span><\/a> button, you'll select either the 6 or 12 bottle membership. On the signup screen, you'll select \"Give this membership as a gift\" and then you'll choose the duration of membership you'd like to gift. We send shipments twice per year: if you select 1 year, your recipient will get 2 shipments. If you select 2 years, your recipient will get 4 shipments. <\/p><p><\/p><p>Your recipient won't have the ability to change the wines in their shipment or add on additional bottles. If you want to give them the ability to choose which wines they get, we recommend sending them a <a href=\"\/products\/martha-stoumen-wines-gift-card\" title=\"Martha Stoumen Wines Gift Card\"><span style=\"text-decoration:underline\">gift card<\/span><\/a>. <\/p>"
           }
         },
         "5682fc9e-41e6-4ca9-ac1e-ebc2867c9cc1": {
