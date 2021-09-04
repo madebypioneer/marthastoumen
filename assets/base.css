@@ -572,6 +572,58 @@ h5,
 /*  }*/
 /*}*/
 
+#MainContent .shopify-policy__container {
+  padding: 64px 64px 128px;
+  max-width: 960px;
+}
+
+#MainContent .shopify-policy__container h1,
+#MainContent .shopify-policy__container ul
+{
+  margin-bottom: 16px;
+}
+
+#MainContent .shopify-policy__container a {
+  text-decoration: underline;
+}
+
+#MainContent .shopify-policy__container ul {
+  list-style: disc;
+}
+
+#MainContent .shopify-policy__container ol {
+  list-style: auto;
+}
+
+#MainContent .shopify-policy__container h1 {
+  margin-bottom: 16px;
+}
+
+#MainContent .shopify-policy__title {
+  margin-bottom: 64px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(https://bloomapp-production.herokuapp.com/assets/ico-select.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 28px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  cursor: pointer;
+  min-width: 5.5em;
+  padding: 8px 10px !important;
+  line-height: 1.42 !important;
+  background-color: #f9f5ea;
+  border: 1px solid #000;
+  font-family: 'Baton Web',sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
 h6,
 .h6 {
   /*color: rgba(var(--color-foreground), 0.75);*/

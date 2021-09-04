@@ -5,6 +5,10 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="{{ 'section-main-press.js' | asset_url }}"></script>
 
+<script src="{{ 'nav-select.js' | asset_url }}" defer="defer"></script>
+
+
+
 
 <div class="main-blog mx-auto" style="max-width: 1280px;">
     <div class="flex flex-wrap md:p-32">
@@ -15,7 +19,24 @@
         <div class="w-full pt-96">
             <div class="flex flex-wrap">
 
-                <div class="w-full md:w-1/4 p-32">
+                <div class="w-full p-32 md:hidden">
+                    <nav-select>
+                        <select name="nav" id="" class="md:hidden bg-transparent w-full">
+                            {% for tag in blog.tags %}
+                                {% if tag.title == 'Current Releases' %}
+                                    <option value="{{ blog.url }}/tagged/{{ tag | handle }}" {% if current_tags contains tag  %}selected{% endif %}>Current Releases</option>
+                                {% endif %}
+                            {% endfor %}
+                            {% for tag in blog.tags %}
+                                {% unless tag.title == 'Current Releases' %}
+                                    <option value="{{ blog.url }}/tagged/{{ tag | handle }}" {% if current_tags contains tag  %}selected{% endif %}>{{ tag.title }}</option>
+                                {% endunless %}
+                            {% endfor %}
+                        </select>
+                    </nav-select>
+                </div>
+
+                <div class="w-full sm:hidden md:w-1/2 lg:w-1/4 p-32">
                     {% for tag in blog.tags %}
                         {% if tag.title == 'Current Releases' %}
                             <ul class="categories mb-32">
@@ -37,7 +58,7 @@
                         {% endfor %}
                     </ul>
                 </div>
-                <div class="w-full md:w-3/4 p-32">
+                <div class="w-full md:w-1/2 lg:w-3/4 p-32">
                     {%- paginate blog.articles by 12 -%}
                         <div class="flex flex-wrap">
                             {%- for article in blog.articles -%}

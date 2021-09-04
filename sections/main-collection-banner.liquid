@@ -1,8 +1,18 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'nav-select.js' | asset_url }}" defer="defer"></script>
 
   <div class="flex flex-wrap collection-nav">
     <div class="w-full p-32 md:p-64">
-      <nav>
+      <nav-select>
+        <select name="nav" id="" class="md:hidden bg-transparent w-full">
+          {% for collection in collections %}
+            {% if collection.metafields.custom_fields.show_as_filter %}
+              <option value="{{ collection.url }}" {% if collection.url contains request.path %}selected{% endif %}>{{ collection.title }}</option>
+            {% endif %}
+          {% endfor %}
+        </select>
+      </nav-select>
+      <nav class="hidden md:block">
         <ul class="flex flex-wrap justify-center">
           {% for collection in collections %}
             {% if collection.metafields.custom_fields.show_as_filter %}

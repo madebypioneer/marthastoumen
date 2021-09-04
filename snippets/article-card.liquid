@@ -13,7 +13,7 @@
 {% endcomment %}
 
 <article class="article-card{% if article.image == blank or show_image == false %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
-  <a href="{{ article.url }}" class="article-content motion-reduce">
+  <a href="{{ article.url }}" class="article-content motion-reduce block w-full">
     {%- if show_image == true and article.image -%}
       <div class="article-card__image-wrapper">
         <div class="article-card__image media media--square">

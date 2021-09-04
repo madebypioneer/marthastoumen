@@ -4,7 +4,8 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="{% if section.settings.fullWidth %}w-full text-center{% else %}md:w-1/2{% endif %}">
+testing
+<div class="{% if section.settings.fullWidth %}w-full text-center{% else %}md:w-1/2{% endif %} p-32 lg:p-64">
   <h2 class="page-title">
     {%- if section.settings.page.title != blank -%}
       {{ section.settings.page.title | escape }}
