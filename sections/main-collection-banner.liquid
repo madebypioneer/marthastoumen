@@ -4,11 +4,6 @@
     <div class="w-full p-32 md:p-64">
       <nav>
         <ul class="flex flex-wrap justify-center">
-          <li class="px-32 py-8">
-            <a href="/collections/all" class="hover:text-vine">
-              All Wine
-            </a>
-          </li>
           {% for collection in collections %}
             {% if collection.metafields.custom_fields.show_as_filter %}
               <li class="px-32 py-8">
