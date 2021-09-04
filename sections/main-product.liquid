@@ -117,7 +117,7 @@
           {%- case block.type -%}
           {%- when 'price' -%}
         {% if show_add_to_cart %}
-            <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
+            <div class="no-js-hidden mb-16" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
 
