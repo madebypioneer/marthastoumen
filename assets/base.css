@@ -585,6 +585,16 @@ h6,
   margin-bottom: 16px;
 }
 
+.product-card .sold-out img {
+  filter: blur(5px);
+  transition: filter var(--duration-long) ease;
+}
+
+.product-card a:hover .sold-out img {
+  filter: blur(0px);
+  transition: filter var(--duration-long) ease;
+}
+
 blockquote {
   font-style: italic;
   color: rgba(var(--color-foreground), 0.75);
