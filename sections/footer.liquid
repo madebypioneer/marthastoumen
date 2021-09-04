@@ -22,7 +22,7 @@
 
   <newsletter-signup class="flex flex-wrap">
     {%- if section.settings.newsletter_enable -%}
-      <div id="newsletter-signup" class="{% if section.settings.partners_enable %}md:w-1/2{% endif %} w-full bg-vine p-32 md:p-64 relative" newsletter-signup>
+      <div id="newsletter-signup" class="{% if section.settings.partners_enable %}xl:w-1/2{% endif %} w-full bg-vine p-32 md:p-64 relative" newsletter-signup>
         <div class="flex flex-wrap -mx-32 items-center">
 
           <div class="absolute top-10 right-10 text-fullMoon">
@@ -132,7 +132,7 @@
       </div>
     {%- endif -%}
     {% if section.settings.partners_enable %}
-      <div id="industry-partners" class="{% if section.settings.newsletter_enable %}md:w-1/2{% else %}w-full{% endif %} p-32 md:p-64 bg-earth text-fullMoon" industry-partners>
+      <div id="industry-partners" class="{% if section.settings.newsletter_enable %}xl:w-1/2{% endif %} w-full p-32 md:p-64 bg-earth text-fullMoon" industry-partners>
         <div class="flex flex-wrap -mx-32" industry-content>
           <div class="w-full lg:w-1/2 px-32 py-16">
             {% if section.settings.partners_preheading %}
@@ -158,14 +158,14 @@
         {% endif %}
   </newsletter-signup>
 
-  <div class="container mx-auto my-64 px-32 md:px-0">
-    <div class="flex flex-wrap -mx-32">
-    <div class="md:w-1/3 mb-32 md:mb-0 px-32">
+  <div class="mx-auto my-64 px-64 md:px-0">
+    <div class="flex flex-wrap lg:px-32">
+    <div class="w-full lg:w-1/2 xl:w-1/3 mb-32 xl:mb-0 px-32 text-center lg:text-left">
       <a href="{{ routes.root_url }}" class="">
         {%- if section.settings.logo != blank -%}
           <img src="{{ section.settings.logo | img_url: '300x' }}"
                loading="lazy"
-               class="mb-16"
+               class="mb-16 mx-auto lg:mx-0"
                width="{{ section.settings.logo.width }}"
                height="{{ section.settings.logo.height }}"
                alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
@@ -177,14 +177,14 @@
       </a>
       <p>We’re recapturing something nearly lost: a winemaking culture of patience.</p>
     </div>
-    <div class="w-full md:w-1/6 mb-32 md:mb-0 px-32 text-center md:text-left">
+    <div class="w-full lg:w-1/2 xl:w-1/6 mb-32 xl:mb-0 px-32 text-center lg:text-left">
       <nav>
         <ul>
           <li>
             <a href="{{ routes.all_products_collection_url }}">
               Shop
             </a>
-            <ul class="columns-2 md:columns-auto">
+            <ul class="columns-2 xl:columns-auto">
               {% for collection in collections %}
                 {% if collection.metafields.custom_fields.show_as_filter %}
                   <li>
@@ -199,12 +199,12 @@
         </ul>
       </nav>
     </div>
-    <div class="w-full md:w-1/3 mb-32 md:mb-0 px-32 text-center md:text-left">
+    <div class="w-full lg:w-1/2 xl:w-1/3 mb-32 xl:mb-0 px-32 text-center lg:text-left">
       <nav>
-        <ul class="md:columns-2">
+        <ul class="columns-2 xl:columns-auto">
           {%- for link in section.settings.menu.links -%}
           <li>
-            <a href="{{ link.url }}">
+            <a href="{{ link.url }}" class="hover:text-vine">
               {{ link.title }}
             </a>
           </li>
@@ -212,7 +212,7 @@
         </ul>
       </nav>
     </div>
-    <div class="w-full md:w-1/6 px-32 text-center md:text-left">
+    <div class="w-full lg:w-1/2 xl:w-1/6 px-32 text-center lg:text-left">
       <h3>
         {% if section.settings.contact_link %}
           <a href="{{ section.settings.contact_link }}">
@@ -232,7 +232,7 @@
       </p>
 
       {%- if section.settings.show_social -%}
-        <ul class="footer__list-social list-unstyled list-social" role="list">
+        <ul class="footer__list-social list-unstyled list-social justify-center lg:justify-start" role="list">
           {%- if settings.social_instagram_link != blank -%}
             <li class="list-social__item">
               <a href="{{ settings.social_instagram_link }}" class="link link--text list-social__link" aria-describedby="a11y-external-message">
@@ -278,9 +278,9 @@
       {%- endif -%}
 
     </div>
-    <div class="w-full mt-88">
+    <div class="w-full mt-24 lg:mt-88">
       <div class="flex flex-wrap">
-        <div class="w-full md:w-1/2 mb-32 md:mb-0 text-center md:text-left px-32">
+        <div class="w-full xl:w-1/2 mb-32 md:mb-0 text-center xl:text-left px-32">
           <ul>
             <li class="block md:inline">
               <small class="copyright__content">
@@ -302,7 +302,7 @@
             </div>
           {% endif %}
         </div>
-        <div class="w-full md:w-1/2 md:text-right mb-32 md:mb-0 text-center px-32">
+        <div class="w-full xl:w-1/2 xl:text-right mb-32 xl:mb-0 text-center px-32">
           <ul>
             {%- for link in section.settings.sub_menu.links -%}
             <li class="block md:inline">

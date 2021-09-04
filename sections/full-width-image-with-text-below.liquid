@@ -19,18 +19,18 @@
             </div>
         </div>
 
-        <div class="w-full md:px-64">
+        <div class="w-full md:px-32 lg:px-64">
             <div class="flex flex-wrap">
                 {%- for block in section.blocks -%}
                     {% case block.type %}
                         {%- when 'heading' -%}
-                            <div class="md:w-1/2 p-32 pb-0 md:pb-32">
+                            <div class="w-full lg:w-1/2 p-32 pb-0 lg:pb-32">
                                 <h2 class="image-with-text__heading h1 text-fullMoon mt-0" {{ block.shopify_attributes }}>
                                     {{ block.settings.heading | escape }}
                                 </h2>
                             </div>
                         {%- when 'text' -%}
-                            <div class="md:w-1/2 p-32">
+                            <div class="w-full lg:w-1/2 p-32">
                                 <div class="image-with-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
                             </div>
                     {%- endcase -%}
