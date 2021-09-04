@@ -2461,8 +2461,10 @@ details[open] > .header__icon--menu .icon-hamburger {
   display: none;
 }
 
-li:hover > .mega_menu {
-  display: block;
+@media (min-width: 980px) {
+  li:hover > .mega_menu {
+    display: block;
+  }
 }
 
 li:hover .mega_hover:after {
