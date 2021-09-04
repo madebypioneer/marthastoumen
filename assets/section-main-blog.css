@@ -17,8 +17,8 @@ h1 {
 
 @media (min-width: 769px) {
   .blog-sidebar-scroll {
-    max-height: 60vh;
-    position: relative;
+    max-height: 75vh;
+    /*position: relative;*/
   }
 
   .blog-sidebar-scroll:after {
