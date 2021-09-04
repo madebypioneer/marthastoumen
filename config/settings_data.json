@@ -13,8 +13,8 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "20% off shipping 6+ bottles use code SUMMER20 \/\/\/ 50% off shipping 12+ bottles Use code SUMMER50 \/\/\/ Free case shipping for wine club members",
-              "link": ""
+              "text": "First 50 customers on our new site are automatically entered to win a year long club membership!",
+              "link": "shopify:\/\/policies\/terms-of-service"
             }
           }
         },
