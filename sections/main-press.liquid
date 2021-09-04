@@ -9,7 +9,7 @@
 
         {% if section.settings.show_featured %}
             <div class="w-full">
-                <div class="flex featured-press">
+                <div class="flex featured-press px-32">
                     {% for article in blog.articles %}
                         {% if article.metafields.custom_fields.featured %}
                             <div class="flex w-full md:w-1/2">

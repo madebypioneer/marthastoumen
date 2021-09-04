@@ -14,3 +14,11 @@
 .featured-press .card:not(:first-of-type) {
     border-width: 1px 1px 1px 0;
 }
+
+.featured-press .slick-track {
+    display: flex !important;
+}
+
+.featured-press .slick-slide {
+    height: inherit !important;
+}

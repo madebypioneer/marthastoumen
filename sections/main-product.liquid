@@ -39,8 +39,8 @@
 </script>
 
 <section>
-  <div class="product flex flex-wrap px-32">
-    <div class="w-full md:w-1/2 p-64">
+  <div class="product flex flex-wrap md:px-32">
+    <div class="w-full lg:w-1/2 p-32 lg:p-64">
       <div class="aspect-w-6 aspect-h-7">
         
         {% if product.metafields.custom_fields.wine_type %}
@@ -85,23 +85,17 @@
             >
       </div>
     </div>
-    <div class="w-full md:w-1/2 p-64">
+    <div class="w-full lg:w-1/2 p-32 lg:p-64 pb-64">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container">
         <div class="tags mb-8 uppercase">
-          <p><a href="/collections/all">ALL WINES</a>  •  {% for collection in product.collections %}{% if forloop.first %}<a href="{{ collection.url }}">{{ collection.title }}</a>{% endif %}  •  {% endfor %}{{ product.title | escape }}</p>
+          <p>{% for collection in product.collections %}<a href="{{ collection.url }}">{{ collection.title }}</a>  •  {% endfor %}{{ product.title | escape }}</p>
         </div>
 
-        
-        
-        
-{% comment %}PRINT BLOOM VARIABLES FOR TESTIN PURPOSES. REMOVE BEFORE GOING LIVE.{% endcomment %}        
-<p style="background-color:#caae7c;"> cart: {{ show_add_to_cart }}<br>
-member: {{ is_member }}<br>
-Club only?: {{ is_club_members_only }}</p>
+        {% comment %}PRINT BLOOM VARIABLES FOR TESTIN PURPOSES. REMOVE BEFORE GOING LIVE.{% endcomment %}
+        {% comment %}<p style="background-color:#caae7c;"> cart: {{ show_add_to_cart }}<br>{% endcomment %}
+        {% comment %}member: {{ is_member }}<br>{% endcomment %}
+        {% comment %}Club only?: {{ is_club_members_only }}</p>{% endcomment %}
 
-        
-        
-        
         <h1 class="mb-8">
           {{ product.title | escape }}
         </h1>
@@ -294,7 +288,7 @@ Club only?: {{ is_club_members_only }}</p>
               </div>
             </noscript>
           {%- when 'buy_buttons' -%}
-            <div class="mb-64" {{ block.shopify_attributes }}>
+            <div class="mb-16 lg:mb-64" {{ block.shopify_attributes }}>
               {% if show_add_to_cart %}
               <product-form class="product-form">
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
