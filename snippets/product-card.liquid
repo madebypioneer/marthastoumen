@@ -29,7 +29,7 @@
           -%}
 
           <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>
-            <div class="media media--transparent aspect-w-2 aspect-h-3 media--hover-effect{% unless available %} sold-out{% endunless %}">
+            <div class="media media--transparent aspect-w-2 aspect-h-3 media--hover-effect{% unless product_card_product.available %} sold-out{% endunless %}">
               <img src="{{ product_card_product.featured_media | img_url: '1000x' }}"
                 alt="{{ product_card_product.featured_media.alt | escape }}"
                 loading="lazy"
@@ -95,8 +95,12 @@
           {% endif %}
 
           <span class="price block pt-8 block" style="display: block;">
-              {% if available %}
-                  {{ product_card_product.price | money }}
+              {% if product_card_product.available %}
+                  {% if product_card_product.price_min != product_card_product.price_max  %}
+                      {{ product_card_product.price_min | money }} &mdash; {{ product_card_product.price_max | money }}
+                  {% else %}
+                      {{ product_card_product.price | money }}
+                  {% endif %}
               {% else %}
                   SOLD OUT
               {% endif %}
