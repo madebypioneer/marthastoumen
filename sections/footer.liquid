@@ -147,7 +147,7 @@
           </div>
           {% if section.settings.partners_link %}
           <div class="w-full lg:w-1/2 lg:text-right px-32 py-16">
-            <a href="{{ section.settings.partners_link }}" class="button--text mr-40">
+            <a href="{{ section.settings.partners_link.url }}" class="button--text mr-40">
               {{ section.settings.partners_linkText | deafault:  "Learn More" }}
               <span class="arrow"></span>
             </a>
