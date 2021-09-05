@@ -19,24 +19,25 @@
         </div>
       {%- when 'featured_image'-%}
         {%- if article.image -%}
-          <div class="w-full md:w-1/2 p-32" {{ block.shopify_attributes }}>
-            <div class="aspect-h-1 aspect-w-1"
+          <div class="w-full p-32 -mx-64 breakout-image" {{ block.shopify_attributes }}>
+            <div class="aspect-h-1 aspect-w-2"
               itemprop="image"
-              {% if block.settings.image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}
             >
               <img
                 src="{{ article.image | img_url: '2000x' }}"
                 loading="lazy"
                 width="{{ article.image.width }}"
                 height="{{ article.image.height }}"
-                alt="{{ article.image.alt | escape }}">
+                alt="{{ article.image.alt | escape }}"
+                class="object-center object-cover"
+              >
             </div>
           </div>
         {%- endif -%}
 
         {%- when 'title'-%}
-          <header class="w-full md:w-1/2 p-32 self-center article-hero" {{ block.shopify_attributes }}>
-            <h6 class="mb-8">{{ blog.title }} • {{ primary_tag.title }}</h6>
+          <header class="w-full article-hero text-center" {{ block.shopify_attributes }}>
+            <h6 class="mb-8">{{ blog.title }}{% if primary_tag %} • {{ primary_tag.title }}{% endif %}</h6>
             <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
             <div class="tags">
             {% for tag in article.tags %}<p><a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag.title }}</a></p>{% endfor %}

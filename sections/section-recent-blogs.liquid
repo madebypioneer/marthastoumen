@@ -1,0 +1,51 @@
+<div>
+   <div class="flex flex-wrap">
+       <div class="w-full">
+           <h2>{{ section.settings.heading }}</h2>
+       </div>
+       <div class="w-full md:w-1/2">
+           {{ section.settings.text }}
+       </div>
+       <div class="w-full md:w-1/2 text-left md:text-right">
+           <a href="{{ section.settings.blog.url }}">
+               Read More
+           </a>
+       </div>
+       <div class="w-full">
+           <div class="flex flex-wrap">
+               {% for article in section.settings.blog.articles %}
+                   <div class="w-full md:w-1/3 p-32">
+                       {%- render 'article-card', article: article -%}
+                   </div>
+               {% endfor %}
+           </div>
+       </div>
+   </div>
+
+</div>
+
+{% schema %}
+{
+    "name": "Recent Blog Posts",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "default": "The Latest From",
+            "label": "Heading"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "default": "<p>These distinctly savory wines offer ample body and brightness as days get brighter and nights get sweeter.</p>",
+            "label": "Text"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Recent Blog Posts"
+        }
+    ]
+}
+{% endschema %}

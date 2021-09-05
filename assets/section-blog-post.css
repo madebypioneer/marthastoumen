@@ -13,6 +13,12 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .breakout-image {
+    width: calc(100% + 128px);
+  }
+}
+
 .article-template__hero-medium {
   height: 15.6rem;
 }
@@ -128,10 +134,10 @@
   margin-bottom: 64px;
 }
 
-.article-body img {
-  clip-path: url(#circleMask);
-  -webkit-clip-path: url(#circleMask);
-}
+/*.article-body img {*/
+/*  clip-path: url(#circleMask);*/
+/*  -webkit-clip-path: url(#circleMask);*/
+/*}*/
 
 .article-hero .tags {
   font-family: 'Courier Prime Sans', monospace;
