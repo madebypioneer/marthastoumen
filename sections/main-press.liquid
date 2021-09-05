@@ -11,7 +11,7 @@
             <div class="w-full">
                 <div class="flex featured-press px-32">
                     {% for article in blog.articles %}
-                        {% if article.metafields.custom_fields.featured %}
+                        {% if article.metafields.custom_fields.featured == 1 %}
                             <div class="flex w-full md:w-1/2">
                                 <div class="featured-press-card py-56 px-64">
                                     <div>
