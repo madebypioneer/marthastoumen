@@ -12,7 +12,7 @@
 
 <script type="text/javascript" src="{{ 'featured-collection.js' | asset_url }}" defer="defer"></script>
 
-{% if product.metafields.custom_fields.related != blank %}
+{% if product.metafields.custom_fields.related_products != blank %}
   <div class="flex flex-wrap p-32 md:px-64 -mx-32">
     <div class="w-full md:w-1/4 p-32">
       <h2 class="product-recommendations__heading">{{ section.settings.heading | escape }}</h2>
@@ -20,7 +20,7 @@
     </div>
     <slick-product-slider class="w-full md:w-3/4 p-32 featured-collection-slick">
       {% assign product_refs = product.metafields.custom_fields["related_products"] | split: "|" %}
-      <div class="flex" role="list">
+      <div class="flex -my-32" role="list">
         <div class="w-11/12">
           <div class="flex" data-slick-slider>
               {% for reccomendation in product_refs %}
