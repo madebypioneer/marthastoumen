@@ -64,7 +64,7 @@
 
         <div class="w-full md:w-1/4 p-32">
             <ul class="categories">
-                {% for tag in blog.tags %}
+                {% for tag in blogs['news'].all_tags %}
                     <li class="py-24">
                         <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="h4">{{ tag.title }}</a>
                     </li>
