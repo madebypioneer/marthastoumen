@@ -1,6 +1,8 @@
 {{ 'section-main-press.css' | asset_url | stylesheet_tag }}
 <script type="text/javascript" src="{{ 'section-main-press.js' | asset_url }}"></script>
 
+<script src="{{ 'nav-select.js' | asset_url }}" defer="defer"></script>
+
 <div class="main-blog mx-auto" style="max-width: 1680px;">
     <div class="flex flex-wrap md:p-32">
         <div class="w-full p-32 text-center">
@@ -60,11 +62,21 @@
 
         <div class="w-full pt-96">
             <div class="flex flex-wrap">
-
-
-        <div class="w-full md:w-1/4 p-32 -my-8">
-            <ul class="categories">
                 {% assign pressTags = blogs['news'].all_tags | sort: 'price' %}
+
+                <div class="w-full px-32 md:hidden">
+                    <nav-select>
+                        <select name="nav" id="" class="md:hidden bg-transparent w-full">
+                            {% for tag in pressTags %}
+                                    <option value="{{ blog.url }}/tagged/{{ tag | handle }}" {% if current_tags contains tag  %}selected{% endif %}>{{ tag.title }}</option>
+                            {% endfor %}
+                        </select>
+                    </nav-select>
+                </div>
+
+        <div class="w-full md:w-1/4 sm:hidden md:block p-32 -my-8">
+            <ul class="categories">
+
                 {% for tag in pressTags %}
                     <li class="py-8">
                         <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="h4 hover:text-vine">{{ tag.title }}</a>
@@ -76,7 +88,7 @@
             {%- paginate blog.articles by 12 -%}
                 <div class="flex flex-wrap -my-8">
                     {%- for article in blog.articles -%}
-                        <div class="w-full py-8">
+                        <div class="w-full py-8 mb-8">
                             <div class="flex flex-wrap">
                                 <div class="w-full">
                                     {% if article.metafields.custom_fields.link %}
