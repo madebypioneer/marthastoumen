@@ -13,8 +13,8 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "20% off shipping 6+ bottles use code SUMMER20 \/\/\/ 50% off shipping 12+ bottles Use code SUMMER50 \/\/\/ Free case shipping for wine club members",
-              "link": ""
+              "text": "First 50 customers on our new site are automatically entered to win a year long club membership!",
+              "link": "shopify:\/\/policies\/terms-of-service"
             }
           }
         },
@@ -59,6 +59,7 @@
           "newsletter_preheading": "Subscribe",
           "newsletter_heading": "Newsletter",
           "newsletter_content": "<p>Harvest updates, new releases, and the occasional recipe fresh from the upstairs office.<\/p>",
+          "accepts_marketing": "<p>I have read and agreed to the <a href=\"\/policies\/privacy-policy\" title=\"Privacy Policy\">Privacy Policy<\/a> and consent to the collection of my personal information, its use and disclosure in accordance with this Policy.<\/p>",
           "show_social": true,
           "partners_enable": true,
           "partners_preheading": "INDUSTRY PARTNERS",
