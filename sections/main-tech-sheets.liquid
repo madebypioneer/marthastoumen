@@ -15,16 +15,17 @@
 
         <div class="w-full pt-96">
             <div class="flex flex-wrap">
+                {% assign techSheetTags = blogs['tech-sheets'].all_tags | sort: 'price' %}
 
                 <div class="w-full p-32 md:hidden">
                     <nav-select>
                         <select name="nav" id="" class="md:hidden bg-transparent w-full">
-                            {% for tag in blogs['tech-sheets'].all_tags %}
+                            {% for tag in techSheetTags %}
                                 {% if tag.title == 'Current Releases' %}
                                     <option value="{{ blog.url }}/tagged/{{ tag | handle }}" {% if current_tags contains tag  %}selected{% endif %}>Current Releases</option>
                                 {% endif %}
                             {% endfor %}
-                            {% for tag in blogs['tech-sheets'].all_tags %}
+                            {% for tag in techSheetTags %}
                                 {% unless tag.title == 'Current Releases' %}
                                     <option value="{{ blog.url }}/tagged/{{ tag | handle }}" {% if current_tags contains tag  %}selected{% endif %}>{{ tag.title }}</option>
                                 {% endunless %}
@@ -34,7 +35,7 @@
                 </div>
 
                 <div class="w-full sm:hidden md:block md:w-1/2 lg:w-1/4 p-32">
-                    {% for tag in blogs['tech-sheets'].all_tags %}
+                    {% for tag in techSheetTags %}
                         {% if tag.title == 'Current Releases' %}
                             <ul class="categories mb-32">
                                 <li class="py-24{% if current_tags contains tag  %} text-vine{% endif %}">
@@ -46,7 +47,7 @@
 
                     <ul class="categories">
                         <li class="h4 uppercase" style="margin-bottom: 16px;">Past Releases</li>
-                        {% for tag in blogs['tech-sheets'].all_tags %}
+                        {% for tag in techSheetTags %}
                             {% if tag.title != 'Current Releases' %}
                                 <li class="py-8{% if current_tags contains tag  %} text-vine{% endif %}">
                                     <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="h4 uppercase">{{ tag.title }}</a>
