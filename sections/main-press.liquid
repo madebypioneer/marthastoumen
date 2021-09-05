@@ -62,25 +62,25 @@
             <div class="flex flex-wrap">
 
 
-        <div class="w-full md:w-1/4 p-32">
+        <div class="w-full md:w-1/4 p-32 -my-8">
             <ul class="categories">
                 {% assign pressTags = blogs['news'].all_tags | sort: 'price' %}
                 {% for tag in pressTags %}
-                    <li class="py-24">
-                        <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="h4">{{ tag.title }}</a>
+                    <li class="py-8">
+                        <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="h4 hover:text-vine">{{ tag.title }}</a>
                     </li>
                 {% endfor %}
             </ul>
         </div>
         <div class="w-full md:w-3/4 p-32">
             {%- paginate blog.articles by 12 -%}
-                <div class="flex flex-wrap">
+                <div class="flex flex-wrap -my-8">
                     {%- for article in blog.articles -%}
-                        <div class="w-full py-24">
+                        <div class="w-full py-8">
                             <div class="flex flex-wrap">
                                 <div class="w-full">
                                     {% if article.metafields.custom_fields.link %}
-                                        <a href="{{ article.metafields.custom_fields.link }}" class="block" target="_blank">
+                                        <a href="{{ article.metafields.custom_fields.link }}" class="block hover:text-vine hover:italic" target="_blank">
                                     {% endif %}
                                         <p class="mb-8">
                                             {{ article.title | escape }}
