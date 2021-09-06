@@ -1,0 +1,5 @@
+.team-member .team-member-image {
+    clip-path: url('#teamMask');
+    position: relative;
+    overflow: hidden;
+}

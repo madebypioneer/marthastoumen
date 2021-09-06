@@ -1,4 +1,4 @@
-{% comment %}{{ 'parallax-with-text.css' | asset_url | stylesheet_tag }}{% endcomment %}
+{{ 'team-members.css' | asset_url | stylesheet_tag }}
 
 <div class="bg-vine text-fullMoon">
     <div class="container mx-auto">
@@ -9,10 +9,10 @@
             </h2>
         </div>
     {%  for block in section.blocks %}
-        <div class="{% if block.settings.featured %}w-full{%  else %}md:w-1/2 lg:w-1/3 w-full{% endif %} md:p-32">
+        <div class="{% if block.settings.featured %}w-full{%  else %}md:w-1/2 lg:w-1/3 w-full{% endif %} md:p-32 team-member">
             <div class="flex flex-wrap items-top image-with-text__grid {% if block.settings.layout == 'text_first' %} lg:flex-row-reverse{% endif %} -mx-32">
                 <div class="{% if block.settings.featured %}md:w-1/2 lg:w-1/3 w-full{% else %}w-full{% endif %} p-32">
-                    <div class="aspect-w-1 aspect-h-1 imageMask {% if block.settings.image == blank %}image-with-text__media--placeholder placeholder{% endif %}"
+                    <div class="aspect-w-1 aspect-h-1 team-member-image {% if block.settings.image == blank %}image-with-text__media--placeholder placeholder{% endif %}"
                     >
                         {% comment %}{% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}{% endcomment %}
                         {%- if block.settings.image != blank -%}
