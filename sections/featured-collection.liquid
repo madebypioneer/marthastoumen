@@ -10,6 +10,11 @@
 <noscript>{{ 'component-badge.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript>
 
+{% include 'bloom' %}
+<link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
 <script type="text/javascript" src="{{ 'featured-collection.js' | asset_url }}" defer="defer"></script>
 
 <div class="flex flex-wrap collection xl:px-88 mb-128">
@@ -75,6 +80,8 @@
     </div>
   </slick-product-slider>
 </div>
+
+{%- render 'cart-notification' -%}
 
 {% schema %}
 {
