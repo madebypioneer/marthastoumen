@@ -2,6 +2,23 @@
   margin-top: 5rem;
 }
 
+
+.article-body  p {
+  position:relative;
+}
+
+.article-body p.iframe-square {
+  padding-top: 100%;
+}
+
+.article-body p.iframe-square iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .article-template__hero-container {
   max-width: 130rem;
   margin: 0 auto;

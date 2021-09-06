@@ -1,4 +1,5 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
 
 {% assign primary_tag = article.tags.first %}
 
@@ -94,8 +95,7 @@
         <div class="flex flex-wrap">
           <div class="w-full">
             <p class="more">
-              View More From
-              <a href="{{ blog.url }}/tagged/{{ primary_tag | handle }}" class="underline">{{ primary_tag.title }}</a>
+              View More From <a href="{{ blog.url }}/tagged/{{ primary_tag | handle }}" class="underline">{{ primary_tag.title }}</a>
             </p>
           </div>
           <div class="w-full">
@@ -103,13 +103,19 @@
               {% assign related_posts = 0 %}
 
               {% for relatedArticle in blog.articles %}
-                {% if relatedArticle.tags contains primary_tag and related_posts < 3 %}
+                {% if relatedArticle.tags contains primary_tag and related_posts < 3 and relatedArticle.id != article.id %}
                   {% assign related_posts = related_posts |  plus: 1 %}
                   <div class="w-full md:w-1/3 p-32">
                     {%- render 'article-card', article: relatedArticle -%}
                   </div>
                 {% endif %}
               {% endfor %}
+
+              {% if related_posts == 0 %}
+                <div class="w-full p-32 text-center">
+                  <h4 class="h2">There are no related posts</h4>
+                </div>
+              {% endif %}
 
             </div>
           </div>
