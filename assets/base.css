@@ -2380,6 +2380,14 @@ details[open] > .search-modal {
   opacity: 0;
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.2);
   height: 100%;
+  left: unset;
+}
+
+@media screen and (max-width: 1199px) {
+  .search-modal {
+    left: 0;
+    top: 64px;
+  }
 }
 
 .search-modal__content {
