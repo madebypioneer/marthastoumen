@@ -44,7 +44,8 @@
       "settings": {
         "reduce_spacing": false,
         "reduce_top_spacing": false,
-        "reduce_bottom_spacing": false
+        "reduce_bottom_spacing": true,
+        "add_spacing_mobile": false
       }
     },
     "1629424061a795407d": {
@@ -341,7 +342,8 @@
       "settings": {
         "reduce_spacing": false,
         "reduce_top_spacing": false,
-        "reduce_bottom_spacing": false
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
       }
     }
   },
