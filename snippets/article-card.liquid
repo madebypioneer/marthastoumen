@@ -12,9 +12,11 @@
     {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
 {% endcomment %}
 
-<article class="article-card{% if article.image == blank or show_image == false %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
+
+
+<article class="article-card{% if article.image == blank %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
   <a href="{{ article.url }}" class="article-content motion-reduce block w-full">
-    {%- if show_image == true and article.image -%}
+    {%- if article.image -%}
       <div class="article-card__image-wrapper">
         <div class="article-card__image media media--square">
           <img
@@ -40,7 +42,9 @@
         </h2>
       </header>
       <div class="article-card__footer">
-          <span>From Martha</span>
+        {% for tag in article.tags %}
+          <span>{{ tag.title }}</span>
+        {% endfor %}
       </div>
     </div>
   </a>
