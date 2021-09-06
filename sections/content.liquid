@@ -1,7 +1,7 @@
 {{ 'section-content.css' | asset_url | stylesheet_tag }}
 
 <div class="container mx-auto {% if section.settings.reduce_top_spacing and section.settings.reduce_bottom_spacing != true %}pb-64{% elsif section.settings.reduce_bottom_spacing %}pt-64{% elsif section.settings.reduce_spacing != true %}py-64{% endif %}">
-    <div class="flex flex-wrap justify-center {% if section.settings.reduce_top_spacing %}px-32{% else %}p-32 md:p-64 py-128{% endif %}">
+    <div class="flex flex-wrap justify-center {% if section.settings.reduce_top_spacing %}px-32{% else %}p-32 md:p-64{% if section.settings.add_spacing_mobile %} py-128{% endif %}{% endif %}">
         {%- for block in section.blocks -%}
             {% case block.type %}
                 {%- when 'buttons' -%}
@@ -89,6 +89,12 @@
             "type": "checkbox",
             "id": "reduce_bottom_spacing",
             "label": "Reduce Bottom Spacing"
+        },
+        {
+            "type": "checkbox",
+            "id": "add_spacing_mobile",
+            "label": "Add additional top and bottom spacing on mobile",
+            "info": "This setting has no effect if you've chosen to reduce top spacing above"
         }
     ],
     "blocks": [
