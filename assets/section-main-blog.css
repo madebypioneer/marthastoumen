@@ -59,6 +59,10 @@ h3.clifton {
   border-bottom: 1px solid #A47250;
 }
 
+.featured-blog-card:hover h2 {
+  color: #0e5356;
+}
+
 .featured-blog-card h2 {
   font-size: 24px;
   line-height: 32px;
@@ -79,4 +83,14 @@ h3.clifton {
 .large-card .button--text .arrow:before,
 .large-card .button--text .arrow:after {
   background-color: #30292F;
+}
+
+.large-card .button--text:hover {
+  color: #0e5356;
+}
+
+.large-card .button--text:hover .arrow,
+.large-card .button--text:hover .arrow:before,
+.large-card .button--text:hover .arrow:after {
+  background-color: #0e5356;
 }
