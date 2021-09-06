@@ -2511,6 +2511,7 @@ li:hover .mega_hover:after {
   /*TODO: Comment back in after styles complete*/
   display: none;
   overflow:hidden;
+  z-index: 20;
 }
 
 .mega_menu--content {
