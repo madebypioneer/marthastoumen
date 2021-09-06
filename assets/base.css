@@ -1621,12 +1621,13 @@ deferred-media {
 
 .button.loading {
   color: transparent;
+  position: relative;
 }
 
 .button.loading:after {
   animation: loading var(--duration-long) infinite linear;
-  border: 0.5rem solid rgba(var(--color-button-text), 0.4);
-  border-left: 0.5rem solid rgb(var(--color-button-text));
+  border: 0.5rem solid rgba(15,83,86, 0.4);
+  border-left: 0.5rem solid rgb(15,83,86);
   border-radius: 100%;
   box-sizing: content-box;
   content: '';
@@ -1634,6 +1635,8 @@ deferred-media {
   height: 2rem;
   position: absolute;
   width: 2rem;
+  top: calc(50% - 1.5rem);
+  left: calc(50% - 1.5rem);
 }
 
 @keyframes loading {
