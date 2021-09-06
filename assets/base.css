@@ -893,6 +893,11 @@ details > * {
   --duration-long: 500ms;
 }
 
+.is-family-monospace {
+  font-family: 'Courier Prime Sans', monospace;
+  letter-spacing: 0;
+}
+
 .underlined-link {
   color: rgba(var(--color-link), var(--alpha-link));
   text-underline-offset: 0.3rem;

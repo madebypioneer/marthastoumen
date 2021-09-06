@@ -3,7 +3,7 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
+<div class="page-width{% if cart == empty %} is-empty{% endif %} pb-120" id="main-cart-footer" data-id="{{ section.id }}">
   <div>
     <div class="cart__footer">
       {%- if section.settings.show_cart_note -%}
@@ -21,8 +21,8 @@
             {%- when 'subtotal' -%}
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div class="totals">
-                  <h3 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h3>
-                  <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
+                  <h3 class="totals__subtotal uppercase">Total:</h3>
+                  <p class="totals__subtotal-value">{{ cart.total_price | money_without_trailing_zeros }}</p>
                 </div>
 
                 <div>

@@ -54,11 +54,11 @@ cart-items {
 }
 
 .cart__footer {
-  padding: 4rem 0 0;
+  padding: 0 0 120px;
 }
 
 .cart__footer-wrapper:last-child .cart__footer {
-  padding-bottom: 5rem;
+  padding-bottom: 120px;
 }
 
 .cart__footer > div:only-child {
@@ -95,7 +95,7 @@ cart-items {
     grid-column-start: 1;
     grid-column-end: 3;
     padding-bottom: 4rem;
-    margin-bottom: 4rem;
+    /*margin-bottom: 4rem;*/
   }
 
   .cart__contents > * + * {
