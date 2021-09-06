@@ -89,7 +89,10 @@ class QuantityInput extends HTMLElement {
     const previousValue = this.input.value;
 
     event.target.name === 'plus' ? this.input.stepUp() : this.input.stepDown();
-    if (previousValue !== this.input.value) this.input.dispatchEvent(this.changeEvent);
+    if (previousValue !== this.input.value) {
+      console.log('target aquired')
+      this.input.dispatchEvent(this.changeEvent);
+    }
   }
 }
 
