@@ -75,7 +75,12 @@
 /*  font-size: 16px;*/
 /*  line-height: 24px;*/
 /*  text-align: center;*/
-/*}*/-
+/*}*/
+
+b,
+strong {
+  font-weight: 400 !important;
+}
 
 .button--secondary {
   --color-button: var(--color-base-outline-button-labels);
@@ -455,7 +460,7 @@ h1,
 .h1 {
   /*font-size: 3rem;*/
   font-style: italic;
-  font-weight: normal;
+  /*font-weight: normal;*/
   font-size: 48px;
   line-height: 48px;
   text-transform: uppercase;
@@ -473,7 +478,7 @@ h2,
   /*font-size: 2rem;*/
   /*font-family: Baton Trial;*/
   font-style: italic;
-  font-weight: normal;
+  /*font-weight: normal;*/
   font-size: 40px;
   line-height: 48px;
   text-transform: uppercase;
@@ -492,7 +497,7 @@ h3,
   /*font-size: 1.7rem;*/
   font-family: 'Courier Prime Sans', monospace;
   font-style: italic;
-  font-weight: normal;
+  /*font-weight: normal;*/
   font-size: 24px;
   line-height: 48px;
 }
@@ -550,7 +555,7 @@ h4,
   font-style: normal;
   /*font-style: var(--font-heading-style);*/
   /*font-size: 1.5rem;*/
-  font-weight: normal;
+  /*font-weight: normal;*/
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 8px;
@@ -566,7 +571,7 @@ h5,
   /*font-size: 1.2rem;*/
   font-family: var(--font-heading-family);
   font-style: var(--font-heading-style);
-  font-weight: normal;
+  /*font-weight: normal;*/
   font-size: 20px;
   line-height: 24px;
 }
@@ -2708,7 +2713,7 @@ details-disclosure > details {
 
 html {
   font-family: 'Gopher', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @keyframes animateMenuOpen {
