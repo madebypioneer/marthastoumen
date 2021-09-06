@@ -1,8 +1,10 @@
 {{ 'section-press-marquee.css' | asset_url | stylesheet_tag }}
 {% assign show_marquee = false %}
 
-{%- for press in blogs.news.articles -%}
-    {% if press.metafields.custom_fields.include_in_press_marquee %}
+{% assign pressArticles = blogs['news'].articles %}
+
+{%- for press in pressArticles -%}
+    {% if press.metafields.custom_fields.include_in_press_marquee == 1 %}
         {% assign show_marquee = true %}
     {% endif %}
 {% endfor %}
@@ -10,10 +12,11 @@
 {% if show_marquee %}
 <div class="bg-earth py-48 overflow-x-hidden press-marquee">
     <div class="flex animate-marquee relative items-center">
-        {%- for press in blogs.news.articles -%}
-            {% if press.metafields.custom_fields.include_in_press_marquee %}
+        {%- for press in pressArticles -%}
+            {% if press.metafields.custom_fields.include_in_press_marquee == 1 %}
                 <div class="text-fullMoon p-32 text-center" style="min-width: 360px; max-width: 360px;">
                     <div class="text-mono">
+                        {{ press.title }}
                         {{ press.content }}
                     </div>
                     {% if press.metafields.custom_fields.light_logo %}
@@ -22,8 +25,8 @@
                 </div>
             {% endif %}
         {%- endfor -%}
-        {%- for press in blogs.news.articles -%}
-            {% if press.metafields.custom_fields.include_in_press_marquee %}
+        {%- for press in pressArticles -%}
+            {% if press.metafields.custom_fields.include_in_press_marquee == 1 %}
                 <div class="text-fullMoon p-32 text-center" style="min-width: 360px;">
                     <div class="text-mono">
                         {{ press.content }}
@@ -34,8 +37,8 @@
                 </div>
             {% endif %}
         {%- endfor -%}
-        {%- for press in blogs.news.articles -%}
-            {% if press.metafields.custom_fields.include_in_press_marquee %}
+        {%- for press in pressArticles -%}
+            {% if press.metafields.custom_fields.include_in_press_marquee == 1 %}
                 <div class="text-fullMoon p-32 text-center hidden lg:inline-block" style="min-width: 360px;">
                     <div class="text-mono">
                         {{ press.content }}
