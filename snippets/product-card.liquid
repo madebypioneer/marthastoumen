@@ -45,7 +45,7 @@
         {%- endif -%}
 
           {% if product_card_product.metafields.custom_fields.wine_type %}
-            <div class="absolute top-0 right-0">
+            <div class="absolute" style="top: 16px; right: 16px;">
                 {% case product_card_product.metafields.custom_fields.wine_type %}
                 {% comment %}Collab{% endcomment %}
                 {% when 'Collab' %}
@@ -83,14 +83,14 @@
       </div>
     </div>
 
-    <div class="card-information text-center pt-24">
+    <div class="card-information text-center pt-24 px-8">
       <div class="card-information__wrapper">
-          <span class="card-information__text h5 uppercase block">
+          <span class="h5 uppercase block">
             {{ product_card_product.title | escape }}
           </span>
 
           {% if product_card_product.metafields.custom_fields.tagline %}
-          <span class="tagline pt-16 block">
+          <span class="tagline block">
             {{ product_card_product.metafields.custom_fields.tagline }}
           </span>
           {% endif %}

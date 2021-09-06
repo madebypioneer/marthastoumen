@@ -653,6 +653,21 @@ h6,
   transition: filter var(--duration-long) ease;
 }
 
+.product-card .h5 {
+  font-size: 16px;
+}
+
+.product-card .button {
+  font-size: 14px;
+  display: inline-block;
+  width: auto;
+  min-width: unset;
+}
+
+.product-card .tagline {
+  font-size: 12px;
+}
+
 blockquote {
   font-style: italic;
   color: rgba(var(--color-foreground), 0.75);
