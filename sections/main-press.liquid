@@ -12,7 +12,8 @@
         {% if section.settings.show_featured %}
             <div class="w-full">
                 <div class="flex featured-press px-32">
-                    {% for article in blog.articles %}
+                    {% assign featuredArticles = blogs['news'].articles %}
+                    {% for article in featuredArticles %}
                         {% if article.metafields.custom_fields.featured == 1 %}
                             <div class="flex w-full md:w-1/2">
                                 <div class="featured-press-card py-56 px-64">
@@ -78,8 +79,8 @@
             <ul class="categories">
 
                 {% for tag in pressTags %}
-                    <li class="py-8">
-                        <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="h4 hover:text-vine">{{ tag.title }}</a>
+                    <li class="py-8{% if current_tags contains tag  %} text-vine italic{% endif %}">
+                        <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="h4 hover:text-vine"{% if current_tags contains tag  %} style="font-style: italic;"{% endif %}>{{ tag.title }}</a>
                     </li>
                 {% endfor %}
             </ul>
