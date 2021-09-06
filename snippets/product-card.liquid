@@ -113,7 +113,13 @@
     <div class="flex mt-24">
         <div class="w-full text-center">
             <div class="mb-16 lg:mb-64" >
-                {% if show_add_to_cart %}
+                {% if product_card_product.metafields.bloom.bloomfields.club_members_only == "1" %}
+                    {% if customer %}
+                        <a href="{{ product_card_product.url }}" class="button button--primary uk-margin-bottom">View Wine</a>
+                    {% else %}
+                        <a href="/pages/wine-club" class="button button--primary uk-margin-bottom">Join Now</a>
+                    {% endif %}
+                {% else %}
                     <product-form class="product-form">
                         {%- form 'product', product_card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                             <input type="hidden" name="id" value="{{ product_card_product.selected_or_first_available_variant.id }}">
@@ -122,15 +128,13 @@
                                         type="submit"
                                         name="add"
                                         class="product-form__submit button button--full-width button--primary"
-                                        {% if product_card_product.available %}disabled{% endif %}
+                                        {% unless product_card_product.available %}disabled{% endunless %}
                                 >
                                     Quick Add
                                 </button>
                             </div>
                         {%- endform -%}
                     </product-form>
-                {% else %}
-                    <a href="/pages/wine-club" class="button button--primary uk-margin-bottom">Join Now</a>
                 {% endif %}
             </div>
         </div>
