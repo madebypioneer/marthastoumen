@@ -75,8 +75,14 @@
       </form>
     </div>
     {%- if search.performed -%}
+      {% assign non_news_articles = 0 %}
+      {% for item in search.results %}
+        {% unless item.url contains '/news/' %}
+          {% assign non_news_articles = newsArticles |  plus: 1 %}
+        {% endunless %}
+      {% endfor %}
       <p class="element-margin" role="status">
-        {%- if search.results_count == 0 -%}
+        {%- if search.results_count == 0 or non_news_articles == 0 -%}
           {{ 'templates.search.no_results' | t: terms: search.terms }}
         {%- else -%}
           {{ 'templates.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
@@ -84,11 +90,12 @@
       </p>
     {%- endif -%}
   </div>
-  {%- if search.performed and search.results.size > 0 -%}
+  {%- if search.performed and search.results.size > 0 and non_news_articles > 0 -%}
     {% paginate search.results by 16 %}
       <div class="template-search__results page-width">
         <ul class="grid grid--4-col-desktop grid--3-col-tablet grid--2-col grid--one-third-max grid--quarter-max negative-margin product-grid" role="list">
           {%- for item in search.results -%}
+            {% unless item.url contains '/news/' %}
             <li class="grid__item{% unless item.object_type == 'product' %} grid__item--small{% endunless %}">
               {%- case item.object_type -%}
                 {%- when 'product' -%}
@@ -128,13 +135,7 @@
                             {%- if section.settings.article_show_date -%}
                               <span class="circle-divider">{{ item.published_at | time_tag: format: 'month_year' }}</span>
                             {%- endif -%}
-                            {%- if section.settings.article_show_author -%}
-                              <span>{{ item.author }}</span>
-                            {%- endif -%}
                           </div>
-                        </div>
-                        <div class="card__badge">
-                          <span class="badge color-background-1">{{ 'blogs.article.blog' | t }}</span>
                         </div>
                       </div>
                     </div>
@@ -152,6 +153,7 @@
                   </a>
               {%- endcase -%}
             </li>
+            {% endunless %}
           {%- endfor -%}
         </ul>
         {%- if paginate.pages > 1 -%}
