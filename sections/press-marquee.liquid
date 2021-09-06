@@ -36,7 +36,7 @@
         {%- endfor -%}
         {%- for press in blogs.news.articles -%}
             {% if press.metafields.custom_fields.include_in_press_marquee %}
-                <div class="text-fullMoon p-32 text-center" style="min-width: 360px;">
+                <div class="text-fullMoon p-32 text-center hidden lg:inline-block" style="min-width: 360px;">
                     <div class="text-mono">
                         {{ press.content }}
                     </div>
