@@ -13,7 +13,7 @@
 <script type="text/javascript" src="{{ 'featured-collection.js' | asset_url }}" defer="defer"></script>
 
 {% if product.metafields.custom_fields.related_products != blank %}
-  <div class="flex flex-wrap p-32 md:px-64 -mx-32">
+  <div class="flex flex-wrap p-32">
     <div class="w-full md:w-1/4 p-32">
       <h2 class="product-recommendations__heading">{{ section.settings.heading | escape }}</h2>
       {{ section.settings.content }}
