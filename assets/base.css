@@ -2304,9 +2304,15 @@ input[type='checkbox'] {
 
 /* Header icons */
 .header__icons {
-  display: flex;
+  /*display: flex;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-area: icons;
   justify-self: end;
+}
+
+.header__icons .header-search {
+  margin: auto;
 }
 
 .header__icon:not(.header__icon--summary),
@@ -2475,7 +2481,7 @@ details[open] > .search-modal {
 /* Header menu drawer */
 .header__icon--menu .icon {
   display: block;
-  position: absolute;
+  /*position: absolute;*/
   opacity: 1;
   transform: scale(1);
   transition: transform 150ms ease, opacity 150ms ease;
