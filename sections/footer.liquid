@@ -185,14 +185,28 @@
               Shop
             </a>
             <ul class="columns-2 xl:columns-auto">
+              {% assign currentCollectionIndex = 1 %}
+              {% assign totalCollections = 0 %}
+
               {% for collection in collections %}
                 {% if collection.metafields.custom_fields.show_as_filter %}
-                  <li>
-                    <a href="{{ collection.url }}" class="hover:text-vine hover:italic">
-                      {{ collection.title }}
-                    </a>
-                  </li>
+                  {% assign totalCollections = totalCollections |  plus: 1 %}
                 {% endif %}
+              {% endfor %}
+
+              {% for i in (1..totalCollections) %}
+                {% for collection in collections %}
+                  {% assign menu_order = collection.metafields.custom_fields.menu_order | plus: 0 %}
+                  {% if collection.metafields.custom_fields.show_as_filter and currentCollectionIndex == menu_order %}
+                    {% assign currentCollectionIndex = currentCollectionIndex |  plus: 1 %}
+                    <li>
+                      <a href="{{ collection.url }}" class="hover:text-vine hover:italic">
+                        {{ collection.title }}
+                      </a>
+                    </li>
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
               {% endfor %}
             </ul>
           </li>

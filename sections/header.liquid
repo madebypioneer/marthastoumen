@@ -327,14 +327,28 @@
                   <div class="mega_menu--content p-64">
                   <div class="grid h-full overflow-hidden">
                     <ul class="categories overflow-y-auto" data-caterories>
+                      {% assign currentCollectionIndex = 1 %}
+                      {% assign totalCollections = 0 %}
+
                       {% for collection in collections %}
                         {% if collection.metafields.custom_fields.show_as_filter %}
-                          <li class="mb-24">
-                            <a href="{{ collection.url }}" class="h4 uppercase hover:italic hover:text-vine block" data-category="{{ collection.id }}">
-                              {{ collection.title }}
-                            </a>
-                          </li>
+                          {% assign totalCollections = totalCollections |  plus: 1 %}
                         {% endif %}
+                      {% endfor %}
+
+                      {% for i in (1..totalCollections) %}
+                        {% for collection in collections %}
+                          {% assign menu_order = collection.metafields.custom_fields.menu_order | plus: 0 %}
+                          {% if collection.metafields.custom_fields.show_as_filter and currentCollectionIndex == menu_order %}
+                            {% assign currentCollectionIndex = currentCollectionIndex |  plus: 1 %}
+                            <li class="mb-24">
+                              <a href="{{ collection.url }}" class="h4 uppercase hover:italic hover:text-vine block" data-category="{{ collection.id }}">
+                                {{ collection.title }}
+                              </a>
+                            </li>
+                            {% break %}
+                          {% endif %}
+                        {% endfor %}
                       {% endfor %}
                       <li class="mt-40" style="padding-bottom: 12px;">
                         <a href="{{ routes.all_products_collection_url }}" class="button--text button--text-dark hover:text-vine">
