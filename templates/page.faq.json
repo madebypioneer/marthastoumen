@@ -102,7 +102,7 @@
           "type": "faq",
           "settings": {
             "heading": "Why can’t you ship to my state?",
-            "content": "<p>We are able to ship to all but 7 states (Alabama, Arkansas, Delaware, Hawaii, Kentucky, Rhode Island, and Utah). If you live in Mississippi, you’ll need to email us at info@marthastoumen.com to arrange for your wines to be shipped to a package store.<\/p>"
+            "content": "<p>We are able to ship to all but 7 states (Alabama, Arkansas, Delaware, Hawaii, Kentucky, Rhode Island, and Utah). If you live in Mississippi, you’ll need to email us at info@marthastoumen.com to arrange for your wines to be shipped to a package store.<\/p><p>We are unable to ship internationally, but please visit our <a href=\"\/pages\/stockists\" title=\"Stockists\"><span style=\"text-decoration:underline\">Stockists<\/span><\/a> page to find our wines in your country. <\/p>"
           }
         },
         "491fc3f2-7fb7-4db9-a7a1-aaf920a81d2e": {
@@ -161,7 +161,7 @@
           "type": "faq",
           "settings": {
             "heading": "How do I update my credit card info for a club shipment?",
-            "content": "<p>After <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\">logging into your account<\/a>, go to Memberships &gt; View my memberships &gt; Billing and Payments. After clicking on the pencil icon next to Billing and Payments, you can update your credit card info for your next club shipment.<\/p>"
+            "content": "<p>After <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\">logging into your account<\/a>, go to <strong>Memberships &gt; View my memberships &gt; Billing and Payments<\/strong>. After clicking on the pencil icon next to Billing and Payments, you can update your credit card info for your next club shipment.<\/p>"
           }
         },
         "ab79d30b-99d4-47b2-9e94-81a253b2afb5": {
