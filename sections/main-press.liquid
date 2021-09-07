@@ -6,7 +6,7 @@
 <div class="main-blog mx-auto" style="max-width: 1680px;">
     <div class="flex flex-wrap md:p-32">
         <div class="w-full p-32 text-center">
-                <h1>{% if section.settings.heading %}{{ sectin.settings.heading }}{% else %}{{ blog.title | escape }}{% endif %}</h1>
+            <h1>{% if section.settings.heading %}{{ sectin.settings.heading }}{% else %}{{ blog.title | escape }}{% endif %}</h1>
         </div>
 
         {% if section.settings.show_featured %}
@@ -89,27 +89,29 @@
             {%- paginate blog.articles by 12 -%}
                 <div class="flex flex-wrap -my-8">
                     {%- for article in blog.articles -%}
-                        <div class="w-full py-8 mb-8">
-                            <div class="flex flex-wrap">
-                                <div class="w-full">
-                                    {% if article.metafields.custom_fields.link %}
-                                        <a href="{{ article.metafields.custom_fields.link }}" class="block hover:text-vine hover:italic" target="_blank">
-                                    {% endif %}
-                                        <p class="mb-8">
-                                            {{ article.title | escape }}
-                                        </p>
-                                        {% if article.metafields.custom_fields.color_logo %}
-                                        <img src="{{ article.metafields.custom_fields.color_logo }}"
-                                             style="height: 16px; width: auto;"
-                                             loading="lazy"
-                                        >
+                        {% if article.metafields.custom_fields.include_in_press_marquee == 0 %}
+                            <div class="w-full py-8 mb-8">
+                                <div class="flex flex-wrap">
+                                    <div class="w-full">
+                                        {% if article.metafields.custom_fields.link %}
+                                            <a href="{{ article.metafields.custom_fields.link }}" class="block hover:text-vine hover:italic" target="_blank">
                                         {% endif %}
-                                    {% if article.metafields.custom_fields.link %}
-                                        </a>
-                                    {% endif %}
+                                            <p class="mb-8">
+                                                {{ article.title | escape }}
+                                            </p>
+                                            {% if article.metafields.custom_fields.color_logo %}
+                                            <img src="{{ article.metafields.custom_fields.color_logo }}"
+                                                 style="height: 16px; width: auto;"
+                                                 loading="lazy"
+                                            >
+                                            {% endif %}
+                                        {% if article.metafields.custom_fields.link %}
+                                            </a>
+                                        {% endif %}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        {% endif %}
                     {%- endfor -%}
                 </div>
 
