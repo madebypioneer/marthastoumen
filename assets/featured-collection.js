@@ -9,8 +9,6 @@ class SlickProductSlider extends HTMLElement {
     const slider = this.querySelectorAll('[data-slick-slider]')[0];
     const sliderNext = this.querySelectorAll('[data-slick-next]')[0];
 
-    console.log(this.querySelectorAll('[data-slick-slider]')[0]);
-
     if (slider) {
       $(slider).slick({
         nextArrow: $(sliderNext),
