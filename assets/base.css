@@ -2547,7 +2547,7 @@ li:hover .mega_hover:after {
 .mega_menu {
   min-height: 560px;
   /*margin-top: 20px;*/
-  max-height: 75vh;
+  max-height: 80vh;
   /*height: 100%;*/
   /*TODO: Comment back in after styles complete*/
   display: none;

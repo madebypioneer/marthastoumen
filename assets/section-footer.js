@@ -33,7 +33,7 @@ class NewsletterSignup extends HTMLElement {
 
 
     // Expand Newsletter
-    newsletter.classList.add('lg:w-11/12');
+    newsletter.classList.add('xl:w-11/12');
 
     // Newsletter Content
     newsletterContent.classList.add('lg:w-1/4');
@@ -52,8 +52,8 @@ class NewsletterSignup extends HTMLElement {
     close.classList.remove('hidden');
 
     //  Narrow Industry Section
-    industry.classList.add('lg:w-1/12');
-    industryContent.classList.add('hidden');
+    industry.classList.add('xl:w-1/12');
+    industryContent.classList.add('xl:hidden');
   }
 
   closeSection() {
@@ -68,8 +68,8 @@ class NewsletterSignup extends HTMLElement {
 
 
     // Expand Newsletter
-    newsletter.classList.remove('lg:w-11/12');
-    newsletter.classList.add('lg:w-1/2');
+    newsletter.classList.remove('xl:w-11/12');
+    newsletter.classList.add('xl:w-1/2');
 
     // Newsletter Content
     newsletterContent.classList.remove('lg:w-1/4');
@@ -91,9 +91,9 @@ class NewsletterSignup extends HTMLElement {
     close.classList.add('hidden');
 
     //  Narrow Industry Section
-    industry.classList.remove('lg:w-1/12');
-    industry.classList.add('lg:w-1/2');
-    industryContent.classList.remove('hidden');
+    industry.classList.remove('xl:w-1/12');
+    industry.classList.add('xl:w-1/2');
+    industryContent.classList.remove('xl:hidden');
   }
 
 
