@@ -19,6 +19,23 @@
   right: 0;
 }
 
+.article-body a {
+  text-decoration: underline;
+}
+
+.article-body a:hover {
+  color: rgb(14, 83, 86);
+}
+
+.article-body .image-caption-wrapper {
+  font-family: 'Courier Prime Sans', monospace;
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+  margin-top: -32px;
+  margin-bottom: 32px;
+}
+
 .article-template__hero-container {
   max-width: 130rem;
   margin: 0 auto;
