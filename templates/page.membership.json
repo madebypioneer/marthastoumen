@@ -33,7 +33,8 @@
       "settings": {
         "reduce_spacing": false,
         "reduce_top_spacing": false,
-        "reduce_bottom_spacing": false
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
       }
     },
     "16299483928fa50dfe": {
@@ -71,7 +72,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wine-club_club-goodies.png",
-            "text": "TWO SHIPMENTS PER YEAR"
+            "text": "LIMITED EDITION ARTWORK"
           }
         }
       },
@@ -172,7 +173,7 @@
         "162994866447ef345c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>This release showcases the stylistic breadth of natural wine. The 2020's are brimming with joy and ready to drink while the 2019’s could make your day today or evolve in your cellar over a few years. <br\/><br\/>(<em>Left \/ Right<\/em>)<br\/>Another Shore 2019 | <em>club exclusive<\/em><br\/>Ricetti Carignan 2019<br\/>Mendocino Benchlands 2019 | <em>library release<\/em><br\/>Honeymoon 2020 | <em>new blend<\/em><br\/>Negroamaro Rosato NV No. 1<br\/>Venturi Carignan Long Élevage 2019<\/p>"
+            "text": "<p>The 2019 wines in this release are from the before time. They were a weighty crop, welcomed into a season of abundant sunshine and little rain. Then, as the 2020 harvest came, so did the worst fires and smoke we’ve ever seen. The vines felt this stress, and it marked the fruit with soaring acidity and very concentrated flavors. <br\/><br\/>(<em>Left \/ Right<\/em>)<br\/>Another Shore 2019 | <em>club exclusive<\/em><br\/>Ricetti Carignan 2019<br\/>Mendocino Benchlands 2019 | <em>library release<\/em><br\/>Honeymoon 2020 | <em>new blend<\/em><br\/>Negroamaro Rosato NV No. 1<br\/>Venturi Carignan Long Élevage 2019<\/p>"
           }
         }
       },
@@ -212,7 +213,8 @@
       "settings": {
         "reduce_spacing": false,
         "reduce_top_spacing": false,
-        "reduce_bottom_spacing": false
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
       }
     }
   },

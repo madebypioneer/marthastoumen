@@ -134,7 +134,8 @@
       "settings": {
         "reduce_spacing": true,
         "reduce_top_spacing": false,
-        "reduce_bottom_spacing": false
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
       }
     },
     "16294237544c521f73": {
@@ -247,7 +248,8 @@
       "settings": {
         "reduce_spacing": false,
         "reduce_top_spacing": true,
-        "reduce_bottom_spacing": false
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
       }
     },
     "163089741896d5f78e": {
@@ -279,7 +281,7 @@
       ],
       "settings": {
         "heading": "The Latest From",
-        "text": "<p>These distinctly savory wines offer ample body and brightness as days get brighter and nights get sweeter.<\/p>",
+        "text": "<p>Musings from the winery, nerdy tangents and rich conversations. <\/p>",
         "blog": "field-notes"
       }
     }
