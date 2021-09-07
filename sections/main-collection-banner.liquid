@@ -1,4 +1,13 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
+
+{% assign totalCollections = 0 %}
+
+{% for collection in collections %}
+  {% if collection.metafields.custom_fields.show_as_filter %}
+    {% assign totalCollections = totalCollections |  plus: 1 %}
+  {% endif %}
+{% endfor %}
+
 <script src="{{ 'nav-select.js' | asset_url }}" defer="defer"></script>
 
   <div class="flex flex-wrap collection-nav">
@@ -14,14 +23,20 @@
       </nav-select>
       <nav class="hidden md:block">
         <ul class="flex flex-wrap justify-center">
-          {% for collection in collections %}
-            {% if collection.metafields.custom_fields.show_as_filter %}
-              <li class="px-32 py-8">
-                <a href="{{ collection.url }}" class="hover:text-vine">
-                  {{ collection.title }}
-                </a>
-              </li>
-            {% endif %}
+          {% assign currentCollectionIndex = 1 %}
+          {% for i in (1..totalCollections) %}
+            {% for collection in collections %}
+              {% assign menu_order = collection.metafields.custom_fields.menu_order | plus: 0 %}
+              {% if collection.metafields.custom_fields.show_as_filter and currentCollectionIndex == menu_order %}
+                {% assign currentCollectionIndex = currentCollectionIndex |  plus: 1 %}
+                <li class="px-32 py-8">
+                  <a href="{{ collection.url }}" class="hover:text-vine">
+                    {{ collection.title }}
+                  </a>
+                </li>
+                {% break %}
+              {% endif %}
+            {% endfor %}
           {% endfor %}
         </ul>
       </nav>
