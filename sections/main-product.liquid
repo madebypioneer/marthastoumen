@@ -102,7 +102,7 @@
         </h1>
 
         <div class="composition mb-16">
-          <p>{% if product.metafields.custom_fields.varietal != blank %}{% for item in product.metafields.custom_fields.varietal %}{{ item.varietal }}{% if forloop.last != true %}, {% endif %}{% endfor %}{% if product.metafields.custom_fields.region_single_line %} · {% endif %}{% endif %}{% if product.metafields.custom_fields.region_single_line %}{{ product.metafields.custom_fields.region_single_line }}{% endif %}</p>
+          <p>{% if product.metafields.custom_fields.varietal != blank %}{% for item in product.metafields.custom_fields.varietal %}{{ item.varietal }}{% if forloop.last != true %}, {% endif %}{% endfor %}{% if product.metafields.custom_fields.region_single_line %} · {% endif %}{% endif %}{% if product.metafields.custom_fields.region_single_line %}{{ product.metafields.custom_fields.region_single_line }}{% endif %}{% if product.metafields.custom_fields.production_amount %} · {{ product.metafields.custom_fields.production_amount }}{% endif %}</p>
         </div>
 
         {% if product.description %}
