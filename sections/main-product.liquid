@@ -111,7 +111,7 @@
           </div>
         {% endif %}
 
-        <p class="subtext mb-32">{% if product.metafields.custom_fields.volume %}{{ product.metafields.custom_fields.volume }}{% if product.metafields.custom_fields.alcohol_by_volume %}, {% endif %}{% endif %}{% if product.metafields.custom_fields.alcohol_by_volume %}{{ product.metafields.custom_fields.alcohol_by_volume }} ABV (alcohol by volume){% endif %}</p>
+        <p class="subtext mb-32">{% if product.metafields.custom_fields.volume %}{{ product.metafields.custom_fields.volume }}{% if product.metafields.custom_fields.alcohol_by_volume %}, {% endif %}{% endif %}{% if product.metafields.custom_fields.alcohol_by_volume %}{{ product.metafields.custom_fields.alcohol_by_volume }} ABV{% endif %}</p>
 
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
         {%- for block in section.blocks -%}
