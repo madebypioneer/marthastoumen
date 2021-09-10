@@ -8,7 +8,7 @@
             {% if section.settings.heading %}
                 <h2 class="{% if section.settings.content %}mb-8{% endif %}">
                     {% if section.settings.section_id != blank %}
-                        <a href="#{{ section.settings.section_id }}" class="hover:text-vine">
+                        <a href="#{{ section.settings.section_id }}" class="hover:text-vine" style="cursor: pointer;">
                     {% endif %}
                             {{ section.settings.heading }}
                     {% if section.settings.section_id != blank %}
