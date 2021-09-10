@@ -19,11 +19,11 @@
         </div>
         <div class="w-full">
             <h2 class="mb-8">
-                {{ section.settings.heading }} <a href="{{ product.metafields.custom_fields.playlist_link }}" class="underline hover:text-vine" target="_blank">{{ product.metafields.custom_fields.playlist_name }}</a>
+                {% if product.metafields.custom_fields.spotify_heading %}{{ product.metafields.custom_fields.spotify_heading }} {% else %}{{ section.settings.heading }} {% endif %}<a href="{{ product.metafields.custom_fields.playlist_link }}" class="underline hover:text-vine" target="_blank">{{ product.metafields.custom_fields.playlist_name }}</a>
             </h2>
             {% if product.metafields.custom_fields.partnership_link %}
             <p>
-                {{ section.settings.text }} <a href="{{ product.metafields.custom_fields.partnership_link }}" class="underline hover:text-vine" target="_blank">{{ product.metafields.custom_fields.partnership_name }}.</a>
+                {% if product.metafields.custom_fields.partnership_text_pre_link %}{{ product.metafields.custom_fields.partnership_text_pre_link }} {% else %}{{ section.settings.text }} {% endif %}<a href="{{ product.metafields.custom_fields.partnership_link }}" class="underline hover:text-vine" target="_blank">{{ product.metafields.custom_fields.partnership_name }}.</a>
             </p>
             {% endif %}
         </div>
