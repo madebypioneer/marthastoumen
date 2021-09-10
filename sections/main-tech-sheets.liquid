@@ -34,12 +34,12 @@
                     </nav-select>
                 </div>
 
-                <div class="w-full sm:hidden md:block md:w-1/2 lg:w-1/4 p-32">
+                <div class="w-full sm:hidden md:block md:w-1/2 lg:w-1/4 p-32 -mt-16">
                     {% for tag in techSheetTags %}
                         {% if tag.title == 'Current Releases' %}
                             <ul class="categories mb-32">
                                 <li class="py-24{% if current_tags contains tag  %} text-vine italic{% endif %}">
-                                    <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="h4 uppercase">{{ tag.title }}</a>
+                                    <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="h4 uppercase hover:text-vine">{{ tag.title }}</a>
                                 </li>
                             </ul>
                         {% endif %}
@@ -50,7 +50,7 @@
                         {% for tag in techSheetTags %}
                             {% if tag.title != 'Current Releases' %}
                                 <li class="py-8{% if current_tags contains tag  %} text-vine{% endif %}">
-                                    <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="h4 uppercase">{{ tag.title }}</a>
+                                    <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="h4 uppercase hover:text-vine">{{ tag.title }}</a>
                                 </li>
                             {% endif %}
                         {% endfor %}
@@ -60,11 +60,11 @@
                     {%- paginate blog.articles by 12 -%}
                         <div class="flex flex-wrap">
                             {%- for article in blog.articles -%}
-                                <div class="w-full py-24">
+                                <div class="w-full py-8">
                                     <div class="flex flex-wrap">
                                         <div class="w-full">
                                                 <p class="mb-8">
-                                                    <a href="{{ article.url }}" class="block">
+                                                    <a href="{{ article.url }}" class="block hover:text-vine hover:underline">
                                                         {{ article.title | escape }}
                                                     </a>
                                                 </p>
