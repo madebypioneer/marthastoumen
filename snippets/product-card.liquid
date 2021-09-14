@@ -109,7 +109,8 @@
       </div>
     </div>
   </a>
-{% comment %}Add Quick Add{% endcomment %}
+    {% comment %}Add Quick Add{% endcomment %}
+    {% unless product_card_product.metafields.custom_fields.wine_type == 'Coming Soon' %}
     <div class="flex mt-24">
         <div class="w-full text-center">
             <div class="mb-16 lg:mb-64" >
@@ -139,4 +140,5 @@
             </div>
         </div>
     </div>
+    {% endunless %}
 </div>
