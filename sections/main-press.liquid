@@ -12,35 +12,37 @@
         {% if section.settings.show_featured %}
             <div class="w-full">
                 <div class="flex featured-press px-32">
-                    {% assign featuredArticles = blogs['news'].articles %}
-                    {% for article in featuredArticles %}
-                        {% if article.metafields.custom_fields.featured == 1 %}
-                            <div class="flex w-full md:w-1/2">
-                                <div class="featured-press-card py-56 px-64">
-                                    <div>
-                                        {% if article.metafields.custom_fields.dark_logo %}
-                                            <img src="{{ article.metafields.custom_fields.dark_logo }}"
-                                                 style="height: 20px; width: auto;"
-                                                 class="mb-24"
-                                                 alt=""
-                                            >
-                                        {% endif %}
-                                    </div>
+                    {% paginate blogs['news'].articles by 99999999999 %}
+                        {% assign featuredArticles = blogs['news'].articles %}
+                        {% for article in featuredArticles %}
+                            {% if article.metafields.custom_fields.featured == 1 and article.content != blank %}
+                                <div class="flex w-full md:w-1/2">
+                                    <div class="featured-press-card py-56 px-64">
+                                        <div>
+                                            {% if article.metafields.custom_fields.dark_logo %}
+                                                <img src="{{ article.metafields.custom_fields.dark_logo }}"
+                                                     style="height: 20px; width: auto;"
+                                                     class="mb-24"
+                                                     alt=""
+                                                >
+                                            {% endif %}
+                                        </div>
 
-                                    <div class="content">
-                                        {{ article.content }}
-                                    </div>
+                                        <div class="content">
+                                            {{ article.content }}
+                                        </div>
 
-                                    <p class="mt-16">
-                                        <a href="{{ article.metafields.custom_fields.link }}" class="button--text button--text-dark" target="_blank">
-                                            Read The Full Article
-                                            <span class="arrow"></span>
-                                        </a>
-                                    </p>
+                                        <p class="mt-16">
+                                            <a href="{{ article.metafields.custom_fields.link }}" class="button--text button--text-dark" target="_blank">
+                                                Read The Full Article
+                                                <span class="arrow"></span>
+                                            </a>
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        {% endif %}
-                    {% endfor %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endpaginate %}
                 </div>
                 <div class="flex mt-40">
                     <div class="w-1/2 text-right px-32">
