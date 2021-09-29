@@ -2533,6 +2533,11 @@ li:hover .mega_hover:after {
 
 .mega_menu .categories {
   border-right: 1px solid #30292F;
+  max-height: calc(80vh - 128px);
+}
+
+.mega_menu--content .grid .max-height {
+  max-height: calc(80vh - 128px);
 }
 
 .mega_menu--content:before {

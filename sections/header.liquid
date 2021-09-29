@@ -359,7 +359,7 @@
                     </ul>
 
                     {% comment %}Collection Products{% endcomment %}
-                    <div class="overflow-y-auto">
+                    <div class="max-height overflow-y-auto">
                       {% for collection in collections %}
                         {% if collection.metafields.custom_fields.show_as_filter %}
                           <ul class="hidden -my-8" data-products="{{ collection.id }}">
@@ -377,7 +377,7 @@
                     </div>
 
                     {% comment %}Product Image{% endcomment %}
-                    <div>
+                    <div class="max-height">
                       {% for product in collections.all.products %}
                         <div class="hidden" data-product="{{ product.id }}">
                           <a href="{{ product.url }}" class="block hover:text-vine hover:italic">
@@ -397,7 +397,7 @@
                     </div>
 
                     {% comment %}Collection Image{% endcomment %}
-                    <div>
+                    <div class="max-height">
                       {% for collection in collections %}
                         {% if collection.metafields.custom_fields.show_as_filter %}
                           <div class="hidden" data-category-image="{{ collection.id }}">
