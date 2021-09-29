@@ -7,6 +7,12 @@
 
 <script src="{{ 'nav-select.js' | asset_url }}" defer="defer"></script>
 
+<script>
+    if (window.location.pathname === "/blogs/tech-sheets") {
+      window.location.pathname = "/blogs/tech-sheets/tagged/current-releases";
+    }
+</script>
+
 <div class="main-blog mx-auto" style="max-width: 1280px;">
     <div class="flex flex-wrap md:p-32">
         <div class="w-full p-32 text-center">
