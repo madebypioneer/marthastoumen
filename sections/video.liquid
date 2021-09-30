@@ -1,0 +1,94 @@
+{{ 'video.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'video.js' | asset_url }}" defer="defer"></script>
+
+    <video-section class="md:mx32 md:py-32" style="{% if section.settings.remove_top_spacing %}padding-top: 0;{% endif %}">
+        <button
+            class="video-modal-open-button"
+            id="open-btn"
+            data-modal-open-button
+        >
+            <svg width="142" height="138" viewBox="0 0 142 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M141.408 68.502C141.881 79.3522 142.062 90.6308 137.288 100.416C132.514 110.202 123.464 117.096 114.575 123.502C105.908 129.746 96.7124 136.187 86.0446 137.339C75.6226 138.463 66.0722 132.463 55.9334 129.83C46.1053 127.277 35.4713 127.362 26.8977 121.978C18.0187 116.402 11.0691 108.086 6.44986 98.7547C1.82034 89.4031 -0.00764808 78.9008 0.424619 68.502C0.848935 58.2946 4.733 48.7662 8.91633 39.4211C13.1945 29.8642 17.1277 19.6914 25.2666 13.008C33.449 6.28901 44.2242 3.71402 54.6967 1.82819C64.9151 -0.011899 75.2958 0.0825695 85.4657 2.16764C95.7459 4.2753 105.706 7.87172 114.157 14.0189C122.756 20.2731 129.839 28.4295 134.566 37.881C139.314 47.3729 140.948 57.9269 141.408 68.502Z" fill="#F9F5EA"/>
+                <path d="M61.4287 46.9257L61.4287 91.0734C61.4287 94.8218 65.5755 96.4877 67.8374 93.9888L87.4404 72.3314C88.9483 70.6655 88.9483 68.1665 87.4404 66.5006L67.8374 44.0102C65.5755 41.5113 61.4287 43.1773 61.4287 46.9257Z" fill="#0E5356"/>
+            </svg>
+        </button>
+        <div class="aspect-w-3 md:aspect-w-11 aspect-h-4 image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+        >
+
+
+            {% comment %}{% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}{% endcomment %}
+            {%- if section.settings.image != blank -%}
+                <img src="{{ section.settings.image | img_url: '3000x' }}"
+                     alt="{{ section.settings.image.alt | escape }}"
+                     loading="lazy"
+                     width="{{ section.settings.image.width }}"
+                     height="{{ section.settings.image.height }}"
+                >
+            {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+        </div>
+
+        <div
+            class="fixed hidden inset-0 overflow-y-auto h-full w-full z-10 p-32 flex items-center"
+            style="background-color: rgba(249, 245, 234, 0.95);"
+            data-modal
+        >
+
+            <div
+                class="relative mx-auto border w-full md:w-3/4 xl:w-1/2 shadow-lg rounded-md bg-fullMoon"
+            >
+                <div class="p-16">
+                    <div class="video-container">
+                        {%- if section.settings.video_url.type == 'youtube' -%}
+                            <iframe src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        {%- else -%}
+                            <iframe src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        {%- endif -%}
+                    </div>
+
+                    <div class="items-center pt-16 text-center justify-center">
+                        <button
+                            class="button button--primary"
+                            data-modal-close-button
+                        >
+                            Close
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </video-section>
+
+{% schema %}
+{
+    "name": "Video",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "video_url",
+            "id": "video",
+            "label": "Video Url",
+            "accept": [
+                "youtube",
+                "vimeo"
+            ]
+        },
+        {
+            "type": "checkbox",
+            "id": "remove_top_spacing",
+            "label": "Remove Top Spacing"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Video"
+        }
+    ]
+}
+{% endschema %}
