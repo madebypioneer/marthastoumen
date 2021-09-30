@@ -282,7 +282,112 @@
         <ul class="list-menu list-menu--inline" role="list">
           {%- for link in section.settings.menu.links -%}
             <li>
-              {%- if link.links != blank -%}
+            {%- if link.title contains 'Shop' -%}
+            <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset mega_hover"{% if link.current %} aria-current="page"{% endif %}>
+              <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+            </a>
+            <mega-menu class="absolute left-0 right-0 mega_menu">
+              <div class="bg-full-moon w-full" style="height: 20px;"><span></span></div>
+              <div class="mega_menu--content p-64">
+                <div class="grid h-full overflow-hidden">
+                  <ul class="categories overflow-y-auto" data-caterories>
+                    {% assign currentCollectionIndex = 1 %}
+                    {% assign totalCollections = 0 %}
+
+                    {% for collection in collections %}
+                      {% if collection.metafields.custom_fields.show_as_filter %}
+                        {% assign totalCollections = totalCollections |  plus: 1 %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% for i in (1..totalCollections) %}
+                      {% for collection in collections %}
+                        {% assign menu_order = collection.metafields.custom_fields.menu_order | plus: 0 %}
+                        {% if collection.metafields.custom_fields.show_as_filter and currentCollectionIndex == menu_order %}
+                          {% assign currentCollectionIndex = currentCollectionIndex |  plus: 1 %}
+                          <li class="mb-24">
+                            <a href="{{ collection.url }}" class="h4 uppercase hover:italic hover:text-vine block" data-category="{{ collection.id }}">
+                              {{ collection.title }}
+                            </a>
+                          </li>
+                          {% break %}
+                        {% endif %}
+                      {% endfor %}
+                    {% endfor %}
+                    <li class="mt-40" style="padding-bottom: 12px;">
+                      <a href="{{ routes.all_products_collection_url }}" class="button--text button--text-dark hover:text-vine">
+                        Shop All
+                        <span class="arrow"></span>
+                      </a>
+                    </li>
+                  </ul>
+
+                  {% comment %}Collection Products{% endcomment %}
+                  <div class="max-height overflow-y-auto">
+                    {% for collection in collections %}
+                      {% if collection.metafields.custom_fields.show_as_filter %}
+                        <ul class="hidden -my-8" data-products="{{ collection.id }}">
+                          {% for product in collection.products %}
+                            <li class="mb-8">
+                              <a href="{{ product.url }}" class="hover:text-vine hover:italic block py-8" data-product-link="{{ product.id }}">{{ product.title }}</a>
+                            </li>
+                          {% endfor %}
+                          <li class="mt-32">
+                            <a href="{{ collection.url }}">View All</a>
+                          </li>
+                        </ul>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+
+                  {% comment %}Product Image{% endcomment %}
+                  <div class="max-height">
+                    {% for product in collections.all.products %}
+                      <div class="hidden" data-product="{{ product.id }}">
+                        <a href="{{ product.url }}" class="block hover:text-vine hover:italic">
+                          <div class="aspect-h-3 aspect-w-2">
+                            <img
+                                    src="{{ product.media.first | img_url: '1000x' }}"
+                                    class="object-center object-cover"
+                                    alt=""
+                            >
+                          </div>
+                          <span class="h4 mt-24 block uppercase">
+                              {{ product.title }}
+                            </span>
+                        </a>
+                      </div>
+                    {% endfor %}
+                  </div>
+
+                  {% comment %}Collection Image{% endcomment %}
+                  <div class="max-height">
+                    {% for collection in collections %}
+                      {% if collection.metafields.custom_fields.show_as_filter %}
+                        <div class="hidden" data-category-image="{{ collection.id }}">
+                          <a href="{{ collection.url }}" class="block hover:text-vine">
+                            <div class="aspect-h-3 aspect-w-4">
+                              <img
+                                      src="{{ collection.image | img_url: '1000x' }}"
+                                      class="object-center object-cover"
+                                      alt=""
+                              >
+                            </div>
+                            <span class="h4 mt-24 block uppercase">
+                                {{ collection.title }}
+                              </span>
+                          </a>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </mega-menu>
+            <ul>
+
+            </ul>
+          {%- elsif link.links != blank -%}
                 <details-disclosure>
                   <details>
                     <summary class="header__menu-item list-menu__item link focus-inset">
@@ -318,112 +423,7 @@
                     </ul>
                   </details>
                 </details-disclosure>
-              {%- elsif link.title contains 'Shop' -%}
-                <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset mega_hover"{% if link.current %} aria-current="page"{% endif %}>
-                  <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                </a>
-                <mega-menu class="absolute left-0 right-0 mega_menu">
-                  <div class="bg-full-moon w-full" style="height: 20px;"><span></span></div>
-                  <div class="mega_menu--content p-64">
-                  <div class="grid h-full overflow-hidden">
-                    <ul class="categories overflow-y-auto" data-caterories>
-                      {% assign currentCollectionIndex = 1 %}
-                      {% assign totalCollections = 0 %}
-
-                      {% for collection in collections %}
-                        {% if collection.metafields.custom_fields.show_as_filter %}
-                          {% assign totalCollections = totalCollections |  plus: 1 %}
-                        {% endif %}
-                      {% endfor %}
-
-                      {% for i in (1..totalCollections) %}
-                        {% for collection in collections %}
-                          {% assign menu_order = collection.metafields.custom_fields.menu_order | plus: 0 %}
-                          {% if collection.metafields.custom_fields.show_as_filter and currentCollectionIndex == menu_order %}
-                            {% assign currentCollectionIndex = currentCollectionIndex |  plus: 1 %}
-                            <li class="mb-24">
-                              <a href="{{ collection.url }}" class="h4 uppercase hover:italic hover:text-vine block" data-category="{{ collection.id }}">
-                                {{ collection.title }}
-                              </a>
-                            </li>
-                            {% break %}
-                          {% endif %}
-                        {% endfor %}
-                      {% endfor %}
-                      <li class="mt-40" style="padding-bottom: 12px;">
-                        <a href="{{ routes.all_products_collection_url }}" class="button--text button--text-dark hover:text-vine">
-                          Shop All
-                          <span class="arrow"></span>
-                        </a>
-                      </li>
-                    </ul>
-
-                    {% comment %}Collection Products{% endcomment %}
-                    <div class="max-height overflow-y-auto">
-                      {% for collection in collections %}
-                        {% if collection.metafields.custom_fields.show_as_filter %}
-                          <ul class="hidden -my-8" data-products="{{ collection.id }}">
-                            {% for product in collection.products %}
-                              <li class="mb-8">
-                                <a href="{{ product.url }}" class="hover:text-vine hover:italic block py-8" data-product-link="{{ product.id }}">{{ product.title }}</a>
-                              </li>
-                            {% endfor %}
-                            <li class="mt-32">
-                              <a href="{{ collection.url }}">View All</a>
-                            </li>
-                          </ul>
-                        {% endif %}
-                      {% endfor %}
-                    </div>
-
-                    {% comment %}Product Image{% endcomment %}
-                    <div class="max-height">
-                      {% for product in collections.all.products %}
-                        <div class="hidden" data-product="{{ product.id }}">
-                          <a href="{{ product.url }}" class="block hover:text-vine hover:italic">
-                            <div class="aspect-h-3 aspect-w-2">
-                              <img
-                                src="{{ product.media.first | img_url: '1000x' }}"
-                                class="object-center object-cover"
-                                alt=""
-                              >
-                            </div>
-                            <span class="h4 mt-24 block uppercase">
-                              {{ product.title }}
-                            </span>
-                          </a>
-                        </div>
-                      {% endfor %}
-                    </div>
-
-                    {% comment %}Collection Image{% endcomment %}
-                    <div class="max-height">
-                      {% for collection in collections %}
-                        {% if collection.metafields.custom_fields.show_as_filter %}
-                          <div class="hidden" data-category-image="{{ collection.id }}">
-                            <a href="{{ collection.url }}" class="block hover:text-vine">
-                              <div class="aspect-h-3 aspect-w-4">
-                                <img
-                                  src="{{ collection.image | img_url: '1000x' }}"
-                                  class="object-center object-cover"
-                                  alt=""
-                                >
-                              </div>
-                              <span class="h4 mt-24 block uppercase">
-                                {{ collection.title }}
-                              </span>
-                            </a>
-                          </div>
-                        {% endif %}
-                      {% endfor %}
-                    </div>
-                  </div>
-                  </div>
-                  </mega-menu>
-                <ul>
-
-                </ul>
-              {%- else -%}
+             {%- else -%}
                 <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                   <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                 </a>
