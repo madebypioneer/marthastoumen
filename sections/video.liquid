@@ -14,9 +14,6 @@
         </button>
         <div class="aspect-w-3 md:aspect-w-11 aspect-h-4 image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
         >
-
-
-            {% comment %}{% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}{% endcomment %}
             {%- if section.settings.image != blank -%}
                 <img src="{{ section.settings.image | img_url: '3000x' }}"
                      alt="{{ section.settings.image.alt | escape }}"
@@ -77,7 +74,11 @@
             "accept": [
                 "youtube",
                 "vimeo"
-            ]
+            ],
+            "default": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "label": "t:sections.collage.blocks.video.settings.video_url.label",
+            "placeholder": "t:sections.collage.blocks.video.settings.video_url.placeholder",
+            "info": "t:sections.collage.blocks.video.settings.video_url.info"
         },
         {
             "type": "checkbox",
