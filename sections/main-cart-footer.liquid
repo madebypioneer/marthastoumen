@@ -80,12 +80,7 @@
     constructor() {
       super();
 
-      this.addEventListener('change', debounce((event) => {
-        const body = JSON.stringify({ note: event.target.value });
-        fetch(`${routes.cart_update_url}`, {...fetchConfig(), ...{ body }});
-      }, 300))
-
-      this.addEventListener('pointerleave', debounce((event) => {
+      this.addEventListener('input', debounce((event) => {
         const body = JSON.stringify({ note: event.target.value });
         fetch(`${routes.cart_update_url}`, {...fetchConfig(), ...{ body }});
       }, 300))
