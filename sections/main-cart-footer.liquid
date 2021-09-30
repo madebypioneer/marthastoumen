@@ -80,7 +80,7 @@
     constructor() {
       super();
 
-      this.addEventListener('change', debounce((event) => {
+      this.addEventListener('input', debounce((event) => {
         console.log('hello');
         // const body = JSON.stringify({ note: event.target.value });
         const body = JSON.stringify({ attributes: {"Gift message": event.target.value, "Gift": event.target.value ? "Yes" : "No" }});
