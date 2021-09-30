@@ -82,7 +82,7 @@
 
       this.addEventListener('input', debounce((event) => {
         console.log('hello');
-        const body = JSON.stringify({ Gift message: event.target.value, Gift: event.target.value ? true : false });
+        const body = JSON.stringify({ "Gift message": event.target.value, "Gift": event.target.value ? "Yes" : "No" });
         fetch(`/cart/update.js`, {...fetchConfig(), ...{ body }});
         fetch(`${routes.cart_update_url}`, {...fetchConfig(), ...{ body }});
       }, 300))
