@@ -80,7 +80,7 @@
     constructor() {
       super();
 
-      this.addEventListener('change textInput input keyup', debounce((event) => {
+      this.addEventListener('input', debounce((event) => {
         const body = JSON.stringify({ note: event.target.value });
         fetch(`${routes.cart_update_url}`, {...fetchConfig(), ...{ body }});
       }, 300))
