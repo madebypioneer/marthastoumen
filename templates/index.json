@@ -3,7 +3,7 @@
     "1629423396520fe146": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Home_Page_TemplateHero_Banner_14ba06bb-97bf-44a9-bef9-09ba880f76cf.jpg",
+        "image": "shopify:\/\/shop_images\/Fall-2021-Hero-Banner-Opt-2.jpg",
         "remove_top_spacing": true
       }
     },
@@ -11,7 +11,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured collection",
-        "collection": "post-flirtation",
+        "collection": "coming-soon",
         "show_view_all": true
       }
     },
@@ -121,7 +121,7 @@
           "type": "buttons",
           "settings": {
             "link_one_text": "Join Now",
-            "link_one_page": "https:\/\/martha-stoumen.myshopify.com\/pages\/membership\/#membershipSection",
+            "link_one_page": "shopify:\/\/pages\/membership",
             "link_two_text": "Sign In",
             "link_two_page": "https:\/\/martha-stoumen.myshopify.com\/account\/login"
           }
@@ -264,13 +264,13 @@
         "96755e71-de8c-4651-844f-54c614444088": {
           "type": "blog",
           "settings": {
-            "article": "field-notes\/martha-and-joel-burt-of-las-jaras-on-collaboration"
+            "article": "field-notes\/try-it-out-with-hanson-of-sonoma-natural-wine-spritzer"
           }
         },
         "89f2cb29-1c56-423b-9987-67d6b177996f": {
           "type": "blog",
           "settings": {
-            "article": "field-notes\/community-love"
+            "article": "field-notes\/fall-winter-2021-with-the-moon-lists"
           }
         }
       },
