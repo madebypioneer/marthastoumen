@@ -17,7 +17,7 @@
                     {% assign tech_sheet_handle = product.metafields.custom_fields.tech_sheet | split: "." %}
                     {% for article in blogs[tech_sheet_handle[0]].articles %}
                         {% if article.handle contains tech_sheet_handle[1] %}
-                            <a href="{{ article.url }}" class="button mt-32">Download Tech Sheet</a>
+                            <a href="{{ article.url }}" class="button mt-32">View Tech Sheet</a>
                         {% endif %}
                     {% endfor %}
                 {% endif %}
