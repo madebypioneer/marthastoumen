@@ -43,7 +43,7 @@
       </header>
       <div class="article-card__footer">
         {% for tag in article.tags %}
-          <span>{{ tag.title }}</span>
+          <span>{{ tag.title }}{% unless forloop.last %} • {% endunless %}</span>
         {% endfor %}
       </div>
     </div>
