@@ -44,7 +44,7 @@
             {% for tag in article.tags %}<p><a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag.title }}</a></p>{% endfor %}
             </div>
             {%- if block.settings.blog_show_date -%}
-              <div class="circle-divider caption-with-letter-spacing published mt-40" itemprop="dateCreated pubdate datePublished">From Martha, {{ article.published_at | time_tag: format: 'month_year' }}</div>
+              <div class="circle-divider caption-with-letter-spacing published mt-40" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'month_year' }}</div>
             {%- endif -%}
           </header>
 
