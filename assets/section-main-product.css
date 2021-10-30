@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+p a:hover {
+  color: rgb(14, 83, 86);
+}
+
 .product--no-media {
   max-width: 57rem;
   margin: 0 auto;
