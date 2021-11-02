@@ -7,14 +7,7 @@ These features and content can be managed within the Bloom app or the Shopify cu
 Bloom (www.bloom.wine)
 {% endcomment %}
 
-<script defer src="https://unpkg.com/hoist-non-react-statics@2.5.5/dist/hoist-non-react-statics.min.js" crossorigin></script>
-<script defer src="https://js.stripe.com/v3/"></script>
-<script defer src="https://unpkg.com/@stripe/react-stripe-js@latest/dist/react-stripe.umd.min.js"></script>
-
 <script defer src="{{ 'bloom-storefront-dependencies.js' | asset_url }}"></script>
-
-<script defer src="https://unpkg.com/formik@2.1.5/dist/formik.umd.production.min.js" crossorigin></script>
-
 <script defer src="{{ 'bloom-storefront-signup.js' | asset_url }}"></script>
 
 
@@ -152,6 +145,7 @@ Bloom (www.bloom.wine)
         "phone": "{{ customer.phone }}"
       },
       "customerDob": "{{ customer_date_of_birth }}",
+      "paymentNote": "{{ payment_note }}",
       "buttonLabel": "{{ button_label }}",
       "buttonLoadingLabel": "{{ button_loading_label }}",
       "pickupLocations": {{ pickup_locations | json }},
@@ -165,6 +159,7 @@ Bloom (www.bloom.wine)
       "selectClass": "{{ select_class }}",
       "buttonClass": "{{ button_class }}",
       "welcomePagePath": "{{ welcome_page_path }}",
+      "showDiscountCode": "{{ shop.metafields.bloom.bloomfields["settings"]["discount_field_visible"] }}",
       "inputFont": {
         "family": "{{ input_font.family | replace: '"', "&#39;" }}",
         "fallbackFamilies": "{{ input_font.fallback_families | replace: '"', "&#39;" }}",
@@ -173,17 +168,5 @@ Bloom (www.bloom.wine)
         "style": "{{ input_font.style }}"
       }
     }'></div>
-
-    <script>
-      function renderSignupForm() {
-        var signupForm = document.getElementById('signup-form')
-        if (signupForm) {
-          var params = Bloom.storefront.utilities._.keysToCamel(JSON.parse(signupForm.dataset.params))
-          ReactDOM.render(React.createElement(Bloom.storefront.ClubSignupView, params), signupForm);
-        }
-      }
-      document.addEventListener('shopify:section:load', renderSignupForm)
-      Bloom.storefront.utilities.ready(renderSignupForm)
-    </script>
   </div>
 </div>
