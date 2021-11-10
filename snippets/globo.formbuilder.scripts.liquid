@@ -8,14 +8,22 @@
             reCaptcha : {
                 siteKey : ''
             },
-            hideWaterMark : false
+            hideWaterMark : false,
+            encryptionFormId : false,
+            copyright: 'Powered by Globo <a href="https://apps.shopify.com/form-builder-contact-form" target="_blank">Contact Form</a>'
         },
         pricing:{
             features:{
                 fileUpload : 2,
-                removeCopyright : false
+                removeCopyright : true,
+                bulkOrderForm: true,
+                cartForm: true,
             }
-        }
+        },
+        configuration: {
+            money_format:  "{{ shop.money_format | replace: '"', "'" }}"
+        },
+        encryption_form_id : false
     };
     Globo.FormBuilder.forms = [];
 
@@ -28,10 +36,12 @@
     {% endif %}
     Globo.FormBuilder.page = {
         title : document.title,
-        href : window.location.href
+        href : window.location.href,
+        type: "{{ request.page_type }}"
     };
     Globo.FormBuilder.assetFormUrls = [];
             Globo.FormBuilder.assetFormUrls[51727] = "{{ 'globo.formbuilder.data.51727.js' | asset_url }}";
+                    Globo.FormBuilder.assetFormUrls[63698] = "{{ 'globo.formbuilder.data.63698.js' | asset_url }}";
             
 </script>
 
