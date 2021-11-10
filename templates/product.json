@@ -68,7 +68,9 @@
     "163019601858fd3f1a": {
       "type": "product-related-news",
       "settings": {
-        "heading": "Get Down With"
+        "testimonial": "",
+        "attribution": "",
+        "link": ""
       }
     },
     "1630196035996deaae": {
@@ -79,7 +81,7 @@
     "163019605020435d5e": {
       "type": "product-specifications",
       "settings": {
-        "content": "<p>Want to dig deeper? Head this way!<\/p>"
+        "content": ""
       }
     },
     "16301960799bced8b6": {
@@ -118,8 +120,8 @@
         "162994917204089a3d-2": {
           "type": "button",
           "settings": {
-            "button_label": "Join Now",
-            "button_link": "shopify:\/\/pages\/6-bottle-membership-signup"
+            "button_label": "LEARN MORE",
+            "button_link": "shopify:\/\/pages\/membership"
           }
         }
       },
@@ -130,7 +132,7 @@
         "162994917204089a3d-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/759e98e1db7c669de0d6b078a93667c9.jpg",
+        "image": "shopify:\/\/shop_images\/Wine-Club-Container_November-2021-Update.jpg",
         "mask": true,
         "wine_club": true,
         "thin": false,
