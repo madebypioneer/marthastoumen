@@ -213,14 +213,6 @@ Bloom.storefront.utilities.postFormData = function(url, data, successCallback, f
   request.send(data);
 }
 
-Bloom.storefront.utilities._.getUrlParameter = function(name, url) {
-  url = url || location.search;
-  name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-  var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-  var results = regex.exec(url);
-  return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-};
-
 Bloom.storefront.utilities._.toCamel = (s) => {
   return s.replace(/([-_][a-z0-9])/ig, ($1) => {
     return $1.toUpperCase()
@@ -321,6 +313,11 @@ Bloom.storefront.utilities._uncoverButton = function(button, i) {
     button.style.opacity = "1"
     checkoutButtonContainer.parentNode.removeChild(checkoutButtonContainer);
   }
+
+  Bloom.storefront.utilities._.getCart(function(cart) {
+    var form = Bloom.storefront.utilities._.closestAncestor(button, "form")
+    Bloom.storefront.utilities._.refreshFormActionDiscountCodeForCart(form, cart);
+  })
 }
 
 Bloom.storefront.utilities.disableCheckout = function() {
@@ -583,7 +580,13 @@ Bloom.storefront.utilities._.getCart = Bloom.storefront.utilities.debounce(funct
 });
 
 Bloom.storefront.utilities.handleCheckoutClick = function(event) {
-  if (Bloom.storefront.utilities._.checkoutIsBlocked() || !Bloom.storefront.utilities._.hasDiscountNinjaPromotion()) {
+  var form = Bloom.storefront.utilities._.closestAncestor(event.target, "form");
+  var inputButton = Bloom.storefront.utilities._.closestAncestor(event.target, "input");
+  var button = Bloom.storefront.utilities._.closestAncestor(event.target, "button");
+  var anchor = Bloom.storefront.utilities._.closestAncestor(event.target, "a");
+  var isNativeCheckoutRetry = ((form||{}).dataset||{}).bloomNativeCheckoutRetry == 'true';
+
+  if (!isNativeCheckoutRetry && (Bloom.storefront.utilities._.checkoutIsBlocked() || !Bloom.storefront.utilities._.hasDiscountNinjaPromotion())) {
     Bloom.storefront.utilities._.cancelEvent(event)
   }
   Bloom.storefront.utilities._.getCart(function(cart) {
@@ -593,21 +596,42 @@ Bloom.storefront.utilities.handleCheckoutClick = function(event) {
     }
     if (Bloom.storefront.utilities._.checkoutIsBlocked()) { return false }
     if (Bloom.storefront.utilities._.hasDiscountNinjaPromotion()) { return true }
-    var form = Bloom.storefront.utilities._.closestAncestor(event.target, "form")
-    var button = Bloom.storefront.utilities._.closestAncestor(event.target, "button")
-    var discountCode = Bloom.storefront.utilities._.getUrlParameter("discount", (form||{}).action)
-    if (!discountCode) {
-      discountCode = Bloom.storefront.utilities._.getDiscountCodeForCart(cart)
-    }
-    ((event||{}).target||{}).disabled = true;
-    (button||{}).disabled = true;
-    try {
-      Bloom.storefront.utilities.checkout(discountCode, { target: doNativeCheckout ? 'shopify' : 'bloom' })
-    } catch (e) {
-      ((event||{}).target||{}).disabled = false;
-      (button||{}).disabled = false;
+    var discountCode = Bloom.storefront.utilities._.refreshFormActionDiscountCodeForCart(form, cart);
+    if (doNativeCheckout && !isNativeCheckoutRetry) {
+      form.setAttribute('data-bloom-native-checkout-retry', 'true')
+      button && button.click();
+      inputButton && inputButton.click();
+      anchor && anchor.click();
+      event.target && event.target.click();
+    } else if (!doNativeCheckout) {
+      (button||{}).disabled = true;
+      (inputButton||{}).disabled = true;
+      (anchor||{}).disabled = true;
+      ((event||{}).target||{}).disabled = true;
+      try {
+        Bloom.storefront.utilities.checkout(discountCode, { target: 'bloom' })
+      } catch (e) {
+        (button||{}).disabled = false;
+        (inputButton||{}).disabled = false;
+        (anchor||{}).disabled = false;
+        ((event||{}).target||{}).disabled = false;
+      }
     }
   })
+}
+
+Bloom.storefront.utilities._.refreshFormActionDiscountCodeForCart = function(form, cart) {
+  var formActionUrl = new URL((form||{}).action || window.location.pathname, window.location.origin);
+  var formActionParams = new URLSearchParams(formActionUrl.search);
+  var discountCode = formActionParams.get('discount');
+  if (!discountCode) {
+    discountCode = Bloom.storefront.utilities._.getDiscountCodeForCart(cart);
+  }
+  if (discountCode) {
+    formActionParams.set('discount', discountCode);
+    form.action = formActionUrl.pathname + '?' + formActionParams.toString();
+  }
+  return discountCode;
 }
 
 Bloom.storefront.utilities.checkout = function(discountCode, options) {
