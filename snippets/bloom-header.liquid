@@ -603,7 +603,7 @@ Bloom.storefront.utilities.handleCheckoutClick = function(event) {
       inputButton && inputButton.click();
       anchor && anchor.click();
       event.target && event.target.click();
-    } else if (!form && doNativeCheckout) {
+    } else if (doNativeCheckout && !form) {
       try {
         Bloom.storefront.utilities.checkout(discountCode, { target: 'shopify' })
       } catch (e) {
