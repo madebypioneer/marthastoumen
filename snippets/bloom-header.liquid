@@ -604,14 +604,7 @@ Bloom.storefront.utilities.handleCheckoutClick = function(event) {
       anchor && anchor.click();
       event.target && event.target.click();
     } else if (doNativeCheckout && !form) {
-      try {
-        Bloom.storefront.utilities.checkout(discountCode, { target: 'shopify' })
-      } catch (e) {
-        (button||{}).disabled = false;
-        (inputButton||{}).disabled = false;
-        (anchor||{}).disabled = false;
-        ((event||{}).target||{}).disabled = false;
-      }
+      Bloom.storefront.utilities.checkout(discountCode, { target: 'shopify' })
     } else if (!doNativeCheckout) {
       (button||{}).disabled = true;
       (inputButton||{}).disabled = true;
