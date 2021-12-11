@@ -597,12 +597,21 @@ Bloom.storefront.utilities.handleCheckoutClick = function(event) {
     if (Bloom.storefront.utilities._.checkoutIsBlocked()) { return false }
     if (Bloom.storefront.utilities._.hasDiscountNinjaPromotion()) { return true }
     var discountCode = Bloom.storefront.utilities._.refreshFormActionDiscountCodeForCart(form, cart);
-    if (doNativeCheckout && !isNativeCheckoutRetry) {
+    if (doNativeCheckout && !isNativeCheckoutRetry && !!form) {
       form.setAttribute('data-bloom-native-checkout-retry', 'true')
       button && button.click();
       inputButton && inputButton.click();
       anchor && anchor.click();
       event.target && event.target.click();
+    } else if (!form && doNativeCheckout) {
+      try {
+        Bloom.storefront.utilities.checkout(discountCode, { target: 'shopify' })
+      } catch (e) {
+        (button||{}).disabled = false;
+        (inputButton||{}).disabled = false;
+        (anchor||{}).disabled = false;
+        ((event||{}).target||{}).disabled = false;
+      }
     } else if (!doNativeCheckout) {
       (button||{}).disabled = true;
       (inputButton||{}).disabled = true;
