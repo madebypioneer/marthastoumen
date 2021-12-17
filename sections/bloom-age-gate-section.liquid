@@ -79,16 +79,13 @@ Bloom.AgeGate = function() {
   }
 
   function show() {
-     setTimeout(function(){
-       const oneTrust = document.getElementById('onetrust-banner-sdk');
-       if (!oneTrust) {
-         Bloom.AgeGate.trap = focusTrap.createFocusTrap('#bloom-age-gate-foreground');
-         Bloom.AgeGate.trap.activate()
-       }
-    }, 1500);
-    var background = document.querySelector('#bloom-age-gate-background')
-    var foreground = document.querySelector('#bloom-age-gate-foreground')
-    var continueButton = foreground.querySelector('[data-bloom-age-gate-yes]')
+    var background = document.querySelector('#bloom-age-gate-background');
+    var foreground = document.querySelector('#bloom-age-gate-foreground');
+    if (foreground) {
+      Bloom.AgeGate.trap = focusTrap.createFocusTrap('#bloom-age-gate-foreground');
+      Bloom.AgeGate.trap && Bloom.AgeGate.trap.activate();
+    }
+    var continueButton = foreground.querySelector('[data-bloom-age-gate-yes]');
     if (background) {
       UIkit.modal(background, config.modalOptions).show();
     }
@@ -221,11 +218,8 @@ document.addEventListener('shopify:section:unload', function() {
       background: none !important;
     {% endunless %}
   }
-  #bloom-age-gate-background.uk-modal {
-    z-index: 10000;
-  }
-  #bloom-age-gate-foreground.uk-modal {
-    z-index: 10001;
+  #bloom-age-gate-background.uk-modal, #bloom-age-gate-foreground.uk-modal {
+    z-index: 2147483646; /* +1 higher than OneTrust cookie consent banner */
   }
   .Bloom__AgeGate a {
     text-decoration: underline;
