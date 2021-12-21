@@ -28,10 +28,15 @@ Bloom.AgeGate = function() {
   var cookie = new Bloom.Cookie('bloom_ag');
   var ageGate;
   var continueButton;
+  var onSuccessCallback;
 
 
   function requireFullDob() {
     return window.matchMedia('(max-width: 639px)').matches ? config.requireFullDobMobile : config.requireFullDob
+  }
+
+  function onSuccess(callback) {
+    onSuccessCallback = callback;
   }
 
   function handleYesClick(event) {
@@ -39,7 +44,7 @@ Bloom.AgeGate = function() {
     if (requireFullDob() && dobIsValid() && !dobIsValid(config.minimumAge)) {
       redirect(event)
     } else {
-      checkAge()
+      checkAge(true)
     }
   }
 
@@ -81,16 +86,16 @@ Bloom.AgeGate = function() {
   function show() {
     var background = document.querySelector('#bloom-age-gate-background');
     var foreground = document.querySelector('#bloom-age-gate-foreground');
-    if (foreground) {
-      Bloom.AgeGate.trap = focusTrap.createFocusTrap('#bloom-age-gate-foreground');
-      Bloom.AgeGate.trap && Bloom.AgeGate.trap.activate();
-    }
     var continueButton = foreground.querySelector('[data-bloom-age-gate-yes]');
     if (background) {
       UIkit.modal(background, config.modalOptions).show();
     }
     if (foreground) {
       UIkit.modal(foreground, config.modalOptions).show();
+    }
+    if (foreground) {
+      Bloom.AgeGate.trap = focusTrap.createFocusTrap('#bloom-age-gate-foreground');
+      Bloom.AgeGate.trap && Bloom.AgeGate.trap.activate();
     }
     checkButton(continueButton)
   }
@@ -134,9 +139,17 @@ Bloom.AgeGate = function() {
     return cookie.getValue(MIN_AGE_COOKIE_KEY)
   }
 
-  function checkAge() {
+  function checkAge(userSubmitted = false) {
     if ((requireFullDob() && dobIsValid(config.minimumAge)) || (!requireFullDob() && isMinAge())) {
       hide()
+      if (userSubmitted) {
+        if (typeof onSuccessCallback == 'function') {
+          onSuccessCallback({
+            dob: cookieDateOfBirth(),
+            isMinAge: isMinAge()
+          })
+        }
+      }
     } else {
       show()
     }
@@ -175,6 +188,7 @@ Bloom.AgeGate = function() {
     checkAge: checkAge,
     isMinAge: isMinAge,
     dateOfBirth: cookieDateOfBirth,
+    onSuccess: onSuccess,
     clearResponse: clearResponse,
     destroy: destroy
   })
@@ -187,7 +201,8 @@ window.BloomController = function() {
     getIsMinAge: ageGate.isMinAge,
     getDateOfBirth: ageGate.dateOfBirth,
     checkAge: ageGate.checkAge,
-    clearAgeGateResponse: ageGate.clearResponse
+    clearAgeGateResponse: ageGate.clearResponse,
+    onAgeGateSuccess: ageGate.onSuccess
   })
 }
 
