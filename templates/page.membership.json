@@ -106,8 +106,8 @@
             "image": "shopify:\/\/shop_images\/martha_stoumen_spring_lifestyle_0274-1_1500.jpg",
             "club_level_name": "6 Bottle Club",
             "title_size": "1.5rem",
-            "level_description": "<p>One bottle of each new wine<\/p>",
-            "level_benefits": "",
+            "level_description": "<p>One bottle of each new wine per seasonal shipment<\/p>",
+            "level_benefits": "Next shipment: Spring\/Summer 2022 shipping in March",
             "club_price": "$195 - $275 per shipment",
             "text_align": "center",
             "to_join": true,
@@ -125,8 +125,8 @@
             "image": "shopify:\/\/shop_images\/martha_stoumen_spring_lifestyle_0338_master_1500.jpg",
             "club_level_name": "12 Bottle Club",
             "title_size": "1.5rem",
-            "level_description": "<p>Two bottles of each new wine per shipment, customizable<\/p>",
-            "level_benefits": "",
+            "level_description": "<p>Two bottles of each new wine per seasonal shipment, customizable<\/p>",
+            "level_benefits": "Next shipment: Spring\/Summer 2022 shipping in March",
             "club_price": "$380 - $550 per shipment",
             "text_align": "center",
             "to_join": true,
@@ -168,19 +168,19 @@
         "773a0703-8b2d-4041-a4ba-d39cdba589b3": {
           "type": "preheading",
           "settings": {
-            "preheading": "NEXT SEASONAL SHIPMENT"
+            "preheading": "SUPER SPECIAL SPARKLER"
           }
         },
         "162994866447ef345c-0": {
           "type": "heading",
           "settings": {
-            "heading": "COMING MARCH 2022"
+            "heading": "COMING TUESDAY JANUARY 18TH"
           }
         },
         "162994866447ef345c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Don't miss out on a single bottle this year! Your next seasonal shipment of six new wines will arrive this March. Until then, you'll receive $25 flat rate shipping on all orders when you join the club.<br\/><\/p>"
+            "text": "<p>Don't miss out on a single bottle this year! Your next seasonal shipment of six new wines will arrive this March. Until then, you'll receive $25 flat rate shipping on all orders when you join the club. <br\/><\/p>"
           }
         }
       },
@@ -190,7 +190,7 @@
         "162994866447ef345c-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/martha_stoumen_spring_lifestyle_0056-1_1500.jpg",
+        "image": "shopify:\/\/shop_images\/MS_collaboration__0009_1500px.jpg",
         "mask": true,
         "wine_club": false,
         "thin": false,
