@@ -18,7 +18,7 @@
         "06d0132b-ca1c-4a54-bcdb-c3893e4260b8": {
           "type": "largeText",
           "settings": {
-            "text": "<p>SPECIAL SPARKLING RELEASE COMING TUESDAY JANUARY 18 \/\/ SCROLL TO JOIN THE PARTY <\/p>"
+            "text": "<p>COLLABORATION 2019 NOW OPEN \/\/ SCROLL TO JOIN THE PARTY <\/p>"
           }
         },
         "005298e7-e458-4bf0-be65-d0b42028ac7e": {
@@ -168,19 +168,19 @@
         "773a0703-8b2d-4041-a4ba-d39cdba589b3": {
           "type": "preheading",
           "settings": {
-            "preheading": "SUPER SPECIAL SPARKLER"
+            "preheading": "WINTER CLUB EXCLUSIVE"
           }
         },
         "162994866447ef345c-0": {
           "type": "heading",
           "settings": {
-            "heading": "COMING TUESDAY JANUARY 18TH"
+            "heading": "COLLABORATION 2019"
           }
         },
         "162994866447ef345c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Don't miss out on a single bottle this year! Your next seasonal shipment of six new wines will arrive this March. Until then, you'll receive $25 flat rate shipping on all orders when you join the club. <br\/><\/p>"
+            "text": "<p>Don't miss out on a single bottle this year! $25 flat rate shipping applies to all club member orders. <br\/><\/p>"
           }
         }
       },
@@ -190,7 +190,7 @@
         "162994866447ef345c-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/MS_collaboration__0009_1500px.jpg",
+        "image": "shopify:\/\/shop_images\/Martha_Stoumen_BNY_06_03_21_LOOK_05_2251.jpg",
         "mask": true,
         "wine_club": false,
         "thin": false,
