@@ -30,8 +30,8 @@ Bloom (www.bloom.wine)
   Bloom.storefront.settings.notices = {
     shipping: {
       enabled: {{ enabled }},
-      title: '{{ title }}',
-      message: '{{ message }}'
+      title: '{{ title | escape }}',
+      message: '{{ message | strip_html | escape }}'
     }
   }
   function handleEvent() {
