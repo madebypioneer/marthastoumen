@@ -1,0 +1,8 @@
+{% if product.metafields.custom_fields["wine_type"] != blank %}
+  <div class="custom-field custom-field__wine-type custom-field__type--text-list">
+    <h3 class="custom-field--title">Wine Type</h3>
+    <div class="custom-field--value">  
+      {{ product.metafields.custom_fields["wine_type"] }}
+    </div>
+  </div>
+{% endif %}

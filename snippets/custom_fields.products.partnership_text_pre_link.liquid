@@ -1,0 +1,8 @@
+{% if product.metafields.custom_fields["partnership_text_pre_link"] != blank %}
+  <div class="custom-field custom-field__partnership-text-pre-link custom-field__type--text">
+    <h3 class="custom-field--title">Partnership Text (Pre Link)</h3>
+    <div class="custom-field--value">
+      {{ product.metafields.custom_fields["partnership_text_pre_link"] }}
+    </div>
+  </div>
+{% endif %}

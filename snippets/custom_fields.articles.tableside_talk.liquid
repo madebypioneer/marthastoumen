@@ -1,0 +1,8 @@
+{% if article.metafields.custom_fields["tableside_talk"] != blank %}
+  <div class="custom-field custom-field__tableside-talk custom-field__type--html">
+    <h3 class="custom-field--title">Tableside Talk</h3>
+    <div class="custom-field--value">
+      {{ article.metafields.custom_fields["tableside_talk"] }}
+    </div>
+  </div>
+{% endif %}

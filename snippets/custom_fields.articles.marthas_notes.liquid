@@ -1,0 +1,8 @@
+{% if article.metafields.custom_fields["marthas_notes"] != blank %}
+  <div class="custom-field custom-field__marthas-notes custom-field__type--html">
+    <h3 class="custom-field--title">Martha's Notes</h3>
+    <div class="custom-field--value">
+      {{ article.metafields.custom_fields["marthas_notes"] }}
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,8 @@
+{% if product.metafields.custom_fields["spotify_heading"] != blank %}
+  <div class="custom-field custom-field__spotify-heading custom-field__type--text">
+    <h3 class="custom-field--title">Heading (Pre Playlist Link)</h3>
+    <div class="custom-field--value">
+      {{ product.metafields.custom_fields["spotify_heading"] }}
+    </div>
+  </div>
+{% endif %}

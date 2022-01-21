@@ -1,0 +1,8 @@
+{% if product.metafields.custom_fields["serving_temp"] != blank %}
+  <div class="custom-field custom-field__serving-temp custom-field__type--html">
+    <h3 class="custom-field--title">Serving Temp</h3>
+    <div class="custom-field--value">
+      {{ product.metafields.custom_fields["serving_temp"] }}
+    </div>
+  </div>
+{% endif %}

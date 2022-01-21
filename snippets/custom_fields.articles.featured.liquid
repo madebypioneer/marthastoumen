@@ -1,0 +1,12 @@
+{% if article.metafields.custom_fields["featured"] != blank %}
+  <div class="custom-field custom-field__featured custom-field__type--checkbox">
+    <h3 class="custom-field--title">Featured</h3>
+    <div class="custom-field--value">
+      {% if article.metafields.custom_fields["featured"] == 1 %}
+        TRUE
+      {% else %}
+        FALSE
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

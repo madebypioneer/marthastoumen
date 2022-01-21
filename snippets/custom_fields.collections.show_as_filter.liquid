@@ -1,0 +1,12 @@
+{% if collection.metafields.custom_fields["show_as_filter"] != blank %}
+  <div class="custom-field custom-field__show-as-filter custom-field__type--checkbox">
+    <h3 class="custom-field--title">Show As Filter</h3>
+    <div class="custom-field--value">
+      {% if collection.metafields.custom_fields["show_as_filter"] == 1 %}
+        TRUE
+      {% else %}
+        FALSE
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,8 @@
+{% if product.metafields.custom_fields["vintage"] != blank %}
+  <div class="custom-field custom-field__vintage custom-field__type--number">
+    <h3 class="custom-field--title">Vintage</h3>
+    <div class="custom-field--value">
+      {{ product.metafields.custom_fields["vintage"] }}
+    </div>
+  </div>
+{% endif %}
