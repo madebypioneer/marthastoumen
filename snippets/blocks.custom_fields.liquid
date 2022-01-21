@@ -1,0 +1,268 @@
+<div class="custom-fields-section">
+  
+    {% if resource_type == "articles" %}
+    <div class="custom-fields-section__articles">
+      {% for block in blocks %}
+      {% if block.type contains "cf_" %}
+      <div class="custom-fields-section__item custom-fields-section__item--{{ block.type }} custom-fields-section__item--{{ block.type }}--{{ block.settings.key }}" {{ block.shopify_attributes }}>
+        {% case block.settings.key %}
+        
+          {% when "alcohol_by_volume" %}
+            {% render "custom_fields.articles.alcohol_by_volume" %}
+        
+          {% when "at_bottling" %}
+            {% render "custom_fields.articles.at_bottling" %}
+        
+          {% when "color_logo" %}
+            {% render "custom_fields.articles.color_logo" %}
+        
+          {% when "dark_logo" %}
+            {% render "custom_fields.articles.dark_logo" %}
+        
+          {% when "featured" %}
+            {% render "custom_fields.articles.featured" %}
+        
+          {% when "include_in_press_marquee" %}
+            {% render "custom_fields.articles.include_in_press_marquee" %}
+        
+          {% when "light_logo" %}
+            {% render "custom_fields.articles.light_logo" %}
+        
+          {% when "link" %}
+            {% render "custom_fields.articles.link" %}
+        
+          {% when "marketing_asset" %}
+            {% render "custom_fields.articles.marketing_asset" %}
+        
+          {% when "marketing_assets" %}
+            {% render "custom_fields.articles.marketing_assets" %}
+        
+          {% when "marketing_asset_text" %}
+            {% render "custom_fields.articles.marketing_asset_text" %}
+        
+          {% when "marthas_notes" %}
+            {% render "custom_fields.articles.marthas_notes" %}
+        
+          {% when "production_amount" %}
+            {% render "custom_fields.articles.production_amount" %}
+        
+          {% when "production_notes" %}
+            {% render "custom_fields.articles.production_notes" %}
+        
+          {% when "related_product" %}
+            {% render "custom_fields.articles.related_product" %}
+        
+          {% when "tableside_talk" %}
+            {% render "custom_fields.articles.tableside_talk" %}
+        
+          {% when "tasting_flavors" %}
+            {% render "custom_fields.articles.tasting_flavors" %}
+        
+          {% when "tasting_notes" %}
+            {% render "custom_fields.articles.tasting_notes" %}
+        
+          {% when "varietal" %}
+            {% render "custom_fields.articles.varietal" %}
+        
+          {% when "vineyard_description" %}
+            {% render "custom_fields.articles.vineyard_description" %}
+        
+          {% when "vinification_notes" %}
+            {% render "custom_fields.articles.vinification_notes" %}
+        
+        {% endcase %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  
+    {% if resource_type == "products" %}
+    <div class="custom-fields-section__products">
+      {% for block in blocks %}
+      {% if block.type contains "cf_" %}
+      <div class="custom-fields-section__item custom-fields-section__item--{{ block.type }} custom-fields-section__item--{{ block.type }}--{{ block.settings.key }}" {{ block.shopify_attributes }}>
+        {% case block.settings.key %}
+        
+          {% when "alcohol_by_volume" %}
+            {% render "custom_fields.products.alcohol_by_volume" %}
+        
+          {% when "attribution" %}
+            {% render "custom_fields.products.attribution" %}
+        
+          {% when "at_bottling" %}
+            {% render "custom_fields.products.at_bottling" %}
+        
+          {% when "drink_when" %}
+            {% render "custom_fields.products.drink_when" %}
+        
+          {% when "enjoy_with" %}
+            {% render "custom_fields.products.enjoy_with" %}
+        
+          {% when "marketing_asset" %}
+            {% render "custom_fields.products.marketing_asset" %}
+        
+          {% when "marketing_assets" %}
+            {% render "custom_fields.products.marketing_assets" %}
+        
+          {% when "marketing_asset_text" %}
+            {% render "custom_fields.products.marketing_asset_text" %}
+        
+          {% when "marthas_notes" %}
+            {% render "custom_fields.products.marthas_notes" %}
+        
+          {% when "marthas_notes_content" %}
+            {% render "custom_fields.products.marthas_notes_content" %}
+        
+          {% when "marthas_notes_image" %}
+            {% render "custom_fields.products.marthas_notes_image" %}
+        
+          {% when "partnership_link" %}
+            {% render "custom_fields.products.partnership_link" %}
+        
+          {% when "partnership_name" %}
+            {% render "custom_fields.products.partnership_name" %}
+        
+          {% when "partnership_text_pre_link" %}
+            {% render "custom_fields.products.partnership_text_pre_link" %}
+        
+          {% when "playlist_link" %}
+            {% render "custom_fields.products.playlist_link" %}
+        
+          {% when "playlist_name" %}
+            {% render "custom_fields.products.playlist_name" %}
+        
+          {% when "production_amount" %}
+            {% render "custom_fields.products.production_amount" %}
+        
+          {% when "production_notes" %}
+            {% render "custom_fields.products.production_notes" %}
+        
+          {% when "region_description" %}
+            {% render "custom_fields.products.region_description" %}
+        
+          {% when "region_single_line" %}
+            {% render "custom_fields.products.region_single_line" %}
+        
+          {% when "related_products" %}
+            {% render "custom_fields.products.related_products" %}
+        
+          {% when "serving_temp" %}
+            {% render "custom_fields.products.serving_temp" %}
+        
+          {% when "specifications" %}
+            {% render "custom_fields.products.specifications" %}
+        
+          {% when "spotify" %}
+            {% render "custom_fields.products.spotify" %}
+        
+          {% when "spotify_heading" %}
+            {% render "custom_fields.products.spotify_heading" %}
+        
+          {% when "tableside_talk" %}
+            {% render "custom_fields.products.tableside_talk" %}
+        
+          {% when "tagline" %}
+            {% render "custom_fields.products.tagline" %}
+        
+          {% when "tasting_flavors" %}
+            {% render "custom_fields.products.tasting_flavors" %}
+        
+          {% when "tasting_notes" %}
+            {% render "custom_fields.products.tasting_notes" %}
+        
+          {% when "tech_sheet" %}
+            {% render "custom_fields.products.tech_sheet" %}
+        
+          {% when "testimonial" %}
+            {% render "custom_fields.products.testimonial" %}
+        
+          {% when "testimonial_content" %}
+            {% render "custom_fields.products.testimonial_content" %}
+        
+          {% when "testimonial_url" %}
+            {% render "custom_fields.products.testimonial_url" %}
+        
+          {% when "varietal" %}
+            {% render "custom_fields.products.varietal" %}
+        
+          {% when "vinification_notes" %}
+            {% render "custom_fields.products.vinification_notes" %}
+        
+          {% when "vintage" %}
+            {% render "custom_fields.products.vintage" %}
+        
+          {% when "volume" %}
+            {% render "custom_fields.products.volume" %}
+        
+          {% when "wine_type" %}
+            {% render "custom_fields.products.wine_type" %}
+        
+        {% endcase %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  
+    {% if resource_type == "shop" %}
+    <div class="custom-fields-section__shop">
+      {% for block in blocks %}
+      {% if block.type contains "cf_" %}
+      <div class="custom-fields-section__item custom-fields-section__item--{{ block.type }} custom-fields-section__item--{{ block.type }}--{{ block.settings.key }}" {{ block.shopify_attributes }}>
+        {% case block.settings.key %}
+        
+          {% when "forgot_password_content" %}
+            {% render "custom_fields.shop.forgot_password_content" %}
+        
+          {% when "login_page_content" %}
+            {% render "custom_fields.shop.login_page_content" %}
+        
+          {% when "password_recovery_error_messag" %}
+            {% render "custom_fields.shop.password_recovery_error_messag" %}
+        
+        {% endcase %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  
+    {% if resource_type == "pages" %}
+    <div class="custom-fields-section__pages">
+      {% for block in blocks %}
+      {% if block.type contains "cf_" %}
+      <div class="custom-fields-section__item custom-fields-section__item--{{ block.type }} custom-fields-section__item--{{ block.type }}--{{ block.settings.key }}" {{ block.shopify_attributes }}>
+        {% case block.settings.key %}
+        
+          {% when "job_description" %}
+            {% render "custom_fields.pages.job_description" %}
+        
+        {% endcase %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  
+    {% if resource_type == "collections" %}
+    <div class="custom-fields-section__collections">
+      {% for block in blocks %}
+      {% if block.type contains "cf_" %}
+      <div class="custom-fields-section__item custom-fields-section__item--{{ block.type }} custom-fields-section__item--{{ block.type }}--{{ block.settings.key }}" {{ block.shopify_attributes }}>
+        {% case block.settings.key %}
+        
+          {% when "menu_order" %}
+            {% render "custom_fields.collections.menu_order" %}
+        
+          {% when "show_as_filter" %}
+            {% render "custom_fields.collections.show_as_filter" %}
+        
+        {% endcase %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  
+</div>
