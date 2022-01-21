@@ -1,0 +1,8 @@
+{% if article.metafields.custom_fields["tasting_notes"] != blank %}
+  <div class="custom-field custom-field__tasting-notes custom-field__type--html">
+    <h3 class="custom-field--title">Tasting Notes</h3>
+    <div class="custom-field--value">
+      {{ article.metafields.custom_fields["tasting_notes"] }}
+    </div>
+  </div>
+{% endif %}

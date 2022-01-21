@@ -1,0 +1,8 @@
+{% if product.metafields.custom_fields["testimonial_content"] != blank %}
+  <div class="custom-field custom-field__testimonial-content custom-field__type--html">
+    <h3 class="custom-field--title">Testimonial Content</h3>
+    <div class="custom-field--value">
+      {{ product.metafields.custom_fields["testimonial_content"] }}
+    </div>
+  </div>
+{% endif %}

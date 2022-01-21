@@ -1,0 +1,8 @@
+{% if article.metafields.custom_fields["light_logo"] != blank %}
+  <div class="custom-field custom-field__light-logo custom-field__type--image">
+    <h3 class="custom-field--title">Light Logo</h3>
+    <div class="custom-field--value">  
+      {% render 'cf-image' with image: article.metafields.custom_fields["light_logo"], print: 'url' %}
+    </div>
+  </div>
+{% endif %}

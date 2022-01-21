@@ -1,0 +1,8 @@
+{% if article.metafields.custom_fields["link"] != blank %}
+  <div class="custom-field custom-field__link custom-field__type--url">
+    <h3 class="custom-field--title">Link</h3>
+    <div class="custom-field--value">
+      {{ article.metafields.custom_fields["link"] }}
+    </div>
+  </div>
+{% endif %}

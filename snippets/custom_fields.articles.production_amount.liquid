@@ -1,0 +1,8 @@
+{% if article.metafields.custom_fields["production_amount"] != blank %}
+  <div class="custom-field custom-field__production-amount custom-field__type--text">
+    <h3 class="custom-field--title">Production Amount</h3>
+    <div class="custom-field--value">
+      {{ article.metafields.custom_fields["production_amount"] }}
+    </div>
+  </div>
+{% endif %}

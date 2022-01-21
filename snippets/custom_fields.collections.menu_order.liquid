@@ -1,0 +1,8 @@
+{% if collection.metafields.custom_fields["menu_order"] != blank %}
+  <div class="custom-field custom-field__menu-order custom-field__type--number">
+    <h3 class="custom-field--title">Menu Order</h3>
+    <div class="custom-field--value">
+      {{ collection.metafields.custom_fields["menu_order"] }}
+    </div>
+  </div>
+{% endif %}

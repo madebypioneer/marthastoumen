@@ -1,0 +1,43 @@
+{% if article.metafields.custom_fields["marketing_asset"] != blank %}
+  <div class="custom-field custom-field__marketing-asset custom-field__type--field-collection-json">
+    <h3 class="custom-field--title">Marketing Asset</h3>
+    <div class="custom-field--value">
+      {% for item in article.metafields.custom_fields["marketing_asset"] %}
+        <div class="fc-item fc-index--{{ forloop.index0 }}">
+           {% if item["link_text"] != blank %}
+             <div class="fc-field field__link-text field-type--text">
+               <h4 class="custom-field--title">Link Text</h4>
+               <div class="custom-field--value">
+                 {{ item["link_text"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["asset_description"] != blank %}
+             <div class="fc-field field__asset-description field-type--text">
+               <h4 class="custom-field--title">Asset Description</h4>
+               <div class="custom-field--value">
+                 {{ item["asset_description"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["asset_file"] != blank %}
+             <div class="fc-field field__asset-file field-type--file">
+               <h4 class="custom-field--title">Asset File</h4>
+               <div class="custom-field--value">
+                 {{ item["asset_file"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["asset_file_url"] != blank %}
+             <div class="fc-field field__asset-file-url field-type--file">
+               <h4 class="custom-field--title">Asset File (NEW)</h4>
+               <div class="custom-field--value">
+                 {{ item["asset_file_url"] }}
+               </div>
+             </div>
+           {% endif %}
+         </div>
+       {% endfor %}
+    </div>
+  </div>
+{% endif %}

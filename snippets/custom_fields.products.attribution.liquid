@@ -1,0 +1,8 @@
+{% if product.metafields.custom_fields["attribution"] != blank %}
+  <div class="custom-field custom-field__attribution custom-field__type--text">
+    <h3 class="custom-field--title">Attribution</h3>
+    <div class="custom-field--value">
+      {{ product.metafields.custom_fields["attribution"] }}
+    </div>
+  </div>
+{% endif %}

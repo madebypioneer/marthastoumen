@@ -1,0 +1,14 @@
+{% if product.metafields.custom_fields["tech_sheet"] != blank %}
+  <div class="custom-field custom-field__tech-sheet custom-field__type--article-reference">
+    <h3 class="custom-field--title">Tech Sheet</h3>
+    <div class="custom-field--value">  
+      {% assign article_blog_handle = product.metafields.custom_fields["tech_sheet"] | split: "." %}
+      {% for article in blogs[article_blog_handle[0]].articles %}
+        {% if article.handle contains article_blog_handle[1] %}
+          {{ article.title | link_to: article.url }}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

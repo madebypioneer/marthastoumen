@@ -1,0 +1,8 @@
+{% if product.metafields.custom_fields["at_bottling"] != blank %}
+  <div class="custom-field custom-field__at-bottling custom-field__type--html">
+    <h3 class="custom-field--title">At Bottling</h3>
+    <div class="custom-field--value">
+      {{ product.metafields.custom_fields["at_bottling"] }}
+    </div>
+  </div>
+{% endif %}

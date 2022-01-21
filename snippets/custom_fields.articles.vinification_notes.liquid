@@ -1,0 +1,8 @@
+{% if article.metafields.custom_fields["vinification_notes"] != blank %}
+  <div class="custom-field custom-field__vinification-notes custom-field__type--html">
+    <h3 class="custom-field--title">Vinification Notes</h3>
+    <div class="custom-field--value">
+      {{ article.metafields.custom_fields["vinification_notes"] }}
+    </div>
+  </div>
+{% endif %}

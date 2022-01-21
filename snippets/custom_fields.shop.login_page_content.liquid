@@ -1,0 +1,8 @@
+{% if shop.metafields.custom_fields["login_page_content"] != blank %}
+  <div class="custom-field custom-field__login-page-content custom-field__type--html">
+    <h3 class="custom-field--title">Login Page Content</h3>
+    <div class="custom-field--value">
+      {{ shop.metafields.custom_fields["login_page_content"] }}
+    </div>
+  </div>
+{% endif %}

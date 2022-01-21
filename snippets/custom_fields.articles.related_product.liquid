@@ -1,0 +1,9 @@
+{% if article.metafields.custom_fields["related_product"] != blank %}
+  <div class="custom-field custom-field__related-product custom-field__type--product-reference">
+    <h3 class="custom-field--title">Related Product</h3>
+    <div class="custom-field--value">  
+    {% assign product_ref = all_products[article.metafields.custom_fields["related_product"]] %}
+    {{ product_ref.title | link_to: product_ref.url }}
+    </div>
+  </div>
+{% endif %}

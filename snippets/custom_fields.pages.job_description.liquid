@@ -1,0 +1,15 @@
+{% if page.metafields.custom_fields["job_description"] != blank %}
+  <div class="custom-field custom-field__job-description custom-field__type--text-repeater">
+    <h3 class="custom-field--title">Job Description</h3>
+    <div class="custom-field--value">
+      {% for item in page.metafields.custom_fields["job_description"] %}
+        <div class="fc-repeater-field-item fc-repeater-field-item--{{ forloop.index0 }} field__job-description field-type--text">
+           <h4 class="custom-field--title">Job Description</h4>
+           <div class="custom-field--value">
+             {{ item["job_description"] }}
+           </div>
+        </div>
+       {% endfor %}
+    </div>
+  </div>
+{% endif %}

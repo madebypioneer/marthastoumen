@@ -1,0 +1,8 @@
+{% if article.metafields.custom_fields["vineyard_description"] != blank %}
+  <div class="custom-field custom-field__vineyard-description custom-field__type--html">
+    <h3 class="custom-field--title">Vineyard Description</h3>
+    <div class="custom-field--value">
+      {{ article.metafields.custom_fields["vineyard_description"] }}
+    </div>
+  </div>
+{% endif %}

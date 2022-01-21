@@ -1,0 +1,8 @@
+{% if article.metafields.custom_fields["marketing_asset_text"] != blank %}
+  <div class="custom-field custom-field__marketing-asset-text custom-field__type--html">
+    <h3 class="custom-field--title">Marketing Asset Text</h3>
+    <div class="custom-field--value">
+      {{ article.metafields.custom_fields["marketing_asset_text"] }}
+    </div>
+  </div>
+{% endif %}
