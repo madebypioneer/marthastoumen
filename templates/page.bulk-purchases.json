@@ -11,7 +11,7 @@
         "show_content": true,
         "show_contact": true,
         "heading": "WE'D LOVE TO HEAR FROM YOU!",
-        "form_shortcode": "<div class=\"globo-formbuilder\" data-id=\"51727\"><\/div>",
+        "form_shortcode": "{formbuilder:51727}",
         "layout": "text_first"
       }
     }
