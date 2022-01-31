@@ -9,9 +9,9 @@
         "social_header": "",
         "show_page_title": true,
         "show_content": true,
-        "show_contact": true,
+        "show_contact": false,
         "heading": "WE'D LOVE TO HEAR FROM YOU!",
-        "form_shortcode": "",
+        "form_shortcode": "{formbuilder:51727}",
         "layout": "text_first"
       }
     }
