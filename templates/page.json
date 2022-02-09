@@ -17,6 +17,7 @@
     },
     "164444815183af8094": {
       "type": "content",
+      "disabled": true,
       "blocks": {
         "9446f7a4-a003-416f-ab8d-2945a71fd78e": {
           "type": "largeText",
@@ -53,6 +54,7 @@
     },
     "16444477694ee0726b": {
       "type": "section-faq",
+      "disabled": true,
       "blocks": {
         "164444776995134dbd-0": {
           "type": "faq",
@@ -105,12 +107,23 @@
       "settings": {
         "layout": "image_first"
       }
+    },
+    "16444508251380f1a0": {
+      "type": "content",
+      "disabled": true,
+      "settings": {
+        "reduce_spacing": false,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
+      }
     }
   },
   "order": [
     "main",
     "164444815183af8094",
     "16444477694ee0726b",
-    "16444482295f6efea9"
+    "16444482295f6efea9",
+    "16444508251380f1a0"
   ]
 }
