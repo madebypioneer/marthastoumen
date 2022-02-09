@@ -79,12 +79,13 @@
         "1629482875830ab17d-0": {
           "type": "faq",
           "settings": {
-            "heading": "I gave you the wrong address! How do I reroute a shipment?",
-            "content": "<p>There is a $20 fee for rerouting shipments if the shipper is able to do it (sometimes they can’t, we’re sorry!). Please email us at <a href=\"mailto:info@marthstoumen.com\"><span style=\"text-decoration:underline\">info@marthstoumen.com<\/span><\/a> with the address you’d like your package to be rerouted to and we will try to get it diverted.<\/p><p>Due to alcohol shipping laws, it is not possible to reroute packages across state lines: the wine will need to return to us in Sonoma and be re-shipped. For all packages that are returned to us, we charge $15 plus the cost of reshipment. <\/p>"
+            "heading": "Click here to learn more",
+            "content": "<p>We at Martha Stoumen Wines make wine out of a shared space, Pax Mahle Wines, in Sebastopol, CA. Pax, Patrick Cappiello (Monte Rio Cellars), Carlo Mondavi (RAEN), Rosalind Reynolds (Emme Wines) and Martha Stoumen make wine in this facility. We all share a group of interns and work together as a team during harvest, and Rosalind, who is also Pax's Assistant Winemaker, hires and manages all of the interns. All of the harvest interns will work on everyone's wine in the facility, so you'll get great exposure to various winemakers and grape varietals. <\/p><p>Harvest runs approximately three months from early August to late October\/early November, 6 to 7 days a week, and is full of hard physical work, great wine, and team lunches at the long table. It's our favorite time of year.<\/p><p>If interested please send an email and resume to <a href=\"mailto:rosalindsreynolds@gmail.com\" target=\"_blank\">RosalindsReynolds@gmail.com<\/a> and Cc <a href=\"mailto:careers@marthastoumen.com\" target=\"_blank\">careers@marthastoumen.com<\/a>. Subject line should read: Harvest 2022 Intern Application<\/p>"
           }
         },
         "ee7e3a83-fe85-43d2-917b-3e711d737545": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "heading": "I received a notice that there was a delivery attempt, but I’m out of town. What do I do?",
             "content": "<p>Using the tracking number emailed to you, please reach out to the shipper (FedEx or GSO) to request that they hold the package at a pick up location, or that they reattempt after your return.<\/p>"
@@ -92,6 +93,7 @@
         },
         "09710330-b7ad-4960-84e8-9f143fdee905": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "heading": "How do I see which wines I’ve ordered?",
             "content": "<p><strong>Are you a wine club member?<\/strong> If yes,  just <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\"><span style=\"text-decoration:underline\">login to your account<\/span><\/a> to see your order history. Haven't logged into your wine club account since before September 7th, 2021?  You'll need to find the email we sent you with an \"activate your account\" button to create a new password. If the link has expired (it's only good for 72 hours), just email us at info@marthastoumen.com to have us send you a new one!<\/p><p><strong>Not a wine club member?<\/strong> To see your order history, you’ll need to <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/register\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/register\"><span style=\"text-decoration:underline\">create an account<\/span><\/a> using the email you used to place your order. All of your order history and tracking information will be in your new account!<\/p>"
@@ -99,6 +101,7 @@
         },
         "a51772d6-95ab-4116-b085-fd30075982f3": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "heading": "I haven’t received tracking information yet. When is my wine coming?",
             "content": "<p>You’ll receive an email with tracking information as soon as your order is ready to ship. We’re a very small team, and so it can take a few days before your order is picked up by FedEx or GSO. <\/p><p>Most orders that are received after 11am PST on Thursday will be sent out the following Monday, and orders received after 11am PST on Friday will be sent the following Tuesday. <\/p><p>If your wine is being shipped via FedEx Cold Chain, tracking information won't be available until a day or two before delivery. Cold Chain packages are prepared every Friday and delivered a week and a half later on Tuesday or Wednesday, depending on your location.<\/p>"
@@ -106,6 +109,7 @@
         },
         "7dbb2b15-04ab-4d01-8c53-8050574b631c": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "heading": "Why can’t you ship to my state?",
             "content": "<p>We are able to ship to all but 7 states (Alabama, Arkansas, Delaware, Hawaii, Kentucky, Rhode Island, and Utah). If you live in Mississippi, you’ll need to email us at info@marthastoumen.com to arrange for your wines to be shipped to a package store.<\/p><p>We are unable to ship internationally, but please visit our <a href=\"\/pages\/stockists\" title=\"Stockists\"><span style=\"text-decoration:underline\">Stockists<\/span><\/a> page to find our wines in your country. <\/p>"
@@ -113,6 +117,7 @@
         },
         "491fc3f2-7fb7-4db9-a7a1-aaf920a81d2e": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "heading": "Why is it so expensive to ship wine?",
             "content": "<p>Wine is heavy, fragile, and temperature sensitive, and there’s a surcharge to make sure that wine is only being sold to and delivered to people 21 years of age and older.  <a href=\"https:\/\/www.sfchronicle.com\/wine\/article\/If-you-want-independent-wineries-to-survive-get-15789494.php\"><span style=\"text-decoration:underline\">Here’s a great article from Esther Mobley at The SF Chronicle that explains some of the ins and outs of moving wine from our winery to you.<\/span><\/a> If you’d like to receive $25 flat rate shipping year round, please <a href=\"https:\/\/martha-stoumen.myshopify.com\/pages\/membership\" title=\"https:\/\/martha-stoumen.myshopify.com\/pages\/membership\"><span style=\"text-decoration:underline\">sign up for the Martha Stoumen Wines club<\/span><\/a>.<\/p>"
