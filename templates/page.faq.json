@@ -3,7 +3,7 @@
     "16294828723a66f779": {
       "type": "page",
       "settings": {
-        "page": "careers",
+        "page": "faq",
         "fullWidth": true,
         "showContent": false
       }
@@ -64,9 +64,9 @@
         "71da2f73-5f18-4ba6-8ef6-0d59d71b4814"
       ],
       "settings": {
-        "heading": "Open Positions",
+        "heading": "General",
         "content": "",
-        "section_id": "open-positions"
+        "section_id": "General"
       }
     },
     "1629482875830ab17d": {
