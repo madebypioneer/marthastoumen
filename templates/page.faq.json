@@ -82,7 +82,7 @@
           "type": "faq",
           "settings": {
             "heading": "I received a notice that there was a delivery attempt, but I’m out of town. What do I do?",
-            "content": "<p>Using the tracking number emailed to you, please reach out to the shipper (FedEx or GSO) to request that they hold the package at a pick up location, or that they reattempt after your return.<\/p>"
+            "content": "<p>Using the tracking number emailed to you, please reach out to the shipper (FedEx or GSO) to request that they hold the package at a pick up location, or that they reattempt after your return.<\/p><p><\/p><p>You can set up a free FedEx delivery manager account here <a href=\"https:\/\/www.fedex.com\/en-us\/delivery-manager.html\"><span style=\"text-decoration:underline\">https:\/\/www.fedex.com\/en-us\/delivery-manager.html<\/span><\/a> to easily hold your package. <\/p>"
           }
         },
         "09710330-b7ad-4960-84e8-9f143fdee905": {
