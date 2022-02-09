@@ -17,7 +17,6 @@
     },
     "164444815183af8094": {
       "type": "content",
-      "disabled": true,
       "blocks": {
         "9446f7a4-a003-416f-ab8d-2945a71fd78e": {
           "type": "largeText",
@@ -54,7 +53,6 @@
     },
     "16444477694ee0726b": {
       "type": "section-faq",
-      "disabled": true,
       "blocks": {
         "164444776995134dbd-0": {
           "type": "faq",
