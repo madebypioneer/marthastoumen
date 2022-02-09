@@ -73,10 +73,9 @@
       "blocks": {
         "1629482875830ab17d-0": {
           "type": "faq",
-          "disabled": true,
           "settings": {
-            "heading": "",
-            "content": ""
+            "heading": "I gave you the wrong address! How do I reroute a shipment?",
+            "content": "<p>There is a $20 fee for rerouting shipments if the shipper is able to do it (sometimes they can’t, we’re sorry!). Please email us at <a href=\"mailto:info@marthstoumen.com\"><span style=\"text-decoration:underline\">info@marthstoumen.com<\/span><\/a> with the address you’d like your package to be rerouted to and we will try to get it diverted.<em> <\/em><\/p><p>Due to alcohol shipping laws, it is not possible to reroute packages across state lines: the wine will need to return to us in Sonoma and be re-shipped. For all packages that are returned to us, we charge $15 plus the cost of reshipment. <\/p>"
           }
         },
         "ee7e3a83-fe85-43d2-917b-3e711d737545": {
