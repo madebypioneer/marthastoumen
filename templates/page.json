@@ -125,6 +125,7 @@
     },
     "16444517320e9706f1": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "d4bfaca8-060b-4bce-a788-e0b2db24891c": {
           "type": "shopify:\/\/apps\/mahina-event-calendar-app\/blocks\/app-block\/e11e7f2a-2a3e-496c-81db-93ba18da671c",
