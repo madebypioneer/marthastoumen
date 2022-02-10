@@ -1,17 +1,60 @@
 {
   "sections": {
     "main": {
-      "type": "main-page"
-    },
-    "form": {
-      "type": "contact-form",
+      "type": "main-page",
+      "disabled": true,
       "settings": {
-        "heading": ""
+        "full_width": true,
+        "reduce_top_spacing": false,
+        "show_social": false,
+        "social_header": "",
+        "show_page_title": true,
+        "show_content": true,
+        "show_contact": false,
+        "heading": "Contact form",
+        "layout": "form_first"
+      }
+    },
+    "1644452157f0520ab2": {
+      "type": "content",
+      "blocks": {
+        "170e91b5-8f6d-4c34-8dbf-8200f131153c": {
+          "type": "heading",
+          "settings": {
+            "heading": "Events"
+          }
+        }
+      },
+      "block_order": [
+        "170e91b5-8f6d-4c34-8dbf-8200f131153c"
+      ],
+      "settings": {
+        "reduce_spacing": true,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
+      }
+    },
+    "164445219048593add": {
+      "type": "apps",
+      "blocks": {
+        "197bbb60-50ce-4dcb-ba55-fb110097bab5": {
+          "type": "shopify:\/\/apps\/mahina-event-calendar-app\/blocks\/app-block\/e11e7f2a-2a3e-496c-81db-93ba18da671c",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "197bbb60-50ce-4dcb-ba55-fb110097bab5"
+      ],
+      "settings": {
+        "include_margins": true
       }
     }
   },
   "order": [
     "main",
-    "form"
+    "1644452157f0520ab2",
+    "164445219048593add"
   ]
 }
