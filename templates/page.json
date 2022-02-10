@@ -115,6 +115,12 @@
         "reduce_bottom_spacing": false,
         "add_spacing_mobile": false
       }
+    },
+    "16444512644d2acaa3": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"eca-app-container\" data-widgetuuid=\"b6c07682-6872-46c9-846f-4cbf3639bd16\"><\/div>\n<script>(function () {\nwindow.eventCalId=9717;\nvar integrationScript = document.createElement(\"script\");\nintegrationScript.async = 1;\nintegrationScript.setAttribute(\"src\", \"https:\/\/api.eventcalendarapp.com\/integration-script.js\");\ndocument.head.appendChild(integrationScript);\nif (window.eventCalendarAppUtilities) { window.eventCalendarAppUtilities.init(\"b6c07682-6872-46c9-846f-4cbf3639bd16\");}})();\n<\/script>"
+      }
     }
   },
   "order": [
@@ -122,6 +128,7 @@
     "164444815183af8094",
     "16444477694ee0726b",
     "16444482295f6efea9",
-    "16444508251380f1a0"
+    "16444508251380f1a0",
+    "16444512644d2acaa3"
   ]
 }
