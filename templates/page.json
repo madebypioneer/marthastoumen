@@ -118,8 +118,25 @@
     },
     "16444512644d2acaa3": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"eca-app-container\" data-widgetuuid=\"b6c07682-6872-46c9-846f-4cbf3639bd16\"><\/div>\n<script>(function () {\nwindow.eventCalId=9717;\nvar integrationScript = document.createElement(\"script\");\nintegrationScript.async = 1;\nintegrationScript.setAttribute(\"src\", \"https:\/\/api.eventcalendarapp.com\/integration-script.js\");\ndocument.head.appendChild(integrationScript);\nif (window.eventCalendarAppUtilities) { window.eventCalendarAppUtilities.init(\"b6c07682-6872-46c9-846f-4cbf3639bd16\");}})();\n<\/script>"
+      }
+    },
+    "16444517320e9706f1": {
+      "type": "apps",
+      "blocks": {
+        "d4bfaca8-060b-4bce-a788-e0b2db24891c": {
+          "type": "shopify:\/\/apps\/mahina-event-calendar-app\/blocks\/app-block\/e11e7f2a-2a3e-496c-81db-93ba18da671c",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "d4bfaca8-060b-4bce-a788-e0b2db24891c"
+      ],
+      "settings": {
+        "include_margins": true
       }
     }
   },
@@ -129,6 +146,7 @@
     "16444477694ee0726b",
     "16444482295f6efea9",
     "16444508251380f1a0",
-    "16444512644d2acaa3"
+    "16444512644d2acaa3",
+    "16444517320e9706f1"
   ]
 }
