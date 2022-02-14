@@ -35,13 +35,13 @@ Bloom.storefront.utilities._.keysToCamel = function(o) {
     const n = {};
 
     Object.keys(o)
-      .forEach((k) => {
+      .forEach(function(k) {
         n[Bloom.storefront.utilities._.toCamel(k)] = Bloom.storefront.utilities._.keysToCamel(o[k]);
       });
 
     return n;
   } else if (Bloom.storefront.utilities._.isArray(o)) {
-    return o.map((i) => {
+    return o.map(function(i) {
       return Bloom.storefront.utilities._.keysToCamel(i);
     });
   }
@@ -52,6 +52,24 @@ Bloom.storefront.utilities._.keysToCamel = function(o) {
 window.Bloom.storefront.data = window.Bloom.storefront.data || {{ shop.metafields.bloom.bloomfields | json }};
 window.Bloom.storefront.data.clubs = window.Bloom.storefront.data.clubs || {{ shop.metafields.bloom.clubs | json }};
 window.Bloom.storefront.data.subscriptionVariants = window.Bloom.storefront.data.subscriptionVariants || {{ shop.metafields.bloom.subscription_variants | json }};
+
+(function() {
+  var subVariantIndex;
+
+  {%- for subscription_variant in shop.metafields.bloom.subscription_variants -%}
+    {%- for subscription_variant_field in subscription_variant -%}
+      {%- if subscription_variant_field[0] == "id" -%}
+        {%- assign subscription_variant_id = subscription_variant_field[1] -%}
+        {%- assign subscription_variant_key = "sub_variant_" | append: subscription_variant_id -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+    subVariantIndex = Bloom.storefront.data.subscriptionVariants.findIndex(function(sv) { return sv.id == "{{ subscription_variant_id }}" });
+    if (subVariantIndex !== -1) {
+      Bloom.storefront.data.subscriptionVariants[subVariantIndex] = {{ shop.metafields.bloom[subscription_variant_key] | json }}
+    }
+  {%- endfor -%}
+})();
 
 (function() {
 
@@ -85,7 +103,7 @@ window.Bloom.storefront.data.subscriptionVariants = window.Bloom.storefront.data
         {%- endfor -%}
       {%- endif -%}
     {%- endfor -%}
-})()
+})();
 
 window.Bloom.storefront.data.clubs = Bloom.storefront.utilities._.keysToCamel(window.Bloom.storefront.data.clubs);
 window.Bloom.storefront.data.subscriptionVariants = Bloom.storefront.utilities._.keysToCamel(window.Bloom.storefront.data.subscriptionVariants);

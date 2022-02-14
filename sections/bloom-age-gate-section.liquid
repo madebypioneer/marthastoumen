@@ -49,7 +49,18 @@ Bloom.AgeGate = function() {
   }
 
   function handleDelegatedYesClick(e) {
-    Bloom.storefront.utilities._.handleDelegatedEvent.call(document, e, '[data-bloom-age-gate-yes]', handleYesClick)
+    try {
+      Bloom.storefront.utilities._.handleDelegatedEvent.call(document, e, '[data-bloom-age-gate-yes]', handleYesClick)
+    } catch (e) {
+      try {
+        handleYesClick(e);
+      } catch (e) {
+        var background = document.querySelector('#bloom-age-gate-background');
+        var foreground = document.querySelector('#bloom-age-gate-foreground');
+        background && background.remove();
+        foreground && foreground.remove();
+      }
+    }
   }
 
   function redirect(event) {
@@ -139,7 +150,8 @@ Bloom.AgeGate = function() {
     return cookie.getValue(MIN_AGE_COOKIE_KEY)
   }
 
-  function checkAge(userSubmitted = false) {
+  function checkAge(userSubmitted) {
+    userSubmitted = userSubmitted || false;
     if ((requireFullDob() && dobIsValid(config.minimumAge)) || (!requireFullDob() && isMinAge())) {
       hide()
       if (userSubmitted) {
@@ -233,8 +245,11 @@ document.addEventListener('shopify:section:unload', function() {
       background: none !important;
     {% endunless %}
   }
-  #bloom-age-gate-background.uk-modal, #bloom-age-gate-foreground.uk-modal {
+  #bloom-age-gate-background.uk-modal {
     z-index: 2147483646; /* +1 higher than OneTrust cookie consent banner */
+  }
+  #bloom-age-gate-foreground.uk-modal {
+    z-index: 2147483647; /* maximum allowed z-index value */
   }
   .Bloom__AgeGate a {
     text-decoration: underline;
