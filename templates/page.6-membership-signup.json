@@ -6,14 +6,14 @@
         "1630091207afb909c8-0": {
           "type": "heading",
           "settings": {
-            "heading": "join the 6 bottle club",
+            "heading": "Join the 6 bottle club",
             "heading_size": "medium"
           }
         },
         "1630091207afb909c8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our 6 bottle club members receive a shipment of 6 bottles in the spring and a shipment of 6 bottles in the fall.  <\/p><p>Buying directly from your producer supports our work of joyfully sharing the flavor of our home and steadily shifting the tides of the California wine industry towards a more sustainable future. <\/p>"
+            "text": "<p><strong>The Spring\/Summer Club Share starts shipping at the end of March.<\/strong><\/p><p>Our 6 bottle club members receive a shipment of 6 bottles in the spring and a shipment of 6 bottles in the fall.  <\/p><p>By joining our Community Supported Wine Club you help us to joyfully share the flavor of our home and steadily shift the tides of the California wine industry towards a more sustainable future. Thanks for supporting your producer directly! <\/p>"
           }
         }
       },
@@ -32,6 +32,7 @@
         "heading": "Member information",
         "club_level": "club-582",
         "welcome_page_path": "\/pages\/6-bottle-welcome",
+        "payment_note": "",
         "button_label": "Join the 6 Bottle Club",
         "button_loading_label": "Creating your account...",
         "apply_default_form_styles": false,
