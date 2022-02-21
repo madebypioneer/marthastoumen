@@ -215,7 +215,7 @@
             "layout": "one_third",
             "image": "shopify:\/\/shop_images\/Guide-to-Natural-Wines_Illustration-1_In-the-Vineyard.v2.png",
             "is_icon": true,
-            "heading": "IN THE VINEYARD",
+            "heading": "FROM THE VINEYARD",
             "content": "<p>We enrich our soils with compost and allow beneficial insects to outcompete pests. We welcome plant growth below our vines: they serve as insect habitat in the spring and organic matter in the fall. Harvesting and pruning by hand ensures healthy grapes come into our cellar and long-lived vines remain in our fields.<\/p>"
           }
         },
@@ -226,7 +226,7 @@
             "image": "shopify:\/\/shop_images\/Guide-to-Natural-Wines_Illustration-2_In-the-Cellar.v2.png",
             "is_icon": true,
             "heading": "TO THE CELLAR",
-            "content": "<p>We work with a light hand in the cellar to allow the natural yeast and bacteria present on grape skins to kick-start each fermentation. Rather than adding tannin, acid, or stabilizing agents, we lean on the tannin and acid naturally present in our fruit. With careful aging we create vibrant, balanced wines.<\/p>"
+            "content": "<p>We work with a light hand to allow the natural yeast and bacteria present on grape skins to kick-start each fermentation. Rather than adding tannin, acid, or stabilizing agents, we lean on the tannin and acid naturally present in our fruit. With careful aging we create vibrant, balanced wines.<\/p>"
           }
         },
         "d86da602-817b-45d2-9509-d8a5b4c0c67a": {
@@ -235,7 +235,7 @@
             "layout": "one_third",
             "image": "shopify:\/\/shop_images\/Guide-to-Natural-Wines_Illustration-3_At-your-Table.v2.png",
             "is_icon": true,
-            "heading": "AT YOUR TABLE",
+            "heading": "TO YOUR TABLE",
             "content": "<p>Natural wines tend to jive with your body the same way thoughtfully prepared produce can make you feel abuzz from the inside out. The same desire to preserve the taste of late summer tomatoes in sauce or sun-warmed berries in jam drives us to create friendly, uplifting wines for your table.<\/p>"
           }
         }
