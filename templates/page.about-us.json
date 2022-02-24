@@ -95,7 +95,7 @@
         "16308764456814c997-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Learn_More_About_Us.png",
+        "image": "shopify:\/\/shop_images\/Image-2_about-us.png",
         "layout": "image_first",
         "disable_parallax": false
       }
@@ -147,7 +147,7 @@
         "16308766027700b82e-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Martha_Stoumen_Natural_Wine_Working_with_Nature_California_Winemaker_Harvest_Story_Andrew_Thomas_Lee-_3.png",
+        "image": "shopify:\/\/shop_images\/Image-4_about-us.png",
         "layout": "text_first",
         "disable_parallax": false
       }
@@ -199,7 +199,7 @@
         "16308766597b708768-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Handmade_with_Patience_-_Bottom_photo.jpg",
+        "image": "shopify:\/\/shop_images\/Image-6_about-us.png",
         "layout": "image_first",
         "disable_parallax": false
       }
@@ -231,6 +231,7 @@
         },
         "3e4977a8-10dc-4c7a-962c-02849a268142": {
           "type": "teamMember",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Jaylee_Photo_4f8eb8b1-523e-40e6-9b6e-c73a724c2414.jpg",
             "layout": "image_first",
@@ -242,6 +243,7 @@
         },
         "d414f505-6de8-4e85-8efb-ea4738931787": {
           "type": "teamMember",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Claire_Photo_81b9e5f7-e7cc-47f8-9e98-6a34fa3a071b.jpg",
             "layout": "image_first",
@@ -258,7 +260,7 @@
             "layout": "image_first",
             "featured": false,
             "name": "NINA KRAVETZ",
-            "position": "SALES + MARKETING ASSISTANT",
+            "position": "HEAD OF MARKETING",
             "bio": ""
           }
         },
@@ -345,6 +347,15 @@
         "reduce_bottom_spacing": false,
         "add_spacing_mobile": false
       }
+    },
+    "16330500390b99c474": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Fall-2021-Hero-Banner-Opt-2.jpg",
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "remove_top_spacing": false
+      }
     }
   },
   "order": [
@@ -357,6 +368,7 @@
     "1629424162b216fb88",
     "163087665921bca559",
     "162942420010f5aeff",
-    "16294242047c980b62"
+    "16294242047c980b62",
+    "16330500390b99c474"
   ]
 }
