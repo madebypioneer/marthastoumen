@@ -2,8 +2,9 @@
   "sections": {
     "164574871083a7450f": {
       "type": "video",
+      "disabled": true,
       "settings": {
-        "video": "https:\/\/vimeo.com\/681644029",
+        "video": "",
         "remove_top_spacing": false
       }
     },
