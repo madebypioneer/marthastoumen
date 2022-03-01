@@ -2,10 +2,10 @@
   "sections": {
     "164574871083a7450f": {
       "type": "video",
-      "disabled": true,
       "settings": {
+        "image": "shopify:\/\/shop_images\/Three_of_Cups_credit_Ellian_Raffoul_31.jpg",
         "video": "https:\/\/vimeo.com\/681644029",
-        "remove_top_spacing": false
+        "remove_top_spacing": true
       }
     },
     "1629948404cfa546a1": {
@@ -20,13 +20,13 @@
         "24fc36ac-7244-4b31-af06-110364face7a": {
           "type": "text",
           "settings": {
-            "text": "<p>Our wine club brings the intimacy of local CSA shares to all you pleasure seekers and craft libation lovers. From fresh and fruity special releases to age-worthy library gems, you'll get access to small production wines that are hard to find around the country. Our seasonal shares offer the same warm fuzzy feeling that you get when diving into handcrafted bounty from your favorite farmer, baker and now, winemaker.<\/p><p><\/p>"
+            "text": "<p>Our wine club brings the intimacy of local CSA shares to pleasure seekers and craft libation lovers around the country. From fresh and fruity special releases to age-worthy library gems, you'll get access to small production wines that you can only find online hard. Our seasonal shares offer the same warm fuzzy feeling that you get when diving into handcrafted bounty from your favorite farmer, baker and now, winemaker.<\/p><p><\/p>"
           }
         },
         "06d0132b-ca1c-4a54-bcdb-c3893e4260b8": {
           "type": "largeText",
           "settings": {
-            "text": "<p>COLLABORATION 2019 NOW OPEN \/\/ SCROLL TO JOIN THE PARTY <\/p>"
+            "text": "<p>SS22 STARTS SHIPPING ON 3\/14 \/\/ SCROLL TO JOIN THE PARTY <\/p>"
           }
         },
         "005298e7-e458-4bf0-be65-d0b42028ac7e": {
@@ -106,16 +106,27 @@
     "16299161199a315e58": {
       "type": "club-join",
       "blocks": {
+        "64facf5c-b76a-4d76-9813-6657a43fda7e": {
+          "type": "text_card",
+          "settings": {
+            "card_width": "w-1\/3",
+            "club_level_name": "Two Ways to Play",
+            "title_size": "3rem",
+            "level_description": "<p>Please note we cannot ship to the following states: Alabama, Arkansas, Delaware, North Dakota, Rhode Island and Utah. Live near a state border? We invite you to consider shipping to a nearby FedEx location to hold your wines for pickup.<\/p>",
+            "level_benefits": "<p><strong>Want to gift a membership?<\/strong>\nIn the join page, just select \"Give this membership as a gift.\"\n<\/p>",
+            "text_align": "left"
+          }
+        },
         "91b61098-5601-4834-9d18-aa2aa4be4580": {
           "type": "customer_choice",
           "settings": {
             "level_variant_id": "112313",
             "card_width": "w-1\/3",
-            "image": "shopify:\/\/shop_images\/martha_stoumen_spring_lifestyle_0274-1_1500.jpg",
+            "image": "shopify:\/\/shop_images\/SS22_1500px_015.jpg",
             "club_level_name": "6 Bottle Club",
             "title_size": "1.5rem",
-            "level_description": "<p>One bottle of each new wine per seasonal shipment<\/p>",
-            "level_benefits": "Next shipment: Spring\/Summer 2022 shipping in March",
+            "level_description": "<p>ONE BOTTLE OF EACH NEW WINE PER SEASONAL SHIPMENT<\/p>",
+            "level_benefits": "SS22 shipment includes Syrah 2019",
             "club_price": "$195 - $275 per shipment",
             "text_align": "center",
             "to_join": true,
@@ -130,11 +141,11 @@
           "settings": {
             "level_variant_id": "112314",
             "card_width": "w-1\/3",
-            "image": "shopify:\/\/shop_images\/martha_stoumen_spring_lifestyle_0338_master_1500.jpg",
+            "image": "shopify:\/\/shop_images\/SS22_1500px_013.jpg",
             "club_level_name": "12 Bottle Club",
             "title_size": "1.5rem",
-            "level_description": "<p>Two bottles of each new wine per seasonal shipment, customizable<\/p>",
-            "level_benefits": "Next shipment: Spring\/Summer 2022 shipping in March",
+            "level_description": "<p>TWO BOTTLES OF EACH NEW WINE PER SEASONAL SHIPMENT \/\/ CUSTOMIZABLE<\/p>",
+            "level_benefits": "SS22 includes one bottle Syrah &amp; one bottle Varietally Incorrect Zinfandel",
             "club_price": "$380 - $550 per shipment",
             "text_align": "center",
             "to_join": true,
@@ -143,23 +154,12 @@
             "to_cart": false,
             "join_button_label": "Join the 12 Bottle Club"
           }
-        },
-        "64facf5c-b76a-4d76-9813-6657a43fda7e": {
-          "type": "text_card",
-          "settings": {
-            "card_width": "w-1\/3",
-            "club_level_name": "Two Ways to Play",
-            "title_size": "3rem",
-            "level_description": "<p>Please note we cannot ship to the following states: Alabama, Arkansas, Delaware, North Dakota, Rhode Island and Utah. Live near a state border? We invite you to consider shipping to a nearby FedEx location to hold your wines for pickup.<\/p>",
-            "level_benefits": "<p><strong>Want to gift a membership?<\/strong>\nIn the join page, just select \"Give this membership as a gift.\"\n<\/p>",
-            "text_align": "left"
-          }
         }
       },
       "block_order": [
+        "64facf5c-b76a-4d76-9813-6657a43fda7e",
         "91b61098-5601-4834-9d18-aa2aa4be4580",
-        "d5ed8a2c-fc62-45fe-b1b9-c52a039501b2",
-        "64facf5c-b76a-4d76-9813-6657a43fda7e"
+        "d5ed8a2c-fc62-45fe-b1b9-c52a039501b2"
       ],
       "settings": {
         "header_height": "400",
