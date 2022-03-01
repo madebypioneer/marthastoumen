@@ -1,5 +1,13 @@
 {
   "sections": {
+    "16461219304f28ed90": {
+      "type": "video",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/MARTHA_STOUMEN_WINE_2.144.1.jpg",
+        "video": "https:\/\/vimeo.com\/651787162",
+        "remove_top_spacing": false
+      }
+    },
     "1629423396520fe146": {
       "type": "image",
       "settings": {
@@ -287,6 +295,7 @@
     }
   },
   "order": [
+    "16461219304f28ed90",
     "1629423396520fe146",
     "16301958688783465e",
     "image_text",
