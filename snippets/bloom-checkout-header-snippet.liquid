@@ -1,0 +1,38 @@
+{% comment %}
+This shop uses Bloom, a growth platform for modern wineries.
+You SHOULD NOT modify the contents of this file.
+It is automatically generated and your changes will be overwritten.
+These features and content can be managed within the Bloom app or the Shopify customizer.
+
+Bloom (www.bloom.wine)
+{% endcomment %}
+
+<script>
+  function setLocale(localeName) {
+    var url = new URL(document.location);
+    var searchParams = url.searchParams;
+    searchParams.set('locale', localeName);
+    url.search = searchParams.toString();
+    window.location.href = url.toString();
+  };
+
+  {%- for field in shop.metafields.bloom.bloomfields -%}
+    {%- if field[0] == "gliding_eagle_country_codes" -%}
+      {%- assign gliding_eagle_country_codes = field[1] -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+  var GLIDING_EAGLE_LOCALE = "en-glidingeagle";
+  var glidingEagleCountryCodes = [{% if gliding_eagle_country_codes %}"{{ gliding_eagle_country_codes | join: '", "' }}"{% endif %}];
+  var checkoutShippingCountryCode = "{{ checkout.shipping_address.country_code }}";
+
+  if (glidingEagleCountryCodes.length > 0) {
+    if (!!checkoutShippingCountryCode && glidingEagleCountryCodes.includes(checkoutShippingCountryCode)) {
+      if (Shopify.Checkout.locale != GLIDING_EAGLE_LOCALE) {
+        setLocale(GLIDING_EAGLE_LOCALE);
+      }
+    } else if (Shopify.Checkout.locale == GLIDING_EAGLE_LOCALE) {
+      setLocale(Shopify.Checkout.normalizedLocale);
+    }
+  }
+</script>
