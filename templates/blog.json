@@ -3,12 +3,10 @@
     "main": {
       "type": "main-blog",
       "settings": {
-        "blog_description": "<p><em>Musings, nerdy tangents and rich conversations from the cellar. Grab a glass and stay a while. <\/em><\/p>",
+        "blog_description": "<p><em>Nerdy tangents and rich conversations from the upstairs office. Grab a glass and stay a while. <\/em><\/p>",
         "show_featured": true,
         "show_categories": true,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false
+        "posts_per_page": 8
       }
     }
   },
