@@ -3,6 +3,12 @@
     "main": {
       "type": "main-tech-sheets",
       "settings": {
+        "blog_description": "",
+        "show_featured": true,
+        "show_categories": true,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false
       }
     }
   },
