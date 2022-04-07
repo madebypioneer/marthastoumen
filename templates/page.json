@@ -22,27 +22,26 @@
           "type": "largeText",
           "disabled": true,
           "settings": {
-            "text": "<p>CAREERS<\/p>"
-          }
-        },
-        "2944f9b2-4a69-4d01-a0e4-82ab1bb80b81": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": ""
+            "text": "<p>ACCESSIBILITY<\/p>"
           }
         },
         "437fd8d7-0083-45a2-a25b-ea02dec2a2ed": {
           "type": "heading",
           "settings": {
-            "heading": "CAREERS"
+            "heading": "accessibility"
+          }
+        },
+        "2944f9b2-4a69-4d01-a0e4-82ab1bb80b81": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Martha Stoumen Wines is committed to crafting website content that is accessible for everyone. We continually evaluate our user experience to ensure that all of our customers feel welcome.<\/p><p>If you are having difficulty engaging with the content or functionality of our website, or notice a feature that is not fully accessible to people with disabilities, please:<\/p><p>Email our team at <a href=\"mailto:info@marthastoumen.com\"><strong>info@marthastoumen.com<\/strong><\/a> with <em>“Website Access”<\/em><em><strong> <\/strong><\/em>in the subject lineProvide a description of the specific feature you feel is not fully accessible<\/p>"
           }
         }
       },
       "block_order": [
         "9446f7a4-a003-416f-ab8d-2945a71fd78e",
-        "2944f9b2-4a69-4d01-a0e4-82ab1bb80b81",
-        "437fd8d7-0083-45a2-a25b-ea02dec2a2ed"
+        "437fd8d7-0083-45a2-a25b-ea02dec2a2ed",
+        "2944f9b2-4a69-4d01-a0e4-82ab1bb80b81"
       ],
       "settings": {
         "reduce_spacing": true,
@@ -53,9 +52,11 @@
     },
     "16444477694ee0726b": {
       "type": "section-faq",
+      "disabled": true,
       "blocks": {
         "264af7b7-b09b-466d-b476-3b988186d210": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "heading": "Harvest Internships",
             "content": "<p>We at Martha Stoumen Wines make wine out of a shared space, Pax Mahle Wines, in Sebastopol, CA. Pax, Patrick Cappiello (Monte Rio Cellars), Carlo Mondavi (RAEN), Rosalind Reynolds (Emme Wines) and Martha Stoumen make wine in this facility. We all share a group of interns and work together as a team during harvest, and Rosalind, who is also Pax's Assistant Winemaker, hires and manages all of the interns. All of the harvest interns will work on everyone's wine in the facility, so you'll get great exposure to various winemakers and grape varietals. <\/p><p>Harvest runs approximately three months from early August to late October\/early November, 6 to 7 days a week, and is full of hard physical work, great wine, and team lunches at the long table. It's our favorite time of year.<\/p><p>If interested please send an email and resume to <a href=\"mailto:rosalindsreynolds@gmail.com\" target=\"_blank\">RosalindsReynolds@gmail.com<\/a> and CC <a href=\"mailto:careers@marthastoumen.com\" target=\"_blank\">careers@marthastoumen.com<\/a>. Subject line should read: Harvest 2022 Intern Application<\/p>"
