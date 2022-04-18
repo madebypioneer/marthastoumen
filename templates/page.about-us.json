@@ -231,13 +231,12 @@
         },
         "3e4977a8-10dc-4c7a-962c-02849a268142": {
           "type": "teamMember",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Jaylee_Photo_4f8eb8b1-523e-40e6-9b6e-c73a724c2414.jpg",
+            "image": "shopify:\/\/shop_images\/marthastoumen_harvest_final_0163.jpg",
             "layout": "image_first",
             "featured": false,
-            "name": "Jaylee Adams",
-            "position": "SALES + MARKETING MANAGER",
+            "name": "IMANE HANINE",
+            "position": "3T SALES MANAGER",
             "bio": ""
           }
         },
@@ -255,10 +254,22 @@
         "d414f505-6de8-4e85-8efb-ea4738931787": {
           "type": "teamMember",
           "settings": {
+            "image": "shopify:\/\/shop_images\/marthastoumen_harvest2021__0221_1500px.jpg",
             "layout": "image_first",
             "featured": false,
             "name": "ANNA ZEPALTAS",
             "position": "CUSTOMER CARE SPECIALIST",
+            "bio": ""
+          }
+        },
+        "3b7e19ce-4562-4c0e-946c-a0e4f3403768": {
+          "type": "teamMember",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/marthastoumen_harvest2021__0001_1500px.jpg",
+            "layout": "image_first",
+            "featured": false,
+            "name": "ALYSSA JULIAN",
+            "position": "DIGITAL CONTENT MANAGER",
             "bio": ""
           }
         },
@@ -280,6 +291,7 @@
         "3e4977a8-10dc-4c7a-962c-02849a268142",
         "dd7e6e18-1e82-4be9-85a5-b6fc8a34b2fb",
         "d414f505-6de8-4e85-8efb-ea4738931787",
+        "3b7e19ce-4562-4c0e-946c-a0e4f3403768",
         "7960ea8e-4461-4e1a-9a59-a15b5d3d3900"
       ],
       "settings": {
