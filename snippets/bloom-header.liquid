@@ -599,10 +599,14 @@ Bloom.storefront.utilities.handleCheckoutClick = function(event) {
     var discountCode = Bloom.storefront.utilities._.refreshFormActionDiscountCodeForCart(form, cart);
     if (doNativeCheckout && !isNativeCheckoutRetry && !!form) {
       form.setAttribute('data-bloom-native-checkout-retry', 'true')
-      button && button.click();
-      inputButton && inputButton.click();
-      anchor && anchor.click();
-      event.target && event.target.click();
+      if (!!discountCode && !!Bloom.storefront.data.settings.strong_checkout_control) {
+        form.submit();
+      } else {
+        button && button.click();
+        inputButton && inputButton.click();
+        anchor && anchor.click();
+        event.target && event.target.click();
+      }
     } else if (doNativeCheckout && !form) {
       Bloom.storefront.utilities.checkout(discountCode, { target: 'shopify' })
     } else if (!doNativeCheckout) {
@@ -630,6 +634,9 @@ Bloom.storefront.utilities._.refreshFormActionDiscountCodeForCart = function(for
     discountCode = Bloom.storefront.utilities._.getDiscountCodeForCart(cart);
   }
   if (discountCode) {
+    if (!!Bloom.storefront.data.settings.strong_checkout_control) {
+      formActionUrl.pathname = "/checkout"
+    }
     formActionParams.set('discount', discountCode);
     form.action = formActionUrl.pathname + '?' + formActionParams.toString();
   }
