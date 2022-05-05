@@ -122,9 +122,9 @@
             "card_width": "w-1\/2",
             "club_level_name": "Two Ways to Play",
             "title_size": "3rem",
-            "level_description": "<p>Please note we cannot ship to the following states: Alabama, Arkansas, Delaware, North Dakota, Rhode Island and Utah. Flat rate shipping does not apply to members in Hawaii and Alaska. <br\/><br\/>Live near a state border? We invite you to consider shipping to a nearby FedEx location to hold your wines for pickup.<\/p>",
-            "level_benefits": "<p><strong>Want to gift a membership?<\/strong>\nIn the join page, just select \"Give this membership as a gift.\"\n<\/p>",
-            "text_align": "left"
+            "level_description": "<p>Please note: new members can still choose to receive the full SS22 shipment.<\/p>",
+            "level_benefits": "",
+            "text_align": "center"
           }
         },
         "91b61098-5601-4834-9d18-aa2aa4be4580": {
@@ -136,7 +136,7 @@
             "club_level_name": "6 Bottle Club",
             "title_size": "1.5rem",
             "level_description": "<p>ONE BOTTLE OF EACH NEW WINE PER SEASONAL SHIPMENT<\/p>",
-            "level_benefits": "New members can still choose to receive the full SS22 shipment",
+            "level_benefits": "",
             "club_price": "$195 - $275 per shipment",
             "text_align": "center",
             "to_join": true,
@@ -155,7 +155,7 @@
             "club_level_name": "12 Bottle Club",
             "title_size": "1.5rem",
             "level_description": "<p>TWO BOTTLES OF EACH NEW WINE PER SEASONAL SHIPMENT \/\/ CUSTOMIZABLE<\/p>",
-            "level_benefits": "New members can still choose to receive the full SS22 shipment",
+            "level_benefits": "",
             "club_price": "$380 - $550 per shipment",
             "text_align": "center",
             "to_join": true,
