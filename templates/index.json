@@ -2,6 +2,7 @@
   "sections": {
     "16461219304f28ed90": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/MARTHA_STOUMEN_WINE_2.185.1.jpg",
         "video": "https:\/\/vimeo.com\/651772687",
@@ -10,7 +11,6 @@
     },
     "1629423396520fe146": {
       "type": "image",
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Martha-Stoumen-Wines-Cartwheel_7ceeb836-7651-4c5f-8528-9855ed9ce1b1.jpg",
         "remove_top_spacing": true
