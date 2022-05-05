@@ -58,7 +58,7 @@
       "settings": {
         "reduce_spacing": false,
         "reduce_top_spacing": false,
-        "reduce_bottom_spacing": false,
+        "reduce_bottom_spacing": true,
         "add_spacing_mobile": false
       }
     },
@@ -136,7 +136,7 @@
             "club_level_name": "6 Bottle Club",
             "title_size": "1.5rem",
             "level_description": "<p>ONE BOTTLE OF EACH NEW WINE PER SEASONAL SHIPMENT<\/p>",
-            "level_benefits": "SS22 shipment available for new members",
+            "level_benefits": "New members can still choose to receive the full SS22 shipment",
             "club_price": "$195 - $275 per shipment",
             "text_align": "center",
             "to_join": true,
@@ -155,7 +155,7 @@
             "club_level_name": "12 Bottle Club",
             "title_size": "1.5rem",
             "level_description": "<p>TWO BOTTLES OF EACH NEW WINE PER SEASONAL SHIPMENT \/\/ CUSTOMIZABLE<\/p>",
-            "level_benefits": "SS22 shipment available for new members",
+            "level_benefits": "New members can still choose to receive the full SS22 shipment",
             "club_price": "$380 - $550 per shipment",
             "text_align": "center",
             "to_join": true,
@@ -215,6 +215,34 @@
         "layout": "image_first"
       }
     },
+    "16517393477658ac6e": {
+      "type": "content",
+      "disabled": true,
+      "blocks": {
+        "7a7abca5-022b-4f93-b7bb-0dc79d75ac92": {
+          "type": "heading",
+          "settings": {
+            "heading": "TWO WAYS TO PLAY"
+          }
+        },
+        "6326a1a5-63fd-4533-a740-1b5d5ff8b527": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Please note we cannot ship to the following states: Alabama, Arkansas, Delaware, North Dakota, Rhode Island and Utah. Flat rate shipping does not apply to members in Hawaii and Alaska.<br\/><br\/>Live near a state border? We invite you to consider shipping to a nearby FedEx location to hold your wines for pickup.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7a7abca5-022b-4f93-b7bb-0dc79d75ac92",
+        "6326a1a5-63fd-4533-a740-1b5d5ff8b527"
+      ],
+      "settings": {
+        "reduce_spacing": false,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
+      }
+    },
     "16299486715b84051b": {
       "type": "content",
       "blocks": {
@@ -239,7 +267,7 @@
         "083dfa57-ecc1-4ea7-b398-81326ea9ed90": {
           "type": "text",
           "settings": {
-            "text": "<p>Please note we cannot ship to the following states: Alabama, Arkansas, Delaware, North Dakota, Rhode Island and Utah. Flat rate shipping does not apply to members in Hawaii and Alaska. <br\/><br\/>Live near a state border? We invite you to consider shipping to a nearby FedEx location to hold your wines for pickup.<\/p><p><\/p>"
+            "text": "<p>Please note we cannot ship to Alabama, Arkansas, Delaware, North Dakota, Rhode Island and Utah. If you live near a state border we invite you to consider shipping to a nearby FedEx location to hold your wines for pickup.<\/p><p><\/p><p>Flat rate shipping does not apply to members in Hawaii and Alaska. <\/p><p><\/p>"
           }
         },
         "5e933451-c335-45e2-8c22-be645c7170c0": {
@@ -278,6 +306,7 @@
     "163050466726472b3f",
     "16299161199a315e58",
     "162994866447ef345c",
+    "16517393477658ac6e",
     "16299486715b84051b"
   ]
 }
