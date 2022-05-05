@@ -20,13 +20,7 @@
         "24fc36ac-7244-4b31-af06-110364face7a": {
           "type": "text",
           "settings": {
-            "text": "<p>Our wine club brings the intimacy of local CSA shares to pleasure seekers and craft libation lovers around the country. From fresh and fruity special releases to age-worthy library gems, you'll get access to small production wines that you can only find online. Our seasonal shares offer the same warm fuzzy feeling that you get when diving into handcrafted bounty from your favorite farmer, baker and now, winemaker.<\/p><p><\/p>"
-          }
-        },
-        "06d0132b-ca1c-4a54-bcdb-c3893e4260b8": {
-          "type": "largeText",
-          "settings": {
-            "text": "<p>SS22 NOW SHIPPING \/\/ SCROLL TO JOIN THE PARTY <\/p>"
+            "text": "<p>Our wine club brings the intimacy of local CSA shares to pleasure seekers and craft libation lovers around the country. From fresh and fruity special releases to age-worthy library gems, you'll get access to small production wines that you can only find online. Our seasonal shares offer the same warm fuzzy feeling that you get when diving into handcrafted bounty from your favorite farmer, baker and now, winemaker.<\/p><p><\/p><p><\/p>"
           }
         },
         "005298e7-e458-4bf0-be65-d0b42028ac7e": {
@@ -37,13 +31,29 @@
             "link_two_text": "Join Now",
             "link_two_page": "\/pages\/membership\/#membershipSection"
           }
+        },
+        "06467a72-7c0b-4ca3-95ac-a784b6fe3276": {
+          "type": "card",
+          "settings": {
+            "layout": "one_quarter",
+            "is_icon": false,
+            "heading": "",
+            "content": ""
+          }
+        },
+        "06d0132b-ca1c-4a54-bcdb-c3893e4260b8": {
+          "type": "largeText",
+          "settings": {
+            "text": "<p>SUMMER 2022 DROP SHIPS TO YOU STARTING MAY 16<\/p>"
+          }
         }
       },
       "block_order": [
         "3024eba2-923e-4fec-a7ea-c35cc8fb3a19",
         "24fc36ac-7244-4b31-af06-110364face7a",
-        "06d0132b-ca1c-4a54-bcdb-c3893e4260b8",
-        "005298e7-e458-4bf0-be65-d0b42028ac7e"
+        "005298e7-e458-4bf0-be65-d0b42028ac7e",
+        "06467a72-7c0b-4ca3-95ac-a784b6fe3276",
+        "06d0132b-ca1c-4a54-bcdb-c3893e4260b8"
       ],
       "settings": {
         "reduce_spacing": false,
@@ -56,7 +66,7 @@
       "type": "image",
       "settings": {
         "image": "shopify:\/\/shop_images\/Membership_PageHero.jpg",
-        "remove_top_spacing": false
+        "remove_top_spacing": true
       }
     },
     "163050466726472b3f": {
@@ -109,7 +119,7 @@
         "64facf5c-b76a-4d76-9813-6657a43fda7e": {
           "type": "text_card",
           "settings": {
-            "card_width": "w-1\/3",
+            "card_width": "w-1\/2",
             "club_level_name": "Two Ways to Play",
             "title_size": "3rem",
             "level_description": "<p>Please note we cannot ship to the following states: Alabama, Arkansas, Delaware, North Dakota, Rhode Island and Utah. Flat rate shipping does not apply to members in Hawaii and Alaska. <br\/><br\/>Live near a state border? We invite you to consider shipping to a nearby FedEx location to hold your wines for pickup.<\/p>",
@@ -126,7 +136,7 @@
             "club_level_name": "6 Bottle Club",
             "title_size": "1.5rem",
             "level_description": "<p>ONE BOTTLE OF EACH NEW WINE PER SEASONAL SHIPMENT<\/p>",
-            "level_benefits": "SS22 shipment includes Syrah 2019",
+            "level_benefits": "SS22 shipment available for new members",
             "club_price": "$195 - $275 per shipment",
             "text_align": "center",
             "to_join": true,
@@ -145,7 +155,7 @@
             "club_level_name": "12 Bottle Club",
             "title_size": "1.5rem",
             "level_description": "<p>TWO BOTTLES OF EACH NEW WINE PER SEASONAL SHIPMENT \/\/ CUSTOMIZABLE<\/p>",
-            "level_benefits": "SS22 includes one bottle Syrah &amp; one bottle Varietally Incorrect Zinfandel",
+            "level_benefits": "SS22 shipment available for new members",
             "club_price": "$380 - $550 per shipment",
             "text_align": "center",
             "to_join": true,
@@ -176,19 +186,19 @@
         "773a0703-8b2d-4041-a4ba-d39cdba589b3": {
           "type": "preheading",
           "settings": {
-            "preheading": "EARLY ACCESS CLUB SCREENING"
+            "preheading": "ORDER BY MAY 16TH"
           }
         },
         "162994866447ef345c-0": {
           "type": "heading",
           "settings": {
-            "heading": "CALIFORNIA NATURAL"
+            "heading": "THE SUMMER DROP"
           }
         },
         "162994866447ef345c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>This cinematic short documentary film offers a sensuous immersion into the world of natural winemaking. Filmed during harvest 2021, this short iIlluminates Martha's ethos and values as she explores the shifting tides of climate change with creativity, expertise and joy. <\/p><p><\/p><p><a href=\"https:\/\/vimeo.com\/651772687\" target=\"_blank\" title=\"https:\/\/vimeo.com\/651772687\"><em><strong>Click here to watch.<\/strong><\/em><\/a><\/p>"
+            "text": "<p>Consider this seasonal offering your companion for every summer adventure imaginable. Sip a spritz poolside, chill by the grill with two food-friendly wines, and prick your palate with three experimental piquettes.<\/p>"
           }
         }
       },
@@ -198,7 +208,7 @@
         "162994866447ef345c-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/MARTHA_STOUMEN_WINE_2.144.1.jpg",
+        "image": "shopify:\/\/shop_images\/MS_summer2022_final_0009.jpg",
         "mask": true,
         "wine_club": false,
         "thin": false,
@@ -208,6 +218,12 @@
     "16299486715b84051b": {
       "type": "content",
       "blocks": {
+        "267ef5d6-10d4-4624-a990-19ff9448c23a": {
+          "type": "heading",
+          "settings": {
+            "heading": "GIFTING?"
+          }
+        },
         "5e933451-c335-45e2-8c22-be645c7170c0": {
           "type": "heading",
           "settings": {
@@ -222,6 +238,7 @@
         }
       },
       "block_order": [
+        "267ef5d6-10d4-4624-a990-19ff9448c23a",
         "5e933451-c335-45e2-8c22-be645c7170c0",
         "67ee4205-4f2a-4390-a6c1-dee932223ca8"
       ],
