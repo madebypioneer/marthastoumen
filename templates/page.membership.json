@@ -187,19 +187,19 @@
         "773a0703-8b2d-4041-a4ba-d39cdba589b3": {
           "type": "preheading",
           "settings": {
-            "preheading": "NEW! NEW! NEW!"
+            "preheading": "CURRENT SHIPMENT"
           }
         },
         "162994866447ef345c-0": {
           "type": "heading",
           "settings": {
-            "heading": "THE SUMMER DROP"
+            "heading": "SS22 COLLECTION"
           }
         },
         "162994866447ef345c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Consider this seasonal offering your companion for every summer adventure imaginable. Sip a spritz poolside, chill by the grill with two food-friendly wines, and prick your palate with three experimental piquettes.<\/p>"
+            "text": "<p>When you join today you'll recieve our Spring\/Summer wines. This release brings fresh vintages of mainstays like Out to the Meadow  and Post Flirtation Red, plus new contemplations on classics like our Varietally Incorrect Zinfandel and Syrah. <\/p>"
           }
         }
       },
@@ -209,7 +209,7 @@
         "162994866447ef345c-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/MS_summer2022_final_0009.jpg",
+        "image": "shopify:\/\/shop_images\/SS22_1500px_007.jpg",
         "mask": true,
         "wine_club": false,
         "thin": false,
