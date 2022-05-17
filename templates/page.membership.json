@@ -43,6 +43,7 @@
         },
         "06d0132b-ca1c-4a54-bcdb-c3893e4260b8": {
           "type": "largeText",
+          "disabled": true,
           "settings": {
             "text": "<p>SUMMER 2022 DROP SHIPS TO YOU STARTING MAY 16<\/p>"
           }
@@ -122,7 +123,7 @@
             "card_width": "w-1\/2",
             "club_level_name": "Two Ways to Play",
             "title_size": "3rem",
-            "level_description": "<p>Please note: new members can still choose to receive the full SS22 shipment.<\/p>",
+            "level_description": "<p>Select a membership and get started with the SS22 shipment.<\/p>",
             "level_benefits": "",
             "text_align": "center"
           }
