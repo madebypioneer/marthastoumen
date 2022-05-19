@@ -43,9 +43,8 @@
         },
         "06d0132b-ca1c-4a54-bcdb-c3893e4260b8": {
           "type": "largeText",
-          "disabled": true,
           "settings": {
-            "text": "<p>SUMMER 2022 DROP SHIPS TO YOU STARTING MAY 16<\/p>"
+            "text": "<p><a href=\"\/collections\/spring-summer-2022\" title=\"SS22\">CLICK HERE TO VIEW THE SPRING\/SUMMER COLLECTION <\/a><\/p>"
           }
         }
       },
