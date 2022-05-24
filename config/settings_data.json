@@ -41,8 +41,8 @@
           "f5d0cdbf-77a1-43dd-b2fb-6a085cb9a20e": {
             "type": "text",
             "settings": {
-              "heading": "Heading",
-              "subtext": "<p>this is where I'd like to give explanatory text<\/p>"
+              "heading": "",
+              "subtext": ""
             }
           }
         },
