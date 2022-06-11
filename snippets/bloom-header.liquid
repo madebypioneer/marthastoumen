@@ -505,7 +505,7 @@ Bloom.storefront.utilities._.setDateInputNumberOfDays = function(dateInputEl) {
 
   if (currentDaysCount !== newDaysCount) {
     dobDaySelect.innerHTML = '<option value="">Day</option>'
-    for (i = 1; i <= newDaysCount; i++) {
+    for (var i = 1; i <= newDaysCount; i++) {
       var option = document.createElement("option");
       option.value = i;
       option.text = i;
