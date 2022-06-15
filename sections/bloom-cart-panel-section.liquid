@@ -12,7 +12,7 @@ Bloom (www.bloom.wine)
   {% assign should_redirect_to_cart_panel = true %}
 {% endif %}
 
-<div data-bloom-cart-config='{{ section.settings | json }}'></div>
+<div data-bloom-cart-config='{{ section.settings | json | escape }}'></div>
 
 <style>
 {% if should_redirect_to_cart_panel %}

@@ -302,6 +302,7 @@ document.addEventListener('shopify:section:unload', function() {
     height: {{ section.settings.header_image_size }}px;
     padding: {{ section.settings.header_image_padding }}px;
     box-sizing: content-box !important;
+    object-fit: contain;
   }
   .Bloom__AgeGate__Dob select {
     border-radius: {{ section.settings.select_border_radius }}px;
