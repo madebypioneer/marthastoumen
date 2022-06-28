@@ -47,8 +47,6 @@ Bloom (www.bloom.wine)
     <div data-bloom-club-join-form-field-id="{{ snippet_guid }}"
       data-bloom-club-join-form-field='{ "name": "{{ name }}", "className": "{{ class }}", "prompt": "{{ prompt }}" }'>
     </div>
-  {% when 'clubform-preferences' %}
-      <div class="BloomElement__GroupSelector" data-bloom-club-join-group-field></div>
   {% when 'clubform-button' %}
     <button class="{{ class }}" data-bloom-club-join-form-button=''>
       {%- if label == blank -%}Join{%- else -%}{{ label }}{%- endif -%}
