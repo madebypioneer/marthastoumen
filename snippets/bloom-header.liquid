@@ -600,28 +600,22 @@ Bloom.storefront.utilities.handleCheckoutClick = function(event) {
     if (Bloom.storefront.utilities._.hasDiscountNinjaPromotion()) { return true }
     var discountCode = Bloom.storefront.utilities._.refreshFormActionDiscountCodeForCart(form, cart);
 
-    if (doNativeCheckout) {
+    if (doNativeCheckout && !isNativeCheckoutRetry && !!submitElement) {
       submitElement.setAttribute('data-bloom-native-checkout-retry', 'true')
-    }
-
-    if (doNativeCheckout && !isNativeCheckoutRetry && !!form) {
       if (!!discountCode && !!Bloom.storefront.data.settings.strong_checkout_control) {
-        form.submit();
+        if (!!form) {
+          form.submit();
+        } else {
+          Bloom.storefront.utilities.checkout(discountCode, { target: 'shopify' })
+        }
       } else {
         button && button.click();
         inputButton && inputButton.click();
         anchor && anchor.click();
         event.target && event.target.click();
       }
-    } else if (doNativeCheckout && !form) {
-      if (!!discountCode) {
-        Bloom.storefront.utilities.checkout(discountCode, { target: 'shopify' })
-      } else {
-        button && button.click();
-        inputButton && inputButton.click();
-        anchor && anchor.click();
-        event.target && event.target.click();
-      }
+    } else if (doNativeCheckout && !submitElement) {
+      Bloom.storefront.utilities.checkout(discountCode, { target: 'shopify' })
     } else if (!doNativeCheckout) {
       (button||{}).disabled = true;
       (inputButton||{}).disabled = true;
