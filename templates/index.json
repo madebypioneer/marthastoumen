@@ -12,8 +12,16 @@
     "1629423396520fe146": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Martha-Stoumen-Wines-Cartwheel_7ceeb836-7651-4c5f-8528-9855ed9ce1b1.jpg",
+        "image": "shopify:\/\/shop_images\/What-Is-Ferragosto-Header.jpg",
         "remove_top_spacing": true
+      }
+    },
+    "1657311033fc06cca1": {
+      "type": "product-related-news",
+      "settings": {
+        "testimonial": "<p>WE'RE OUT OF OFFICE TO RECHARGE BEFORE THE BUSY HARVEST SEASON!<br\/>ORDERS PLACED  7\/9 - 7\/22 WILL BEGIN SHIPPING WHEN WE RETURN ON MONDAY, 7\/25. <\/p><p>SENDING JOY TO YOU,<br\/>MARTHA, TIM, IMANE, ANNA, ALYSSA & NINA<\/p>",
+        "attribution": "",
+        "link": "shopify:\/\/blogs\/field-notes\/what-is-ferragosto"
       }
     },
     "16301958688783465e": {
@@ -298,6 +306,7 @@
   "order": [
     "16461219304f28ed90",
     "1629423396520fe146",
+    "1657311033fc06cca1",
     "16301958688783465e",
     "image_text",
     "1629481912abcaba07",
