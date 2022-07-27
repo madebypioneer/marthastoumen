@@ -479,8 +479,8 @@
         "image_2": "shopify:\/\/shop_images\/Martha-Stoumen-Wines_Crushing-Grapes.jpg",
         "desktop_text_box_position": "center",
         "color_scheme": "background-2",
-        "stack_images_on_mobile": true,
-        "adapt_height_first_image": true
+        "stack_images_on_mobile": false,
+        "adapt_height_first_image": false
       }
     },
     "16330500390b99c474": {
