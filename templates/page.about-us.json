@@ -11,10 +11,10 @@
     "16294242047c980b62": {
       "type": "content",
       "blocks": {
-        "93b46cb1-ebda-4412-aeb7-8a2deb7c746a": {
-          "type": "largeText",
+        "42b1dcfe-d552-4186-9aec-9cd7c076040b": {
+          "type": "heading",
           "settings": {
-            "text": "<p>WE ARE ONE VOICE IN A CHORUS OF AGRICULTURAL PRODUCERS WHO ARE CHANGING THE TUNE OF THE WINE INDUSTRY. <\/p>"
+            "heading": "WE ARE ONE VOICE IN A CHORUS OF AGRICULTURAL PRODUCERS WHO ARE CHANGING THE TUNE OF THE WINE INDUSTRY."
           }
         },
         "411e19cf-37c6-4ccf-94e7-19c793e6b8d7": {
@@ -59,14 +59,14 @@
         }
       },
       "block_order": [
-        "93b46cb1-ebda-4412-aeb7-8a2deb7c746a",
+        "42b1dcfe-d552-4186-9aec-9cd7c076040b",
         "411e19cf-37c6-4ccf-94e7-19c793e6b8d7",
         "b28069c6-576f-4ecd-af12-43d65953ddfb",
         "e20ae0ae-4d93-4410-888a-5110362303a0",
         "48e97139-a27f-406b-a0b7-eeda85744683"
       ],
       "settings": {
-        "reduce_spacing": true,
+        "reduce_spacing": false,
         "reduce_top_spacing": false,
         "reduce_bottom_spacing": false,
         "add_spacing_mobile": false
