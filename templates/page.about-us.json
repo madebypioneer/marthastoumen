@@ -1,5 +1,77 @@
 {
   "sections": {
+    "1658879428d1da341d": {
+      "type": "video",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/MARTHA_STOUMEN_WINE_2.22.1.jpg",
+        "video": "https:\/\/vimeo.com\/651772687",
+        "remove_top_spacing": false
+      }
+    },
+    "16294242047c980b62": {
+      "type": "content",
+      "blocks": {
+        "93b46cb1-ebda-4412-aeb7-8a2deb7c746a": {
+          "type": "largeText",
+          "settings": {
+            "text": "<p>Joy, pleasure, and the art of winemaking come first in our effort to shift the tide of California wine. We are one voice in a chorus of producers who find shared value in guiding our industry away from practices that harm the planet and the people behind the bottle. <\/p>"
+          }
+        },
+        "411e19cf-37c6-4ccf-94e7-19c793e6b8d7": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "layout": "one_quarter",
+            "is_icon": false,
+            "heading": "COLLABORATE WITH CARETAKERS",
+            "content": "<p>We have deep compassion <br\/>for others.<br\/><br\/>We believe in treating all people <br\/>in our supply chain equitably.<\/p>"
+          }
+        },
+        "b28069c6-576f-4ecd-af12-43d65953ddfb": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "layout": "one_quarter",
+            "is_icon": false,
+            "heading": "LISTEN TO THE LAND",
+            "content": "<p>We have deep respect for the California land. <br\/><br\/>We believe in putting Mother Nature at the forefront of decision-making. <\/p>"
+          }
+        },
+        "e20ae0ae-4d93-4410-888a-5110362303a0": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "layout": "one_quarter",
+            "is_icon": false,
+            "heading": "CRAFT WITH PATIENCE",
+            "content": "<p>We have deep patience for the natural winemaking process.<br\/><br\/>We believe in making low-intervention wines the traditional way — no shortcuts.<\/p>"
+          }
+        },
+        "48e97139-a27f-406b-a0b7-eeda85744683": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "layout": "one_quarter",
+            "is_icon": false,
+            "heading": "ENJOY LIFE’S SIMPLE PLEASURES",
+            "content": "<p>We have deep appreciation for <br\/>the joy of wine.<br\/><br\/>We believe in sharing the art, romance, and pleasure of wine with our community and beyond.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "93b46cb1-ebda-4412-aeb7-8a2deb7c746a",
+        "411e19cf-37c6-4ccf-94e7-19c793e6b8d7",
+        "b28069c6-576f-4ecd-af12-43d65953ddfb",
+        "e20ae0ae-4d93-4410-888a-5110362303a0",
+        "48e97139-a27f-406b-a0b7-eeda85744683"
+      ],
+      "settings": {
+        "reduce_spacing": false,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
+      }
+    },
     "main": {
       "type": "image-with-text",
       "blocks": {
@@ -26,6 +98,59 @@
         "wine_club": false,
         "thin": false,
         "layout": "image_first"
+      }
+    },
+    "165887982271a707a4": {
+      "type": "content",
+      "blocks": {
+        "29c54b03-b8c2-4326-bf94-3cb0f25eba66": {
+          "type": "card",
+          "settings": {
+            "layout": "one_quarter",
+            "is_icon": false,
+            "heading": "COLLABORATING WITH CARETAKERS",
+            "content": "<p>We have deep compassion for others.<\/p><p><\/p><p>We believe in treating all people in our supply chain equitably<\/p>"
+          }
+        },
+        "9e32fa07-b6bf-4f28-a254-c25c21c84948": {
+          "type": "card",
+          "settings": {
+            "layout": "one_quarter",
+            "is_icon": false,
+            "heading": "LISTENING TO THE LAND",
+            "content": "<p>We respect California soils.<\/p><p><\/p><p>We believe in putting Mother Nature at the forefront of our decision-making.<\/p>"
+          }
+        },
+        "bb1e629f-afe0-4692-9188-a57e15d0139b": {
+          "type": "card",
+          "settings": {
+            "layout": "one_quarter",
+            "is_icon": false,
+            "heading": "CRAFTING WITH PATIENCE",
+            "content": "<p>We approach the winemaking process with patience and care – no shortcuts for this ancient process.<\/p><p><\/p><p>We believe that true expressions of  the California harvest cannot formulated in a laboratory. <\/p>"
+          }
+        },
+        "0293e9f2-6448-4eb6-9a7c-55ad4f958495": {
+          "type": "card",
+          "settings": {
+            "layout": "one_quarter",
+            "is_icon": false,
+            "heading": "ENJOYING LIFE'S SIMPLE PLEASURES",
+            "content": "<p>We live for the joy of wine.<\/p><p><\/p><p>We generously sharing the art, romance, and pleasure of our craft.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "29c54b03-b8c2-4326-bf94-3cb0f25eba66",
+        "9e32fa07-b6bf-4f28-a254-c25c21c84948",
+        "bb1e629f-afe0-4692-9188-a57e15d0139b",
+        "0293e9f2-6448-4eb6-9a7c-55ad4f958495"
+      ],
+      "settings": {
+        "reduce_spacing": false,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
       }
     },
     "1629423979307bc95b": {
@@ -298,66 +423,6 @@
         "heading": "THE TEAM"
       }
     },
-    "16294242047c980b62": {
-      "type": "content",
-      "blocks": {
-        "93b46cb1-ebda-4412-aeb7-8a2deb7c746a": {
-          "type": "largeText",
-          "settings": {
-            "text": "<p>Joy, pleasure, and the art of winemaking come first in our effort to shift the tide of California wine. We are one voice in a chorus of producers who find shared value in guiding our industry away from practices that harm the planet and the people behind the bottle. <\/p>"
-          }
-        },
-        "b28069c6-576f-4ecd-af12-43d65953ddfb": {
-          "type": "card",
-          "settings": {
-            "layout": "one_quarter",
-            "is_icon": false,
-            "heading": "LISTEN TO THE LAND",
-            "content": "<p>We have deep respect for the California land. <br\/><br\/>We believe in putting Mother Nature at the forefront of decision-making. <\/p>"
-          }
-        },
-        "411e19cf-37c6-4ccf-94e7-19c793e6b8d7": {
-          "type": "card",
-          "settings": {
-            "layout": "one_quarter",
-            "is_icon": false,
-            "heading": "COLLABORATE WITH CARETAKERS",
-            "content": "<p>We have deep compassion <br\/>for others.<br\/><br\/>We believe in treating all people <br\/>in our supply chain equitably.<\/p>"
-          }
-        },
-        "e20ae0ae-4d93-4410-888a-5110362303a0": {
-          "type": "card",
-          "settings": {
-            "layout": "one_quarter",
-            "is_icon": false,
-            "heading": "CRAFT WITH PATIENCE",
-            "content": "<p>We have deep patience for the natural winemaking process.<br\/><br\/>We believe in making low-intervention wines the traditional way — no shortcuts.<\/p>"
-          }
-        },
-        "48e97139-a27f-406b-a0b7-eeda85744683": {
-          "type": "card",
-          "settings": {
-            "layout": "one_quarter",
-            "is_icon": false,
-            "heading": "ENJOY LIFE’S SIMPLE PLEASURES",
-            "content": "<p>We have deep appreciation for <br\/>the joy of wine.<br\/><br\/>We believe in sharing the art, romance, and pleasure of wine with our community and beyond.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "93b46cb1-ebda-4412-aeb7-8a2deb7c746a",
-        "b28069c6-576f-4ecd-af12-43d65953ddfb",
-        "411e19cf-37c6-4ccf-94e7-19c793e6b8d7",
-        "e20ae0ae-4d93-4410-888a-5110362303a0",
-        "48e97139-a27f-406b-a0b7-eeda85744683"
-      ],
-      "settings": {
-        "reduce_spacing": false,
-        "reduce_top_spacing": false,
-        "reduce_bottom_spacing": false,
-        "add_spacing_mobile": false
-      }
-    },
     "16330500390b99c474": {
       "type": "video",
       "disabled": true,
@@ -369,7 +434,10 @@
     }
   },
   "order": [
+    "1658879428d1da341d",
+    "16294242047c980b62",
     "main",
+    "165887982271a707a4",
     "1629423979307bc95b",
     "1629424061a795407d",
     "163087644574435c5a",
@@ -378,7 +446,6 @@
     "1629424162b216fb88",
     "163087665921bca559",
     "162942420010f5aeff",
-    "16294242047c980b62",
     "16330500390b99c474"
   ]
 }
