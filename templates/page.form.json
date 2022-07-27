@@ -23,15 +23,22 @@
           "settings": {
             "heading": "Events"
           }
+        },
+        "a573cc80-2cc7-45e2-a783-ca3fe720da1b": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"\/pages\/bulk-orders\" title=\"Bulk Orders\">Looking for delightful natural wines to share at a special occassion? Click here to get in touch and learn more about bulk pricing. <\/a><\/p>"
+          }
         }
       },
       "block_order": [
-        "170e91b5-8f6d-4c34-8dbf-8200f131153c"
+        "170e91b5-8f6d-4c34-8dbf-8200f131153c",
+        "a573cc80-2cc7-45e2-a783-ca3fe720da1b"
       ],
       "settings": {
         "reduce_spacing": true,
-        "reduce_top_spacing": false,
-        "reduce_bottom_spacing": false,
+        "reduce_top_spacing": true,
+        "reduce_bottom_spacing": true,
         "add_spacing_mobile": false
       }
     },
