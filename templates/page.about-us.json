@@ -14,7 +14,7 @@
         "93b46cb1-ebda-4412-aeb7-8a2deb7c746a": {
           "type": "largeText",
           "settings": {
-            "text": "<p>Joy, pleasure, and the art of winemaking come first in our effort to shift the tide of California wine. We are one voice in a chorus of producers who find shared value in guiding our industry away from practices that harm the planet and the people behind the bottle. <\/p>"
+            "text": "<p>WE ARE ONE VOICE IN A CHORUS OF AGRICULTURAL PRODUCERS WHO ARE CHANGING THE TUNE OF THE WINE INDUSTRY. <\/p>"
           }
         },
         "411e19cf-37c6-4ccf-94e7-19c793e6b8d7": {
@@ -66,7 +66,7 @@
         "48e97139-a27f-406b-a0b7-eeda85744683"
       ],
       "settings": {
-        "reduce_spacing": false,
+        "reduce_spacing": true,
         "reduce_top_spacing": false,
         "reduce_bottom_spacing": false,
         "add_spacing_mobile": false
@@ -98,6 +98,26 @@
         "wine_club": false,
         "thin": false,
         "layout": "image_first"
+      }
+    },
+    "16588807406055e1fc": {
+      "type": "content",
+      "blocks": {
+        "438707d7-790d-4262-8e77-3b2ef16caf1f": {
+          "type": "heading",
+          "settings": {
+            "heading": "A CULTURE OF PATIENCE"
+          }
+        }
+      },
+      "block_order": [
+        "438707d7-790d-4262-8e77-3b2ef16caf1f"
+      ],
+      "settings": {
+        "reduce_spacing": false,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": true,
+        "add_spacing_mobile": false
       }
     },
     "165887982271a707a4": {
@@ -148,7 +168,7 @@
       ],
       "settings": {
         "reduce_spacing": false,
-        "reduce_top_spacing": false,
+        "reduce_top_spacing": true,
         "reduce_bottom_spacing": false,
         "add_spacing_mobile": false
       }
@@ -437,6 +457,7 @@
     "1658879428d1da341d",
     "16294242047c980b62",
     "main",
+    "16588807406055e1fc",
     "165887982271a707a4",
     "1629423979307bc95b",
     "1629424061a795407d",
