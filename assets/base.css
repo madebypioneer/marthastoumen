@@ -718,9 +718,7 @@ blockquote + figcaption {
 .customer select,
 .field__input,
 .form__label,
-.select__select,
-.globo-form input,
-.globo-form textarea {
+.select__select {
   font-size: 1.3rem;
   line-height: 1.5;
   letter-spacing: 0.04rem;
