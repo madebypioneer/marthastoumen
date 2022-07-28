@@ -718,7 +718,9 @@ blockquote + figcaption {
 .customer select,
 .field__input,
 .form__label,
-.select__select {
+.select__select,
+.globo-form input,
+.globo-form textarea {
   font-size: 1.3rem;
   line-height: 1.5;
   letter-spacing: 0.04rem;
@@ -1705,7 +1707,8 @@ deferred-media {
 .field__input,
 .select__select,
 .customer .field input,
-.customer select {
+.customer select,
+.globo-form input {
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
@@ -1734,13 +1737,15 @@ deferred-media {
 .select__select:hover,
 .customer .field input:hover,
 .customer select:hover,
-.localization-form__select:hover {
+.localization-form__select:hover,
+.globo-form input:hover {
   box-shadow: 0 0 0 0.2rem rgba(var(--color-foreground), 0.55);
 }
 
 .field__input:focus-visible,
 .select__select:focus-visible,
-.field input:focus-visible {
+.field input:focus-visible,
+.globo-form input:focus-visible {
   box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.55),
     0 0 0 0.3rem rgb(var(--color-background)),
     0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
@@ -1748,14 +1753,16 @@ deferred-media {
 
 .field__input:focus,
 .select__select:focus,
-.field input:focus {
+.field input:focus,
+.globo-form input:focus {
   box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.55),
     0 0 0 0.3rem rgb(var(--color-background)),
     0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
 .text-area,
-.select {
+.select,
+.globo-form textarea {
   display: inline-block;
   position: relative;
   width: 100%;
@@ -1795,14 +1802,16 @@ deferred-media {
 }
 
 .field__input,
-.customer .field input {
+.customer .field input,
+.globo-form input {
   flex-grow: 1;
   text-align: left;
   padding: 1.5rem;
 }
 
 .field__label,
-.customer .field label {
+.customer .field label,
+.globo-form label {
   font-size: 1.6rem;
   left: 1.5rem;
   top: 1rem;
@@ -1816,6 +1825,7 @@ deferred-media {
   line-height: 1.5;
 }
 
+.globo-form input:foucs ~ .label,
 .field__input:focus ~ .field__label,
 .field__input:not(:placeholder-shown) ~ .field__label,
 .field__input:-webkit-autofill ~ .field__label,
@@ -1828,6 +1838,7 @@ deferred-media {
   opacity: 1;
 }
 
+.globo-form input:focus,
 .field__input:focus,
 .field__input:not(:placeholder-shown),
 .field__input:-webkit-autofill,
@@ -1842,6 +1853,7 @@ deferred-media {
   display: none;
 }
 
+.globo-form input::placeholder,
 .field__input::placeholder,
 .customer .field input::placeholder {
   opacity: 0;
