@@ -336,6 +336,10 @@ Bloom.storefront.utilities.cartItemHasAlcohol = function(item) {
   return !!parseInt((Bloom.storefront.data.products.find(function(p) { return p.id.toString() === item.product_id.toString() })||{}).abv)
 }
 
+Bloom.storefront.utilities.cartItemIsRecharge = function(item) {
+  return Object.keys(item.properties || []).some(function(p) { return p.toLowerCase().includes("shipping_interval") });
+}
+
 Bloom.storefront.utilities.cartItemIsRecurring = function(item) {
   var clubNames = ["subscription"].concat(Bloom.storefront.data.clubs.map(function(c) { return c.name.toLowerCase() }))
   return clubNames.includes(item.product_title.toLowerCase()) || Object.keys(item.properties || []).some(function(p) { return clubNames.includes(p.toLowerCase()) })
@@ -562,9 +566,10 @@ Bloom.storefront.utilities._.hasDiscountNinjaPromotion = function() {
 }
 
 Bloom.storefront.utilities._.doNativeCheckout = function(cart) {
-  var hasDiscountNinjaPromotion = Bloom.storefront.utilities._.hasDiscountNinjaPromotion()
-  var cartHasRecurring = cart.items.some(Bloom.storefront.utilities.cartItemIsRecurring)
-  return hasDiscountNinjaPromotion || (!Bloom.storefront.data.settings.always_use_bloom_checkout && !cartHasRecurring)
+  var hasDiscountNinjaPromotion = Bloom.storefront.utilities._.hasDiscountNinjaPromotion();
+  var hasRechargeItem = cart.items.some(Bloom.storefront.utilities.cartItemIsRecharge);
+  var cartHasRecurring = cart.items.some(Bloom.storefront.utilities.cartItemIsRecurring);
+  return hasDiscountNinjaPromotion || hasRechargeItem || (!Bloom.storefront.data.settings.always_use_bloom_checkout && !cartHasRecurring);
 };
 
 Bloom.storefront.utilities._.getCart = Bloom.storefront.utilities.debounce(function(successCallback) {
