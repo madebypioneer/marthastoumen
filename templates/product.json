@@ -91,9 +91,48 @@
     },
     "163019609541e24af1": {
       "type": "spotify",
+      "disabled": true,
       "settings": {
         "heading": "Get Down With",
         "text": "Check out our playlist pairings curated in partnership with"
+      }
+    },
+    "166118594459877aa0": {
+      "type": "content",
+      "blocks": {
+        "2e8378fb-8848-4490-b3a9-38f9f7cb0fdb": {
+          "type": "card",
+          "settings": {
+            "layout": "one_third",
+            "image": "shopify:\/\/shop_images\/DiasporaCo_BrandAssets_Logo_Primary_Black.png",
+            "is_icon": true,
+            "heading": "",
+            "content": ""
+          }
+        },
+        "5b417ace-9956-4357-ae3d-ca7cfc1d53e8": {
+          "type": "heading",
+          "settings": {
+            "heading": "DID SOMEONE SAY SPICY SANGRIA SPRITZ?"
+          }
+        },
+        "b46f3675-5f60-4a6e-a76e-41447a08989d": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"https:\/\/www.diasporaco.com\/pages\/newsletter\" target=\"_blank\" title=\"Diaspora Co. newsletter sign up\">Click here to subscribe to the Diaspora Co. newsletter to stay in the know on seasonal recipes...trust us, it's a good one.<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "2e8378fb-8848-4490-b3a9-38f9f7cb0fdb",
+        "5b417ace-9956-4357-ae3d-ca7cfc1d53e8",
+        "b46f3675-5f60-4a6e-a76e-41447a08989d"
+      ],
+      "settings": {
+        "reduce_spacing": false,
+        "reduce_top_spacing": true,
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
       }
     },
     "162994917204089a3d": {
@@ -154,6 +193,7 @@
     "163019605020435d5e",
     "16301960799bced8b6",
     "163019609541e24af1",
+    "166118594459877aa0",
     "162994917204089a3d",
     "product-recommendations"
   ]
