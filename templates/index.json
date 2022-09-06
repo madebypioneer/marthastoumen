@@ -12,15 +12,24 @@
     "1629423396520fe146": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/final-banner-supersize.jpg",
+        "image": "shopify:\/\/shop_images\/Martha-Stoumen-Wines-Cartwheel_7ceeb836-7651-4c5f-8528-9855ed9ce1b1.jpg",
         "remove_top_spacing": true
       }
     },
     "16301958688783465e": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "collection": "harvest-happy-hour",
+        "show_view_all": true
+      }
+    },
+    "1630195896c1987861": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "reds",
         "show_view_all": true
       }
     },
@@ -63,14 +72,6 @@
     "1629481912abcaba07": {
       "type": "press-marquee",
       "settings": {
-      }
-    },
-    "1630195896c1987861": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "collection": "reds",
-        "show_view_all": true
       }
     },
     "16301959176235442b": {
@@ -299,9 +300,9 @@
     "16461219304f28ed90",
     "1629423396520fe146",
     "16301958688783465e",
+    "1630195896c1987861",
     "image_text",
     "1629481912abcaba07",
-    "1630195896c1987861",
     "16301959176235442b",
     "163019593826b6f234",
     "162942358041d53832",
