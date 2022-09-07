@@ -7,6 +7,12 @@ These features and content can be managed within the Bloom app or the Shopify cu
 Bloom (www.bloom.wine)
 {% endcomment %}
 
+
+{% if template.name == "index" %}
+  <script defer src="{{ 'bloom-storefront-bundle.js' | asset_url }}"></script>
+  <link href="{{ 'bloom-storefront-bundle.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+{% endif %}
+
 <div id="my-memberships-initial-loader" >
   <div class="uk-flex uk-flex-column uk-flex-middle uk-margin-xlarge-top">
     <div class="uk-width-1-1 uk-flex uk-flex-center">

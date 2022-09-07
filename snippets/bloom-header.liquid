@@ -15,8 +15,15 @@ Bloom (www.bloom.wine)
 <script src='https://js.stripe.com/v3/'></script>
 
 <script defer src="{{ 'bloom-storefront-dependencies.js' | asset_url }}"></script>
-<script defer src="{{ 'bloom-storefront-bundle.js' | asset_url }}"></script>
-<link href="{{ 'bloom-storefront-bundle.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+
+{% comment %}
+Don't render the bundle if we are on the home page.
+{% endcomment %}
+
+{% if template.name != "index" %}
+  <script defer src="{{ 'bloom-storefront-bundle.js' | asset_url }}"></script>
+  <link href="{{ 'bloom-storefront-bundle.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+{% endif %}
 
 {% render 'bloom-js-polyfills' %}
 {% render 'bloom-common-data' %}
