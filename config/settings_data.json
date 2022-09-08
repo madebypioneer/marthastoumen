@@ -15,8 +15,8 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "IT'S HOT OUT HERE \/\/\/ WE'RE SHIPPING ALL ORDERS VIA FEDEX COLD CHAIN THIS SUMMER",
-              "link": "shopify:\/\/collections\/all"
+              "text": "NEW WINES COMING SOON \/\/\/ JOIN THE CLUB FOR FIRST ACCESS",
+              "link": "shopify:\/\/pages\/membership"
             }
           }
         },
