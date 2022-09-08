@@ -6,7 +6,9 @@
     Globo.FormBuilder.shop = {
         settings : {
             reCaptcha : {
-                siteKey : ''
+                siteKey : '',
+                recaptchaType : 'v2',
+                languageCode : 'en'
             },
             hideWaterMark : false,
             encryptionFormId : false,
@@ -31,15 +33,22 @@
     {% if customer %}
         Globo.FormBuilder.customer = {
             id : '{{ customer.id }}',
-            name : '{{ customer.name }}',
+            name : `{{ customer.name }}`,
             email : '{{ customer.email }}'
         };
     {% endif %}
     Globo.FormBuilder.page = {
-        title : document.title,
+        title : document.title.replaceAll('"', "'"),
         href : window.location.href,
         type: "{{ request.page_type }}"
     };
+    {% if request.page_type == 'product' %}
+    Globo.FormBuilder.product= {
+        title : `{{ product.title }}`,
+        type : `{{ product.type }}`,
+        vendor : `{{ product.vendor }}`
+    }
+    {% endif %}
     Globo.FormBuilder.assetFormUrls = [];
             Globo.FormBuilder.assetFormUrls[51727] = "{{ 'globo.formbuilder.data.51727.js' | asset_url }}";
                     Globo.FormBuilder.assetFormUrls[63698] = "{{ 'globo.formbuilder.data.63698.js' | asset_url }}";
