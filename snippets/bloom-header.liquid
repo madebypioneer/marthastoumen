@@ -14,7 +14,7 @@ Bloom (www.bloom.wine)
 
 <script src='https://js.stripe.com/v3/'></script>
 
-<script defer src="{{ 'bloom-storefront-dependencies.js' | asset_url }}"></script>
+<script  src="{{ 'bloom-storefront-dependencies.js' | asset_url }}"></script>
 
 {% comment %}
 Don't render the bundle if we are on the home page.
@@ -22,7 +22,10 @@ Don't render the bundle if we are on the home page.
 
 {% if template.name != "index" %}
   <script defer src="{{ 'bloom-storefront-bundle.js' | asset_url }}"></script>
-  <link href="{{ 'bloom-storefront-bundle.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+  
+          <link rel="preload" href="{{ 'bloom-storefront-bundle.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+          <noscript><link rel="stylesheet" href="{{ 'bloom-storefront-bundle.css' | asset_url }}"></noscript>
+        
 {% endif %}
 
 {% render 'bloom-js-polyfills' %}
@@ -706,6 +709,14 @@ Bloom.storefront.utilities.ready(function() {
     if (el.value.includes('checkout')) {
       el.value = '/cart';
     }
+  });
+
+  Bloom.storefront.utilities.makeArray(document.querySelectorAll("[action='/account/activate']")).forEach(function(el) {
+    var input = document.createElement("input");
+    input.setAttribute("type", "hidden");
+    input.setAttribute("name", "return_to");
+    input.setAttribute("value", new URL(window.location.href).searchParams.get("return_to") || "");
+    el.appendChild(input);
   });
 
   // Redirect back to cart after forgot password flow to ensure club member benefits are applied

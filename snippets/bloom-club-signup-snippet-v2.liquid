@@ -11,7 +11,10 @@ Bloom (www.bloom.wine)
 
 {% if template.name == "index" %}
   <script defer src="{{ 'bloom-storefront-bundle.js' | asset_url }}"></script>
-  <link href="{{ 'bloom-storefront-bundle.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+  
+          <link rel="preload" href="{{ 'bloom-storefront-bundle.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+          <noscript><link rel="stylesheet" href="{{ 'bloom-storefront-bundle.css' | asset_url }}"></noscript>
+        
 {% endif %}
 
 {%- assign club_level_id = "club-" | append: club_id -%}
