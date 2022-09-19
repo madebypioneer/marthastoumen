@@ -54,9 +54,13 @@ Bloom (www.bloom.wine)
   {% when 'endclubform' %}
     </div>
     <script>
-      var formContainer = document.querySelector('[data-bloom-club-join-form-id="{{ id }}"]');
-      var props = Object.assign({ id: "{{ id }}", elementContainer: formContainer }, JSON.parse(formContainer.dataset.bloomClubJoinForm || "{}"))
-      var element = bloom.elements().create('form', props)
+      function initBloomElements() {
+        var formContainer = document.querySelector('[data-bloom-club-join-form-id="{{ id }}"]');
+        var props = Object.assign({ id: "{{ id }}", elementContainer: formContainer }, JSON.parse(formContainer.dataset.bloomClubJoinForm || "{}"))
+        var element = bloom.elements().create('form', props)
+      }
+
+        initBloomElements()
     </script>
   {% else %}
      This snippet is not configured properly
