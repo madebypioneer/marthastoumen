@@ -15,8 +15,8 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "NEW WINES COMING SOON \/\/\/ JOIN THE CLUB FOR FIRST ACCESS",
-              "link": "shopify:\/\/pages\/membership"
+              "text": "FW22 WINES ARE HERE! SHOP NOW",
+              "link": "shopify:\/\/collections\/fall-winter-2022"
             }
           }
         },
