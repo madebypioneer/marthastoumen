@@ -128,11 +128,11 @@ variant-radios label {
   border-radius: 8px;
   border-color: #000;
   color: #000;
-    -webkit-appearance: none;
-    appearance: none;
-    font-family: Baton Web,sans-serif;
-    font-style: italic;
-    font-weight: 400;
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: Baton Web,sans-serif;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .product-form__input--dropdown {
