@@ -1781,6 +1781,8 @@ deferred-media {
 
 .select {
   border: 1px solid #30292F;
+  max-width: 100%;
+  padding-right: 40px;
 }
 
 .select select {
