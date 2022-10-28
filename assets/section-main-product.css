@@ -121,6 +121,20 @@ variant-selects {
   display: block;
 }
 
+variant-radios label {
+  padding: 0.9rem 3rem;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 8px;
+  border-color: #000;
+  color: #000;
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: Baton Web,sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
 .product-form__input--dropdown {
   margin-bottom: 1.6rem;
 }
