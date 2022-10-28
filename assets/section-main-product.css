@@ -135,6 +135,13 @@ variant-radios .product-form__input input[type=radio]+label {
   font-weight: 400;
 }
 
+variant-radios .product-form__input input[type=radio]+label:hover {
+  border: 1px solid;
+  border-radius: 8px;
+  border-color: #000;
+  color: #000;
+}
+
 .product-form__input--dropdown {
   margin-bottom: 1.6rem;
 }
