@@ -141,6 +141,7 @@ variant-radios .product-form__input input[type=radio]:checked+label {
   border-radius: 8px;
   border-color: #a46f4d;
   background-color: #a46f4d;
+  color: #f9f5ea;
 }
 
 .product-form__input--dropdown {
