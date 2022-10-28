@@ -1793,6 +1793,10 @@ deferred-media {
   border: none;
 }
 
+.select select + svg {
+  display: none;
+}
+
 /* Field */
 
 .field {
