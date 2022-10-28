@@ -1779,6 +1779,14 @@ deferred-media {
   padding: 0 4rem 0 1.5rem;
 }
 
+.select {
+  border: 1px solid #30292F;
+}
+
+.select select {
+  border: none;
+}
+
 /* Field */
 
 .field {
