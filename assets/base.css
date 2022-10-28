@@ -1783,6 +1783,8 @@ deferred-media {
   border: 1px solid #30292F;
   max-width: 100%;
   padding-right: 40px;
+  border-radius: 8px;
+  width: 100%;
 }
 
 .select select {
