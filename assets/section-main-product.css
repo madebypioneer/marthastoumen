@@ -121,7 +121,7 @@ variant-selects {
   display: block;
 }
 
-variant-radios label {
+variant-radios .product-form__input input[type=radio]+label {
   padding: 0.9rem 3rem;
   text-decoration: none;
   border: 1px solid;
