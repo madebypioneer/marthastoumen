@@ -15,8 +15,8 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "SHOP WINTER WINES \/\/\/ AVAILABLE NOW",
-              "link": "shopify:\/\/collections\/fall-winter-2022"
+              "text": "",
+              "link": "shopify:\/\/collections\/winter-wines"
             }
           }
         },
@@ -93,7 +93,7 @@
           "redirect_url": "https:\/\/carolynnhaydu.com\/",
           "modal_drop_shadow": true,
           "background": "#a46f4d",
-          "background_image": "shopify:\/\/shop_images\/marthastoumen_fall2022_final_0018.jpg",
+          "background_image": "shopify:\/\/shop_images\/Alyssa-Holiday-93.jpg",
           "background_overlay": true,
           "modal_max_width": 360,
           "content_max_width": 240,
