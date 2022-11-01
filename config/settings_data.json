@@ -15,8 +15,8 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "",
-              "link": "shopify:\/\/collections\/winter-wines"
+              "text": "HOT OFF THE PRESS \/\/\/ SHOP PRINTS",
+              "link": "shopify:\/\/collections\/prints"
             }
           }
         },
