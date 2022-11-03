@@ -443,6 +443,43 @@
         "heading": "THE TEAM"
       }
     },
+    "7c6786e7-118c-452c-882b-f51f3666a8bf": {
+      "type": "collection-list",
+      "blocks": {
+        "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "winter-wines"
+          }
+        },
+        "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fall-winter-2022"
+          }
+        },
+        "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-2": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "prints"
+          }
+        }
+      },
+      "block_order": [
+        "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-0",
+        "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-1",
+        "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-2"
+      ],
+      "settings": {
+        "title": "Current collections",
+        "image_ratio": "portrait",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": true,
+        "show_view_all": false
+      }
+    },
     "16588815562a3839f8": {
       "type": "image-banner",
       "blocks": {
@@ -507,6 +544,7 @@
     "1629424162b216fb88",
     "163087665921bca559",
     "162942420010f5aeff",
+    "7c6786e7-118c-452c-882b-f51f3666a8bf",
     "16588815562a3839f8",
     "16330500390b99c474"
   ]
