@@ -244,6 +244,14 @@
         "add_spacing_mobile": false
       }
     },
+    "5868ae7e-5ff9-4f68-8414-2cd1c61bd07e": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop the Current Release",
+        "collection": "fall-winter-2022",
+        "show_view_all": true
+      }
+    },
     "16299486715b84051b": {
       "type": "content",
       "blocks": {
@@ -294,7 +302,7 @@
       ],
       "settings": {
         "reduce_spacing": false,
-        "reduce_top_spacing": false,
+        "reduce_top_spacing": true,
         "reduce_bottom_spacing": false,
         "add_spacing_mobile": false
       }
@@ -308,6 +316,7 @@
     "16299161199a315e58",
     "162994866447ef345c",
     "16517393477658ac6e",
+    "5868ae7e-5ff9-4f68-8414-2cd1c61bd07e",
     "16299486715b84051b"
   ]
 }
