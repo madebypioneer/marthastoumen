@@ -190,19 +190,27 @@
         "layout": "image_first"
       }
     },
+    "754e2c90-4586-474d-b17c-7e04e9195d94": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "wine-club-exclusive",
+        "show_view_all": true
+      }
+    },
     "162943294777e06a90": {
       "type": "full-width-image-with-text-below",
       "blocks": {
         "162943294777e06a90-0": {
           "type": "heading",
           "settings": {
-            "heading": "YOUR GUIDE TO NATURAL WINES"
+            "heading": "A BRIEF PRIMER ON NATURAL WINE"
           }
         },
         "162943294777e06a90-1": {
           "type": "text",
           "settings": {
-            "text": "<p>People have been crafting wine without additives for centuries. This fact easily gets lost among the shelves of formulated products and rows of chemically treated vines that dominate the American wine industry today. The post-war industrial food movement birthed a huge shift in the way we farm and eat. Although not discussed as much, this movement also shifted the way we grow grapes and drink. Small natural wine producers (that’s us!) are working to shift the tides back towards a gentler way of making wine, tending our soils, our vines, and our communities.<br\/><\/p><p>Natural winemakers nurture the ever-growing voice of transparency and sustainability in our agricultural system. We craft wines that place Mother Nature first, using our knowledge and expertise to support healthy farming systems and delicious moments of connection.<\/p>"
+            "text": "<p>Makers have been crafting wine without additives for centuries, so what's all of this noise about natural wine? The post-war industrial food movement birthed a huge shift in the way we farm and eat. Although not discussed as much, this movement also shifted the way we grow grapes and drink.<\/p><p><\/p><p>Small natural wine producers (that’s us!) are working to shift the tides back towards a gentler way of making wine, tending our soils, our vines, and our communities. Natural winemakers nurture the ever-growing voice of transparency and sustainability in our agricultural system. We craft wines that place Mother Nature first, using our knowledge and expertise to support healthy farming systems and delicious moments of connection.<\/p>"
           }
         }
       },
@@ -307,6 +315,7 @@
     "162942358041d53832",
     "1629423586fd4603de",
     "16294237544c521f73",
+    "754e2c90-4586-474d-b17c-7e04e9195d94",
     "162943294777e06a90",
     "162943297494e0f082",
     "163089741896d5f78e"
