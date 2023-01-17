@@ -35,7 +35,6 @@
         },
         "06467a72-7c0b-4ca3-95ac-a784b6fe3276": {
           "type": "card",
-          "disabled": true,
           "settings": {
             "layout": "one_quarter",
             "is_icon": false,
@@ -49,6 +48,18 @@
           "settings": {
             "text": "<p><a href=\"\/collections\/wine-club-exclusive\" title=\"Club Exclusive\">NOW SHIPPING: FALL\/WINTER 2022 \/\/ CLICK HERE TO SHOP CURRENT CLUB EXCLUSIVES<\/a><\/p>"
           }
+        },
+        "b6d3328f-1b1e-4efb-a0f9-7c3d61a3f40e": {
+          "type": "largeText",
+          "settings": {
+            "text": "<p>TWO WAYS TO PLAY<\/p>"
+          }
+        },
+        "44c4b46a-a5ab-462b-8bce-280b9b78e49f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Select a membership below and get started with the FW22 shipment.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -56,7 +67,9 @@
         "24fc36ac-7244-4b31-af06-110364face7a",
         "005298e7-e458-4bf0-be65-d0b42028ac7e",
         "06467a72-7c0b-4ca3-95ac-a784b6fe3276",
-        "06d0132b-ca1c-4a54-bcdb-c3893e4260b8"
+        "06d0132b-ca1c-4a54-bcdb-c3893e4260b8",
+        "b6d3328f-1b1e-4efb-a0f9-7c3d61a3f40e",
+        "44c4b46a-a5ab-462b-8bce-280b9b78e49f"
       ],
       "settings": {
         "reduce_spacing": false,
