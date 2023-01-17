@@ -101,46 +101,6 @@
         "add_spacing_mobile": false
       }
     },
-    "48ad7e13-65bf-4286-a7bc-56e70d65ece0": {
-      "type": "section-perks",
-      "blocks": {
-        "template--14928548233404__48ad7e13-65bf-4286-a7bc-56e70d65ece0-16739847510dac942d-0": {
-          "type": "icon",
-          "settings": {
-            "text": "SPRING\/SUMMER SEASON RELEASE IN MARCH"
-          }
-        },
-        "c32e74f7-eb94-454d-9a1e-a1fbf3a89727": {
-          "type": "icon",
-          "settings": {
-            "text": "SUMMER SAGRA PARTY IN JUNE"
-          }
-        },
-        "60e5746f-477b-4772-8874-b215e0a6c32b": {
-          "type": "icon",
-          "settings": {
-            "text": "FERRAGOSTO, FAREWELL! WE'RE OOO IN JULY"
-          }
-        },
-        "243b34f4-49b3-45e1-972a-91257edebe4e": {
-          "type": "icon",
-          "settings": {
-            "text": "FALL\/WINTER SEASONAL RELEASE IN OCTOBER"
-          }
-        }
-      },
-      "block_order": [
-        "template--14928548233404__48ad7e13-65bf-4286-a7bc-56e70d65ece0-16739847510dac942d-0",
-        "c32e74f7-eb94-454d-9a1e-a1fbf3a89727",
-        "60e5746f-477b-4772-8874-b215e0a6c32b",
-        "243b34f4-49b3-45e1-972a-91257edebe4e"
-      ],
-      "settings": {
-        "preheading": "LOOKING AHEAD",
-        "heading": "HERE'S WHAT YOU CAN EXPECT IN 2023",
-        "content": ""
-      }
-    },
     "16299161199a315e58": {
       "type": "club-join",
       "blocks": {
@@ -207,6 +167,26 @@
         "bg_color": "",
         "card_color_bg": "#f9f5ea",
         "club_max_width": 90
+      }
+    },
+    "99e19944-565d-48ed-aa77-902a01d8f2a1": {
+      "type": "content",
+      "blocks": {
+        "ab863719-2c32-45f5-9c7d-88b07ed61151": {
+          "type": "largeText",
+          "settings": {
+            "text": "<p>LOOKING AHEAD: CURRENTLY SHIPPING FW22 \/\/ MARCH: SPRING\/SUMMER 2023 SHIPMENT \/\/ JUNE: SONOMA SAGRA PARTY \/\/ JULY: FERRAGOSTO FAREWELL! \/\/ OCTOBER: FALL\/WINTER 2023 SHIPMENT \/\/ NOVEMBER: HOLIDAY 2023<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ab863719-2c32-45f5-9c7d-88b07ed61151"
+      ],
+      "settings": {
+        "reduce_spacing": true,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
       }
     },
     "16299483928fa50dfe": {
@@ -392,8 +372,8 @@
     "164574871083a7450f",
     "1629948404cfa546a1",
     "1ea72761-d93b-42f6-9f1b-6b40ae34e2d4",
-    "48ad7e13-65bf-4286-a7bc-56e70d65ece0",
     "16299161199a315e58",
+    "99e19944-565d-48ed-aa77-902a01d8f2a1",
     "16299483928fa50dfe",
     "163050466726472b3f",
     "162994866447ef345c",
