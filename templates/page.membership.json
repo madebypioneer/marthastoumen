@@ -116,6 +116,12 @@
             "text": "SUMMER SAGRA PARTY IN JUNE"
           }
         },
+        "60e5746f-477b-4772-8874-b215e0a6c32b": {
+          "type": "icon",
+          "settings": {
+            "text": "FERRAGOSTO, FAREWELL! WE'RE OOO IN JULY"
+          }
+        },
         "243b34f4-49b3-45e1-972a-91257edebe4e": {
           "type": "icon",
           "settings": {
@@ -126,6 +132,7 @@
       "block_order": [
         "template--14928548233404__48ad7e13-65bf-4286-a7bc-56e70d65ece0-16739847510dac942d-0",
         "c32e74f7-eb94-454d-9a1e-a1fbf3a89727",
+        "60e5746f-477b-4772-8874-b215e0a6c32b",
         "243b34f4-49b3-45e1-972a-91257edebe4e"
       ],
       "settings": {
