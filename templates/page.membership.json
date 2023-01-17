@@ -62,57 +62,6 @@
         "add_spacing_mobile": false
       }
     },
-    "16299483928fa50dfe": {
-      "type": "image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Membership_PageHero.jpg",
-        "remove_top_spacing": true
-      }
-    },
-    "163050466726472b3f": {
-      "type": "section-perks",
-      "blocks": {
-        "163050466726472b3f-0": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Illustration_First-access-to-new-vintages-and-special-releases.png",
-            "text": "FIRST ACCESS TO ALL WINE & EXCLUSIVE ACCESS TO LIMITED RELEASES"
-          }
-        },
-        "c1a03499-653c-4f56-a33e-247c94541049": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Illustration__25-flat-rate-shipping-on-all-orders.png",
-            "text": "YEAR ROUND $25 FLAT RATE SHIPPING"
-          }
-        },
-        "59690b09-8c5b-400b-8a69-b8643d8466b2": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Illustration_Tickets-to-release-parties_-popups-and-other-events.png",
-            "text": "TICKETS TO PARTIES, POP-UPS, & EVENTS"
-          }
-        },
-        "8b5b8866-b32a-4092-8cf7-c8e614399ee0": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Wine-club_club-goodies.png",
-            "text": "LIMITED EDITION ARTWORK"
-          }
-        }
-      },
-      "block_order": [
-        "163050466726472b3f-0",
-        "c1a03499-653c-4f56-a33e-247c94541049",
-        "59690b09-8c5b-400b-8a69-b8643d8466b2",
-        "8b5b8866-b32a-4092-8cf7-c8e614399ee0"
-      ],
-      "settings": {
-        "preheading": "Community Supported Wine Club",
-        "heading": "Come On In",
-        "content": "<p>This club makes our world go around, so it's important to us that you feel special. Expect goodies in your seasonal releases and perks throughout the year. <\/p>"
-      }
-    },
     "16299161199a315e58": {
       "type": "club-join",
       "blocks": {
@@ -178,6 +127,57 @@
         "bg_color": "",
         "card_color_bg": "#f9f5ea",
         "club_max_width": 90
+      }
+    },
+    "16299483928fa50dfe": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/MS_event_100822_35mm_-_10.jpg",
+        "remove_top_spacing": true
+      }
+    },
+    "163050466726472b3f": {
+      "type": "section-perks",
+      "blocks": {
+        "163050466726472b3f-0": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Illustration_First-access-to-new-vintages-and-special-releases.png",
+            "text": "FIRST ACCESS TO ALL WINE & EXCLUSIVE ACCESS TO LIMITED RELEASES"
+          }
+        },
+        "c1a03499-653c-4f56-a33e-247c94541049": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Illustration__25-flat-rate-shipping-on-all-orders.png",
+            "text": "YEAR ROUND $25 FLAT RATE SHIPPING"
+          }
+        },
+        "59690b09-8c5b-400b-8a69-b8643d8466b2": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Illustration_Tickets-to-release-parties_-popups-and-other-events.png",
+            "text": "TICKETS TO PARTIES, POP-UPS, & EVENTS"
+          }
+        },
+        "8b5b8866-b32a-4092-8cf7-c8e614399ee0": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wine-club_club-goodies.png",
+            "text": "LIMITED EDITION ARTWORK"
+          }
+        }
+      },
+      "block_order": [
+        "163050466726472b3f-0",
+        "c1a03499-653c-4f56-a33e-247c94541049",
+        "59690b09-8c5b-400b-8a69-b8643d8466b2",
+        "8b5b8866-b32a-4092-8cf7-c8e614399ee0"
+      ],
+      "settings": {
+        "preheading": "Community Supported Wine Club",
+        "heading": "Come On In",
+        "content": "<p>This club makes our world go around, so it's important to us that you feel special. Expect goodies in your seasonal releases and perks throughout the year. <\/p>"
       }
     },
     "162994866447ef345c": {
@@ -311,9 +311,9 @@
   "order": [
     "164574871083a7450f",
     "1629948404cfa546a1",
+    "16299161199a315e58",
     "16299483928fa50dfe",
     "163050466726472b3f",
-    "16299161199a315e58",
     "162994866447ef345c",
     "16517393477658ac6e",
     "5868ae7e-5ff9-4f68-8414-2cd1c61bd07e",
