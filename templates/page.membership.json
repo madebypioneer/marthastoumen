@@ -35,6 +35,7 @@
         },
         "06467a72-7c0b-4ca3-95ac-a784b6fe3276": {
           "type": "card",
+          "disabled": true,
           "settings": {
             "layout": "one_quarter",
             "is_icon": false,
@@ -51,6 +52,7 @@
         },
         "b6d3328f-1b1e-4efb-a0f9-7c3d61a3f40e": {
           "type": "largeText",
+          "disabled": true,
           "settings": {
             "text": "<p>SELECT A MEMBERSHIP BELOW TO GET STARTED WITH <br\/>THE FW22 SHIPMENT:<\/p>"
           }
@@ -84,7 +86,6 @@
       "blocks": {
         "64facf5c-b76a-4d76-9813-6657a43fda7e": {
           "type": "text_card",
-          "disabled": true,
           "settings": {
             "card_width": "w-1\/2",
             "club_level_name": "Two Ways to Play",
