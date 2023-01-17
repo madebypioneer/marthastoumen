@@ -25,6 +25,7 @@
         },
         "005298e7-e458-4bf0-be65-d0b42028ac7e": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "link_one_text": "Sign In",
             "link_one_page": "\/account",
@@ -34,6 +35,7 @@
         },
         "06467a72-7c0b-4ca3-95ac-a784b6fe3276": {
           "type": "card",
+          "disabled": true,
           "settings": {
             "layout": "one_quarter",
             "is_icon": false,
@@ -43,6 +45,7 @@
         },
         "06d0132b-ca1c-4a54-bcdb-c3893e4260b8": {
           "type": "largeText",
+          "disabled": true,
           "settings": {
             "text": "<p><a href=\"\/collections\/wine-club-exclusive\" title=\"Club Exclusive\">NOW SHIPPING: FALL\/WINTER 2022 \/\/ CLICK HERE TO SHOP CURRENT CLUB EXCLUSIVES<\/a><\/p>"
           }
@@ -67,6 +70,7 @@
       "blocks": {
         "64facf5c-b76a-4d76-9813-6657a43fda7e": {
           "type": "text_card",
+          "disabled": true,
           "settings": {
             "card_width": "w-1\/2",
             "club_level_name": "Two Ways to Play",
@@ -127,6 +131,26 @@
         "bg_color": "",
         "card_color_bg": "#f9f5ea",
         "club_max_width": 90
+      }
+    },
+    "1ea72761-d93b-42f6-9f1b-6b40ae34e2d4": {
+      "type": "content",
+      "blocks": {
+        "58f1ece6-79eb-4c55-9efc-c095de538f10": {
+          "type": "largeText",
+          "settings": {
+            "text": "<p>NOW SHIPPING: FALL\/WINTER 2022 \/\/ CLICK HERE TO SHOP CLUB EXCLUSIVE WINES<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "58f1ece6-79eb-4c55-9efc-c095de538f10"
+      ],
+      "settings": {
+        "reduce_spacing": true,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
       }
     },
     "16299483928fa50dfe": {
@@ -312,6 +336,7 @@
     "164574871083a7450f",
     "1629948404cfa546a1",
     "16299161199a315e58",
+    "1ea72761-d93b-42f6-9f1b-6b40ae34e2d4",
     "16299483928fa50dfe",
     "163050466726472b3f",
     "162994866447ef345c",
