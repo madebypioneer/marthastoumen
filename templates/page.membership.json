@@ -52,11 +52,12 @@
         "b6d3328f-1b1e-4efb-a0f9-7c3d61a3f40e": {
           "type": "largeText",
           "settings": {
-            "text": "<p>TWO WAYS TO PLAY<\/p>"
+            "text": "<p>SELECT A MEMBERSHIP BELOW TO GET STARTED WITH <br\/>THE FW22 SHIPMENT:<\/p>"
           }
         },
         "44c4b46a-a5ab-462b-8bce-280b9b78e49f": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Select a membership below and get started with the FW22 shipment.<\/p>"
           }
