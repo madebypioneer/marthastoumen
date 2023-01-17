@@ -73,9 +73,9 @@
         "44c4b46a-a5ab-462b-8bce-280b9b78e49f"
       ],
       "settings": {
-        "reduce_spacing": false,
+        "reduce_spacing": true,
         "reduce_top_spacing": false,
-        "reduce_bottom_spacing": true,
+        "reduce_bottom_spacing": false,
         "add_spacing_mobile": false
       }
     },
