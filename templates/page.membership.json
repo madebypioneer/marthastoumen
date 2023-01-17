@@ -367,6 +367,14 @@
         "reduce_bottom_spacing": false,
         "add_spacing_mobile": false
       }
+    },
+    "84d6686e-bbb0-454b-a1f5-53a8e0dc7dcd": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "wine-club-exclusive",
+        "show_view_all": true
+      }
     }
   },
   "order": [
@@ -380,6 +388,7 @@
     "162994866447ef345c",
     "16517393477658ac6e",
     "5868ae7e-5ff9-4f68-8414-2cd1c61bd07e",
-    "16299486715b84051b"
+    "16299486715b84051b",
+    "84d6686e-bbb0-454b-a1f5-53a8e0dc7dcd"
   ]
 }
