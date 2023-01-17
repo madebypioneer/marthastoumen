@@ -107,12 +107,19 @@
         "template--14928548233404__48ad7e13-65bf-4286-a7bc-56e70d65ece0-16739847510dac942d-0": {
           "type": "icon",
           "settings": {
-            "text": ""
+            "text": "SPRING\/SUMMER 2023 SHIPMENT IN APRIL"
+          }
+        },
+        "c32e74f7-eb94-454d-9a1e-a1fbf3a89727": {
+          "type": "icon",
+          "settings": {
+            "text": "SUMMER SAGRA PARTY IN JUNE"
           }
         }
       },
       "block_order": [
-        "template--14928548233404__48ad7e13-65bf-4286-a7bc-56e70d65ece0-16739847510dac942d-0"
+        "template--14928548233404__48ad7e13-65bf-4286-a7bc-56e70d65ece0-16739847510dac942d-0",
+        "c32e74f7-eb94-454d-9a1e-a1fbf3a89727"
       ],
       "settings": {
         "preheading": "LOOKING AHEAD",
