@@ -64,6 +64,13 @@ Bloom (www.bloom.wine)
       JSON.parse(document.querySelector("[data-bloom-product-form-config]").dataset["bloomProductFormConfig"])
     );
     Object.assign(config, Bloom.storefront.utilities._.keysToCamel(null));
+    Object.assign(
+      config,
+      {
+        legacySubscriptions: true,
+        sellingPlanGroupsAppIdPrefix: "bloom_allocations"
+      }
+    );
     Object.assign(config, Bloom.storefront.settings.cart)
     bloom.storage().setItem('productForm', config)
   }
