@@ -448,6 +448,7 @@
       "blocks": {
         "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-0": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "winter-wines"
           }
