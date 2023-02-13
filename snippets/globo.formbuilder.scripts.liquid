@@ -13,8 +13,8 @@
             hideWaterMark : false,
             encryptionFormId : false,
             copyright: `Powered by Globo <a href="https://apps.shopify.com/form-builder-contact-form" target="_blank">Contact Form</a>`,
-            scrollTop: true
-        },
+            scrollTop: true,
+            additionalColumns: []        },
         pricing:{
             features:{
                 fileUpload : 10,
@@ -34,8 +34,19 @@
         Globo.FormBuilder.customer = {
             id : '{{ customer.id }}',
             name : `{{ customer.name }}`,
-            email : '{{ customer.email }}'
+            email : '{{ customer.email }}',
+            phone : '{{ customer.phone }}',
+            first_name : '{{ customer.first_name }}',
+            last_name : '{{ customer.last_name }}',
+            tags: []
         };
+
+        Globo.FormBuilder.customer.tags = Globo.FormBuilder.customer.tags.concat(
+            {%- if customer.tags.size > 0 -%}                {%- for tag in customer.tags -%}                    {%- unless forloop.first -%},{%- endunless -%}                    `{{ tag }}`                {%- endfor -%}            {%- endif -%}        );
+        Globo.FormBuilder.customer.default_address = {{ customer.default_address | json }};
+
+        {% capture globo_customer %}customer_{{ customer.id }}{% endcapture %}        {% assign customerMetafield = shop.metafields.g_formbuilder[globo_customer] %}        Globo.FormBuilder.customer.metafields = {{ customerMetafield.value | json }};
+
     {% endif %}
     Globo.FormBuilder.page = {
         title : document.title.replaceAll('"', "'"),
