@@ -17,7 +17,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "description": "<p>Listed here in order from lightest to boldest, each of our small production bottles offers sustained moments of connection and joy. Spend some time getting to know each wine year after year or surprise yourself with a mixed case, there are no wrong turns!<\/p>",
+        "description": "<p>Listed here in order from lightest to boldest, each of our small production bottles offers sustained moments of connection and joy. Spend some time getting to know each wine year after year, or surprise yourself with a mixed case—there are no wrong turns!<\/p>",
         "products_per_page": 24,
         "image_ratio": "adapt",
         "show_secondary_image": false,
