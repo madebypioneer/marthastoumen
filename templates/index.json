@@ -272,28 +272,28 @@
     "163089741896d5f78e": {
       "type": "section-recent-blogs",
       "blocks": {
-        "f4def082-ddf6-46ae-9b3c-ec4dac0cef2b": {
-          "type": "blog",
-          "settings": {
-            "article": "field-notes\/try-it-out-at-lbvl-club"
-          }
-        },
         "96755e71-de8c-4651-844f-54c614444088": {
           "type": "blog",
           "settings": {
             "article": "field-notes\/love-notes"
           }
         },
+        "f4def082-ddf6-46ae-9b3c-ec4dac0cef2b": {
+          "type": "blog",
+          "settings": {
+            "article": "field-notes\/try-it-out-at-lbvl-club"
+          }
+        },
         "89f2cb29-1c56-423b-9987-67d6b177996f": {
           "type": "blog",
           "settings": {
-            "article": "field-notes\/diy-dye-with-red-wine"
+            "article": "field-notes\/warehouse-dinner-with-natoora-diaspora-co-and-kreung"
           }
         }
       },
       "block_order": [
-        "f4def082-ddf6-46ae-9b3c-ec4dac0cef2b",
         "96755e71-de8c-4651-844f-54c614444088",
+        "f4def082-ddf6-46ae-9b3c-ec4dac0cef2b",
         "89f2cb29-1c56-423b-9987-67d6b177996f"
       ],
       "settings": {
