@@ -414,8 +414,8 @@
         "67ee4205-4f2a-4390-a6c1-dee932223ca8"
       ],
       "settings": {
-        "reduce_spacing": false,
-        "reduce_top_spacing": true,
+        "reduce_spacing": true,
+        "reduce_top_spacing": false,
         "reduce_bottom_spacing": false,
         "add_spacing_mobile": false
       }
