@@ -217,13 +217,23 @@
         "47147142-c4ad-4f6a-8b52-1006ac622c77": {
           "type": "text",
           "settings": {
-            "text": "<p> <\/p><p>Get your Post Flirtation favorites for just $25\/bottle when you purchase 6 or more bottles.<\/p>"
+            "text": "<p> <\/p><p>Get your Post Flirtation favorites for just $25\/bottle when you purchase 6 or more bottles. Celebrate the abundance around you with these reliable California showstoppers.<\/p>"
+          }
+        },
+        "dd0a0820-71b5-4967-bd1f-f1a18f56e2ce": {
+          "type": "buttons",
+          "settings": {
+            "link_one_text": "Sign In",
+            "link_one_page": "https:\/\/marthastoumen.com\/account\/login",
+            "link_two_text": "Join Now",
+            "link_two_page": "shopify:\/\/pages\/6-bottle-membership-signup"
           }
         }
       },
       "block_order": [
         "4ce6b115-cc11-4296-9400-595d377432b9",
-        "47147142-c4ad-4f6a-8b52-1006ac622c77"
+        "47147142-c4ad-4f6a-8b52-1006ac622c77",
+        "dd0a0820-71b5-4967-bd1f-f1a18f56e2ce"
       ],
       "settings": {
         "reduce_spacing": true,
@@ -237,6 +247,14 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Post_Flirtation_Header.jpg",
         "remove_top_spacing": true
+      }
+    },
+    "84d6686e-bbb0-454b-a1f5-53a8e0dc7dcd": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "wine-club-exclusive",
+        "show_view_all": true
       }
     },
     "163050466726472b3f": {
@@ -401,14 +419,6 @@
         "reduce_bottom_spacing": false,
         "add_spacing_mobile": false
       }
-    },
-    "84d6686e-bbb0-454b-a1f5-53a8e0dc7dcd": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "collection": "wine-club-exclusive",
-        "show_view_all": true
-      }
     }
   },
   "order": [
@@ -420,10 +430,10 @@
     "5868ae7e-5ff9-4f68-8414-2cd1c61bd07e",
     "47a22176-a133-419d-a1f2-e82ba9538416",
     "16299483928fa50dfe",
+    "84d6686e-bbb0-454b-a1f5-53a8e0dc7dcd",
     "163050466726472b3f",
     "162994866447ef345c",
     "16517393477658ac6e",
-    "16299486715b84051b",
-    "84d6686e-bbb0-454b-a1f5-53a8e0dc7dcd"
+    "16299486715b84051b"
   ]
 }
