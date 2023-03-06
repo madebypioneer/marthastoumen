@@ -177,11 +177,18 @@
             "link_two_text": "Join Now",
             "link_two_page": "shopify:\/\/pages\/6-bottle-membership-signup"
           }
+        },
+        "06b0253c-5ec4-46c2-a0fc-8a943d96da34": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>GET TO KNOW THE UPCOMING SPRING\/SUMMER SHIPMENT BELOW:<\/h6>"
+          }
         }
       },
       "block_order": [
         "ab863719-2c32-45f5-9c7d-88b07ed61151",
-        "55db0bb1-5e87-461c-89ab-7ff1dd2c4120"
+        "55db0bb1-5e87-461c-89ab-7ff1dd2c4120",
+        "06b0253c-5ec4-46c2-a0fc-8a943d96da34"
       ],
       "settings": {
         "reduce_spacing": true,
