@@ -170,6 +170,7 @@
         },
         "55db0bb1-5e87-461c-89ab-7ff1dd2c4120": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "link_one_text": "Sign in",
             "link_one_page": "https:\/\/marthastoumen.com\/account\/login",
@@ -200,7 +201,7 @@
     "16299483928fa50dfe": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/MS_event_100822_35mm_-_10.jpg",
+        "image": "shopify:\/\/shop_images\/Post_Flirtation_Header.jpg",
         "remove_top_spacing": true
       }
     },
