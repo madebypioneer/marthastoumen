@@ -260,18 +260,18 @@
     "163050466726472b3f": {
       "type": "section-perks",
       "blocks": {
-        "163050466726472b3f-0": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Illustration_First-access-to-new-vintages-and-special-releases.png",
-            "text": "FIRST ACCESS TO ALL WINE & EXCLUSIVE ACCESS TO LIMITED RELEASES"
-          }
-        },
         "c1a03499-653c-4f56-a33e-247c94541049": {
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/Illustration__25-flat-rate-shipping-on-all-orders.png",
             "text": "YEAR ROUND $25 FLAT RATE SHIPPING"
+          }
+        },
+        "163050466726472b3f-0": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Illustration_First-access-to-new-vintages-and-special-releases.png",
+            "text": "FIRST ACCESS TO ALL WINE & EXCLUSIVE ACCESS TO LIMITED RELEASES"
           }
         },
         "59690b09-8c5b-400b-8a69-b8643d8466b2": {
@@ -290,8 +290,8 @@
         }
       },
       "block_order": [
-        "163050466726472b3f-0",
         "c1a03499-653c-4f56-a33e-247c94541049",
+        "163050466726472b3f-0",
         "59690b09-8c5b-400b-8a69-b8643d8466b2",
         "8b5b8866-b32a-4092-8cf7-c8e614399ee0"
       ],
