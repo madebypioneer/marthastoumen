@@ -260,6 +260,13 @@
     "163050466726472b3f": {
       "type": "section-perks",
       "blocks": {
+        "8b5b8866-b32a-4092-8cf7-c8e614399ee0": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PF-addition-Guide_to_Natural_Wines_Illustration_3_At_your_Table.png",
+            "text": "CLUB-EXCLUSIVE POST FLIRTATION PRICING"
+          }
+        },
         "c1a03499-653c-4f56-a33e-247c94541049": {
           "type": "icon",
           "settings": {
@@ -280,20 +287,13 @@
             "image": "shopify:\/\/shop_images\/Illustration_Tickets-to-release-parties_-popups-and-other-events.png",
             "text": "TICKETS TO PARTIES, POP-UPS, & EVENTS"
           }
-        },
-        "8b5b8866-b32a-4092-8cf7-c8e614399ee0": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/PF-addition-Guide_to_Natural_Wines_Illustration_3_At_your_Table.png",
-            "text": "CLUB-EXCLUSIVE POST FLIRTATION PRICING"
-          }
         }
       },
       "block_order": [
+        "8b5b8866-b32a-4092-8cf7-c8e614399ee0",
         "c1a03499-653c-4f56-a33e-247c94541049",
         "163050466726472b3f-0",
-        "59690b09-8c5b-400b-8a69-b8643d8466b2",
-        "8b5b8866-b32a-4092-8cf7-c8e614399ee0"
+        "59690b09-8c5b-400b-8a69-b8643d8466b2"
       ],
       "settings": {
         "preheading": "Community Supported Wine Club",
