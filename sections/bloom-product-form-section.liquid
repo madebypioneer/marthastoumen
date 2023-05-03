@@ -59,10 +59,26 @@ Bloom (www.bloom.wine)
 </style>
 
 <script>
+  function isJsonString(str) {
+      try {
+          JSON.parse(str);
+      } catch (e) {
+          return false;
+      }
+      return true;
+  }
   function initializeBloomProductForm() {
     var config = Bloom.storefront.utilities._.keysToCamel(
       JSON.parse(document.querySelector("[data-bloom-product-form-config]").dataset["bloomProductFormConfig"])
     );
+    var v1VariantSubscriptionQuantities = {};
+    {% for variant in product.variants %}
+      v1VariantSubscriptionQuantities["{{variant.id}}"] = "{{ variant.metafields.bloom.bloomfields.subscription_quantity_options }}";
+      if(isJsonString(v1VariantSubscriptionQuantities["{{variant.id}}"])) {
+          v1VariantSubscriptionQuantities["{{variant.id}}"] = JSON.parse(v1VariantSubscriptionQuantities["{{variant.id}}"]).join(",");
+      }
+    {% endfor %}
+    config.v1SubscriptionsAllowedQuantities = v1VariantSubscriptionQuantities;
     Object.assign(config, Bloom.storefront.utilities._.keysToCamel(null));
     Object.assign(
       config,
