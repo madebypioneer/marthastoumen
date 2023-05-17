@@ -563,6 +563,7 @@ Bloom.storefront.utilities.domModified = Bloom.storefront.utilities.debounce(fun
 
 Bloom.storefront.utilities._.getDiscountCodeForCart = function(cart) {
   if (!window.RecurringOptions) return;
+  if (!!Bloom.storefront.data.settings.use_v1_discounts) return;
   var discount = Bloom.storefront.utilities._.recurringOptions.discountForCustomerTagsAndLineItems(
     Bloom.storefront.data.customer.tags,
     cart.items,
@@ -646,6 +647,7 @@ Bloom.storefront.utilities.handleCheckoutClick = function(event) {
 }
 
 Bloom.storefront.utilities._.refreshFormActionDiscountCodeForCart = function(form, cart) {
+  if (!!Bloom.storefront.data.settings.use_v1_discounts) return;
   var formActionUrl = new URL((form||{}).action || window.location.pathname, window.location.origin);
   var formActionParams = new URLSearchParams(formActionUrl.search);
   var discountCode = formActionParams.get('discount');
