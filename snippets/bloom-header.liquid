@@ -654,7 +654,7 @@ Bloom.storefront.utilities._.refreshFormActionDiscountCodeForCart = function(for
   if (!discountCode) {
     discountCode = Bloom.storefront.utilities._.getDiscountCodeForCart(cart);
   }
-  if (discountCode) {
+  if (discountCode && form) {
     if (!!Bloom.storefront.data.settings.strong_checkout_control) {
       formActionUrl.pathname = "/checkout"
     }
