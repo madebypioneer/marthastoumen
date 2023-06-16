@@ -16,7 +16,8 @@
       "settings": {
         "reduce_spacing": false,
         "reduce_top_spacing": true,
-        "reduce_bottom_spacing": true
+        "reduce_bottom_spacing": true,
+        "add_spacing_mobile": false
       }
     },
     "main": {
