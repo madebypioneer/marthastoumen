@@ -572,15 +572,16 @@ Bloom.storefront.utilities._.getDiscountCodeForCart = function(cart) {
   return (discount||{}).code
 };
 
-Bloom.storefront.utilities._.hasDiscountNinjaPromotion = function() {
+Bloom.storefront.utilities._.hasNonCodeDiscount = function() {
+  if (!!Bloom.storefront.data.settings.use_v1_discounts) { return true; }
   return (typeof discountNinja !== 'undefined') && discountNinja.DiscountedCart.GetAppliedPromotions().length
 }
 
 Bloom.storefront.utilities._.doNativeCheckout = function(cart) {
-  var hasDiscountNinjaPromotion = Bloom.storefront.utilities._.hasDiscountNinjaPromotion();
+  var hasNonCodeDiscount = Bloom.storefront.utilities._.hasNonCodeDiscount();
   var hasRechargeItem = cart.items.some(Bloom.storefront.utilities.cartItemIsRecharge);
   var cartHasRecurring = cart.items.some(Bloom.storefront.utilities.cartItemIsRecurring);
-  return hasDiscountNinjaPromotion || hasRechargeItem || (!Bloom.storefront.data.settings.always_use_bloom_checkout && !cartHasRecurring);
+  return hasNonCodeDiscount || hasRechargeItem || (!Bloom.storefront.data.settings.always_use_bloom_checkout && !cartHasRecurring);
 };
 
 Bloom.storefront.utilities._.getCart = Bloom.storefront.utilities.debounce(function(successCallback) {
@@ -598,10 +599,10 @@ Bloom.storefront.utilities.handleCheckoutClick = function(event) {
   var inputButton = Bloom.storefront.utilities._.closestAncestor(event.target, "input");
   var button = Bloom.storefront.utilities._.closestAncestor(event.target, "button");
   var anchor = Bloom.storefront.utilities._.closestAncestor(event.target, "a");
-  var submitElement = form || anchor;
+  var submitElement = form || anchor || button;
   var isNativeCheckoutRetry = ((submitElement||{}).dataset||{}).bloomNativeCheckoutRetry == 'true';
 
-  if (!isNativeCheckoutRetry && (Bloom.storefront.utilities._.checkoutIsBlocked() || !Bloom.storefront.utilities._.hasDiscountNinjaPromotion())) {
+  if (!isNativeCheckoutRetry && (Bloom.storefront.utilities._.checkoutIsBlocked() || !Bloom.storefront.utilities._.hasNonCodeDiscount())) {
     Bloom.storefront.utilities._.cancelEvent(event)
   }
   Bloom.storefront.utilities._.getCart(function(cart) {
@@ -610,7 +611,7 @@ Bloom.storefront.utilities.handleCheckoutClick = function(event) {
       Bloom.storefront.utilities._.cancelEvent(event)
     }
     if (Bloom.storefront.utilities._.checkoutIsBlocked()) { return false }
-    if (Bloom.storefront.utilities._.hasDiscountNinjaPromotion()) { return true }
+    if (Bloom.storefront.utilities._.hasNonCodeDiscount()) { return true }
     var discountCode = Bloom.storefront.utilities._.refreshFormActionDiscountCodeForCart(form, cart);
 
     if (doNativeCheckout && !isNativeCheckoutRetry && !!submitElement) {
