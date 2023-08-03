@@ -11,6 +11,8 @@
     </a>
   </div>
 
+          {% section "bloom-my-account-section" %}
+
   <div>
     <div>
       <h2>{{ 'customer.orders.title' | t }}</h2>
@@ -106,11 +108,12 @@
 
     <div>
       {% include 'bloom' %}
-      {% if is_member == false %}
+      {% if is_member == true %}
       <h2>Memberships</h2>
       <p class="uk-margin-medium-bottom"><a class="" href="/apps/wine-club/account/customers/{{ customer.id }}">View my memberships</a></p>
       {% endif %}
       
+{% comment %} REMOVED CUSTOMER ADDRESSES, AS REQUESTED BY CLAIRE ON 9/23    
       <h2>{{ 'customer.account.details' | t }}</h2>
 
       {{ customer.default_address | format_address }}
@@ -118,6 +121,8 @@
       <a href="{{ routes.account_addresses_url }}">
         {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
       </a>
+{% endcomment %} 
+      
     </div>
 
   </div>
