@@ -136,10 +136,13 @@
 
     <div>
       {% include 'bloom' %}
+      {% comment %}
+      Removing membership edit link 
       {% if is_member == true %}
       <h2>Memberships</h2>
       <p class="uk-margin-medium-bottom"><a class="" href="/apps/wine-club/account/customers/{{ customer.id }}">View my memberships</a></p>
       {% endif %}
+      {% endcomment %}
       
 {% comment %} REMOVED CUSTOMER ADDRESSES, AS REQUESTED BY CLAIRE ON 9/23    
       <h2>{{ 'customer.account.details' | t }}</h2>
