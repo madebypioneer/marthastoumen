@@ -617,11 +617,7 @@ Bloom.storefront.utilities.handleCheckoutClick = function(event) {
     if (doNativeCheckout && !isNativeCheckoutRetry && !!submitElement) {
       submitElement.setAttribute('data-bloom-native-checkout-retry', 'true')
       if (!!discountCode && !!Bloom.storefront.data.settings.strong_checkout_control) {
-        if (!!form) {
-          form.submit();
-        } else {
-          Bloom.storefront.utilities.checkout(discountCode, { target: 'shopify' })
-        }
+        Bloom.storefront.utilities.checkout(discountCode, { target: 'shopify' })
       } else {
         button && button.click();
         inputButton && inputButton.click();
