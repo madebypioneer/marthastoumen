@@ -114,9 +114,9 @@
             "image": "shopify:\/\/shop_images\/Alyssa-Holiday-68.jpg",
             "club_level_name": "6 Bottle Club",
             "title_size": "1.5rem",
-            "level_description": "<p>ONE BOTTLE OF EACH NEW WINE PER SEASONAL SHIPMENT<\/p><p>$25 FLAT RATE SHIPPING<\/p><p>EXCLUSIVE POST FLIRTATION PRICING<\/p>",
+            "level_description": "<p>ONE BOTTLE OF EACH NEW WINE PER SEASONAL SHIPMENT<\/p><p>$30 FLAT RATE SHIPPING<\/p><p>EXCLUSIVE POST FLIRTATION PRICING<\/p>",
             "level_benefits": "",
-            "club_price": "$200 - $275 per shipment",
+            "club_price": "$240 - $320 per shipment",
             "text_align": "center",
             "to_join": true,
             "to_join_url": "\/pages\/6-bottle-membership-signup",
@@ -303,7 +303,6 @@
     },
     "162994866447ef345c": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "773a0703-8b2d-4041-a4ba-d39cdba589b3": {
           "type": "preheading",
@@ -329,6 +328,7 @@
         "162994866447ef345c-0",
         "162994866447ef345c-1"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/MS_summer2022_final_0013.jpg",
         "mask": true,
@@ -339,7 +339,6 @@
     },
     "16517393477658ac6e": {
       "type": "content",
-      "disabled": true,
       "blocks": {
         "7a7abca5-022b-4f93-b7bb-0dc79d75ac92": {
           "type": "heading",
@@ -358,6 +357,7 @@
         "7a7abca5-022b-4f93-b7bb-0dc79d75ac92",
         "6326a1a5-63fd-4533-a740-1b5d5ff8b527"
       ],
+      "disabled": true,
       "settings": {
         "reduce_spacing": false,
         "reduce_top_spacing": false,
