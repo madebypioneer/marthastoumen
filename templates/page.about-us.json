@@ -335,7 +335,7 @@
         "16308766597b708768-1": {
           "type": "text",
           "settings": {
-            "text": "<p>You have your own personality, and we like that too. That's why we take your joy seriously.<strong> <\/strong>We're ready to leave that heavy, tired feeling you get when drinking conventional wine behind. We believe natural wines jive with your body better: whether it’s a moody red, a snappy rosato, a bright white, or something in between, our wines tend to uplift you more than weigh you down.<\/p><p><em>Image: Martha smelling a glass of wine and smiling. <\/em><\/p>"
+            "text": "<p>You have your own personality, and we like that too. That's why we take your joy seriously.<strong> <\/strong>We're ready to leave that heavy, tired feeling you get when drinking conventional wine behind. We believe natural wines jive with your body better: whether it’s a moody red, a snappy rosato, a bright white, or something in between, our wines tend to uplift you more than weigh you down.<\/p><p><em>Image: Martha reaches for a cluster of grapes on the vine.<\/em><\/p>"
           }
         }
       },
@@ -344,7 +344,7 @@
         "16308766597b708768-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Image-6_about-us.png",
+        "image": "shopify:\/\/shop_images\/marthastoumen_harvest2021__0251_1500px.jpg",
         "layout": "image_first",
         "disable_parallax": false
       }
@@ -455,6 +455,7 @@
         },
         "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-1": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "spring-summer-2023"
           }
@@ -465,12 +466,19 @@
           "settings": {
             "collection": "natural-wine-gift-bundles-prints"
           }
+        },
+        "18fef9ec-7407-4680-a4ba-27629ff66dc6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fall-winter"
+          }
         }
       },
       "block_order": [
         "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-0",
         "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-1",
-        "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-2"
+        "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-2",
+        "18fef9ec-7407-4680-a4ba-27629ff66dc6"
       ],
       "settings": {
         "title": "Current collections",
