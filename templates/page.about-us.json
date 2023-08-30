@@ -446,20 +446,6 @@
     "7c6786e7-118c-452c-882b-f51f3666a8bf": {
       "type": "collection-list",
       "blocks": {
-        "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-0": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "winter-wines"
-          }
-        },
-        "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-1": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "spring-summer-2023"
-          }
-        },
         "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-2": {
           "type": "featured_collection",
           "disabled": true,
@@ -475,8 +461,6 @@
         }
       },
       "block_order": [
-        "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-0",
-        "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-1",
         "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-2",
         "18fef9ec-7407-4680-a4ba-27629ff66dc6"
       ],
