@@ -349,6 +349,46 @@
         "disable_parallax": false
       }
     },
+    "16588815562a3839f8": {
+      "type": "image-banner",
+      "blocks": {
+        "165888155668ef7ec8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "COME ON IN"
+          }
+        },
+        "d9cd3e71-53e4-4a26-a07a-9030ccac3c64": {
+          "type": "text",
+          "settings": {
+            "text": "Community Supported Wine Club members receive first and exclusive access to each of our limited production wines. Choose between the 6 and 12 bottle club to explore each season with us."
+          }
+        },
+        "165888155668ef7ec8-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Join the 6 bottle club",
+            "button_link_1": "shopify:\/\/pages\/6-bottle-membership-signup",
+            "button_style_secondary_1": false,
+            "button_label_2": "Join the 12 bottle club",
+            "button_link_2": "shopify:\/\/pages\/12-bottle-membership-signup",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "165888155668ef7ec8-0",
+        "d9cd3e71-53e4-4a26-a07a-9030ccac3c64",
+        "165888155668ef7ec8-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Martha-Stoumen_Stomping-Red-Grapes.jpg",
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-2",
+        "stack_images_on_mobile": false,
+        "adapt_height_first_image": false
+      }
+    },
     "162942420010f5aeff": {
       "type": "team-member",
       "blocks": {
@@ -473,46 +513,6 @@
         "show_view_all": false
       }
     },
-    "16588815562a3839f8": {
-      "type": "image-banner",
-      "blocks": {
-        "165888155668ef7ec8-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "COME ON IN"
-          }
-        },
-        "d9cd3e71-53e4-4a26-a07a-9030ccac3c64": {
-          "type": "text",
-          "settings": {
-            "text": "Community Supported Wine Club members receive first and exclusive access to each of our limited production wines. Choose between the 6 and 12 bottle club to explore each season with us."
-          }
-        },
-        "165888155668ef7ec8-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Join the 6 bottle club",
-            "button_link_1": "shopify:\/\/pages\/6-bottle-membership-signup",
-            "button_style_secondary_1": false,
-            "button_label_2": "Join the 12 bottle club",
-            "button_link_2": "shopify:\/\/pages\/12-bottle-membership-signup",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "165888155668ef7ec8-0",
-        "d9cd3e71-53e4-4a26-a07a-9030ccac3c64",
-        "165888155668ef7ec8-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Martha-Stoumen_Stomping-Red-Grapes.jpg",
-        "desktop_text_box_position": "center",
-        "color_scheme": "background-2",
-        "stack_images_on_mobile": false,
-        "adapt_height_first_image": false
-      }
-    },
     "16330500390b99c474": {
       "type": "video",
       "disabled": true,
@@ -536,9 +536,9 @@
     "163087660282050368",
     "1629424162b216fb88",
     "163087665921bca559",
+    "16588815562a3839f8",
     "162942420010f5aeff",
     "7c6786e7-118c-452c-882b-f51f3666a8bf",
-    "16588815562a3839f8",
     "16330500390b99c474"
   ]
 }
