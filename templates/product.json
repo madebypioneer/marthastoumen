@@ -98,7 +98,6 @@
     },
     "166118594459877aa0": {
       "type": "content",
-      "disabled": true,
       "blocks": {
         "2e8378fb-8848-4490-b3a9-38f9f7cb0fdb": {
           "type": "card",
@@ -138,6 +137,7 @@
         "b46f3675-5f60-4a6e-a76e-41447a08989d",
         "79b44637-816f-46ea-b5db-dd5ac367d62a"
       ],
+      "disabled": true,
       "settings": {
         "reduce_spacing": false,
         "reduce_top_spacing": true,
@@ -181,7 +181,7 @@
         "162994917204089a3d-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Wine-Club-Container_November-2021-Update.jpg",
+        "image": "shopify:\/\/shop_images\/Three_of_Cups_credit_Ellian_Raffoul_243.jpg",
         "mask": true,
         "wine_club": true,
         "thin": false,
