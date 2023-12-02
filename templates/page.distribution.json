@@ -23,7 +23,8 @@
       "settings": {
         "reduce_spacing": false,
         "reduce_top_spacing": false,
-        "reduce_bottom_spacing": false
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
       }
     },
     "1629864785397d8167": {
@@ -38,6 +39,32 @@
       "settings": {
         "heading": "INTERNATIONAL",
         "link_list": "international"
+      }
+    },
+    "074c2368-3e34-439c-9914-90ab14b54ba2": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14924584812732__074c2368-3e34-439c-9914-90ab14b54ba2-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "LOOKING FOR DISTRIBUTION ASSETS?",
+            "heading_size": "medium"
+          }
+        },
+        "template--14924584812732__074c2368-3e34-439c-9914-90ab14b54ba2-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In need of tech sheets, photos of wine, or further information to educate and empower your sales team? We've got you!<\/p><h6> <\/h6><h6><a href=\"\/blogs\/tech-sheets\" title=\"Tech Sheets\">CLICK HERE TO FIND TECH SHEETS!<\/a><\/h6>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14924584812732__074c2368-3e34-439c-9914-90ab14b54ba2-heading-1",
+        "template--14924584812732__074c2368-3e34-439c-9914-90ab14b54ba2-text-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
       }
     },
     "1629864868c6825d4d": {
@@ -69,7 +96,7 @@
         "897deeea-c7d2-4728-a8c8-e894147fcfdf"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Distribution_-_Find_Stockists_Photo_-_Grape_Witches.jpg",
+        "image": "shopify:\/\/shop_images\/theholly_wine.jpg",
         "layout": "image_first",
         "disable_parallax": true
       }
@@ -79,6 +106,7 @@
     "162986478112c194ab",
     "1629864785397d8167",
     "1629864829950a9a5e",
+    "074c2368-3e34-439c-9914-90ab14b54ba2",
     "1629864868c6825d4d"
   ]
 }
