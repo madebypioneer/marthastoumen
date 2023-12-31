@@ -42,19 +42,14 @@ window.Bloom.storefront.data.customer = window.Bloom.storefront.data.customer ||
   phone: "{{ customer.phone }}",
   email: "{{ customer.email }}",
   hasAccount: {% if customer %}{{ customer.has_account }}{% else %}null{% endif %},
-  addresses: [{% for address in customer.addresses %}{{ address | json }}{% if forloop.last == false %},{% endif %}{% endfor %}],
-  tags: "{{ customer.tags | join: ',' }}"
+  tags: "{{ customer.tags | join: ',' }}",
+  addresses: [{% for address in customer.addresses %}{{ address | json }}{% if forloop.last == false %},{% endif %}{% endfor %}]
 }
 window.Bloom.storefront.data.billingCountries = window.Bloom.storefront.data.billingCountries || {{ shop.metafields.bloom.billing_countries | json }};
 window.Bloom.storefront.data.shippingCountries = window.Bloom.storefront.data.shippingCountries || {{ shop.metafields.bloom.shipping_countries | json }};
-window.Bloom.storefront.data.products = window.Bloom.storefront.data.products || []
+window.Bloom.storefront.data.products = window.Bloom.storefront.data.products || [];
 
-</script>
-
-  {% render 'bloom-product-data' %}
-  {% render 'bloom-variant-data' %}
-
-<script type="text/javascript">
+window.Bloom.storefront.data.products = Object.values({{ shop.metafields.bloom.product_specs }} || {});
 
 Bloom.storefront.data.settings = Bloom.storefront.data.settings || {}
 Bloom.storefront.data.settings.app_proxy_path = Bloom.storefront.data.settings.app_proxy_path || '/apps/wine-club'
@@ -65,9 +60,12 @@ Bloom.storefront.settings.dob = {
   minimumAge: {{ settings.bloom_cart_dob_minimum_age }},
   cartAttributeName: "Customer date of birth"
 }
+
 Bloom.storefront.settings.cart = Bloom.storefront.settings.cart || Bloom.storefront.utilities._.keysToCamel(
-  {})
-Bloom.storefront.settings.isBloomV1 = true;
+  Bloom.storefront.data.settings.bloom_cart_config
+)
+
+Bloom.storefront.settings.isBloomV1 = Bloom.storefront.data.settings.is_bloom_v1;
 
 Bloom.Cookie = function(name) {
   var current = new Date();

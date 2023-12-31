@@ -79,13 +79,13 @@ Bloom (www.bloom.wine)
       }
     {% endfor %}
     config.v1SubscriptionsAllowedQuantities = v1VariantSubscriptionQuantities;
-    Object.assign(config, Bloom.storefront.utilities._.keysToCamel(null));
+    Object.assign(config, Bloom.storefront.utilities._.keysToCamel({{ shop.metafields.bloom.shop_settings.value.bloom_product_form_config | json }}));
     Object.assign(
       config,
       {
-        useShopifySellingPlans: false,
-        legacySubscriptions: true,
-        sellingPlanGroupsAppIdPrefix: "bloom_allocations"
+        useShopifySellingPlans: {{ shop.metafields.bloom.shop_settings.value.use_shopify_selling_plans }},
+        legacySubscriptions: {{ shop.metafields.bloom.shop_settings.value.legacy_subscriptions }},
+        sellingPlanGroupsAppIdPrefix: "{{ shop.metafields.bloom.shop_settings.value.selling_plan_groups_app_id_prefix }}"
       }
     );
     Object.assign(config, Bloom.storefront.settings.cart)
