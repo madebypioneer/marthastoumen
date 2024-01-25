@@ -69,12 +69,21 @@
         "thin": false,
         "layout": "image_first"
       }
+    },
+    "featured_collection_gaMHzH": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "lovers-corner-natural-wine-gifts",
+        "show_view_all": true
+      }
     }
   },
   "order": [
     "1630297194ef18551f",
     "banner",
     "product-grid",
-    "1630297257e2405d88"
+    "1630297257e2405d88",
+    "featured_collection_gaMHzH"
   ]
 }
