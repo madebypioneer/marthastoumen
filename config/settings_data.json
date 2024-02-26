@@ -15,8 +15,8 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "STEP INTO THE LOVERS CORNER \/\/ MEET US IN SF AT THE 1 HOTEL",
-              "link": "shopify:\/\/pages\/events"
+              "text": "MEET THE CHARACTERS OF SS24 WHEN YOU JOIN THE CLUB",
+              "link": "shopify:\/\/pages\/membership"
             }
           }
         },
