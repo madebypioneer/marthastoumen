@@ -483,34 +483,12 @@
         "heading": "THE TEAM"
       }
     },
-    "7c6786e7-118c-452c-882b-f51f3666a8bf": {
-      "type": "collection-list",
-      "blocks": {
-        "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-2": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "natural-wine-gift-bundles-prints"
-          }
-        },
-        "18fef9ec-7407-4680-a4ba-27629ff66dc6": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "all"
-          }
-        }
-      },
-      "block_order": [
-        "template--14899622281404__7c6786e7-118c-452c-882b-f51f3666a8bf-1667493640681f5e79-2",
-        "18fef9ec-7407-4680-a4ba-27629ff66dc6"
-      ],
+    "featured_collection_CAbUXH": {
+      "type": "featured-collection",
       "settings": {
-        "title": "OUR CURRENT OFFERINGS",
-        "image_ratio": "portrait",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": true,
-        "image_padding": true,
-        "show_view_all": false
+        "title": "Featured collection",
+        "collection": "spring-summer",
+        "show_view_all": true
       }
     },
     "16330500390b99c474": {
@@ -538,7 +516,7 @@
     "163087665921bca559",
     "16588815562a3839f8",
     "162942420010f5aeff",
-    "7c6786e7-118c-452c-882b-f51f3666a8bf",
+    "featured_collection_CAbUXH",
     "16330500390b99c474"
   ]
 }
