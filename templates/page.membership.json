@@ -419,6 +419,14 @@
         "reduce_bottom_spacing": false,
         "add_spacing_mobile": false
       }
+    },
+    "featured_collection_GXNMDe": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "wine-club-exclusive",
+        "show_view_all": true
+      }
     }
   },
   "order": [
@@ -434,6 +442,7 @@
     "163050466726472b3f",
     "162994866447ef345c",
     "16517393477658ac6e",
-    "16299486715b84051b"
+    "16299486715b84051b",
+    "featured_collection_GXNMDe"
   ]
 }
