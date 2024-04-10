@@ -425,18 +425,6 @@
             "bio": ""
           }
         },
-        "dd7e6e18-1e82-4be9-85a5-b6fc8a34b2fb": {
-          "type": "teamMember",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/marthastoumen_harvest2021__0179_1500px.jpg",
-            "layout": "image_first",
-            "featured": false,
-            "name": "NINA KRAVETZ",
-            "position": "HEAD OF MARKETING",
-            "bio": ""
-          }
-        },
         "3b7e19ce-4562-4c0e-946c-a0e4f3403768": {
           "type": "teamMember",
           "settings": {
@@ -475,7 +463,6 @@
         "162942420010f5aeff-0",
         "0b3a33a4-a4f2-4a09-9255-6b7162144068",
         "3e4977a8-10dc-4c7a-962c-02849a268142",
-        "dd7e6e18-1e82-4be9-85a5-b6fc8a34b2fb",
         "3b7e19ce-4562-4c0e-946c-a0e4f3403768",
         "d414f505-6de8-4e85-8efb-ea4738931787",
         "7960ea8e-4461-4e1a-9a59-a15b5d3d3900"
