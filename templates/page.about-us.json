@@ -427,6 +427,7 @@
         },
         "dd7e6e18-1e82-4be9-85a5-b6fc8a34b2fb": {
           "type": "teamMember",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/marthastoumen_harvest2021__0179_1500px.jpg",
             "layout": "image_first",
