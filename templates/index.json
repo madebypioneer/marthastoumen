@@ -18,10 +18,47 @@
     },
     "16301958688783465e": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "collection": "natural-wine-gift-bundles-prints",
         "show_view_all": true
+      }
+    },
+    "image_with_text_JLJ3jB": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_p77XtQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "SUMMER CELLAR OPEN HOUSE"
+          }
+        },
+        "text_rmEVkL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join us for a summer cellar tasting and stock up event! Taste through six wines, start your afternoon off with a spritz, and secure wines for summer while hanging with Martha and the team. We'll have light bites to snack on and a mix of reds, whites, and rosés to taste. It's been a while since we've done this and we can't wait to see you!<\/p>"
+          }
+        },
+        "button_V6JbKT": {
+          "type": "button",
+          "settings": {
+            "button_label": "GET TICKETS",
+            "button_link": "shopify:\/\/products\/ms-wines-open-house"
+          }
+        }
+      },
+      "block_order": [
+        "heading_p77XtQ",
+        "text_rmEVkL",
+        "button_V6JbKT"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Harvest2023_AlyssaMJulian_46.jpg",
+        "mask": false,
+        "wine_club": false,
+        "thin": false,
+        "layout": "image_first"
       }
     },
     "image_text": {
@@ -52,6 +89,7 @@
         "text",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/About-Us_November-2021-update.jpg",
         "mask": false,
@@ -307,6 +345,7 @@
     "16461219304f28ed90",
     "1629423396520fe146",
     "16301958688783465e",
+    "image_with_text_JLJ3jB",
     "image_text",
     "1629481912abcaba07",
     "1630195896c1987861",

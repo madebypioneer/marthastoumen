@@ -14,10 +14,9 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "MEET THE CHARACTERS OF SS24 \/\/\/ JOIN THE CLUB TODAY",
-              "link": "shopify:\/\/pages\/membership"
+              "text": "WE'RE THROWING A PARTY ON 6\/22 \/\/\/ GET TICKETS",
+              "link": "shopify:\/\/products\/ms-wines-open-house"
             }
           }
         },
