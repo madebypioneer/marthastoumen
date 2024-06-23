@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "16461219304f28ed90": {
@@ -52,6 +61,7 @@
         "text_rmEVkL",
         "button_V6JbKT"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Harvest2023_AlyssaMJulian_46.jpg",
         "mask": false,
@@ -88,7 +98,6 @@
         "text",
         "button"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/About-Us_November-2021-update.jpg",
         "mask": false,

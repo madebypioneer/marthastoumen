@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "social_facebook_link": "https:\/\/facebook.com\/marthastoumenwines",
@@ -14,6 +23,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "WE'RE THROWING A PARTY ON 6\/22 \/\/\/ GET TICKETS",
               "link": "shopify:\/\/products\/ms-wines-open-house"
