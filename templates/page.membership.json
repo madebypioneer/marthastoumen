@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "164574871083a7450f": {
@@ -181,7 +190,7 @@
         "06b0253c-5ec4-46c2-a0fc-8a943d96da34": {
           "type": "text",
           "settings": {
-            "text": "<h6>WHEN YOU JOIN THE CLUB TODAY, YOU WILL RECEIVE<br\/>THE SPRING\/SUMMER 2024 SHIPMENT.<\/h6><h6><\/h6><p>Get to know these featured wines below:<\/p>"
+            "text": "<h6>WHEN YOU JOIN THE CLUB TODAY, YOU WILL RECEIVE THE NEW FALL RELEASE IN SEPTEMBER 2024.<\/h6><p><\/p>"
           }
         }
       },
