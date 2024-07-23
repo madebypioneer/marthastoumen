@@ -206,8 +206,17 @@
         "add_spacing_mobile": false
       }
     },
+    "featured_collection_GXNMDe": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "wine-club-exclusive",
+        "show_view_all": true
+      }
+    },
     "5868ae7e-5ff9-4f68-8414-2cd1c61bd07e": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Shop the Current Release",
         "collection": "spring-summer",
@@ -428,14 +437,6 @@
         "reduce_bottom_spacing": false,
         "add_spacing_mobile": false
       }
-    },
-    "featured_collection_GXNMDe": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "collection": "wine-club-exclusive",
-        "show_view_all": true
-      }
     }
   },
   "order": [
@@ -444,6 +445,7 @@
     "1ea72761-d93b-42f6-9f1b-6b40ae34e2d4",
     "16299161199a315e58",
     "99e19944-565d-48ed-aa77-902a01d8f2a1",
+    "featured_collection_GXNMDe",
     "5868ae7e-5ff9-4f68-8414-2cd1c61bd07e",
     "16299483928fa50dfe",
     "47a22176-a133-419d-a1f2-e82ba9538416",
@@ -451,7 +453,6 @@
     "163050466726472b3f",
     "162994866447ef345c",
     "16517393477658ac6e",
-    "16299486715b84051b",
-    "featured_collection_GXNMDe"
+    "16299486715b84051b"
   ]
 }
