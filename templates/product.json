@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -38,6 +47,13 @@
           "settings": {
           }
         },
+        "bloom_commerce_bloom_subscription_app_section_jnnBMh": {
+          "type": "shopify:\/\/apps\/bloom-commerce\/blocks\/bloom-subscription-app-section\/a1421136-f8f4-4099-a0bc-ffd3811b3b59",
+          "settings": {
+            "enable_legacy_checkout_compatiblity": false,
+            "custom_css": ""
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -57,6 +73,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "bloom_commerce_bloom_subscription_app_section_jnnBMh",
         "buy_buttons",
         "description"
       ],
