@@ -9,8 +9,16 @@
 */
 {
   "sections": {
+    "16299483928fa50dfe": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Post_Flirtation_Header.jpg",
+        "remove_top_spacing": true
+      }
+    },
     "164574871083a7450f": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Screen_Shot_2023-01-17_at_11.23.57_AM.png",
         "video": "https:\/\/vimeo.com\/789095279",
@@ -23,13 +31,13 @@
         "3024eba2-923e-4fec-a7ea-c35cc8fb3a19": {
           "type": "heading",
           "settings": {
-            "heading": "COMMUNITY SUPPORTED WINE CLUB"
+            "heading": "POST FLIRTATION SUBSCRIPTION"
           }
         },
         "24fc36ac-7244-4b31-af06-110364face7a": {
           "type": "text",
           "settings": {
-            "text": "<p>Our wine club brings the intimacy of local CSA shares to pleasure seekers and craft libation lovers around the country. From fresh and fruity special releases to age-worthy library gems, you'll get access to small production wines that you can only find online. Our seasonal shares offer the same warm fuzzy feeling that you get when diving into handcrafted bounty from your favorite farmer, baker and now, winemaker.<\/p><p><\/p><p><\/p>"
+            "text": "<p>XYZ<\/p>"
           }
         },
         "06467a72-7c0b-4ca3-95ac-a784b6fe3276": {
@@ -221,13 +229,6 @@
         "title": "Shop the Current Release",
         "collection": "spring-summer",
         "show_view_all": true
-      }
-    },
-    "16299483928fa50dfe": {
-      "type": "image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Post_Flirtation_Header.jpg",
-        "remove_top_spacing": true
       }
     },
     "47a22176-a133-419d-a1f2-e82ba9538416": {
@@ -440,6 +441,7 @@
     }
   },
   "order": [
+    "16299483928fa50dfe",
     "164574871083a7450f",
     "1629948404cfa546a1",
     "1ea72761-d93b-42f6-9f1b-6b40ae34e2d4",
@@ -447,7 +449,6 @@
     "99e19944-565d-48ed-aa77-902a01d8f2a1",
     "featured_collection_GXNMDe",
     "5868ae7e-5ff9-4f68-8414-2cd1c61bd07e",
-    "16299483928fa50dfe",
     "47a22176-a133-419d-a1f2-e82ba9538416",
     "84d6686e-bbb0-454b-a1f5-53a8e0dc7dcd",
     "163050466726472b3f",
