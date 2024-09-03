@@ -87,93 +87,12 @@
         "add_spacing_mobile": false
       }
     },
-    "1ea72761-d93b-42f6-9f1b-6b40ae34e2d4": {
-      "type": "content",
-      "blocks": {
-        "58f1ece6-79eb-4c55-9efc-c095de538f10": {
-          "type": "largeText",
-          "disabled": true,
-          "settings": {
-            "text": "<p><a href=\"https:\/\/marthastoumen.com\/collections\/wine-club-exclusive\" title=\"Martha Stoumen Wine Club Exclusive Bottles\">NOW SHIPPING: FALL\/WINTER 2022 \/\/ CLICK HERE TO SHOP CLUB EXCLUSIVE WINES<\/a><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "58f1ece6-79eb-4c55-9efc-c095de538f10"
-      ],
+    "featured_collection_GXNMDe": {
+      "type": "featured-collection",
       "settings": {
-        "reduce_spacing": true,
-        "reduce_top_spacing": false,
-        "reduce_bottom_spacing": false,
-        "add_spacing_mobile": false
-      }
-    },
-    "16299161199a315e58": {
-      "type": "club-join",
-      "blocks": {
-        "64facf5c-b76a-4d76-9813-6657a43fda7e": {
-          "type": "text_card",
-          "disabled": true,
-          "settings": {
-            "card_width": "w-1\/2",
-            "club_level_name": "Two Ways to Play",
-            "title_size": "3rem",
-            "level_description": "<p>Select a membership and get started with the FW22 shipment.<\/p>",
-            "level_benefits": "",
-            "text_align": "center"
-          }
-        },
-        "91b61098-5601-4834-9d18-aa2aa4be4580": {
-          "type": "customer_choice",
-          "settings": {
-            "level_variant_id": "112313",
-            "card_width": "w-1\/3",
-            "image": "shopify:\/\/shop_images\/Alyssa-Holiday-68.jpg",
-            "club_level_name": "6 Bottle Club",
-            "title_size": "1.5rem",
-            "level_description": "<p>ONE BOTTLE OF EACH NEW WINE PER SEASONAL SHIPMENT<\/p><p>$30 FLAT RATE SHIPPING<\/p><p>EXCLUSIVE POST FLIRTATION PRICING<\/p>",
-            "level_benefits": "",
-            "club_price": "$240 - $320 per shipment",
-            "text_align": "center",
-            "to_join": true,
-            "to_join_url": "\/pages\/6-bottle-membership-signup",
-            "to_checkout": false,
-            "to_cart": false,
-            "join_button_label": "Join the 6 Bottle Club"
-          }
-        },
-        "d5ed8a2c-fc62-45fe-b1b9-c52a039501b2": {
-          "type": "customer_choice",
-          "settings": {
-            "level_variant_id": "112314",
-            "card_width": "w-1\/3",
-            "image": "shopify:\/\/shop_images\/Alyssa-Holiday-31.jpg",
-            "club_level_name": "12 Bottle Club",
-            "title_size": "1.5rem",
-            "level_description": "<p>TWO BOTTLES OF EACH NEW WINE PER SEASONAL SHIPMENT<\/p><p>$30 FLAT RATE SHIPPING<\/p><p>EXCLUSIVE POST FLIRTATION PRICING<\/p><p>FULLY CUSTOMIZABLE SHIPMENTS<\/p>",
-            "level_benefits": "",
-            "club_price": "$480 - $640 per shipment",
-            "text_align": "center",
-            "to_join": true,
-            "to_join_url": "\/pages\/12-bottle-membership-signup",
-            "to_checkout": false,
-            "to_cart": false,
-            "join_button_label": "Join the 12 Bottle Club"
-          }
-        }
-      },
-      "block_order": [
-        "64facf5c-b76a-4d76-9813-6657a43fda7e",
-        "91b61098-5601-4834-9d18-aa2aa4be4580",
-        "d5ed8a2c-fc62-45fe-b1b9-c52a039501b2"
-      ],
-      "settings": {
-        "header_height": "400",
-        "heading_text": "",
-        "intro_text": "",
-        "bg_color": "",
-        "card_color_bg": "#f9f5ea",
-        "club_max_width": 90
+        "title": "Featured collection",
+        "collection": "post-flirtation",
+        "show_view_all": true
       }
     },
     "99e19944-565d-48ed-aa77-902a01d8f2a1": {
@@ -212,14 +131,6 @@
         "reduce_top_spacing": false,
         "reduce_bottom_spacing": false,
         "add_spacing_mobile": false
-      }
-    },
-    "featured_collection_GXNMDe": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "collection": "wine-club-exclusive",
-        "show_view_all": true
       }
     },
     "5868ae7e-5ff9-4f68-8414-2cd1c61bd07e": {
@@ -444,10 +355,8 @@
     "16299483928fa50dfe",
     "164574871083a7450f",
     "1629948404cfa546a1",
-    "1ea72761-d93b-42f6-9f1b-6b40ae34e2d4",
-    "16299161199a315e58",
-    "99e19944-565d-48ed-aa77-902a01d8f2a1",
     "featured_collection_GXNMDe",
+    "99e19944-565d-48ed-aa77-902a01d8f2a1",
     "5868ae7e-5ff9-4f68-8414-2cd1c61bd07e",
     "47a22176-a133-419d-a1f2-e82ba9538416",
     "84d6686e-bbb0-454b-a1f5-53a8e0dc7dcd",
