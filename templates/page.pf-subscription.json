@@ -52,9 +52,8 @@
         },
         "06d0132b-ca1c-4a54-bcdb-c3893e4260b8": {
           "type": "largeText",
-          "disabled": true,
           "settings": {
-            "text": "<p><a href=\"\/collections\/wine-club-exclusive\" title=\"Club Exclusive\">NOW SHIPPING: FALL\/WINTER 2022 \/\/ CLICK HERE TO SHOP CURRENT CLUB EXCLUSIVES<\/a><\/p>"
+            "text": "<p> <\/p><p>  <\/p><p>HOW DOES IT WORK?<\/p>"
           }
         },
         "b6d3328f-1b1e-4efb-a0f9-7c3d61a3f40e": {
@@ -87,11 +86,41 @@
         "add_spacing_mobile": false
       }
     },
+    "content_rAQHNk": {
+      "type": "content",
+      "blocks": {
+        "large_text_icVXHH": {
+          "type": "largeText",
+          "settings": {
+            "text": "<p>HOW DOES IT WORK?<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "large_text_icVXHH"
+      ],
+      "disabled": true,
+      "settings": {
+        "reduce_spacing": false,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
+      }
+    },
     "featured_collection_GXNMDe": {
       "type": "featured-collection",
       "settings": {
         "title": "Featured collection",
         "collection": "post-flirtation",
+        "show_view_all": true
+      }
+    },
+    "5868ae7e-5ff9-4f68-8414-2cd1c61bd07e": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Shop the Current Release",
+        "collection": "spring-summer",
         "show_view_all": true
       }
     },
@@ -126,20 +155,12 @@
         "55db0bb1-5e87-461c-89ab-7ff1dd2c4120",
         "06b0253c-5ec4-46c2-a0fc-8a943d96da34"
       ],
+      "disabled": true,
       "settings": {
         "reduce_spacing": true,
         "reduce_top_spacing": false,
         "reduce_bottom_spacing": false,
         "add_spacing_mobile": false
-      }
-    },
-    "5868ae7e-5ff9-4f68-8414-2cd1c61bd07e": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Shop the Current Release",
-        "collection": "spring-summer",
-        "show_view_all": true
       }
     },
     "47a22176-a133-419d-a1f2-e82ba9538416": {
@@ -355,9 +376,10 @@
     "16299483928fa50dfe",
     "164574871083a7450f",
     "1629948404cfa546a1",
+    "content_rAQHNk",
     "featured_collection_GXNMDe",
-    "99e19944-565d-48ed-aa77-902a01d8f2a1",
     "5868ae7e-5ff9-4f68-8414-2cd1c61bd07e",
+    "99e19944-565d-48ed-aa77-902a01d8f2a1",
     "47a22176-a133-419d-a1f2-e82ba9538416",
     "84d6686e-bbb0-454b-a1f5-53a8e0dc7dcd",
     "163050466726472b3f",
