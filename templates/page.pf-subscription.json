@@ -84,7 +84,7 @@
         "large_text_icVXHH"
       ],
       "settings": {
-        "reduce_spacing": false,
+        "reduce_spacing": true,
         "reduce_top_spacing": false,
         "reduce_bottom_spacing": false,
         "add_spacing_mobile": false
