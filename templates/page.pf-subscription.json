@@ -49,35 +49,12 @@
             "heading": "",
             "content": ""
           }
-        },
-        "06d0132b-ca1c-4a54-bcdb-c3893e4260b8": {
-          "type": "largeText",
-          "settings": {
-            "text": "<p> <\/p><p>  <\/p><p>HOW DOES IT WORK?<\/p>"
-          }
-        },
-        "b6d3328f-1b1e-4efb-a0f9-7c3d61a3f40e": {
-          "type": "largeText",
-          "disabled": true,
-          "settings": {
-            "text": "<p>SELECT A MEMBERSHIP BELOW TO GET STARTED WITH <br\/>THE FW22 SHIPMENT:<\/p>"
-          }
-        },
-        "44c4b46a-a5ab-462b-8bce-280b9b78e49f": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Select a membership below and get started with the FW22 shipment.<\/p>"
-          }
         }
       },
       "block_order": [
         "3024eba2-923e-4fec-a7ea-c35cc8fb3a19",
         "24fc36ac-7244-4b31-af06-110364face7a",
-        "06467a72-7c0b-4ca3-95ac-a784b6fe3276",
-        "06d0132b-ca1c-4a54-bcdb-c3893e4260b8",
-        "b6d3328f-1b1e-4efb-a0f9-7c3d61a3f40e",
-        "44c4b46a-a5ab-462b-8bce-280b9b78e49f"
+        "06467a72-7c0b-4ca3-95ac-a784b6fe3276"
       ],
       "settings": {
         "reduce_spacing": true,
@@ -89,6 +66,12 @@
     "content_rAQHNk": {
       "type": "content",
       "blocks": {
+        "heading_jgJkbA": {
+          "type": "heading",
+          "settings": {
+            "heading": "how does it work?"
+          }
+        },
         "large_text_icVXHH": {
           "type": "largeText",
           "settings": {
@@ -97,9 +80,9 @@
         }
       },
       "block_order": [
+        "heading_jgJkbA",
         "large_text_icVXHH"
       ],
-      "disabled": true,
       "settings": {
         "reduce_spacing": false,
         "reduce_top_spacing": false,
