@@ -213,12 +213,20 @@
           "settings": {
             "text": "<p>This super limited release is exclusive to Post Flirtation Subscribers and Community Supported Wine Club members.<\/p>"
           }
+        },
+        "button_XEErrd": {
+          "type": "button",
+          "settings": {
+            "button_label": "Add on to your shipment",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "773a0703-8b2d-4041-a4ba-d39cdba589b3",
         "162994866447ef345c-0",
-        "162994866447ef345c-1"
+        "162994866447ef345c-1",
+        "button_XEErrd"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/08.26.24-marthastoumen-postflirtationamber-0454-FINAL-0006.jpg",
