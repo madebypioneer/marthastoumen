@@ -193,70 +193,25 @@
         "show_view_all": true
       }
     },
-    "163050466726472b3f": {
-      "type": "section-perks",
-      "blocks": {
-        "8b5b8866-b32a-4092-8cf7-c8e614399ee0": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/PF-addition-Guide_to_Natural_Wines_Illustration_3_At_your_Table.png",
-            "text": "CLUB-EXCLUSIVE POST FLIRTATION PRICING"
-          }
-        },
-        "c1a03499-653c-4f56-a33e-247c94541049": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Illustration__30-flat-rate-shipping-on-all-orders.png",
-            "text": "$30 FLAT RATE SHIPPING YEAR ROUND"
-          }
-        },
-        "163050466726472b3f-0": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Illustration_First-access-to-new-vintages-and-special-releases.png",
-            "text": "FIRST ACCESS TO ALL WINE & EXCLUSIVE ACCESS TO LIMITED RELEASES"
-          }
-        },
-        "59690b09-8c5b-400b-8a69-b8643d8466b2": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Illustration_Tickets-to-release-parties_-popups-and-other-events.png",
-            "text": "TICKETS TO PARTIES, POP-UPS, & EVENTS"
-          }
-        }
-      },
-      "block_order": [
-        "8b5b8866-b32a-4092-8cf7-c8e614399ee0",
-        "c1a03499-653c-4f56-a33e-247c94541049",
-        "163050466726472b3f-0",
-        "59690b09-8c5b-400b-8a69-b8643d8466b2"
-      ],
-      "disabled": true,
-      "settings": {
-        "preheading": "Community Supported Wine Club",
-        "heading": "Come On In",
-        "content": "<p>This club makes our world go around, so it's important to us that you feel special. Expect goodies in your seasonal releases and perks throughout the year. <\/p>"
-      }
-    },
     "162994866447ef345c": {
       "type": "image-with-text",
       "blocks": {
         "773a0703-8b2d-4041-a4ba-d39cdba589b3": {
           "type": "preheading",
           "settings": {
-            "preheading": "CURRENT RELEASE"
+            "preheading": "NEW AND LIMITED"
           }
         },
         "162994866447ef345c-0": {
           "type": "heading",
           "settings": {
-            "heading": "THE SUMMER DROP"
+            "heading": "POST FLIRTATION ORANGE NV No. 1"
           }
         },
         "162994866447ef345c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>This fresh summer release brings three distinct expressions of our favorite fruit. Piquettes from the second pressings of grapeskins and stems, spritzer from a grape based spirit, and two savory summer wines keep you lifted through the season's sweltering days. Plus, club members receive $25 flat rate shipping year round!<\/p>"
+            "text": "<p>This super limited release is exclusive to Post Flirtation Subscribers and Community Supported Wine Club members.<\/p><p>Click here to add a bottle (or two) on to your subscription.<\/p>"
           }
         }
       },
@@ -367,7 +322,6 @@
     "99e19944-565d-48ed-aa77-902a01d8f2a1",
     "47a22176-a133-419d-a1f2-e82ba9538416",
     "84d6686e-bbb0-454b-a1f5-53a8e0dc7dcd",
-    "163050466726472b3f",
     "162994866447ef345c",
     "16517393477658ac6e",
     "16299486715b84051b"
