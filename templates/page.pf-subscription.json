@@ -302,6 +302,12 @@
           "settings": {
             "text": "<p>Choose how often you receive deliveries—monthly, quarterly, or twice a year. <\/p><p> <\/p>"
           }
+        },
+        "heading_YhbBjt": {
+          "type": "heading",
+          "settings": {
+            "heading": "FREE ADD-ON BOTTLES"
+          }
         }
       },
       "block_order": [
@@ -310,7 +316,8 @@
         "44f555e7-38d0-47f2-b4b2-d39c0d97b17e",
         "083dfa57-ecc1-4ea7-b398-81326ea9ed90",
         "5e933451-c335-45e2-8c22-be645c7170c0",
-        "67ee4205-4f2a-4390-a6c1-dee932223ca8"
+        "67ee4205-4f2a-4390-a6c1-dee932223ca8",
+        "heading_YhbBjt"
       ],
       "settings": {
         "reduce_spacing": true,
