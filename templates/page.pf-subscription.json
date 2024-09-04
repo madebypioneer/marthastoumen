@@ -308,6 +308,12 @@
           "settings": {
             "heading": "FREE ADD-ON BOTTLES"
           }
+        },
+        "text_n9qjj7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Add extra bottles to each delivery with no additional shipping charges. <br\/>That's right—your $20 flat rate shipping extends to additional bottles, too.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -317,7 +323,8 @@
         "083dfa57-ecc1-4ea7-b398-81326ea9ed90",
         "5e933451-c335-45e2-8c22-be645c7170c0",
         "67ee4205-4f2a-4390-a6c1-dee932223ca8",
-        "heading_YhbBjt"
+        "heading_YhbBjt",
+        "text_n9qjj7"
       ],
       "settings": {
         "reduce_spacing": true,
