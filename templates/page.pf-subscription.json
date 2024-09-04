@@ -176,6 +176,7 @@
         "47147142-c4ad-4f6a-8b52-1006ac622c77",
         "dd0a0820-71b5-4967-bd1f-f1a18f56e2ce"
       ],
+      "disabled": true,
       "settings": {
         "reduce_spacing": true,
         "reduce_top_spacing": false,
@@ -185,6 +186,7 @@
     },
     "84d6686e-bbb0-454b-a1f5-53a8e0dc7dcd": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "collection": "post-flirtation",
