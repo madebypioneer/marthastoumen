@@ -130,8 +130,9 @@
         "column_TPkrnA": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "image": "shopify:\/\/shop_images\/PFRose_Product_AndrewThomasLee.jpg",
+            "title": "POST FLIRTATION ROSÉ NV No. 3",
+            "text": "<p>Post Flirtation Rosé is bringing Hawaiian Punch energy, all grown up. As usual, this fruity friend doesn’t fail to delight with subtlety and substance. Encourage summer activities year round with this flamingo pink favorite.<\/p>"
           }
         }
       },
