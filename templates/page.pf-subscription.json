@@ -115,7 +115,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/LSPF_1500px.jpg",
-            "title": "POST FLIRTATION RED 2022",
+            "title": "POST FLIRTATION RED",
             "text": "<p>This concentrated kitchen chameleon carries our banner for California crowd-pleasers. Year after year, excellent sourcing and careful blending yield a heart-warming wine that’s bursting with juicy red fruit. Bring this joyous bottle into any bustling hearth and share amongst friends old and new.<\/p>"
           }
         },
@@ -147,8 +147,8 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
+        "button_label": "SHOP POST FLIRTATIONS",
+        "button_link": "shopify:\/\/collections\/post-flirtation",
         "swipe_on_mobile": false
       }
     },
