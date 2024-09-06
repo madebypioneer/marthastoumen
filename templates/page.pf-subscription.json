@@ -92,6 +92,7 @@
     },
     "featured_collection_GXNMDe": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "collection": "post-flirtation",
@@ -105,6 +106,48 @@
         "title": "Shop the Current Release",
         "collection": "spring-summer",
         "show_view_all": true
+      }
+    },
+    "multicolumn_wCdkGD": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_FFhiKJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LSPF_1500px.jpg",
+            "title": "POST FLIRTATION RED",
+            "text": "<p>This concentrated kitchen chameleon carries our banner for California crowd-pleasers. Year after year, excellent sourcing and careful blending yield a heart-warming wine that’s bursting with juicy red fruit. Bring this joyous bottle into any bustling hearth and share amongst friends old and new.<\/p>"
+          }
+        },
+        "column_pUGX6U": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "column_TPkrnA": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_FFhiKJ",
+        "column_pUGX6U",
+        "column_TPkrnA"
+      ],
+      "settings": {
+        "title": "MEET THE POST FLIRTATIONS",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
       }
     },
     "99e19944-565d-48ed-aa77-902a01d8f2a1": {
@@ -341,6 +384,7 @@
     "content_rAQHNk",
     "featured_collection_GXNMDe",
     "5868ae7e-5ff9-4f68-8414-2cd1c61bd07e",
+    "multicolumn_wCdkGD",
     "99e19944-565d-48ed-aa77-902a01d8f2a1",
     "47a22176-a133-419d-a1f2-e82ba9538416",
     "84d6686e-bbb0-454b-a1f5-53a8e0dc7dcd",
