@@ -122,8 +122,9 @@
         "column_pUGX6U": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "image": "shopify:\/\/shop_images\/LSPFW_1500px.jpg",
+            "title": "POST FLIRTATION WHITE 2023",
+            "text": "<p>This refreshing blend tastes like straight up lemonade served with a hint of citrahops. Lively aromas of ocean air mingle with a touch of lime zest for a libation that’s begging for sunshine and seaside vacations.<\/p>"
           }
         },
         "column_TPkrnA": {
