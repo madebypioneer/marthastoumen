@@ -50,7 +50,7 @@
         "bloom_commerce_bloom_subscription_app_section_jnnBMh": {
           "type": "shopify:\/\/apps\/bloom-commerce\/blocks\/bloom-subscription-app-section\/a1421136-f8f4-4099-a0bc-ffd3811b3b59",
           "settings": {
-            "enable_legacy_checkout_compatiblity": false,
+            "enable_legacy_checkout_compatiblity": true,
             "custom_css": ""
           }
         },
