@@ -47,6 +47,13 @@
           "settings": {
           }
         },
+        "bloom_commerce_bloom_subscription_app_section_fUjHAr": {
+          "type": "shopify:\/\/apps\/bloom-commerce\/blocks\/bloom-subscription-app-section\/a1421136-f8f4-4099-a0bc-ffd3811b3b59",
+          "settings": {
+            "enable_legacy_checkout_compatiblity": false,
+            "custom_css": ""
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -66,6 +73,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "bloom_commerce_bloom_subscription_app_section_fUjHAr",
         "buy_buttons",
         "description"
       ],
