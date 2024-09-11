@@ -1,9 +1,18 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "1630297194ef18551f": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Collection_header.jpg",
+        "image": "shopify:\/\/shop_images\/MS_spring2023_final_0012_1.jpg",
         "remove_top_spacing": true
       }
     },
