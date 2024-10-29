@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -48,7 +48,7 @@
           }
         },
         "bloom_commerce_bloom_subscription_app_section_fUjHAr": {
-          "type": "shopify:\/\/apps\/bloom-commerce\/blocks\/bloom-subscription-app-section\/a1421136-f8f4-4099-a0bc-ffd3811b3b59",
+          "type": "shopify://apps/bloom-commerce/blocks/bloom-subscription-app-section/a1421136-f8f4-4099-a0bc-ffd3811b3b59",
           "settings": {
             "enable_legacy_checkout_compatiblity": false,
             "custom_css": ""
@@ -106,6 +106,13 @@
       "settings": {
       }
     },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "Keep Exploring",
+        "content": "<p>There are no wrong turns when it comes to expanding your palate, stay curious!</p>"
+      }
+    },
     "163019609541e24af1": {
       "type": "spotify",
       "settings": {
@@ -120,7 +127,7 @@
           "type": "card",
           "settings": {
             "layout": "one_third",
-            "image": "shopify:\/\/shop_images\/DiasporaCo_BrandAssets_LogoSubtitle_FullColor.png",
+            "image": "shopify://shop_images/DiasporaCo_BrandAssets_LogoSubtitle_FullColor.png",
             "is_icon": true,
             "heading": "",
             "content": ""
@@ -135,14 +142,14 @@
         "b46f3675-5f60-4a6e-a76e-41447a08989d": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"https:\/\/www.diasporaco.com\/pages\/newsletter\" target=\"_blank\" title=\"Diaspora Co. newsletter sign up\">Click here to subscribe to the Diaspora Co. newsletter to stay in the know on seasonal recipes...trust us, it's a good one.<\/a><\/p>"
+            "text": "<p><a href=\"https://www.diasporaco.com/pages/newsletter\" target=\"_blank\" title=\"Diaspora Co. newsletter sign up\">Click here to subscribe to the Diaspora Co. newsletter to stay in the know on seasonal recipes...trust us, it's a good one.</a></p>"
           }
         },
         "79b44637-816f-46ea-b5db-dd5ac367d62a": {
           "type": "buttons",
           "settings": {
             "link_one_text": "KEEP READING IN OUR FIELD NOTES",
-            "link_one_page": "shopify:\/\/blogs\/field-notes\/whats-cooking-summer-sangria-with-diaspora-co",
+            "link_one_page": "shopify://blogs/field-notes/whats-cooking-summer-sangria-with-diaspora-co",
             "link_two_text": "",
             "link_two_page": ""
           }
@@ -180,14 +187,14 @@
         "162994917204089a3d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>This club makes our world go around so we want every release to feel special for you. Our club members receive a bottle of each new wine along with:<br\/><br\/>• First access to new vintages and special releases<\/p><p>• Limited edition artwork and thoughtful club goodies<\/p><p>• $30 flat rate shipping on all orders<\/p><p>• Tickets to release parties, popups and other events<\/p>"
+            "text": "<p>This club makes our world go around so we want every release to feel special for you. Our club members receive a bottle of each new wine along with:<br/><br/>• First access to new vintages and special releases</p><p>• Limited edition artwork and thoughtful club goodies</p><p>• $30 flat rate shipping on all orders</p><p>• Tickets to release parties, popups and other events</p>"
           }
         },
         "162994917204089a3d-2": {
           "type": "button",
           "settings": {
             "button_label": "LEARN MORE",
-            "button_link": "shopify:\/\/pages\/membership"
+            "button_link": "shopify://pages/membership"
           }
         }
       },
@@ -198,18 +205,11 @@
         "162994917204089a3d-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Three_of_Cups_credit_Ellian_Raffoul_243.jpg",
+        "image": "shopify://shop_images/Three_of_Cups_credit_Ellian_Raffoul_243.jpg",
         "mask": true,
         "wine_club": true,
         "thin": false,
         "layout": "image_first"
-      }
-    },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "heading": "Keep Exploring",
-        "content": "<p>There are no wrong turns when it comes to expanding your palate, stay curious!<\/p>"
       }
     }
   },
@@ -219,9 +219,9 @@
     "1630196035996deaae",
     "163019605020435d5e",
     "16301960799bced8b6",
+    "product-recommendations",
     "163019609541e24af1",
     "166118594459877aa0",
-    "162994917204089a3d",
-    "product-recommendations"
+    "162994917204089a3d"
   ]
 }
