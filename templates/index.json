@@ -1,27 +1,27 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "16461219304f28ed90": {
       "type": "video",
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/MARTHA_STOUMEN_WINE_2.185.1.jpg",
-        "video": "https:\/\/vimeo.com\/651772687",
+        "image": "shopify://shop_images/MARTHA_STOUMEN_WINE_2.185.1.jpg",
+        "video": "https://vimeo.com/651772687",
         "remove_top_spacing": false
       }
     },
     "1629423396520fe146": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Martha-Stoumen-Wines-Cartwheel_7ceeb836-7651-4c5f-8528-9855ed9ce1b1.jpg",
+        "image": "shopify://shop_images/Martha-Stoumen-Wines-Cartwheel_7ceeb836-7651-4c5f-8528-9855ed9ce1b1.jpg",
         "remove_top_spacing": true
       }
     },
@@ -29,7 +29,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured collection",
-        "collection": "fall-winter",
+        "collection": "natural-wine-gift-bundles-prints",
         "show_view_all": true
       }
     },
@@ -45,14 +45,14 @@
         "text_rmEVkL": {
           "type": "text",
           "settings": {
-            "text": "<p>Join us for a summer cellar tasting and stock up event! Taste through six wines, start your afternoon off with a spritz, and secure wines for summer while hanging with Martha and the team. We'll have light bites to snack on and a mix of reds, whites, and rosés to taste. It's been a while since we've done this and we can't wait to see you!<\/p>"
+            "text": "<p>Join us for a summer cellar tasting and stock up event! Taste through six wines, start your afternoon off with a spritz, and secure wines for summer while hanging with Martha and the team. We'll have light bites to snack on and a mix of reds, whites, and rosés to taste. It's been a while since we've done this and we can't wait to see you!</p>"
           }
         },
         "button_V6JbKT": {
           "type": "button",
           "settings": {
             "button_label": "GET TICKETS",
-            "button_link": "shopify:\/\/products\/ms-wines-open-house"
+            "button_link": "shopify://products/ms-wines-open-house"
           }
         }
       },
@@ -63,7 +63,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/Harvest2023_AlyssaMJulian_46.jpg",
+        "image": "shopify://shop_images/Harvest2023_AlyssaMJulian_46.jpg",
         "mask": false,
         "wine_club": false,
         "thin": false,
@@ -82,14 +82,14 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Martha Stoumen Wines was founded upon the desire to recapture a farming and winemaking culture that has all but faded away: a winemaking culture of patience. <\/p>"
+            "text": "<p>Martha Stoumen Wines was founded upon the desire to recapture a farming and winemaking culture that has all but faded away: a winemaking culture of patience. </p>"
           }
         },
         "button": {
           "type": "button",
           "settings": {
             "button_label": "Learn More",
-            "button_link": "shopify:\/\/pages\/team"
+            "button_link": "shopify://pages/team"
           }
         }
       },
@@ -99,7 +99,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/About-Us_November-2021-update.jpg",
+        "image": "shopify://shop_images/About-Us_November-2021-update.jpg",
         "mask": false,
         "wine_club": false,
         "thin": false,
@@ -156,7 +156,7 @@
         "162942358041d53832-0"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Home_Page_TemplateWine_Club_Banner.jpg",
+        "image": "shopify://shop_images/Home_Page_TemplateWine_Club_Banner.jpg",
         "mask": true,
         "wine_club": false,
         "thin": true,
@@ -176,9 +176,9 @@
           "type": "buttons",
           "settings": {
             "link_one_text": "Join Now",
-            "link_one_page": "shopify:\/\/pages\/membership",
+            "link_one_page": "shopify://pages/membership",
             "link_two_text": "Sign In",
-            "link_two_page": "https:\/\/martha-stoumen.myshopify.com\/account\/login"
+            "link_two_page": "https://martha-stoumen.myshopify.com/account/login"
           }
         }
       },
@@ -211,14 +211,14 @@
         "16294237544c521f73-1": {
           "type": "text",
           "settings": {
-            "text": "<p>This club makes our world go around so we want every release to feel special for you. Our club members receive a bottle of each new wine along with:<br\/><br\/>• First access to new vintages and special releases<\/p><p>• Limited edition artwork and thoughtful club goodies<\/p><p>• $30 flat rate shipping on all orders<\/p><p>• Tickets to release parties, popups and other events<\/p><p>• Exclusive $25\/bottle Post Flirtation pricing<\/p>"
+            "text": "<p>This club makes our world go around so we want every release to feel special for you. Our club members receive a bottle of each new wine along with:<br/><br/>• First access to new vintages and special releases</p><p>• Limited edition artwork and thoughtful club goodies</p><p>• $30 flat rate shipping on all orders</p><p>• Tickets to release parties, popups and other events</p><p>• Exclusive $25/bottle Post Flirtation pricing</p>"
           }
         },
         "16294237544c521f73-2": {
           "type": "button",
           "settings": {
             "button_label": "LEARN MORE",
-            "button_link": "shopify:\/\/pages\/membership"
+            "button_link": "shopify://pages/membership"
           }
         }
       },
@@ -229,7 +229,7 @@
         "16294237544c521f73-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/MS_event_100822_35mm_-_17.jpg",
+        "image": "shopify://shop_images/MS_event_100822_35mm_-_17.jpg",
         "mask": true,
         "wine_club": true,
         "thin": false,
@@ -256,7 +256,7 @@
         "162943294777e06a90-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Makers have been crafting wine without additives for centuries, so what's all of this noise about natural wine? The post-war industrial food movement birthed a huge shift in the way we farm and eat. Although not discussed as much, this movement also shifted the way we grow grapes and drink.<\/p><p><\/p><p>Small natural wine producers (that’s us!) are working to shift the tides back towards a gentler way of making wine, tending our soils, our vines, and our communities. Natural winemakers nurture the ever-growing voice of transparency and sustainability in our agricultural system. We craft wines that place Mother Nature first, using our knowledge and expertise to support healthy farming systems and delicious moments of connection.<\/p>"
+            "text": "<p>Makers have been crafting wine without additives for centuries, so what's all of this noise about natural wine? The post-war industrial food movement birthed a huge shift in the way we farm and eat. Although not discussed as much, this movement also shifted the way we grow grapes and drink.</p><p></p><p>Small natural wine producers (that’s us!) are working to shift the tides back towards a gentler way of making wine, tending our soils, our vines, and our communities. Natural winemakers nurture the ever-growing voice of transparency and sustainability in our agricultural system. We craft wines that place Mother Nature first, using our knowledge and expertise to support healthy farming systems and delicious moments of connection.</p>"
           }
         }
       },
@@ -265,7 +265,7 @@
         "162943294777e06a90-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Home_Page_TemplateGuide_to_natural_wines_0a206116-f6ca-406b-83fa-c12919af04cc.jpg",
+        "image": "shopify://shop_images/Home_Page_TemplateGuide_to_natural_wines_0a206116-f6ca-406b-83fa-c12919af04cc.jpg",
         "additional_top_spacing": true
       }
     },
@@ -276,30 +276,30 @@
           "type": "card",
           "settings": {
             "layout": "one_third",
-            "image": "shopify:\/\/shop_images\/Guide-to-Natural-Wines_Illustration-1_In-the-Vineyard.v2.png",
+            "image": "shopify://shop_images/Guide-to-Natural-Wines_Illustration-1_In-the-Vineyard.v2.png",
             "is_icon": true,
             "heading": "FROM THE VINEYARD",
-            "content": "<p>We enrich our soils with compost and allow beneficial insects to outcompete pests. We welcome plant growth below our vines: they serve as insect habitat in the spring and organic matter in the fall. Harvesting and pruning by hand ensures healthy grapes come into our cellar and long-lived vines remain in our fields.<\/p>"
+            "content": "<p>We enrich our soils with compost and allow beneficial insects to outcompete pests. We welcome plant growth below our vines: they serve as insect habitat in the spring and organic matter in the fall. Harvesting and pruning by hand ensures healthy grapes come into our cellar and long-lived vines remain in our fields.</p>"
           }
         },
         "dc14f402-6ca0-4344-9a74-2e4943153ce9": {
           "type": "card",
           "settings": {
             "layout": "one_third",
-            "image": "shopify:\/\/shop_images\/Guide-to-Natural-Wines_Illustration-2_In-the-Cellar.v2.png",
+            "image": "shopify://shop_images/Guide-to-Natural-Wines_Illustration-2_In-the-Cellar.v2.png",
             "is_icon": true,
             "heading": "TO THE CELLAR",
-            "content": "<p>We work with a light hand to allow the natural yeast and bacteria present on grape skins to kick-start each fermentation. Rather than adding tannin, acid, or stabilizing agents, we lean on the tannin and acid naturally present in our fruit. With careful aging we create vibrant, balanced wines.<\/p>"
+            "content": "<p>We work with a light hand to allow the natural yeast and bacteria present on grape skins to kick-start each fermentation. Rather than adding tannin, acid, or stabilizing agents, we lean on the tannin and acid naturally present in our fruit. With careful aging we create vibrant, balanced wines.</p>"
           }
         },
         "d86da602-817b-45d2-9509-d8a5b4c0c67a": {
           "type": "card",
           "settings": {
             "layout": "one_third",
-            "image": "shopify:\/\/shop_images\/Guide-to-Natural-Wines_Illustration-3_At-your-Table.v2.png",
+            "image": "shopify://shop_images/Guide-to-Natural-Wines_Illustration-3_At-your-Table.v2.png",
             "is_icon": true,
             "heading": "ON YOUR TABLE",
-            "content": "<p>Natural wines tend to jive with your body the same way thoughtfully prepared produce can make you feel abuzz from the inside out. The same desire to preserve the taste of late summer tomatoes in sauce or sun-warmed berries in jam drives us to create friendly, uplifting wines for your table.<\/p>"
+            "content": "<p>Natural wines tend to jive with your body the same way thoughtfully prepared produce can make you feel abuzz from the inside out. The same desire to preserve the taste of late summer tomatoes in sauce or sun-warmed berries in jam drives us to create friendly, uplifting wines for your table.</p>"
           }
         }
       },
@@ -321,19 +321,19 @@
         "96755e71-de8c-4651-844f-54c614444088": {
           "type": "blog",
           "settings": {
-            "article": "field-notes\/city-guides-longway-californias-guide-to-west-marin"
+            "article": "field-notes/city-guides-longway-californias-guide-to-west-marin"
           }
         },
         "89f2cb29-1c56-423b-9987-67d6b177996f": {
           "type": "blog",
           "settings": {
-            "article": "field-notes\/martha-stoumen-x-cos-giusto-occhipinti-tasting-at-the-punchdown-sebastopol"
+            "article": "field-notes/martha-stoumen-x-cos-giusto-occhipinti-tasting-at-the-punchdown-sebastopol"
           }
         },
         "f4def082-ddf6-46ae-9b3c-ec4dac0cef2b": {
           "type": "blog",
           "settings": {
-            "article": "field-notes\/spring-summer-2024-with-carolynn-haydu"
+            "article": "field-notes/spring-summer-2024-with-carolynn-haydu"
           }
         }
       },
@@ -344,7 +344,7 @@
       ],
       "settings": {
         "heading": "The Latest From",
-        "text": "<p>Nerdy tangents and rich conversations from the upstairs office. Grab a glass and stay a while. <\/p>",
+        "text": "<p>Nerdy tangents and rich conversations from the upstairs office. Grab a glass and stay a while. </p>",
         "blog": "field-notes"
       }
     }
