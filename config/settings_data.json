@@ -23,9 +23,8 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "THIS WEEKEND ONLY // 20% OFF ORDERS $100+! NO CODE NECESSARY",
+              "text": "20% OFF ORDERS $100+! /// NO CODE NECESSARY, ENDS MONDAY",
               "link": "shopify://collections/all"
             }
           }
