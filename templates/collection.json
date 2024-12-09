@@ -1,18 +1,18 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "1630297194ef18551f": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/MS_spring2023_final_0012_1.jpg",
+        "image": "shopify://shop_images/MS_spring2023_final_0012_1.jpg",
         "remove_top_spacing": true
       }
     },
@@ -26,7 +26,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "description": "<p>Listed here in order from lightest to boldest, each of our small production bottles offers sustained moments of connection and joy. Spend some time getting to know each wine year after year, or surprise yourself with a mixed case—there are no wrong turns!<\/p>",
+        "description": "<p>Listed here in order from lightest to boldest, each of our small production bottles offers sustained moments of connection and joy. Spend some time getting to know each wine year after year, or surprise yourself with a mixed case—there are no wrong turns!</p>",
         "products_per_page": 24,
         "image_ratio": "adapt",
         "show_secondary_image": false,
@@ -54,14 +54,14 @@
         "1630297257e2405d88-1": {
           "type": "text",
           "settings": {
-            "text": "<p>This club makes our world go around so we want every release to feel special for you. Our club members receive a bottle of each new wine along with:<\/p><p>• First access to new vintages and special releases<\/p><p>• Limited edition artwork and thoughtful club goodies<\/p><p>• $30 flat rate shipping on all orders<\/p><p>• Tickets to release parties, popups and other events<\/p>"
+            "text": "<p>This club makes our world go around so we want every release to feel special for you. Our club members receive a bottle of each new wine along with:</p><p>• First access to new vintages and special releases</p><p>• Limited edition artwork and thoughtful club goodies</p><p>• $30 flat rate shipping on all orders</p><p>• Tickets to release parties, popups and other events</p>"
           }
         },
         "1630297257e2405d88-2": {
           "type": "button",
           "settings": {
             "button_label": "Learn More",
-            "button_link": "shopify:\/\/pages\/membership"
+            "button_link": "shopify://pages/membership"
           }
         }
       },
@@ -72,7 +72,7 @@
         "1630297257e2405d88-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/FW23_Alyssa_M_Julian_36.jpg",
+        "image": "shopify://shop_images/FW23_Alyssa_M_Julian_36.jpg",
         "mask": true,
         "wine_club": true,
         "thin": false,
@@ -83,7 +83,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured collection",
-        "collection": "spring-summer",
+        "collection": "natural-wine-gift-bundles-prints",
         "show_view_all": true
       }
     }
