@@ -1,19 +1,19 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "164574871083a7450f": {
       "type": "video",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2023-01-17_at_11.23.57_AM.png",
-        "video": "https:\/\/vimeo.com\/789095279",
+        "image": "shopify://shop_images/Screen_Shot_2023-01-17_at_11.23.57_AM.png",
+        "video": "https://vimeo.com/789095279",
         "remove_top_spacing": true
       }
     },
@@ -29,7 +29,7 @@
         "24fc36ac-7244-4b31-af06-110364face7a": {
           "type": "text",
           "settings": {
-            "text": "<p>Our wine club brings the intimacy of local CSA shares to pleasure seekers and craft libation lovers around the country. From fresh and fruity special releases to age-worthy library gems, you'll get access to small production wines that you can only find online. Our seasonal shares offer the same warm fuzzy feeling that you get when diving into handcrafted bounty from your favorite farmer, baker and now, winemaker.<\/p><p><\/p><p><\/p>"
+            "text": "<p>Our wine club brings the intimacy of local CSA shares to pleasure seekers and craft libation lovers around the country. From fresh and fruity special releases to age-worthy library gems, you'll get access to small production wines that you can only find online. Our seasonal shares offer the same warm fuzzy feeling that you get when diving into handcrafted bounty from your favorite farmer, baker and now, winemaker.</p><p></p><p></p>"
           }
         },
         "06467a72-7c0b-4ca3-95ac-a784b6fe3276": {
@@ -46,21 +46,21 @@
           "type": "largeText",
           "disabled": true,
           "settings": {
-            "text": "<p><a href=\"\/collections\/wine-club-exclusive\" title=\"Club Exclusive\">NOW SHIPPING: FALL\/WINTER 2022 \/\/ CLICK HERE TO SHOP CURRENT CLUB EXCLUSIVES<\/a><\/p>"
+            "text": "<p><a href=\"/collections/wine-club-exclusive\" title=\"Club Exclusive\">NOW SHIPPING: FALL/WINTER 2022 // CLICK HERE TO SHOP CURRENT CLUB EXCLUSIVES</a></p>"
           }
         },
         "b6d3328f-1b1e-4efb-a0f9-7c3d61a3f40e": {
           "type": "largeText",
           "disabled": true,
           "settings": {
-            "text": "<p>SELECT A MEMBERSHIP BELOW TO GET STARTED WITH <br\/>THE FW22 SHIPMENT:<\/p>"
+            "text": "<p>SELECT A MEMBERSHIP BELOW TO GET STARTED WITH <br/>THE FW22 SHIPMENT:</p>"
           }
         },
         "44c4b46a-a5ab-462b-8bce-280b9b78e49f": {
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Select a membership below and get started with the FW22 shipment.<\/p>"
+            "text": "<p>Select a membership below and get started with the FW22 shipment.</p>"
           }
         }
       },
@@ -86,7 +86,7 @@
           "type": "largeText",
           "disabled": true,
           "settings": {
-            "text": "<p><a href=\"https:\/\/marthastoumen.com\/collections\/wine-club-exclusive\" title=\"Martha Stoumen Wine Club Exclusive Bottles\">NOW SHIPPING: FALL\/WINTER 2022 \/\/ CLICK HERE TO SHOP CLUB EXCLUSIVE WINES<\/a><\/p>"
+            "text": "<p><a href=\"https://marthastoumen.com/collections/wine-club-exclusive\" title=\"Martha Stoumen Wine Club Exclusive Bottles\">NOW SHIPPING: FALL/WINTER 2022 // CLICK HERE TO SHOP CLUB EXCLUSIVE WINES</a></p>"
           }
         }
       },
@@ -107,28 +107,47 @@
           "type": "text_card",
           "disabled": true,
           "settings": {
-            "card_width": "w-1\/2",
+            "card_width": "w-1/2",
             "club_level_name": "Two Ways to Play",
             "title_size": "3rem",
-            "level_description": "<p>Select a membership and get started with the FW22 shipment.<\/p>",
+            "level_description": "<p>Select a membership and get started with the FW22 shipment.</p>",
             "level_benefits": "",
             "text_align": "center"
+          }
+        },
+        "customer_choice_ALb3yb": {
+          "type": "customer_choice",
+          "disabled": true,
+          "settings": {
+            "level_variant_id": "114147",
+            "card_width": "w-1/3",
+            "club_level_name": "3 Bottle Club",
+            "title_size": "inherit",
+            "level_description": "",
+            "level_benefits": "ONE BOTTLE OF EACH NEW WINE PER SEASONAL SHIPMENT\n\n$30 FLAT RATE SHIPPING\n\nEXCLUSIVE POST FLIRTATION PRICING",
+            "club_price": "",
+            "text_align": "center",
+            "to_join": false,
+            "to_join_url": "",
+            "to_checkout": false,
+            "to_cart": false,
+            "join_button_label": "Join the 3 Bottle Club"
           }
         },
         "91b61098-5601-4834-9d18-aa2aa4be4580": {
           "type": "customer_choice",
           "settings": {
             "level_variant_id": "112313",
-            "card_width": "w-1\/3",
-            "image": "shopify:\/\/shop_images\/Alyssa-Holiday-68.jpg",
+            "card_width": "w-1/3",
+            "image": "shopify://shop_images/Alyssa-Holiday-68.jpg",
             "club_level_name": "6 Bottle Club",
             "title_size": "1.5rem",
-            "level_description": "<p>ONE BOTTLE OF EACH NEW WINE PER SEASONAL SHIPMENT<\/p><p>$30 FLAT RATE SHIPPING<\/p><p>EXCLUSIVE POST FLIRTATION PRICING<\/p>",
+            "level_description": "<p>ONE BOTTLE OF EACH NEW WINE PER SEASONAL SHIPMENT</p><p>$30 FLAT RATE SHIPPING</p><p>EXCLUSIVE POST FLIRTATION PRICING</p>",
             "level_benefits": "",
             "club_price": "$240 - $320 per shipment",
             "text_align": "center",
             "to_join": true,
-            "to_join_url": "\/pages\/6-bottle-membership-signup",
+            "to_join_url": "/pages/6-bottle-membership-signup",
             "to_checkout": false,
             "to_cart": false,
             "join_button_label": "Join the 6 Bottle Club"
@@ -138,16 +157,16 @@
           "type": "customer_choice",
           "settings": {
             "level_variant_id": "112314",
-            "card_width": "w-1\/3",
-            "image": "shopify:\/\/shop_images\/Alyssa-Holiday-31.jpg",
+            "card_width": "w-1/3",
+            "image": "shopify://shop_images/Alyssa-Holiday-31.jpg",
             "club_level_name": "12 Bottle Club",
             "title_size": "1.5rem",
-            "level_description": "<p>TWO BOTTLES OF EACH NEW WINE PER SEASONAL SHIPMENT<\/p><p>$30 FLAT RATE SHIPPING<\/p><p>EXCLUSIVE POST FLIRTATION PRICING<\/p><p>FULLY CUSTOMIZABLE SHIPMENTS<\/p>",
+            "level_description": "<p>TWO BOTTLES OF EACH NEW WINE PER SEASONAL SHIPMENT</p><p>$30 FLAT RATE SHIPPING</p><p>EXCLUSIVE POST FLIRTATION PRICING</p><p>FULLY CUSTOMIZABLE SHIPMENTS</p>",
             "level_benefits": "",
             "club_price": "$480 - $640 per shipment",
             "text_align": "center",
             "to_join": true,
-            "to_join_url": "\/pages\/12-bottle-membership-signup",
+            "to_join_url": "/pages/12-bottle-membership-signup",
             "to_checkout": false,
             "to_cart": false,
             "join_button_label": "Join the 12 Bottle Club"
@@ -156,6 +175,7 @@
       },
       "block_order": [
         "64facf5c-b76a-4d76-9813-6657a43fda7e",
+        "customer_choice_ALb3yb",
         "91b61098-5601-4834-9d18-aa2aa4be4580",
         "d5ed8a2c-fc62-45fe-b1b9-c52a039501b2"
       ],
@@ -174,7 +194,7 @@
         "ab863719-2c32-45f5-9c7d-88b07ed61151": {
           "type": "largeText",
           "settings": {
-            "text": "<p>2024: YOUR CLUB YEAR AHEAD<\/p><p>FEBRUARY: LOVER'S MONTH OPENS<\/p><p>MARCH\/APRIL: SS24 RELEASE<\/p><p>JULY: FERRAGOSTO, FAREWELL!<\/p><p>SEPTEMBER\/OCTOBER: FW24 RELEASE<\/p><p>NOVEMBER\/DECEMBER: GIFT SHOP OPENS WITH EARLY CLUB ACCESS<\/p>"
+            "text": "<p>2024: YOUR CLUB YEAR AHEAD</p><p>FEBRUARY: LOVER'S MONTH OPENS</p><p>MARCH/APRIL: SS24 RELEASE</p><p>JULY: FERRAGOSTO, FAREWELL!</p><p>SEPTEMBER/OCTOBER: FW24 RELEASE</p><p>NOVEMBER/DECEMBER: GIFT SHOP OPENS WITH EARLY CLUB ACCESS</p>"
           }
         },
         "55db0bb1-5e87-461c-89ab-7ff1dd2c4120": {
@@ -182,15 +202,15 @@
           "disabled": true,
           "settings": {
             "link_one_text": "Sign in",
-            "link_one_page": "https:\/\/marthastoumen.com\/account\/login",
+            "link_one_page": "https://marthastoumen.com/account/login",
             "link_two_text": "Join Now",
-            "link_two_page": "shopify:\/\/pages\/6-bottle-membership-signup"
+            "link_two_page": "shopify://pages/6-bottle-membership-signup"
           }
         },
         "06b0253c-5ec4-46c2-a0fc-8a943d96da34": {
           "type": "text",
           "settings": {
-            "text": "<h6>WHEN YOU JOIN THE CLUB TODAY, YOU WILL RECEIVE THE NEW FALL RELEASE IN SEPTEMBER 2024.<\/h6><p><\/p>"
+            "text": "<h6>WHEN YOU JOIN THE CLUB TODAY, YOU WILL RECEIVE THE NEW FALL RELEASE IN SEPTEMBER 2024.</h6><p></p>"
           }
         }
       },
@@ -226,7 +246,7 @@
     "16299483928fa50dfe": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Post_Flirtation_Header.jpg",
+        "image": "shopify://shop_images/Post_Flirtation_Header.jpg",
         "remove_top_spacing": true
       }
     },
@@ -242,16 +262,16 @@
         "47147142-c4ad-4f6a-8b52-1006ac622c77": {
           "type": "text",
           "settings": {
-            "text": "<p> <\/p><p>Club members receive special pricing of $25\/bottle on any of our Post Flirtation wines. Be sure to log in before you shop—discount automatically applied at checkout.<\/p>"
+            "text": "<p> </p><p>Club members receive special pricing of $25/bottle on any of our Post Flirtation wines. Be sure to log in before you shop—discount automatically applied at checkout.</p>"
           }
         },
         "dd0a0820-71b5-4967-bd1f-f1a18f56e2ce": {
           "type": "buttons",
           "settings": {
             "link_one_text": "Sign In",
-            "link_one_page": "https:\/\/marthastoumen.com\/account\/login",
+            "link_one_page": "https://marthastoumen.com/account/login",
             "link_two_text": "Join Now",
-            "link_two_page": "shopify:\/\/pages\/6-bottle-membership-signup"
+            "link_two_page": "shopify://pages/6-bottle-membership-signup"
           }
         }
       },
@@ -281,28 +301,28 @@
         "8b5b8866-b32a-4092-8cf7-c8e614399ee0": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/PF-addition-Guide_to_Natural_Wines_Illustration_3_At_your_Table.png",
+            "image": "shopify://shop_images/PF-addition-Guide_to_Natural_Wines_Illustration_3_At_your_Table.png",
             "text": "CLUB-EXCLUSIVE POST FLIRTATION PRICING"
           }
         },
         "c1a03499-653c-4f56-a33e-247c94541049": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Illustration__30-flat-rate-shipping-on-all-orders.png",
+            "image": "shopify://shop_images/Illustration__30-flat-rate-shipping-on-all-orders.png",
             "text": "$30 FLAT RATE SHIPPING YEAR ROUND"
           }
         },
         "163050466726472b3f-0": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Illustration_First-access-to-new-vintages-and-special-releases.png",
+            "image": "shopify://shop_images/Illustration_First-access-to-new-vintages-and-special-releases.png",
             "text": "FIRST ACCESS TO ALL WINE & EXCLUSIVE ACCESS TO LIMITED RELEASES"
           }
         },
         "59690b09-8c5b-400b-8a69-b8643d8466b2": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Illustration_Tickets-to-release-parties_-popups-and-other-events.png",
+            "image": "shopify://shop_images/Illustration_Tickets-to-release-parties_-popups-and-other-events.png",
             "text": "TICKETS TO PARTIES, POP-UPS, & EVENTS"
           }
         }
@@ -316,7 +336,7 @@
       "settings": {
         "preheading": "Community Supported Wine Club",
         "heading": "Come On In",
-        "content": "<p>This club makes our world go around, so it's important to us that you feel special. Expect goodies in your seasonal releases and perks throughout the year. <\/p>"
+        "content": "<p>This club makes our world go around, so it's important to us that you feel special. Expect goodies in your seasonal releases and perks throughout the year. </p>"
       }
     },
     "162994866447ef345c": {
@@ -337,7 +357,7 @@
         "162994866447ef345c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>This fresh summer release brings three distinct expressions of our favorite fruit. Piquettes from the second pressings of grapeskins and stems, spritzer from a grape based spirit, and two savory summer wines keep you lifted through the season's sweltering days. Plus, club members receive $25 flat rate shipping year round!<\/p>"
+            "text": "<p>This fresh summer release brings three distinct expressions of our favorite fruit. Piquettes from the second pressings of grapeskins and stems, spritzer from a grape based spirit, and two savory summer wines keep you lifted through the season's sweltering days. Plus, club members receive $25 flat rate shipping year round!</p>"
           }
         }
       },
@@ -348,7 +368,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/MS_summer2022_final_0013.jpg",
+        "image": "shopify://shop_images/MS_summer2022_final_0013.jpg",
         "mask": true,
         "wine_club": false,
         "thin": false,
@@ -367,7 +387,7 @@
         "6326a1a5-63fd-4533-a740-1b5d5ff8b527": {
           "type": "text",
           "settings": {
-            "text": "<p>Please note we cannot ship to the following states: Alabama, Arkansas, Delaware, North Dakota, Rhode Island and Utah. Flat rate shipping does not apply to members in Hawaii and Alaska.<br\/><br\/>Live near a state border? We invite you to consider shipping to a nearby FedEx location to hold your wines for pickup.<\/p>"
+            "text": "<p>Please note we cannot ship to the following states: Alabama, Arkansas, Delaware, North Dakota, Rhode Island and Utah. Flat rate shipping does not apply to members in Hawaii and Alaska.<br/><br/>Live near a state border? We invite you to consider shipping to a nearby FedEx location to hold your wines for pickup.</p>"
           }
         }
       },
@@ -395,7 +415,7 @@
         "788e9fb3-2ee0-4bb8-be05-a2246a3fc567": {
           "type": "text",
           "settings": {
-            "text": "<p>It's one of our love languages, too. On the join page, just select <em>\"Give this membership as a gift.\"<\/em><\/p><p><\/p><p><em>  <\/em><\/p><p><\/p>"
+            "text": "<p>It's one of our love languages, too. On the join page, just select <em>\"Give this membership as a gift.\"</em></p><p></p><p><em>  </em></p><p></p>"
           }
         },
         "44f555e7-38d0-47f2-b4b2-d39c0d97b17e": {
@@ -407,7 +427,7 @@
         "083dfa57-ecc1-4ea7-b398-81326ea9ed90": {
           "type": "text",
           "settings": {
-            "text": "<p>Please note we cannot ship to Alabama, Arkansas, Delaware, North Dakota, Rhode Island and Utah. If you live near a state border we invite you to consider shipping to a nearby FedEx location to hold your wines for pickup.<\/p><p><\/p><p>Flat rate shipping does not apply to members in Hawaii and Alaska. <\/p><p><\/p>"
+            "text": "<p>Please note we cannot ship to Alabama, Arkansas, Delaware, North Dakota, Rhode Island and Utah. If you live near a state border we invite you to consider shipping to a nearby FedEx location to hold your wines for pickup.</p><p></p><p>Flat rate shipping does not apply to members in Hawaii and Alaska. </p><p></p>"
           }
         },
         "5e933451-c335-45e2-8c22-be645c7170c0": {
@@ -419,7 +439,7 @@
         "67ee4205-4f2a-4390-a6c1-dee932223ca8": {
           "type": "text",
           "settings": {
-            "text": "<p>Check out our <a href=\"\/pages\/faq\" title=\"FAQ\"><span style=\"text-decoration:underline\">FAQs Page<\/span><\/a>.<\/p>"
+            "text": "<p>Check out our <a href=\"/pages/faq\" title=\"FAQ\"><span style=\"text-decoration:underline\">FAQs Page</span></a>.</p>"
           }
         }
       },
