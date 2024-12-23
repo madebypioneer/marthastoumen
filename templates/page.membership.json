@@ -127,8 +127,8 @@
             "level_benefits": "ONE BOTTLE OF EACH NEW WINE PER SEASONAL SHIPMENT\n\n$30 FLAT RATE SHIPPING\n\nEXCLUSIVE POST FLIRTATION PRICING",
             "club_price": "",
             "text_align": "center",
-            "to_join": false,
-            "to_join_url": "",
+            "to_join": true,
+            "to_join_url": "/pages/3-membership-sign-up",
             "to_checkout": false,
             "to_cart": false,
             "join_button_label": "Join the 3 Bottle Club"
