@@ -40,9 +40,9 @@
       "settings": {
         "heading": "Member information",
         "club_level": "club-582",
-        "welcome_page_path": "/pages/6-bottle-welcome",
+        "welcome_page_path": "/pages/3-membership-welcome",
         "payment_note": "",
-        "button_label": "Join the 6 Bottle Club",
+        "button_label": "Join the 3 Bottle Club",
         "button_loading_label": "Creating your account...",
         "apply_default_form_styles": false,
         "button_size": "medium",
