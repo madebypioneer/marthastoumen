@@ -29,7 +29,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured collection",
-        "collection": "natural-wine-gift-bundles-prints",
+        "collection": "lovers-corner-natural-wine-gifts",
         "show_view_all": true
       }
     },
@@ -108,8 +108,7 @@
     },
     "1629481912abcaba07": {
       "type": "press-marquee",
-      "settings": {
-      }
+      "settings": {}
     },
     "1630195896c1987861": {
       "type": "featured-collection",
