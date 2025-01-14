@@ -83,7 +83,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured collection",
-        "collection": "natural-wine-gift-bundles-prints",
+        "collection": "all",
         "show_view_all": true
       }
     }
