@@ -320,26 +320,26 @@
         "96755e71-de8c-4651-844f-54c614444088": {
           "type": "blog",
           "settings": {
-            "article": "field-notes/how-to-enjoy-a-vertical"
-          }
-        },
-        "89f2cb29-1c56-423b-9987-67d6b177996f": {
-          "type": "blog",
-          "settings": {
-            "article": "field-notes/whats-cooking-shingled-sweet-potatoes-with-harissa"
+            "article": "field-notes/lovers-corner-martha-stoumen-and-jon-patch"
           }
         },
         "f4def082-ddf6-46ae-9b3c-ec4dac0cef2b": {
           "type": "blog",
           "settings": {
-            "article": "field-notes/city-guides-ally-and-caseys-guide-to-echo-park"
+            "article": "field-notes/lovers-corner-nick-schwanz-and-spencer-scott"
+          }
+        },
+        "89f2cb29-1c56-423b-9987-67d6b177996f": {
+          "type": "blog",
+          "settings": {
+            "article": "field-notes/ithe-lovers-corner-geneva-ryan-theredwood"
           }
         }
       },
       "block_order": [
         "96755e71-de8c-4651-844f-54c614444088",
-        "89f2cb29-1c56-423b-9987-67d6b177996f",
-        "f4def082-ddf6-46ae-9b3c-ec4dac0cef2b"
+        "f4def082-ddf6-46ae-9b3c-ec4dac0cef2b",
+        "89f2cb29-1c56-423b-9987-67d6b177996f"
       ],
       "settings": {
         "heading": "The Latest From",
