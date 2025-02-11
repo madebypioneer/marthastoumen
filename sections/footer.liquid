@@ -81,13 +81,14 @@
                   <input
                           type="text"
                           name="contact[first_name]"
+                          id="contact[first_name]"
                           value="{{ form.first_name }}"
                           placeholder="{{ 'newsletter.first_name' | t }}"
                           class="field__input"
                           style="display: block;"
                           required
                   />
-                  <label for="first-name" class="field__label">
+                  <label for="contact[first_name]" class="field__label">
                     First name
                   </label>
                 </div>
@@ -98,21 +99,22 @@
                   <input
                           type="text"
                           name="contact[last_name]"
+                          id="contact[last_name]"
                           value="{{ form.last_name }}"
                           placeholder="{{ 'newsletter.last_name' | t }}"
                           class="field__input"
                           style="display: block;"
                           required
                   />
-                  <label for="last-name" class="field__label">Last name</label>
+                  <label for="contact[last_name]" class="field__label">Last name</label>
                 </div>
               </div>
 
                 <div class="w-full lg:w-2/3 px-16 newsletter-form__field-wrapper hidden" data-newsletter-input>
                   <div class="field">
                     <input type="hidden" name="contact[accepts_marketing]" value="" />
-                    <input type="checkbox" name="contact[accepts_marketing]" required />
-                    <label for="accepts-marketing">{{ section.settings.accepts_marketing }}</label>
+                    <input type="checkbox" id="contact[accepts_marketing]" name="contact[accepts_marketing]" required />
+                    <label for="contact[accepts_marketing]">{{ section.settings.accepts_marketing }}</label>
                   </div>
               </div>
 
