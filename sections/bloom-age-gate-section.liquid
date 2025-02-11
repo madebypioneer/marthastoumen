@@ -326,7 +326,7 @@ document.addEventListener('shopify:section:unload', function() {
 {%- endif -%}
 
 {% if section.settings.enable and is_page_gated %}
-  <div id="bloom-age-gate-background" role="dialog" class="uk-modal-full">
+  <div id="bloom-age-gate-background" role="dialog" class="uk-modal-full" aria-labeledby="bloom-age-gate-prompt">
       <div class="uk-modal-dialog">
           <div class="uk-grid-collapse uk-child-width-1-1 uk-flex-middle" uk-grid>
               <div class="uk-background-cover" style="background-color: {{ section.settings.background }}; {% if section.settings.background_image %}background-image: url({{ section.settings.background_image | img_url: 'master' }}); background-repeat: no-repeat;{% endif %}" uk-height-viewport></div>
@@ -334,7 +334,7 @@ document.addEventListener('shopify:section:unload', function() {
       </div>
   </div>
 
-  <div id="bloom-age-gate-foreground" role="dialog" class="Bloom__AgeGate uk-flex-top">
+  <div id="bloom-age-gate-foreground" role="dialog" class="Bloom__AgeGate uk-flex-top" aria-label="Bloom Age Gate Background" aria-labeledby="bloom-age-gate-prompt">
       <div class="Bloom__AgeGate__Dialog uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center uk-card uk-card-hover">
           {% if section.settings.header_image %}
             <img src="{{ section.settings.header_image | img_url: 'x400' }}" height="{{ section.settings.header_image_size }}" alt="{{ section.settings.header_image.alt }}" class="Bloom__AgeGate__HeaderImage uk-align-center uk-margin-bottom" />
