@@ -24,7 +24,7 @@
     </div>
     {%- if section.settings.show_view_all -%}
       <p class="pt-40">
-        <a href="{{ section.settings.collection.url }}" class="button--text button--text-small button--text-dark">
+        <a href="{{ section.settings.collection.url }}" class="button--text button--text-small button--text-dark" aria-label="View All {{ section.settings.collection.title | escape }}">
           {{ 'sections.featured_collection.view_all' | t }}
           <span class="arrow"></span>
         </a>
