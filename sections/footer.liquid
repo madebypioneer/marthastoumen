@@ -294,7 +294,7 @@
             <li class="list-social__item" style="top: 2px; position: relative;">
               <a href="matilto:{{ shop.email }}" class="link link--text list-social__link" aria-describedby="a11y-external-message">
 	      	<svg height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="M0 0h24v24H0Z"/><g stroke-linecap="round" stroke-width="1.5" stroke="#30292F" fill="none" stroke-linejoin="round"><path d="M4.636 5.045h14.727c.9 0 1.63.73 1.63 1.63v10.63c0 .9-.74 1.63-1.64 1.63H4.62c-.903 0-1.64-.74-1.64-1.64V6.65c0-.91.73-1.64 1.63-1.64Z"/><path d="M3.11 6.075l7.69 5.5c.69.49 1.62.49 2.32 0l7.73-5.519"/></g></g></svg>
-                <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+                <span class="visually-hidden">{{ shop.email }}</span>
               </a>
             </li>
           {%- endif -%}
