@@ -21,8 +21,7 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "subtitle": {
           "type": "text",
@@ -33,8 +32,7 @@
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -44,8 +42,7 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "bloom_commerce_bloom_subscription_app_section_fUjHAr": {
           "type": "shopify://apps/bloom-commerce/blocks/bloom-subscription-app-section/a1421136-f8f4-4099-a0bc-ffd3811b3b59",
@@ -62,8 +59,7 @@
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -92,8 +88,7 @@
     },
     "1630196035996deaae": {
       "type": "product-marthas-notes",
-      "settings": {
-      }
+      "settings": {}
     },
     "163019605020435d5e": {
       "type": "product-specifications",
@@ -103,8 +98,7 @@
     },
     "16301960799bced8b6": {
       "type": "product-gallery",
-      "settings": {
-      }
+      "settings": {}
     },
     "product-recommendations": {
       "type": "product-recommendations",
@@ -194,6 +188,7 @@
           "type": "button",
           "settings": {
             "button_label": "LEARN MORE",
+            "button_reader_label": "Learn More About The Benefits Of Our Wine Club",
             "button_link": "shopify://pages/membership"
           }
         }
