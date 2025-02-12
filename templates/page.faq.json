@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "16294828723a66f779": {
@@ -15,42 +24,42 @@
           "type": "faq",
           "settings": {
             "heading": "Where can I buy your wines near me?",
-            "content": "<p>Please visit our <a href=\"\/pages\/stockists\" title=\"Stockists\">Stockists<\/a> page to see where you can find our wines locally!<\/p>"
+            "content": "<p>Please visit our <a href=\"/pages/stockists\" title=\"Stockists\">Stockists</a> page to see where you can find our wines locally!</p>"
           }
         },
         "512e9d22-a951-446a-ab14-6cefd7728704": {
           "type": "faq",
           "settings": {
             "heading": "Do you have a tasting room? Can I visit?",
-            "content": "<p>Martha Stoumen Wines does not have a tasting room. If you find yourself in the Sebastopol area and would like to order any of our wines for pick up, our friends at the Pax tasting room kindly let us use them as a pick up point for pre-orders. <\/p><p>To order Martha Stoumen’s wines for pick up, please place an order on our website at least 2 business days ahead of time. You’ll receive an email with instructions as soon as they’re ready to pick up! If you’d like to stick around the Pax tasting room, they offer 2-for-1 tastings to all of our friends. Want to make a day of it and stop by some of our favorite spots on the way? Check out our <a href=\"https:\/\/www.instagram.com\/marthastoumen\/guides\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/marthastoumen\/guides\/\">summer road trip guides<\/a>.<\/p>"
+            "content": "<p>Martha Stoumen Wines does not currently have a tasting room. </p>"
           }
         },
         "2b7b8a3e-5490-42e9-a635-b3cb9feb5a0c": {
           "type": "faq",
           "settings": {
-            "heading": "I’m a sommelier \/ have a super cool wine shop \/ want to serve your wines at my restaurant. Who do I talk to?",
-            "content": "<p>Please visit our <a href=\"\/pages\/distribution\" title=\"Distribution\"><span style=\"text-decoration:underline\">Industry<\/span><\/a> page to see a list of all of the distributors and importers we work with across the country and around the world.<\/p>"
+            "heading": "I’m a sommelier / have a super cool wine shop / want to serve your wines at my restaurant. Who do I talk to?",
+            "content": "<p>Please visit our <a href=\"/pages/distribution\" title=\"Distribution\"><span style=\"text-decoration:underline\">Industry</span></a> page to see a list of all of the distributors and importers we work with across the country and around the world.</p>"
           }
         },
         "417164ae-fd31-4711-95d4-31ac60604c99": {
           "type": "faq",
           "settings": {
             "heading": "Are your wines vegan?",
-            "content": "<p>Yes, our wines themselves are vegan, but we’ve recently started using a cork that uses beeswax instead of plastic. If you’d like to know which of our wines use a beeswax free closure, please reach out to Claire at <a href=\"mailto:info@marthastoumen.com\"><span style=\"text-decoration:underline\">info@marthastoumen.com<\/span><\/a> and she’ll give you the lowdown! <\/p>"
+            "content": "<p>Yes, our wines themselves are vegan, but we’ve recently started using a cork that uses beeswax instead of plastic. If you’d like to know which of our wines use a beeswax free closure, please reach out to Claire at <a href=\"mailto:info@marthastoumen.com\"><span style=\"text-decoration:underline\">info@marthastoumen.com</span></a> and she’ll give you the lowdown! </p>"
           }
         },
         "2b4bd066-e4f3-46bf-a638-d4ad85f967a1": {
           "type": "faq",
           "settings": {
             "heading": "A lot of your wines aren’t certified organic. Why is that?",
-            "content": "<p>Some of the vineyards we work with are certified organic, and others do not go through the certification process. We are committed to farming in a way that works with nature, and <a href=\"https:\/\/marthastoumen.com\/blog\/2021\/4\/9\/working-with-nature-the-natural-wine-movement\"><span style=\"text-decoration:underline\">dedicated to the natural wine movement’s goals of greater transparency and environmental responsibility.<\/span><\/a> If you’d like to know more about the specific farming practices at a vineyard we work with, please take a look at our <a href=\"\/blogs\/tech-sheets\" title=\"Tech Sheets\"><span style=\"text-decoration:underline\">tech sheets<\/span><\/a>. <br\/><br\/>Martha does not go for certification on the vineyards that she farms herself. Beyond the expense, organic farming rules don’t really address issues like carbon sequestration, erosion control, biodiversity, and soil health as a holistic system. <br\/><\/p><p>Many farmers who work organically will certify some of their vineyards but not others. Some, like Hawkeye Vineyard (where <a href=\"\/blogs\/news\/honeymoon-2019\" title=\"Honeymoon 2019\"><span style=\"text-decoration:underline\">Honeymoon’s Chardonnay<\/span><\/a><span style=\"text-decoration:underline\"> <\/span>is grown), go for less cost prohibitive certifications like the “<a href=\"https:\/\/www.fishfriendlyfarming.org\/about\"><span style=\"text-decoration:underline\">Fish Friendly Farming<\/span><\/a>” program (administered by the California Land Stewardship Institute) that shows a dedication to managing runoff by using cover crops and other regenerative farming practices.<\/p>"
+            "content": "<p>Some of the vineyards we work with are certified organic, and others do not go through the certification process. We are committed to farming in a way that works with nature, and <a href=\"https://marthastoumen.com/blog/2021/4/9/working-with-nature-the-natural-wine-movement\"><span style=\"text-decoration:underline\">dedicated to the natural wine movement’s goals of greater transparency and environmental responsibility.</span></a> If you’d like to know more about the specific farming practices at a vineyard we work with, please take a look at our <a href=\"/blogs/tech-sheets\" title=\"Tech Sheets\"><span style=\"text-decoration:underline\">tech sheets</span></a>. <br/><br/>Martha does not go for certification on the vineyards that she farms herself. Beyond the expense, organic farming rules don’t really address issues like carbon sequestration, erosion control, biodiversity, and soil health as a holistic system. <br/></p><p>Many farmers who work organically will certify some of their vineyards but not others. Some, like Hawkeye Vineyard (where <a href=\"/blogs/news/honeymoon-2019\" title=\"Honeymoon 2019\"><span style=\"text-decoration:underline\">Honeymoon’s Chardonnay</span></a><span style=\"text-decoration:underline\"> </span>is grown), go for less cost prohibitive certifications like the “<a href=\"https://www.fishfriendlyfarming.org/about\"><span style=\"text-decoration:underline\">Fish Friendly Farming</span></a>” program (administered by the California Land Stewardship Institute) that shows a dedication to managing runoff by using cover crops and other regenerative farming practices.</p>"
           }
         },
         "71da2f73-5f18-4ba6-8ef6-0d59d71b4814": {
           "type": "faq",
           "settings": {
             "heading": "I want to work with you and learn everything there is to know about grapes!",
-            "content": "<p>Every year, we have a wonderful crew of harvest interns who help us with all of the work that goes into turning grapes into wine. We make wine out of a shared space in Sebastopol, <a href=\"https:\/\/www.paxwine.com\/\" target=\"_blank\" title=\"https:\/\/www.paxwine.com\/\"><span style=\"text-decoration:underline\">Pax Mahle Wines<\/span><\/a>, and work alongside Carlo Mondavi (<a href=\"https:\/\/www.raenwinery.com\/\" target=\"_blank\" title=\"https:\/\/www.raenwinery.com\/\"><span style=\"text-decoration:underline\">RAEN<\/span><\/a>), Patrick Capiello (<a href=\"https:\/\/www.monteriocellars.com\/\" target=\"_blank\" title=\"https:\/\/www.monteriocellars.com\/\"><span style=\"text-decoration:underline\">Monte Rio<\/span><\/a>), and Rosalind Reynolds (<a href=\"https:\/\/www.emmewines.com\/\" target=\"_blank\" title=\"https:\/\/www.emmewines.com\/\"><span style=\"text-decoration:underline\">Emme Wines<\/span><\/a>). We all share a group of interns and work together as a team during harvest. Rosalind, Pax’s assistant winemaker, is responsible for putting together our harvest crew - we at Martha Stoumen Wines do not do any of the hiring for harvest, but pass along promising candidates to Rosalind. Please email your resume to us at <a href=\"mailto:careers@marthastoumen.com\"><span style=\"text-decoration:underline\">careers@marthastoumen.com<\/span><\/a> if you’d like to be considered for a harvest intern position! We review resumes from January to April of each year, with positions starting in August or so. <\/p>"
+            "content": "<p>Every year, we have a wonderful crew of harvest interns who help us with all of the work that goes into turning grapes into wine. We make wine out of a shared space in Sebastopol, <a href=\"https://www.paxwine.com/\" target=\"_blank\" title=\"https://www.paxwine.com/\"><span style=\"text-decoration:underline\">Pax Mahle Wines</span></a>, and work alongside Carlo Mondavi (<a href=\"https://www.raenwinery.com/\" target=\"_blank\" title=\"https://www.raenwinery.com/\"><span style=\"text-decoration:underline\">RAEN</span></a>), Patrick Capiello (<a href=\"https://www.monteriocellars.com/\" target=\"_blank\" title=\"https://www.monteriocellars.com/\"><span style=\"text-decoration:underline\">Monte Rio</span></a>), and Rosalind Reynolds (<a href=\"https://www.emmewines.com/\" target=\"_blank\" title=\"https://www.emmewines.com/\"><span style=\"text-decoration:underline\">Emme Wines</span></a>). We all share a group of interns and work together as a team during harvest. Rosalind, Pax’s assistant winemaker, is responsible for putting together our harvest crew - we at Martha Stoumen Wines do not do any of the hiring for harvest, but pass along promising candidates to Rosalind. Please email your resume to us at <a href=\"mailto:careers@marthastoumen.com\"><span style=\"text-decoration:underline\">careers@marthastoumen.com</span></a> if you’d like to be considered for a harvest intern position! We review resumes from January to April of each year, with positions starting in August or so. </p>"
           }
         }
       },
@@ -75,42 +84,42 @@
           "type": "faq",
           "settings": {
             "heading": "I gave you the wrong address! How do I reroute a shipment?",
-            "content": "<p>There is a $20 fee for rerouting shipments if the shipper is able to do it (sometimes they can’t, we’re sorry!). Please email us at <a href=\"mailto:info@marthstoumen.com\"><span style=\"text-decoration:underline\">info@marthstoumen.com<\/span><\/a> with the address you’d like your package to be rerouted to and we will try to get it diverted.<em> <\/em><\/p><p>Due to alcohol shipping laws, it is not possible to reroute packages across state lines: the wine will need to return to us in Sonoma and be re-shipped. For all packages that are returned to us, we charge $15 plus the cost of reshipment. <\/p>"
+            "content": "<p>There is a $20 fee for rerouting shipments if the shipper is able to do it (sometimes they can’t, we’re sorry!). Please email us at <a href=\"mailto:info@marthstoumen.com\"><span style=\"text-decoration:underline\">info@marthstoumen.com</span></a> with the address you’d like your package to be rerouted to and we will try to get it diverted.<em> </em></p><p>Due to alcohol shipping laws, it is not possible to reroute packages across state lines: the wine will need to return to us in Sonoma and be re-shipped. For all packages that are returned to us, we charge $15 plus the cost of reshipment. </p>"
           }
         },
         "ee7e3a83-fe85-43d2-917b-3e711d737545": {
           "type": "faq",
           "settings": {
             "heading": "I received a notice that there was a delivery attempt, but I’m out of town. What do I do?",
-            "content": "<p>Using the tracking number emailed to you, please reach out to the shipper (FedEx or GSO) to request that they hold the package at a pick up location, or that they reattempt after your return.<\/p><p><\/p><p>You can set up a free FedEx delivery manager account here <a href=\"https:\/\/www.fedex.com\/en-us\/delivery-manager.html\"><span style=\"text-decoration:underline\">https:\/\/www.fedex.com\/en-us\/delivery-manager.html<\/span><\/a> to easily hold your package. <\/p>"
+            "content": "<p>Using the tracking number emailed to you, please reach out to the shipper (FedEx or GSO) to request that they hold the package at a pick up location, or that they reattempt after your return.</p><p></p><p>You can set up a free FedEx delivery manager account here <a href=\"https://www.fedex.com/en-us/delivery-manager.html\"><span style=\"text-decoration:underline\">https://www.fedex.com/en-us/delivery-manager.html</span></a> to easily hold your package. </p>"
           }
         },
         "09710330-b7ad-4960-84e8-9f143fdee905": {
           "type": "faq",
           "settings": {
             "heading": "How do I see which wines I’ve ordered?",
-            "content": "<p><strong>Are you a wine club member?<\/strong> If yes,  just <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\"><span style=\"text-decoration:underline\">login to your account<\/span><\/a> to see your order history. Haven't logged into your wine club account since before September 7th, 2021?  You'll need to find the email we sent you with an \"activate your account\" button to create a new password. If the link has expired (it's only good for 72 hours), just email us at info@marthastoumen.com to have us send you a new one!<\/p><p><strong>Not a wine club member?<\/strong> To see your order history, you’ll need to <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/register\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/register\"><span style=\"text-decoration:underline\">create an account<\/span><\/a> using the email you used to place your order. All of your order history and tracking information will be in your new account!<\/p>"
+            "content": "<p><strong>Are you a wine club member?</strong> If yes,  just <a href=\"https://martha-stoumen.myshopify.com/account/login\" title=\"https://martha-stoumen.myshopify.com/account/login\"><span style=\"text-decoration:underline\">login to your account</span></a> to see your order history. Haven't logged into your wine club account since before September 7th, 2021?  You'll need to find the email we sent you with an \"activate your account\" button to create a new password. If the link has expired (it's only good for 72 hours), just email us at info@marthastoumen.com to have us send you a new one!</p><p><strong>Not a wine club member?</strong> To see your order history, you’ll need to <a href=\"https://martha-stoumen.myshopify.com/account/register\" title=\"https://martha-stoumen.myshopify.com/account/register\"><span style=\"text-decoration:underline\">create an account</span></a> using the email you used to place your order. All of your order history and tracking information will be in your new account!</p>"
           }
         },
         "a51772d6-95ab-4116-b085-fd30075982f3": {
           "type": "faq",
           "settings": {
             "heading": "I haven’t received tracking information yet. When is my wine coming?",
-            "content": "<p>You’ll receive an email with tracking information as soon as your order is ready to ship. We’re a very small team, and so it can take a few days before your order is picked up by FedEx. <\/p><p>Most orders that are received after 11am PST on Thursday will be sent out the following Monday, and orders received after 11am PST on Friday will be sent the following Tuesday. <\/p><p>If your wine is being shipped via FedEx Cold Chain, tracking information won't be available until a day or two before delivery. Cold Chain packages are prepared every Friday and delivered a week and a half later on Tuesday or Wednesday, depending on your location.<\/p>"
+            "content": "<p>You’ll receive an email with tracking information as soon as your order is ready to ship. We’re a very small team, and so it can take a few days before your order is picked up by FedEx. </p><p>Most orders that are received after 11am PST on Thursday will be sent out the following Monday, and orders received after 11am PST on Friday will be sent the following Tuesday. </p><p>If your wine is being shipped via FedEx Cold Chain, tracking information won't be available until a day or two before delivery. Cold Chain packages are prepared every Friday and delivered a week and a half later on Tuesday or Wednesday, depending on your location.</p>"
           }
         },
         "7dbb2b15-04ab-4d01-8c53-8050574b631c": {
           "type": "faq",
           "settings": {
             "heading": "Why can’t you ship to my state?",
-            "content": "<p>We are able to ship to all but 7 states (Alabama, Arkansas, Delaware, Hawaii, Kentucky, Rhode Island, and Utah). If you live in Mississippi, you’ll need to email us at info@marthastoumen.com to arrange for your wines to be shipped to a package store.<\/p><p>We are unable to ship internationally, but please visit our <a href=\"\/pages\/stockists\" title=\"Stockists\"><span style=\"text-decoration:underline\">Stockists<\/span><\/a> page to find our wines in your country. <\/p>"
+            "content": "<p>We are able to ship to all but 7 states (Alabama, Arkansas, Delaware, Hawaii, Kentucky, Rhode Island, and Utah). If you live in Mississippi, you’ll need to email us at info@marthastoumen.com to arrange for your wines to be shipped to a package store.</p><p>We are unable to ship internationally, but please visit our <a href=\"/pages/stockists\" title=\"Stockists\"><span style=\"text-decoration:underline\">Stockists</span></a> page to find our wines in your country. </p>"
           }
         },
         "491fc3f2-7fb7-4db9-a7a1-aaf920a81d2e": {
           "type": "faq",
           "settings": {
             "heading": "Why is it so expensive to ship wine?",
-            "content": "<p>Wine is heavy, fragile, and temperature sensitive, and there’s a surcharge to make sure that wine is only being sold to and delivered to people 21 years of age and older.  <a href=\"https:\/\/www.sfchronicle.com\/wine\/article\/If-you-want-independent-wineries-to-survive-get-15789494.php\"><span style=\"text-decoration:underline\">Here’s a great article from Esther Mobley at The SF Chronicle that explains some of the ins and outs of moving wine from our winery to you.<\/span><\/a> If you’d like to receive $25 flat rate shipping year round, please <a href=\"https:\/\/martha-stoumen.myshopify.com\/pages\/membership\" title=\"https:\/\/martha-stoumen.myshopify.com\/pages\/membership\"><span style=\"text-decoration:underline\">sign up for the Martha Stoumen Wines club<\/span><\/a>.<\/p>"
+            "content": "<p>Wine is heavy, fragile, and temperature sensitive, and there’s a surcharge to make sure that wine is only being sold to and delivered to people 21 years of age and older.  <a href=\"https://www.sfchronicle.com/wine/article/If-you-want-independent-wineries-to-survive-get-15789494.php\"><span style=\"text-decoration:underline\">Here’s a great article from Esther Mobley at The SF Chronicle that explains some of the ins and outs of moving wine from our winery to you.</span></a> If you’d like to receive $25 flat rate shipping year round, please <a href=\"https://martha-stoumen.myshopify.com/pages/membership\" title=\"https://martha-stoumen.myshopify.com/pages/membership\"><span style=\"text-decoration:underline\">sign up for the Martha Stoumen Wines club</span></a>.</p>"
           }
         }
       },
@@ -135,77 +144,77 @@
           "type": "faq",
           "settings": {
             "heading": "I just signed up for the wine club! How do I log into my account?",
-            "content": "<p>Congratulations, we’re so excited to have you! Click the person icon in the top right corner of any page (<a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\"><span style=\"text-decoration:underline\">or head here<\/span><\/a>). <\/p><p>Once you are logged in, $25 flat rate shipping will automatically apply to all of your orders and you'll be able to purchase wine club exclusive bottles.<\/p><p>Are you an existing wine club member who hasn't logged in since before September 7th, 2021? You'll need to find the email we sent you with the \"activate your account\" button. If that link has expired (it's only good for 72 hours), just reach out to us at info@marthastoumen.com and we'll get you a replacement ASAP!<\/p>"
+            "content": "<p>Congratulations, we’re so excited to have you! Click the person icon in the top right corner of any page (<a href=\"https://martha-stoumen.myshopify.com/account/login\" title=\"https://martha-stoumen.myshopify.com/account/login\"><span style=\"text-decoration:underline\">or head here</span></a>). </p><p>Once you are logged in, $25 flat rate shipping will automatically apply to all of your orders and you'll be able to purchase wine club exclusive bottles.</p><p>Are you an existing wine club member who hasn't logged in since before September 7th, 2021? You'll need to find the email we sent you with the \"activate your account\" button. If that link has expired (it's only good for 72 hours), just reach out to us at info@marthastoumen.com and we'll get you a replacement ASAP!</p>"
           }
         },
         "32ad446c-d7c8-4baa-a232-d7b15bed9e2c": {
           "type": "faq",
           "settings": {
             "heading": "Which wines are in your current wine club release?",
-            "content": "<p>You can see the 6 current wine club wines by heading on over to the <a href=\"https:\/\/martha-stoumen.myshopify.com\/pages\/membership\" title=\"https:\/\/martha-stoumen.myshopify.com\/pages\/membership\"><span style=\"text-decoration:underline\">Community Supported Wine Club page<\/span><\/a>. <\/p><p>12 bottle club members automatically receive 2 bottles of each new release, but have the option to fully customize their shipments between current and past releases.<\/p><p>6 bottle club members receive 1 of each bottle in their shipment and have the option to add additional bottles.<\/p>"
+            "content": "<p>You can see the 6 current wine club wines by heading on over to the <a href=\"https://martha-stoumen.myshopify.com/pages/membership\" title=\"https://martha-stoumen.myshopify.com/pages/membership\"><span style=\"text-decoration:underline\">Community Supported Wine Club page</span></a>. </p><p>12 bottle club members automatically receive 2 bottles of each new release, but have the option to fully customize their shipments between current and past releases.</p><p>6 bottle club members receive 1 of each bottle in their shipment and have the option to add additional bottles.</p>"
           }
         },
         "8b7c3776-93e1-44fa-a44a-e4838ba42d25": {
           "type": "faq",
           "settings": {
             "heading": "How do I select the local pickup option for the current release?",
-            "content": "<p>Want to pick up your wines in Sebastopol? Please <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\"><span style=\"text-decoration:underline\">login into your account<\/span><\/a> and select the \"local pickup\" option before the release closes. <\/p><p>The Pax Wines tasting room is open 7 days a week from 11AM to 6PM, and until 7PM on Fridays and Saturdays. They are located in The Barlow at 6780 McKinley Street, Suite 170. As a Martha Stoumen Wines club member, you’re invited to a 2 for 1 tasting when you come to pick up your wines. Please <a href=\"https:\/\/www.exploretock.com\/paxwine\/\" target=\"_blank\" title=\"https:\/\/www.exploretock.com\/paxwine\/\"><span style=\"text-decoration:underline\">schedule your tasting directly with Pax Wines<\/span><\/a> and let them know you’re with the band. <\/p><p>If you are unable to pick up your wines within 4 weeks, we will ship your wines to you and charge your card on file for $30 flat rate shipping. <\/p>"
+            "content": "<p>Want to pick up your wines in Sebastopol? Please <a href=\"https://martha-stoumen.myshopify.com/account/login\" title=\"https://martha-stoumen.myshopify.com/account/login\"><span style=\"text-decoration:underline\">login into your account</span></a> and select the \"local pickup\" option before the release closes. </p><p>The Pax Wines tasting room is open 7 days a week from 11AM to 6PM, and until 7PM on Fridays and Saturdays. They are located in The Barlow at 6780 McKinley Street, Suite 170. As a Martha Stoumen Wines club member, you’re invited to a 2 for 1 tasting when you come to pick up your wines. Please <a href=\"https://www.exploretock.com/paxwine/\" target=\"_blank\" title=\"https://www.exploretock.com/paxwine/\"><span style=\"text-decoration:underline\">schedule your tasting directly with Pax Wines</span></a> and let them know you’re with the band. </p><p>If you are unable to pick up your wines within 4 weeks, we will ship your wines to you and charge your card on file for $30 flat rate shipping. </p>"
           }
         },
         "b23d8080-a509-408b-9259-e692ece89ad3": {
           "type": "faq",
           "settings": {
             "heading": "How do I update billing or shipping information for my club membership?",
-            "content": "<p>After <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\"><span style=\"text-decoration:underline\">logging into your account<\/span><\/a>, go to <strong>Memberships &gt; View my Memberships<\/strong> to edit the billing and shipping information for your club shipment. <\/p><p>If you change your address in Account Details, it WILL NOT update your club shipment. Please make sure that the address in your Membership is correct! We charge a $15 fee for all returned orders in addition to the cost of reshipment.<\/p>"
+            "content": "<p>After <a href=\"https://martha-stoumen.myshopify.com/account/login\" title=\"https://martha-stoumen.myshopify.com/account/login\"><span style=\"text-decoration:underline\">logging into your account</span></a>, go to <strong>Memberships &gt; View my Memberships</strong> to edit the billing and shipping information for your club shipment. </p><p>If you change your address in Account Details, it WILL NOT update your club shipment. Please make sure that the address in your Membership is correct! We charge a $15 fee for all returned orders in addition to the cost of reshipment.</p>"
           }
         },
         "ef2e959c-d493-452a-8fba-fcd7d714c688": {
           "type": "faq",
           "settings": {
             "heading": "How do I update my credit card info for a club shipment?",
-            "content": "<p>After <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\">logging into your account<\/a>, go to <strong>Memberships &gt; View my memberships &gt; Billing and Payments<\/strong>. After clicking on the pencil icon next to Billing and Payments, you can update your credit card info for your next club shipment.<\/p>"
+            "content": "<p>After <a href=\"https://martha-stoumen.myshopify.com/account\" title=\"https://martha-stoumen.myshopify.com/account\">logging into your account</a>, go to <strong>Memberships &gt; View my memberships &gt; Billing and Payments</strong>. After clicking on the pencil icon next to Billing and Payments, you can update your credit card info for your next club shipment.</p>"
           }
         },
         "ab79d30b-99d4-47b2-9e94-81a253b2afb5": {
           "type": "faq",
           "settings": {
             "heading": "How do I select which wines are in my wine club shipment?",
-            "content": "<p>After <a href=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\" title=\"https:\/\/martha-stoumen.myshopify.com\/account\/login\"><span style=\"text-decoration:underline\">logging into your account<\/span><\/a>, go to Memberships &gt; View my Memberships to <strong>Add or edit wine options<\/strong>. <\/p><p>Only 12 bottle club members may customize their wine club shipment. 6 bottle club members receive one bottle of each new release in their shipment but have the option to add additional bottles to their club shipment.  <\/p><p>Under <strong>Add or edit wine options<\/strong>, scroll down to <strong>Looking to add a few more bottles to your shipment?<\/strong> and add whichever other bottles you'd like! As a club member with $25 flat rate shipping on all orders, you can add any number of bottles for no additional shipping cost.<\/p>"
+            "content": "<p>After <a href=\"https://martha-stoumen.myshopify.com/account/login\" title=\"https://martha-stoumen.myshopify.com/account/login\"><span style=\"text-decoration:underline\">logging into your account</span></a>, go to Memberships &gt; View my Memberships to <strong>Add or edit wine options</strong>. </p><p>Only 12 bottle club members may customize their wine club shipment. 6 bottle club members receive one bottle of each new release in their shipment but have the option to add additional bottles to their club shipment.  </p><p>Under <strong>Add or edit wine options</strong>, scroll down to <strong>Looking to add a few more bottles to your shipment?</strong> and add whichever other bottles you'd like! As a club member with $25 flat rate shipping on all orders, you can add any number of bottles for no additional shipping cost.</p>"
           }
         },
         "9482537e-3d82-4749-908e-b6853584156f": {
           "type": "faq",
           "settings": {
             "heading": "How do I change my membership level?",
-            "content": "<p>Want to bump your club membership up to 12-bottles or down to 6-bottles? Reach out to Anna at info@marthastoumen.com and we’ll get you sorted.<\/p>"
+            "content": "<p>Want to bump your club membership up to 12-bottles or down to 6-bottles? Reach out to Anna at info@marthastoumen.com and we’ll get you sorted.</p>"
           }
         },
         "31852817-023b-4ab4-837c-888494ddeab7": {
           "type": "faq",
           "settings": {
             "heading": "How do I place my membership on hold or cancel?",
-            "content": "<p>There is no way to change this in your account. Please email Anna at <a href=\"mailto:info@marthastoumen.com\">info@marthastoumen.com<\/a> and she’ll put your membership on hold until a future date, or cancel your membership.<\/p>"
+            "content": "<p>There is no way to change this in your account. Please email Anna at <a href=\"mailto:info@marthastoumen.com\">info@marthastoumen.com</a> and she’ll put your membership on hold until a future date, or cancel your membership.</p>"
           }
         },
         "de5098d7-58f2-4405-a9d1-deb86a48d068": {
           "type": "faq",
           "settings": {
             "heading": "How can I purchase wine club exclusive bottles?",
-            "content": "<p>Once you're logged into your wine club account, all wines marked <strong>Wine club exclusive<\/strong> will be available for you to purchase. <\/p><p>If you'd like to add any bottles to your wine club purchase for no additional shipping fees, log into your wine club account and go to <strong>Memberships<\/strong> &gt; <strong>View my memberships<\/strong>.<\/p><p>Under <strong>Add or edit wine options<\/strong>, scroll down to <strong>Looking to add a few more bottles to your shipment?<\/strong> and add whichever other bottles you'd like!<\/p>"
+            "content": "<p>Once you're logged into your wine club account, all wines marked <strong>Wine club exclusive</strong> will be available for you to purchase. </p><p>If you'd like to add any bottles to your wine club purchase for no additional shipping fees, log into your wine club account and go to <strong>Memberships</strong> &gt; <strong>View my memberships</strong>.</p><p>Under <strong>Add or edit wine options</strong>, scroll down to <strong>Looking to add a few more bottles to your shipment?</strong> and add whichever other bottles you'd like!</p>"
           }
         },
         "fda21c67-42e6-4213-9a54-08bf2f5d98b9": {
           "type": "faq",
           "settings": {
             "heading": "How much does the wine club cost?",
-            "content": "<p>The 6 bottle club ranges between $240-320 per shipment, and the 12 bottle club generally ranges from $480-640 per shipment, depending upon your selections. In addition to the wine, there are applicable taxes and $30 flat rate shipping.<\/p>"
+            "content": "<p>The 6 bottle club ranges between $240-320 per shipment, and the 12 bottle club generally ranges from $480-640 per shipment, depending upon your selections. In addition to the wine, there are applicable taxes and $30 flat rate shipping.</p>"
           }
         },
         "883bb8bb-2e52-4093-bec8-607586e1f20c": {
           "type": "faq",
           "settings": {
             "heading": "I'm trying to sign up and it says \"Phone has already been taken.\" What's going on?",
-            "content": "<p>We use Shopify for our backend e-commerce. They use your email and phone number as unique identifiers. If you've ever made a purchase on a website that uses Shopify (a lot of websites do!), their database has tied your email and phone number together. <\/p><p>If you get this error, it means you need to use the email address you've tied it to, or use an alternate phone number.<\/p>"
+            "content": "<p>We use Shopify for our backend e-commerce. They use your email and phone number as unique identifiers. If you've ever made a purchase on a website that uses Shopify (a lot of websites do!), their database has tied your email and phone number together. </p><p>If you get this error, it means you need to use the email address you've tied it to, or use an alternate phone number.</p>"
           }
         }
       },
@@ -235,28 +244,28 @@
           "type": "faq",
           "settings": {
             "heading": "How do I gift a wine club membership?",
-            "content": "<p>After clicking the <a href=\"https:\/\/martha-stoumen.myshopify.com\/pages\/membership\" title=\"https:\/\/martha-stoumen.myshopify.com\/pages\/membership\"><span style=\"text-decoration:underline\">Join Now<\/span><\/a> button, you'll select either the 6 or 12 bottle membership. On the signup screen, you'll select \"Give this membership as a gift\" and then you'll choose the duration of membership you'd like to gift. We send shipments twice per year: if you select 1 year, your recipient will get 2 shipments. If you select 2 years, your recipient will get 4 shipments. <\/p><p><\/p><p>Your recipient won't have the ability to change the wines in their shipment or add on additional bottles. If you want to give them the ability to choose which wines they get, we recommend sending them a <a href=\"\/products\/martha-stoumen-wines-gift-card\" title=\"Martha Stoumen Wines Gift Card\"><span style=\"text-decoration:underline\">gift card<\/span><\/a>. <\/p>"
+            "content": "<p>After clicking the <a href=\"https://martha-stoumen.myshopify.com/pages/membership\" title=\"https://martha-stoumen.myshopify.com/pages/membership\"><span style=\"text-decoration:underline\">Join Now</span></a> button, you'll select either the 6 or 12 bottle membership. On the signup screen, you'll select \"Give this membership as a gift\" and then you'll choose the duration of membership you'd like to gift. We send shipments twice per year: if you select 1 year, your recipient will get 2 shipments. If you select 2 years, your recipient will get 4 shipments. </p><p></p><p>Your recipient won't have the ability to change the wines in their shipment or add on additional bottles. If you want to give them the ability to choose which wines they get, we recommend sending them a <a href=\"/products/martha-stoumen-wines-gift-card\" title=\"Martha Stoumen Wines Gift Card\"><span style=\"text-decoration:underline\">gift card</span></a>. </p>"
           }
         },
         "5682fc9e-41e6-4ca9-ac1e-ebc2867c9cc1": {
           "type": "faq",
           "settings": {
             "heading": "I lost my gift card! I never received my gift card! How do I get access to it?",
-            "content": "<p>From the order confirmation email, click <strong>Resend gift cards<\/strong>. You will receive an email that contains your gift card. <\/p><p>Didn’t receive an order confirmation email? Please reach out to Anna at <a href=\"mailto:info@marthastoumen.com\"><span style=\"text-decoration:underline\">info@marthastoumen.com<\/span><\/a> and she’ll help you figure out what’s going on!<\/p>"
+            "content": "<p>From the order confirmation email, click <strong>Resend gift cards</strong>. You will receive an email that contains your gift card. </p><p>Didn’t receive an order confirmation email? Please reach out to Anna at <a href=\"mailto:info@marthastoumen.com\"><span style=\"text-decoration:underline\">info@marthastoumen.com</span></a> and she’ll help you figure out what’s going on!</p>"
           }
         },
         "25a7a64c-ca53-46e4-a5a6-76dd8e4f593a": {
           "type": "faq",
           "settings": {
             "heading": "Do gift cards expire?",
-            "content": "<p>Nope! Martha Stoumen Wines gift cards never expire.<\/p>"
+            "content": "<p>Nope! Martha Stoumen Wines gift cards never expire.</p>"
           }
         },
         "c38e6a9a-7cc4-4743-84cb-3cca6d7ef308": {
           "type": "faq",
           "settings": {
             "heading": "Does my recipient receive an email after I send them a gift?",
-            "content": "<p><strong>Gift card: <\/strong>No, there is no place for you to enter a gift recipient email in addition to your own. You are emailed the gift card, which you can then forward to your recipient with a message, or print out and snail mail with a handwritten note! <\/p><p><strong>Gift membership<\/strong>: Only if you want them to! When a new member creates a gift membership and doesn't check the box to <strong>Send a Message<\/strong>, then this becomes a setting on the membership that tells the system not to send any notifications to the gift recipient. These notifications include the welcome to the club email, as well as future processing emails. The gift recipient will still receive an order confirmation and shipping emails. <\/p>"
+            "content": "<p><strong>Gift card: </strong>No, there is no place for you to enter a gift recipient email in addition to your own. You are emailed the gift card, which you can then forward to your recipient with a message, or print out and snail mail with a handwritten note! </p><p><strong>Gift membership</strong>: Only if you want them to! When a new member creates a gift membership and doesn't check the box to <strong>Send a Message</strong>, then this becomes a setting on the membership that tells the system not to send any notifications to the gift recipient. These notifications include the welcome to the club email, as well as future processing emails. The gift recipient will still receive an order confirmation and shipping emails. </p>"
           }
         }
       },
@@ -279,14 +288,14 @@
           "type": "faq",
           "settings": {
             "heading": "Why can’t you ship my wines to me via FedEx Ground in July?",
-            "content": "<p>We want to make sure that you receive your wines in excellent condition so that you can taste all of the love and care that went into their making. <\/p><p>Natural wine is a living product that is sensitive to things like sunlight and temperature extremes. Wine can “cook” if it is exposed to high temperatures, making it smell flat and lose its vibrancy, and bright flavors can become muddied and taste stewed. <\/p><p>Below freezing, wine can freeze in the bottle and expand, pushing out the cork or breaking the glass bottle. <\/p>"
+            "content": "<p>We want to make sure that you receive your wines in excellent condition so that you can taste all of the love and care that went into their making. </p><p>Natural wine is a living product that is sensitive to things like sunlight and temperature extremes. Wine can “cook” if it is exposed to high temperatures, making it smell flat and lose its vibrancy, and bright flavors can become muddied and taste stewed. </p><p>Below freezing, wine can freeze in the bottle and expand, pushing out the cork or breaking the glass bottle. </p>"
           }
         },
         "0b46ca20-b9d5-4443-8662-a294dd729cb8": {
           "type": "faq",
           "settings": {
             "heading": "What is Cold Chain shipping?",
-            "content": "<p>Cold Chain shipping is some temperature-controlled logistics sorcery, part of the same magic that gets vaccines around the country and Dippin’ Dots to your favorite waterpark in high summer.<\/p><p>Each summer, we work with FedEx and their national network of 90 temperature controlled warehouses to make sure that your wine arrives in perfect condition. Each Monday morning, a refrigerated FedEx truck arrives at our warehouse and picks up all of the orders from the past week. Everyone’s wine is sent out to regional temperature controlled facilities, and delivered the following week. It’s not fast! But it’s also significantly cheaper than overnight shipping, and has a smaller (though not insignificant!) carbon footprint. <br\/><br\/><a href=\"\/collections\/all\" title=\"All Wine\">During the summer months we recommend ordering larger quantities (12+ bottles) to avoid reordering. Put a case together with neighbors and friends, throw a party, stock your cellar, go wild<\/a>!<\/p>"
+            "content": "<p>Cold Chain shipping is some temperature-controlled logistics sorcery, part of the same magic that gets vaccines around the country and Dippin’ Dots to your favorite waterpark in high summer.</p><p>Each summer, we work with FedEx and their national network of 90 temperature controlled warehouses to make sure that your wine arrives in perfect condition. Each Monday morning, a refrigerated FedEx truck arrives at our warehouse and picks up all of the orders from the past week. Everyone’s wine is sent out to regional temperature controlled facilities, and delivered the following week. It’s not fast! But it’s also significantly cheaper than overnight shipping, and has a smaller (though not insignificant!) carbon footprint. <br/><br/><a href=\"/collections/all\" title=\"All Wine\">During the summer months we recommend ordering larger quantities (12+ bottles) to avoid reordering. Put a case together with neighbors and friends, throw a party, stock your cellar, go wild</a>!</p>"
           }
         }
       },
