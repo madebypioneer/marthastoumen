@@ -121,17 +121,18 @@
           "settings": {
             "level_variant_id": "114147",
             "card_width": "w-1/3",
+            "image": "shopify://shop_images/SS23-45.jpg",
             "club_level_name": "4 Bottle Club",
             "title_size": "inherit",
-            "level_description": "",
-            "level_benefits": "ONE BOTTLE OF EACH NEW WINE PER SEASONAL SHIPMENT\n\n$30 FLAT RATE SHIPPING\n\nEXCLUSIVE POST FLIRTATION PRICING",
+            "level_description": "<p>FOUR BOTTLES PER SEASONAL SHIPMENT (SPRING, SUMMER, FALL)</p><p>$30 FLAT RATE SHIPPING</p><p>SKIP ANYTIME (UP TO 2X CONSECUTIVELY)</p>",
+            "level_benefits": "",
             "club_price": "",
             "text_align": "center",
             "to_join": true,
-            "to_join_url": "/pages/3-membership-sign-up",
+            "to_join_url": "/pages/4-membership-sign-up",
             "to_checkout": false,
             "to_cart": false,
-            "join_button_label": "Join the 3 Bottle Club"
+            "join_button_label": "Join the 4 Bottle Club"
           }
         },
         "91b61098-5601-4834-9d18-aa2aa4be4580": {
