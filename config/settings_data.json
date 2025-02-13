@@ -84,7 +84,7 @@
       "bloom-age-gate-section": {
         "type": "bloom-age-gate-section",
         "settings": {
-          "enable": true,
+          "enable": false,
           "allow_list": "",
           "require_full_dob": false,
           "require_full_dob_mobile": false,
@@ -141,6 +141,16 @@
         "settings": {
           "enable_legacy_checkout_compatiblity": false,
           "custom_css": ""
+        }
+      },
+      "16434623157229667862": {
+        "type": "shopify://apps/bloom-commerce/blocks/bloom-age-gate/a1421136-f8f4-4099-a0bc-ffd3811b3b59",
+        "disabled": false,
+        "settings": {
+          "enable_age_gate": true,
+          "stylesheet": "",
+          "enable-product-specs": false,
+          "stylesheet-product-specs": ""
         }
       }
     }
