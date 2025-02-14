@@ -1860,10 +1860,10 @@ deferred-media {
   display: none;
 }
 
-.field__input::placeholder,
+/* .field__input::placeholder,
 .customer .field input::placeholder {
   opacity: 0;
-}
+} */
 
 .field__button {
   align-items: center;
