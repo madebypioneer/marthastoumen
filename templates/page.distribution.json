@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "162986478112c194ab": {
@@ -6,13 +15,14 @@
         "c4ba74c0-1732-483b-b16f-1698cc3229f4": {
           "type": "heading",
           "settings": {
-            "heading": "WANT MARTHA STOUMEN WINES IN YOUR RESTAURANT OR RETAIL SPACE?"
+            "heading": "WANT MARTHA STOUMEN WINES IN YOUR RESTAURANT OR RETAIL SPACE?",
+            "page_heading": true
           }
         },
         "88ad6791-58c2-4d12-8a95-9b0a6ec53a29": {
           "type": "text",
           "settings": {
-            "text": "<p>We work with the following (fantastic!) distributors to share handmade California wines with purveyors around the world.<\/p>"
+            "text": "<p>We work with the following (fantastic!) distributors to share handmade California wines with purveyors around the world.</p>"
           }
         }
       },
@@ -54,7 +64,7 @@
         "template--14924584812732__074c2368-3e34-439c-9914-90ab14b54ba2-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>In need of tech sheets, photos of wine, or further information to educate and empower your sales team? We've got you!<\/p><h6> <\/h6><h6><a href=\"\/blogs\/tech-sheets\" title=\"Tech Sheets\">CLICK HERE TO FIND TECH SHEETS!<\/a><\/h6>"
+            "text": "<p>In need of tech sheets, photos of wine, or further information to educate and empower your sales team? We've got you!</p><h6> </h6><h6><a href=\"/blogs/tech-sheets\" title=\"Tech Sheets\">CLICK HERE TO FIND TECH SHEETS!</a></h6>"
           }
         }
       },
@@ -79,14 +89,14 @@
         "1629864868c6825d4d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We’ve gathered a list of the local wine shops, bars, stores, and restaurants that usually carry our wines. This isn’t everyone — you can find our bottles in some pretty unexpected places! We always recommend calling ahead to see what’s in stock. <\/p>"
+            "text": "<p>We’ve gathered a list of the local wine shops, bars, stores, and restaurants that usually carry our wines. This isn’t everyone — you can find our bottles in some pretty unexpected places! We always recommend calling ahead to see what’s in stock. </p>"
           }
         },
         "897deeea-c7d2-4728-a8c8-e894147fcfdf": {
           "type": "button",
           "settings": {
             "button_label": "VIEW STOCKISTS",
-            "button_link": "shopify:\/\/pages\/stockists"
+            "button_link": "shopify://pages/stockists"
           }
         }
       },
@@ -96,7 +106,7 @@
         "897deeea-c7d2-4728-a8c8-e894147fcfdf"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/theholly_wine.jpg",
+        "image": "shopify://shop_images/theholly_wine.jpg",
         "layout": "image_first",
         "disable_parallax": true
       }
