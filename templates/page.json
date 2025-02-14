@@ -13,12 +13,12 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "reduce_top_spacing": false,
         "show_social": false,
         "social_header": "",
-        "show_page_title": true,
-        "show_content": true,
+        "show_page_title": false,
+        "show_content": false,
         "show_contact": false,
         "heading": "Contact form",
         "layout": "form_first"
