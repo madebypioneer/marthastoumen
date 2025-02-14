@@ -20,7 +20,11 @@
                 {%- when 'heading' -%}
                     <div class="w-full large text-center">
                         <div class="m-auto" style="max-width: 960px;">
+                          {% if block.settings.page_heading %}
+                            <h1>{{ block.settings.heading }}</h1>
+                          {% else %}
                             <h2 class="h1">{{ block.settings.heading }}</h2>
+                          {% endif %}
                         </div>
                     </div>
                 {%- when 'largeText' -%}
@@ -134,6 +138,11 @@
                     "type": "text",
                     "id": "heading",
                     "label": "Heading"
+                },
+                {
+                  "type": "checkbox",
+                  "id": "page_heading",
+                  "label": "Is Page Heading?"
                 }
             ]
         },
