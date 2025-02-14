@@ -32,15 +32,14 @@
           <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>
             <div class="media media--transparent aspect-w-2 aspect-h-3 media--hover-effect{% unless product_card_product.available %} sold-out{% endunless %}">
               <img src="{{ product_card_product.featured_media | img_url: '1000x' }}"
-                {% comment %}alt="{{ product_card_product.featured_media.alt | escape }}"{% endcomment %}
                 loading="lazy"
                 class="motion-reduce object-cover"
                 width="{{ product_card_product.featured_media.width }}"
                 height="{{ product_card_product.featured_media.height }}"
-                {% if product_card_product.featured_media.alt == product_card_product.title %}
+                {% if product_card_product.featured_media.alt | escape == product_card_product.title | escape %}
                   aria-hidden="true"
                 {% else %}
-                  alt="{{ product_card_product.featured_media.alt }}"
+                  alt="{{ product_card_product.featured_media.alt | escape }}"
                 {% endif %}
               >
             </div>
