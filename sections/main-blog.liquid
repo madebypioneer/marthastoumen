@@ -42,7 +42,7 @@
                           {{- article.published_at | date: '%B %d, %Y' -}}
                         </span>
 
-                        <h2 class="featured" id="Article-{{ article.id }}">
+                        <h2 class="featured">
                           {{ article.title | escape }}
                         </h2>
                       </div>
@@ -58,7 +58,7 @@
           <h3 class="clifton">Categories</h3>
           <div class="lg:hidden">
             <nav-select>
-              <select name="nav" id="" class="lg:hidden bg-transparent w-full">
+              <select name="nav" class="lg:hidden bg-transparent w-full">
                 {% for tag in blogs['field-notes'].all_tags %}
                   <option value="{{ blog.url }}/tagged/{{ tag | handle }}" {% if current_tags contains tag  %}selected{% endif %}>{{ tag.title }}</option>
                 {% endfor %}
@@ -103,7 +103,7 @@
                         {{- article.published_at | date: '%B %d, %Y' -}}
                       </span>
 
-                      <h2 class="mb-16" id="Article-{{ article.id }}">
+                      <h2 class="mb-16">
                         <a href="{{ article.url }}" class="hover:text-vine hover:underline">
                           {{ article.title | escape }}
                         </a>
