@@ -199,7 +199,7 @@
 
 .newsletter-form__field-wrapper label {
   color: #F9F5EA;
-  /* opacity: 0.5; */
+  opacity: 0.75;
 }
 
 @media screen and (max-width: 749px) {
