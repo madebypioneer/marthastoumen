@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -21,13 +30,14 @@
         "170e91b5-8f6d-4c34-8dbf-8200f131153c": {
           "type": "heading",
           "settings": {
-            "heading": "Events"
+            "heading": "Events",
+            "page_heading": true
           }
         },
         "a573cc80-2cc7-45e2-a783-ca3fe720da1b": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"\/pages\/bulk-orders\" title=\"Bulk Orders\">Looking for delightful natural wines to share at a special occasion? Click here to get in touch and learn more about bulk pricing. <\/a><\/p>"
+            "text": "<p><a href=\"/pages/bulk-orders\" title=\"Bulk Orders\">Looking for delightful natural wines to share at a special occasion? Click here to get in touch and learn more about bulk pricing. </a></p>"
           }
         }
       },
@@ -46,9 +56,8 @@
       "type": "apps",
       "blocks": {
         "197bbb60-50ce-4dcb-ba55-fb110097bab5": {
-          "type": "shopify:\/\/apps\/mahina-event-calendar-app\/blocks\/app-block\/e11e7f2a-2a3e-496c-81db-93ba18da671c",
-          "settings": {
-          }
+          "type": "shopify://apps/mahina-event-calendar-app/blocks/app-block/e11e7f2a-2a3e-496c-81db-93ba18da671c",
+          "settings": {}
         }
       },
       "block_order": [
