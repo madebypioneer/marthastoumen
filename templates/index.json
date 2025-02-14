@@ -219,7 +219,7 @@
           "type": "button",
           "settings": {
             "button_label": "LEARN MORE",
-            "button_reader_label": "Button label",
+            "button_reader_label": "Learn More About Our Wine Club",
             "button_link": "shopify://pages/membership"
           }
         }
