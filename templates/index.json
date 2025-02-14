@@ -52,6 +52,7 @@
           "type": "button",
           "settings": {
             "button_label": "GET TICKETS",
+            "button_reader_label": "Button label",
             "button_link": "shopify://products/ms-wines-open-house"
           }
         }
@@ -89,6 +90,7 @@
           "type": "button",
           "settings": {
             "button_label": "Learn More",
+            "button_reader_label": "Learn More About Martha Stoumen",
             "button_link": "shopify://pages/team"
           }
         }
@@ -217,6 +219,7 @@
           "type": "button",
           "settings": {
             "button_label": "LEARN MORE",
+            "button_reader_label": "Button label",
             "button_link": "shopify://pages/membership"
           }
         }
