@@ -11,10 +11,32 @@
   "sections": {
     "16294828723a66f779": {
       "type": "page",
+      "disabled": true,
       "settings": {
         "page": "faq",
         "fullWidth": true,
         "showContent": false
+      }
+    },
+    "content_gbqVqK": {
+      "type": "content",
+      "blocks": {
+        "heading_iprwjq": {
+          "type": "heading",
+          "settings": {
+            "heading": "FAQ",
+            "page_heading": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_iprwjq"
+      ],
+      "settings": {
+        "reduce_spacing": false,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
       }
     },
     "1629482800b8facdc6": {
@@ -312,6 +334,7 @@
   },
   "order": [
     "16294828723a66f779",
+    "content_gbqVqK",
     "1629482800b8facdc6",
     "1629482875830ab17d",
     "16294830541423f7f7",
