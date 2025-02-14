@@ -64,13 +64,22 @@
         "template--14924584812732__074c2368-3e34-439c-9914-90ab14b54ba2-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>In need of tech sheets, photos of wine, or further information to educate and empower your sales team? We've got you!</p><h6></h6><h6><a href=\"/blogs/tech-sheets\" title=\"Tech Sheets\">CLICK HERE TO FIND TECH SHEETS!</a></h6>"
+            "text": "<p>In need of tech sheets, photos of wine, or further information to educate and empower your sales team? We've got you!</p>"
+          }
+        },
+        "button_jn8YDQ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Click Here To Find Tech Sheets!",
+            "button_link": "shopify://blogs/tech-sheets",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
         "template--14924584812732__074c2368-3e34-439c-9914-90ab14b54ba2-heading-1",
-        "template--14924584812732__074c2368-3e34-439c-9914-90ab14b54ba2-text-1"
+        "template--14924584812732__074c2368-3e34-439c-9914-90ab14b54ba2-text-1",
+        "button_jn8YDQ"
       ],
       "settings": {
         "color_scheme": "background-1",
