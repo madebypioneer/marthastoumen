@@ -236,6 +236,7 @@
       "blocks": {
         "16308764456814c997-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": ""
           }
@@ -288,6 +289,7 @@
       "blocks": {
         "16308766027700b82e-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": ""
           }
@@ -340,6 +342,7 @@
       "blocks": {
         "16308766597b708768-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": ""
           }
