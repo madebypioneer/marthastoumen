@@ -7,7 +7,7 @@ Club header
   <div class="uk-cover-container">
     <canvas width="" height="{{ header_image_height }}"></canvas>
     <img src="{{ section.settings.header_image| img_url: 'master' }}"
-         alt="" class="" uk-cover>
+         alt="{{ section.settings.header_image.alt | escape }}" class="" uk-cover>
   </div>
 </header>
 {% endif %}
@@ -16,7 +16,7 @@ Club header
   <div class="uk-container uk-width-1-1 uk-margin-auto" id="membershipSection" style="max-width:{{section.settings.club_max_width}}%"> 
     <div class="membership-grid uk-margin-large-top uk-margin-large-bottom"> 
       <div class="uk-margin-large-bottom uk-text-center uk-margin-auto uk-width-2-3@m"> 
-        {% if section.settings.heading_text %} <h1 class="u-h1">{{ section.settings.heading_text }}</h1>{% endif %}
+        {% if section.settings.heading_text and section.settings.heading_text != "" %} <h1 class="u-h1">{{ section.settings.heading_text }}</h1>{% endif %}
         {% if section.settings.intro_text %} <p>{{ section.settings.intro_text }}</p> {% endif %}
       </div>
 
