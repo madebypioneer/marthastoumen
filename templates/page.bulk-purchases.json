@@ -1,7 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "16304255066d33f782": {
       "type": "page-with-form",
+      "custom_css": [
+        ".globo-form-id-51727 .globo-form-app .globo-form-control .help-text.globo-description, .globo-form-id-51727 .globo-form-app .globo-form-control span.globo-description {color: #30292f;}"
+      ],
       "settings": {
         "full_width": false,
         "reduce_top_spacing": true,
