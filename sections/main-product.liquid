@@ -81,6 +81,7 @@
         <div  class="aspect-w-6 aspect-h-7">
           <img src="{{ product.media.first | img_url: '3000x' }}"
                class="object-center object-cover"
+              alt="{{ product.media.first.alt | escape }}"
           >
         </div>
 
