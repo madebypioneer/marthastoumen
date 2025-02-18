@@ -39,6 +39,9 @@
     },
     "16298654210ff76458": {
       "type": "section-stockist",
+      "custom_css": [
+        "#stockist-widget .stockist-powered-by-link,.stockist-powered-by-link a {color: #30292F;}"
+      ],
       "settings": {}
     }
   },
