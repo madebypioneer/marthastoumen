@@ -21,6 +21,7 @@
         },
         "title": {
           "type": "title",
+          "disabled": true,
           "settings": {}
         },
         "subtitle": {
@@ -130,7 +131,8 @@
         "5b417ace-9956-4357-ae3d-ca7cfc1d53e8": {
           "type": "heading",
           "settings": {
-            "heading": "DID SOMEONE SAY SPICY SANGRIA SPRITZ?"
+            "heading": "DID SOMEONE SAY SPICY SANGRIA SPRITZ?",
+            "page_heading": false
           }
         },
         "b46f3675-5f60-4a6e-a76e-41447a08989d": {
