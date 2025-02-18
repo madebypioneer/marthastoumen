@@ -139,8 +139,10 @@ variant-radios .product-form__input input[type=radio]+label:hover,
 variant-radios .product-form__input input[type=radio]:checked+label {
   border: 1px solid;
   border-radius: 8px;
-  border-color: #a46f4d;
-  background-color: #a46f4d;
+  border-color: #8c684d;
+  background-color: #8c684d;
+  /* border-color: #a46f4d;
+  background-color: #a46f4d; */
   color: #f9f5ea;
 }
 
