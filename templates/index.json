@@ -29,7 +29,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured collection",
-        "collection": "lovers-corner-natural-wine-gifts",
+        "collection": "all",
         "show_view_all": true
       }
     },
@@ -170,7 +170,8 @@
         "2137a895-a158-4f85-aac6-ad42a6a50104": {
           "type": "heading",
           "settings": {
-            "heading": "A Community Supported Wine Club"
+            "heading": "A Community Supported Wine Club",
+            "page_heading": false
           }
         },
         "4251c108-9981-47e6-a1de-21b6e77737fe": {
