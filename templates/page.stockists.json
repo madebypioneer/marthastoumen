@@ -41,7 +41,8 @@
       "type": "section-stockist",
       "custom_css": [
         "#stockist-widget .stockist-powered-by-link,.stockist-powered-by-link a {color: #30292f;}",
-        "#stockist-widget .stockist-query-entry .stockist-search-field::placeholder {color: #30292F;}"
+        "#stockist-widget .stockist-query-entry .stockist-search-field::placeholder {color: #30292f;}",
+        "#stockist-widget .leaflet-bar a.leaflet-disabled {color: #30292f;}"
       ],
       "settings": {}
     }
