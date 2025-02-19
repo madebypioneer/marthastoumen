@@ -241,6 +241,7 @@
     },
     "754e2c90-4586-474d-b17c-7e04e9195d94": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "collection": "wine-club-exclusive",
