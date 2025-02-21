@@ -2812,6 +2812,6 @@ input::placeholder,
 textarea::placeholder,
 .text_area::placeholder,
 .field_input::placeholder {
-  color: rgba(var(--color-foreground), 0.75);
-  opacity: 0.75;
+  color: rgba(var(--color-foreground), 1);
+  opacity: 1;
 }
