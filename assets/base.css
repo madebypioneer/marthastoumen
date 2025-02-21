@@ -2808,7 +2808,8 @@ html {
   display: inline-block !important;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: rgba(var(--color-foreground), 0.75);
   opacity: 0.75;
 }
