@@ -62,13 +62,13 @@
                           {% elsif form.posted_successfully? %}
                             aria-describedby="ContactFooter-success"
                           {% endif %}
-                          placeholder="{{ 'newsletter.label' }}"
+                          placeholder="{{ 'newsletter.label' | t }}"
                           style="display: block;"
                           required
                           data-newsletter-focus
                   >
                   <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                    {{ 'newsletter.label' }}
+                    {{ 'newsletter.label' | t }}
                   </label>
                 </div>
                 {%- if form.errors -%}
@@ -83,7 +83,7 @@
                           name="contact[first_name]"
                           id="contact[first_name]"
                           value="{{ form.first_name }}"
-                          placeholder="{{ 'newsletter.first_name' }}"
+                          placeholder="{{ 'newsletter.first_name' | t }}"
                           class="field__input"
                           style="display: block;"
                           required
@@ -101,7 +101,7 @@
                           name="contact[last_name]"
                           id="contact[last_name]"
                           value="{{ form.last_name }}"
-                          placeholder="{{ 'newsletter.last_name' }}"
+                          placeholder="{{ 'newsletter.last_name' | t }}"
                           class="field__input"
                           style="display: block;"
                           required
@@ -120,7 +120,7 @@
 
               <div class="w-full px-16" data-newsletter-input="constant">
                 <button type="submit" class="button--text" name="commit" id="Subscribe">
-                  {{ 'newsletter.button_label' }}
+                  {{ 'newsletter.button_label' | t }}
                   <span class="arrow"></span>
                 </button>
               </div>
