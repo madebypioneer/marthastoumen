@@ -1870,6 +1870,7 @@ deferred-media {
 
 .field_input::placeholder {
   color: rgba(var(--color-foreground), 0.75);
+  opacity: 1;
 }
 
 .field__button {
@@ -2805,4 +2806,9 @@ html {
 
 .customer-template-content a {
   display: inline-block !important;
+}
+
+.field_input::placeholder {
+  color: rgba(var(--color-foreground), 0.75);
+  opacity: 1;
 }
