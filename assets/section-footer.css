@@ -197,7 +197,7 @@
   margin-bottom: 24px;
 }
 
-.newsletter-form__field-wrapper input:placeholder {
+.newsletter-form__field-wrapper input::placeholder {
   color: #F9F5EA;
   opacity: 0.75;
 }
