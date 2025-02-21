@@ -1835,6 +1835,10 @@ deferred-media {
   opacity: 0;
 }
 
+.field_input::placeholder {
+  color: rgba(var(--color-foreground), 0.75);
+}
+
 .field__input:focus ~ .field__label,
 .field__input:not(:placeholder-shown) ~ .field__label,
 .field__input:-webkit-autofill ~ .field__label,
