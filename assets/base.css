@@ -2809,7 +2809,9 @@ html {
 }
 
 input::placeholder,
-textarea::placeholder {
+textarea::placeholder,
+.text_area::placeholder,
+.field_input::placeholder {
   color: rgba(var(--color-foreground), 0.75);
   opacity: 0.75;
 }
