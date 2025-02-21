@@ -207,6 +207,10 @@
   opacity: 0;
 }
 
+input[type="checkbox"] + label {
+  opacity: 1;
+}
+
 @media screen and (max-width: 749px) {
   .footer-block__newsletter .newsletter-form__field-wrapper {
     width: 30rem;
