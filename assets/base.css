@@ -1838,6 +1838,13 @@ deferred-media {
   letter-spacing: 0.2px;
 }
 
+textarea + label {
+  opacity: 1;
+  top: 12.5px;
+  left: 13px;
+  letter-spacing: 0.4px;
+}
+
 
 
 .field__input:focus ~ .field__label,
