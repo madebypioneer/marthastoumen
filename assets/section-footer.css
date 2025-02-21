@@ -204,7 +204,7 @@
 
 .newsletter-form__field-wrapper label {
   color: #F9F5EA;
-  opacity: 0;
+  opacity: 1;
 }
 
 input[type="checkbox"] + label {
