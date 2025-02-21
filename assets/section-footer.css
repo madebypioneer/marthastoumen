@@ -197,6 +197,11 @@
   margin-bottom: 24px;
 }
 
+.newsletter-form__field-wrapper input:placeholder {
+  color: #F9F5EA;
+  opacity: 0.75;
+}
+
 .newsletter-form__field-wrapper label {
   color: #F9F5EA;
   opacity: 0;
