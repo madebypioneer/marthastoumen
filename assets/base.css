@@ -1868,10 +1868,10 @@ deferred-media {
   opacity: 0;
 } */
 
-.field_input::placeholder {
+/* .field_input::placeholder {
   color: rgba(var(--color-foreground), 0.75);
   opacity: 1;
-}
+} */
 
 .field__button {
   align-items: center;
