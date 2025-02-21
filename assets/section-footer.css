@@ -205,6 +205,9 @@
 .newsletter-form__field-wrapper label {
   color: #F9F5EA;
   opacity: 1;
+  left: 15px;
+  top: 10px;
+  letter-spacing: .04rem;
 }
 
 input[type="checkbox"] + label {
