@@ -2809,6 +2809,6 @@ html {
 }
 
 input::placeholder {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 0.5);
   opacity: 1;
 }
