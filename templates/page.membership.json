@@ -23,7 +23,8 @@
         "3024eba2-923e-4fec-a7ea-c35cc8fb3a19": {
           "type": "heading",
           "settings": {
-            "heading": "COMMUNITY SUPPORTED WINE CLUB"
+            "heading": "COMMUNITY SUPPORTED WINE CLUB",
+            "page_heading": false
           }
         },
         "24fc36ac-7244-4b31-af06-110364face7a": {
@@ -195,7 +196,7 @@
         "ab863719-2c32-45f5-9c7d-88b07ed61151": {
           "type": "largeText",
           "settings": {
-            "text": "<p>2025: YOUR CLUB YEAR AHEAD</p><p>FEBRUARY: LOVER'S MONTH OPENS</p><p>MARCH/APRIL: SS25 RELEASE</p><p>JULY: FERRAGOSTO, FAREWELL!</p><p>SEPTEMBER/OCTOBER: FW25 RELEASE</p><p>NOVEMBER/DECEMBER: GIFT SHOP OPENS WITH EARLY CLUB ACCESS</p>"
+            "text": "<p>2025: YOUR CLUB YEAR AHEAD</p><p>FEBRUARY: LOVER'S MONTH OPENS</p><p>MARCH/APRIL: SPRING RELEASE</p><p>SEPTEMBER/OCTOBER: FW25 RELEASE</p><p>NOVEMBER/DECEMBER: GIFT SHOP OPENS WITH EARLY CLUB ACCESS</p>"
           }
         },
         "55db0bb1-5e87-461c-89ab-7ff1dd2c4120": {
@@ -257,7 +258,8 @@
         "4ce6b115-cc11-4296-9400-595d377432b9": {
           "type": "heading",
           "settings": {
-            "heading": "exclusive for club members:"
+            "heading": "exclusive for club members:",
+            "page_heading": false
           }
         },
         "47147142-c4ad-4f6a-8b52-1006ac622c77": {
@@ -382,7 +384,8 @@
         "7a7abca5-022b-4f93-b7bb-0dc79d75ac92": {
           "type": "heading",
           "settings": {
-            "heading": "TWO WAYS TO PLAY"
+            "heading": "TWO WAYS TO PLAY",
+            "page_heading": false
           }
         },
         "6326a1a5-63fd-4533-a740-1b5d5ff8b527": {
@@ -410,7 +413,8 @@
         "267ef5d6-10d4-4624-a990-19ff9448c23a": {
           "type": "heading",
           "settings": {
-            "heading": "GIFTING?"
+            "heading": "GIFTING?",
+            "page_heading": false
           }
         },
         "788e9fb3-2ee0-4bb8-be05-a2246a3fc567": {
@@ -422,7 +426,8 @@
         "44f555e7-38d0-47f2-b4b2-d39c0d97b17e": {
           "type": "heading",
           "settings": {
-            "heading": "LIVE FAR?"
+            "heading": "LIVE FAR?",
+            "page_heading": false
           }
         },
         "083dfa57-ecc1-4ea7-b398-81326ea9ed90": {
@@ -434,7 +439,8 @@
         "5e933451-c335-45e2-8c22-be645c7170c0": {
           "type": "heading",
           "settings": {
-            "heading": "STILL CURIOUS?"
+            "heading": "STILL CURIOUS?",
+            "page_heading": false
           }
         },
         "67ee4205-4f2a-4390-a6c1-dee932223ca8": {
