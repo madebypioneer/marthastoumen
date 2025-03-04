@@ -230,6 +230,7 @@
     },
     "featured_collection_GXNMDe": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "collection": "wine-club-exclusive",
