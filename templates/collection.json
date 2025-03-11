@@ -12,7 +12,7 @@
     "1630297194ef18551f": {
       "type": "image",
       "settings": {
-        "image": "shopify://shop_images/MS_spring2023_final_0012_1.jpg",
+        "image": "shopify://shop_images/MarthaStoumen_SS25_-44.jpg",
         "remove_top_spacing": true
       }
     },
@@ -61,6 +61,7 @@
           "type": "button",
           "settings": {
             "button_label": "Learn More",
+            "button_reader_label": "Button label",
             "button_link": "shopify://pages/membership"
           }
         }
