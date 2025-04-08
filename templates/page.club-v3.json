@@ -1,0 +1,147 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "reduce_top_spacing": false,
+        "show_social": false,
+        "social_header": "",
+        "show_page_title": false,
+        "show_content": false,
+        "show_contact": false,
+        "heading": "Contact form",
+        "layout": "form_first"
+      }
+    },
+    "164444815183af8094": {
+      "type": "content",
+      "blocks": {
+        "437fd8d7-0083-45a2-a25b-ea02dec2a2ed": {
+          "type": "heading",
+          "settings": {
+            "heading": "Accessibility",
+            "page_heading": true
+          }
+        },
+        "2944f9b2-4a69-4d01-a0e4-82ab1bb80b81": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Martha Stoumen Wines is committed to crafting website content that is accessible for everyone. We continually evaluate our user experience to ensure that all of our customers feel welcome.</p><p></p><p>If you are having difficulty engaging with the content or functionality of our website, or notice a feature that is not fully accessible to people with disabilities, please:</p><p>- Email our customer care team at <a href=\"mailto:info@marthastoumen.com\"><strong>info@marthastoumen.com</strong></a> with <em>“Website Access”</em><em><strong> </strong></em>in the subject line.</p><p>- Provide a description of the specific feature you feel is not fully accessible</p>"
+          }
+        }
+      },
+      "block_order": [
+        "437fd8d7-0083-45a2-a25b-ea02dec2a2ed",
+        "2944f9b2-4a69-4d01-a0e4-82ab1bb80b81"
+      ],
+      "settings": {
+        "reduce_spacing": true,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
+      }
+    },
+    "16444477694ee0726b": {
+      "type": "section-faq",
+      "blocks": {
+        "264af7b7-b09b-466d-b476-3b988186d210": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "heading": "Harvest Internships",
+            "content": "<p>We at Martha Stoumen Wines make wine out of a shared space, Pax Mahle Wines, in Sebastopol, CA. Pax, Patrick Cappiello (Monte Rio Cellars), Carlo Mondavi (RAEN), Rosalind Reynolds (Emme Wines) and Martha Stoumen make wine in this facility. We all share a group of interns and work together as a team during harvest, and Rosalind, who is also Pax's Assistant Winemaker, hires and manages all of the interns. All of the harvest interns will work on everyone's wine in the facility, so you'll get great exposure to various winemakers and grape varietals. </p><p>Harvest runs approximately three months from early August to late October/early November, 6 to 7 days a week, and is full of hard physical work, great wine, and team lunches at the long table. It's our favorite time of year.</p><p>If interested please send an email and resume to <a href=\"mailto:rosalindsreynolds@gmail.com\" target=\"_blank\">RosalindsReynolds@gmail.com</a> and CC <a href=\"mailto:careers@marthastoumen.com\" target=\"_blank\">careers@marthastoumen.com</a>. Subject line should read: Harvest 2022 Intern Application</p>"
+          }
+        }
+      },
+      "block_order": [
+        "264af7b7-b09b-466d-b476-3b988186d210"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Open Positions",
+        "content": "",
+        "section_id": "open-positions"
+      }
+    },
+    "16444482295f6efea9": {
+      "type": "heading-and-text",
+      "blocks": {
+        "16444482292036ef46-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "16444482292036ef46-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "16444482292036ef46-0",
+        "16444482292036ef46-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "image_first"
+      }
+    },
+    "16444508251380f1a0": {
+      "type": "content",
+      "disabled": true,
+      "settings": {
+        "reduce_spacing": false,
+        "reduce_top_spacing": false,
+        "reduce_bottom_spacing": false,
+        "add_spacing_mobile": false
+      }
+    },
+    "16444512644d2acaa3": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"eca-app-container\" data-widgetuuid=\"b6c07682-6872-46c9-846f-4cbf3639bd16\"></div>\n<script>(function () {\nwindow.eventCalId=9717;\nvar integrationScript = document.createElement(\"script\");\nintegrationScript.async = 1;\nintegrationScript.setAttribute(\"src\", \"https://api.eventcalendarapp.com/integration-script.js\");\ndocument.head.appendChild(integrationScript);\nif (window.eventCalendarAppUtilities) { window.eventCalendarAppUtilities.init(\"b6c07682-6872-46c9-846f-4cbf3639bd16\");}})();\n</script>"
+      }
+    },
+    "16444517320e9706f1": {
+      "type": "apps",
+      "blocks": {
+        "d4bfaca8-060b-4bce-a788-e0b2db24891c": {
+          "type": "shopify://apps/mahina-event-calendar-app/blocks/app-block/e11e7f2a-2a3e-496c-81db-93ba18da671c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "d4bfaca8-060b-4bce-a788-e0b2db24891c"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164444815183af8094",
+    "16444477694ee0726b",
+    "16444482295f6efea9",
+    "16444508251380f1a0",
+    "16444512644d2acaa3",
+    "16444517320e9706f1"
+  ]
+}
